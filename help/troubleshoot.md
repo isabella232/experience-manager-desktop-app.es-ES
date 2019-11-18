@@ -1,17 +1,15 @@
 ---
 title: Prácticas recomendadas para la solución de problemas de la aplicación de escritorio AEM
-seo-title: Solución de problemas y prácticas recomendadas de la aplicación de AEM Desktop
 description: Siga las optimizaciones y solucione los problemas ocasionales relacionados con la instalación, actualización, configuración, etc.
-seo-description: Siga las optimizaciones y solucione los problemas ocasionales relacionados con la instalación, actualización, configuración, etc.
-uuid: ce98a3e7-5454-41be-aaa-4252b3e0f8dd
-contentOwner: asgupta
+uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a46660a3d56100e0d767e7f2b54656782bb5e7a7
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
