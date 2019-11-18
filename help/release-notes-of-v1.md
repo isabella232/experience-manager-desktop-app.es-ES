@@ -1,17 +1,15 @@
 ---
 title: Notas de la versión de la aplicación de escritorio de AEM para la versión 1.x
-seo-title: Notas de la versión de la aplicación de escritorio de AEM para la versión 1.x
 description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad y vínculos de descarga para la versión 1.x de la aplicación de escritorio de AEM.
-seo-description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad y vínculos de descarga para la versión 1.x de la aplicación de escritorio de AEM.
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 3052549b-fe75-44fb-a55e-5cc612868f54
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c305f57b8ad874bcffc250689d917e31820225e4
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
@@ -317,7 +315,7 @@ Dado que la carpeta /Volumes ya no requiere derechos administrativos, este cambi
 * Funcionalidad Copiar/Pegar: Pegar está disponible cuando no se ha copiado ningún recurso en el portapapeles
 * Windows:
    * Los archivos con flujos de datos alternativos (ADS) solo son totalmente compatibles con NTFS. Si copia estos archivos al recurso compartido WebDAV proporcionado por la aplicación de escritorio, se mostrará un cuadro de diálogo de advertencia en el que se avisará al usuario de que el archivo tiene propiedades que no se pueden copiar en la nueva ubicación. Esto suele ser correcto, ya que las propiedades solo son relevantes para una aplicación en particular en el escritorio del usuario y no tienen nada que ver con el contenido real del archivo (CQ-103770) (Win)
-   * la aplicación de escritorio en Windows debe instalarla el usuario que la va a utilizar (CQ-4216389) (win)
+   * la aplicación de escritorio en Windows debe ser instalada por el usuario que la va a utilizar (CQ-4216389) (win)
    * La aplicación puede bloquearse al hacer clic en el botón Reintentar en una carga fallida en determinadas circunstancias después de haber reanudado la carga por lotes al desconectarse (CQ-4251884) (Win)
 
 ## Recursos útiles {#helpful-resources}
