@@ -1,16 +1,12 @@
 ---
 title: Introducción a la aplicación de escritorio de AEM
-seo-title: Documentación técnica y autoayuda de la aplicación de escritorio de Adobe Experience Manager
-description: Documentación técnica y autoayuda para comprender cómo la aplicación de escritorio de AEM puede optimizar el flujo de trabajo de los usuarios creativos al utilizar recursos empresariales directamente desde su escritorio.
-seo-description: Obtenga información sobre cómo la aplicación de escritorio AEM puede optimizar el flujo de trabajo de los usuarios creativos al utilizar recursos empresariales directamente desde su escritorio.
-contentOwner: asgupta
+description: Aprenda a utilizar la aplicación de escritorio de AEM para optimizar los flujos de trabajo de gestión de recursos para los usuarios creativos al utilizar Recursos AEM directamente desde su escritorio.
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
-index: y
-internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b74a3ff5c9a25ee1433dd661a1bce677271a5ebe
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
