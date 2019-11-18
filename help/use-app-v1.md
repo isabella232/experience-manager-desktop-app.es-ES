@@ -1,17 +1,15 @@
 ---
 title: Uso de la versión 1.x de la aplicación de escritorio de AEM
-seo-title: Uso de la versión 1.x de la aplicación de escritorio Adobe Experience Manager
 description: Obtenga información sobre cómo utilizar la versión 1.x de la aplicación de escritorio Adobe Experience Manager y optimizar su trabajo con recursos en el escritorio.
-seo-description: Obtenga información sobre cómo utilizar la versión 1.x de la aplicación de escritorio Adobe Experience Manager y optimizar su trabajo con recursos en flujos de trabajo creativos y de escritorio.
 uuid: 55057617-89de-43cd-8419-1252a42ab2fb
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c305f57b8ad874bcffc250689d917e31820225e4
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
