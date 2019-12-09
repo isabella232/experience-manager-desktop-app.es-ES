@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -89,15 +89,15 @@ En el diagrama siguiente se ilustra el flujo de recursos y archivos desde la nub
 ## Problemas conocidos {#known-issues-v2}
 
 **Problemas de la interfaz de usuario:**
-* En ocasiones, la interfaz de la aplicación de escritorio podría quedar en blanco. Haga clic con el botón derecho y, a continuación, haga clic en [!UICONTROL Refresh] para cargar la aplicación de nuevo. Esta actualización restablece el estado de la aplicación y le permite comenzar en la pantalla de bienvenida en la raíz del repositorio de DAM. <!-- CQ-4270267 -->
-* Dificultad al desplazarse por las carpetas o los resultados de búsqueda sin un panel táctil o sin la rueda del ratón. Es posible que la barra de desplazamiento no aparezca en los dispositivos que utilizan ratón si este no tiene rueda. <!-- CQ-4269947 -->
+* En ocasiones, la interfaz de la aplicación de escritorio puede quedar en blanco. Right-click and click [!UICONTROL Refresh] to re-load the application. Después de esta actualización, se inicia en la raíz del repositorio DAM. Se conservan las actualizaciones o los estados de los recursos. <!-- CQ-4270267 -->
+* Difícil desplazarse por las carpetas o los resultados de la búsqueda sin un panel de seguimiento o un puntero del ratón. The scroll-bar might not appear with mouse devices without mouse wheel. <!-- CQ-4269947 -->
 * De forma poco frecuente, la barra de progreso no se muestra correctamente cuando se producen cambios en el recurso que se carga.
 * Después de aplicar y quitar el filtro para buscar todos los recursos editados a nivel local, la aplicación no lleva a los usuarios a la vista de carpetas o a los resultados de búsqueda con los que los usuarios empezaron. La aplicación muestra la carpeta raíz del repositorio de DAM.
 * En ocasiones, cuando se conecta a una dirección URL que no tiene el servidor AEM en ejecución, la pantalla de conexión deja de responder. Salga de la aplicación y vuelva a iniciarla.
 
 **Problemas de CRUD (Crear, Leer, Actualizar y Eliminar):**
 * La aplicación intenta cargar archivos incluso cuando incluye caracteres no válidos, lo que puede provocar un error de carga en el servidor. <!-- CQ-4273652 -->
-* Al cargar cambios en un recurso con comentarios, los comentarios se almacenan con el recurso en AEM, pero no se pueden ver como comentarios de versiones (resuelto en AEM 6.4.5 y 6.5.1). <!-- CQ-4268990 -->
+* Al cargar cambios en un recurso con comentarios, los comentarios se almacenan con el recurso en AEM, pero no se pueden ver como comentarios de versiones. Este problema se ha resuelto en AEM 6.4.5 y AEM 6.5.1. Adobe recomienda encarecidamente instalar los Service Packs más recientes. <!-- CQ-4268990 -->
 * El usuario no puede cancelar las transferencias de recursos. Si ha activado una transferencia de gran volumen sin querer, salga de la aplicación y vuelva a iniciarla. <!-- CQ-4278940 -->
 
 **Problemas de la plataforma:**
