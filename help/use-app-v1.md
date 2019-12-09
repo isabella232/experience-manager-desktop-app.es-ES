@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -196,7 +196,7 @@ La aplicación le permite extraer archivos de recursos para evitar que otros usu
    ![Abrir en el menú contextual de Recursos AEM en Mac](assets/chlimage_1-5.png)
 
 1. Haga clic con el botón derecho en el recurso y seleccione Más información de recursos en el menú contextual.
-1. En el cuadro de diálogo Información del recurso, toque o haga clic en el icono Cierre de compra para extraer el recurso. El icono Cierre de compra se desplaza al icono Desproteger después de tocar o hacer clic en él.
+1. En el cuadro de diálogo Información del recurso, toque o haga clic en el icono Cierre de compra para extraer el recurso. El icono Cierre de compra se desplaza al icono de ingreso después de tocar o hacer clic en él.
 
    ![Explorar hasta el recurso para realizar la compra](assets/chlimage_1-6.png)
 
@@ -212,7 +212,7 @@ La aplicación le permite extraer archivos de recursos para evitar que otros usu
    ![Icono de cierre de compra](assets/chlimage_1-7.png)
 
 1. Haga clic con el botón derecho en el recurso y seleccione Abrir en Web en el menú contextual.
-1. En el cuadro de diálogo Información del recurso, toque o haga clic en el icono Cierre de compra. El icono Cierre de compra se desplaza al icono Proteger.
+1. En el cuadro de diálogo Información del recurso, toque o haga clic en el icono Cierre de compra. El icono Cierre de compra se desplaza al icono de ingreso.
 
    ![Icono de cierre de compra](assets/chlimage_1-8.png)
 
@@ -221,17 +221,17 @@ La aplicación le permite extraer archivos de recursos para evitar que otros usu
    >[!NOTE]
    >El icono de candado puede aparecer después de unos minutos de retraso. La aplicación de AEM Desktop almacena en caché los recursos para un acceso rápido, por lo que puede tardar unos minutos en actualizar el estado de bloqueo.
 
-1. Para desproteger el recurso para que esté disponible para otros usuarios, toque o haga clic en el icono de protección del cuadro de diálogo Información del **recurso** .
+1. Para desproteger el recurso para que esté disponible para otros usuarios, toque o haga clic en el icono de desprotección del cuadro de diálogo Información **de** recurso.
 
 ### Buscar un recurso mediante Finder o Explorer y mediante la interfaz Web {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
 
-Cuando haya terminado de editar los recursos, guárdelos en la aplicación de escritorio. En el menú contextual, seleccione Más información de recursos y toque o haga clic en Proteger.
+Cuando haya terminado de editar los recursos, guárdelos en la aplicación de escritorio. En el menú contextual, seleccione Más información de recursos y toque o haga clic en el registro.
 
 Los recursos se cargan en el servidor AEM. Si lo desea, puede comprobar el estado de la carga seleccionando Ver estado del recurso en el icono de bandeja.
 
 ![Ventana de estado de carga y transferencia de archivos de la aplicación de AEM Desktop](assets/aem_desktopapp_upload_status.png)
 
-También puede registrar un recurso desde la interfaz web de AEM. Toque o haga clic en los recursos extraídos o selecciónelos. En la barra de herramientas, toque o haga clic en el icono de protección ![Icono](assets/aemassets_icon_checkin.png)de protección.
+También puede registrar un recurso desde la interfaz web de AEM. Toque o haga clic en los recursos extraídos o selecciónelos. En la barra de herramientas, toque o haga clic en el icono de ![protección](assets/aemassets_icon_checkin.png).
 
 ### Carga masiva de recursos y carpetas en el servidor AEM {#bulkupload}
 
