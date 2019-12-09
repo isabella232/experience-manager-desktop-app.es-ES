@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -28,7 +28,7 @@ La aplicación de escritorio monta el repositorio de AEM Assets como recurso com
 >
 >Antes de leer este documento, puede revisar las prácticas [recomendadas generales de integración de](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html) AEM y Creative Cloud para obtener una descripción general de nivel superior del tema.
 
-## Arquitectura de aplicaciones de AEM Desktop {#aem-desktop-app-architecture}
+## AEM desktop app architecture {#aem-desktop-app-architecture}
 
 La aplicación de escritorio de AEM utiliza recursos compartidos de red WebDAV (Windows) o SMB (Mac) para montar recursos compartidos de red. El recurso compartido de red montado solo es local. La aplicación de escritorio de AEM intercepta las llamadas (abrir, leer, escribir) y proporciona almacenamiento en caché local adicional. Traduce llamadas remotas al servidor de AEM Assets para optimizar las solicitudes HTTP de AEM. En el diagrama siguiente se muestra la arquitectura de la aplicación de escritorio de AEM.
 
@@ -109,7 +109,9 @@ Para conocer las prácticas recomendadas sobre la configuración de red de AEM A
 
 * **** Guardar ancho de banda: Considere desactivar la vista previa de iconos en Finder en Mac al explorar el repositorio montado con Finder. Finder solicita a cada archivo que genere una vista previa y hace que la aplicación de escritorio descargue y almacene en caché el recurso localmente. Tenga en cuenta que, al ahorrar ancho de banda, también disminuiría la experiencia del usuario en el escritorio, por lo que debería hacerse al trabajar con repositorios con recursos grandes y/o ancho de banda limitado.
 
-**** Nota: Para desactivar las vistas previas de iconos, en Finder vaya a Ver, seleccione Ver opciones y, a continuación, desmarque la opción "Mostrar vista previa de iconos". Esto solo funciona para la carpeta actual; para que sea predeterminada, haga clic en el botón "Usar como predeterminado" en la misma ventana.
+>[!NOTE]
+>
+>Para desactivar las vistas previas de iconos, en el Buscador vaya a Ver, seleccione Ver opciones y, a continuación, desmarque la opción "Mostrar vista previa de iconos". Esto solo funciona para la carpeta actual; para que sea predeterminada, haga clic en el botón "Usar como predeterminado" en la misma ventana.
 
 ### Optimización del rendimiento del servidor {#optimizing-server-performance}
 
