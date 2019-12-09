@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -24,11 +24,11 @@ La aplicación de escritorio de Adobe Experience Manager (AEM) incluye utilidade
 
 Con esta arquitectura, la aplicación de escritorio intercepta las llamadas al sistema de archivos (abrir, cerrar, leer, escribir, etc.) al recurso compartido de red montado y las traduce en llamadas HTTP nativas de AEM al servidor AEM. Los archivos se almacenan en caché localmente. Para obtener más información, consulte [Uso de la aplicación de escritorio de AEM v1.x](use-app-v1.md).
 
-## Descripción general del componente de la aplicación de escritorio {#desktop-nbsp-app-component-overview}
+## AEM desktop app component overview {#desktop-app-component-overview}
 
 la aplicación de escritorio incluye los siguientes componentes:
 
-* **La aplicación** Desktop: Monta/desmonta DAM como un sistema de archivos remoto y traduce las llamadas del sistema de archivos entre el recurso compartido de red montado localmente y la instancia remota de AEM a la que se conecta.
+* **La aplicación** de escritorio: La aplicación monta o desmonta DAM como un sistema de archivos remoto y traduce las llamadas del sistema de archivos entre el recurso compartido de red montado localmente y la instancia remota de AEM a la que se conecta.
 * **Sistema operativo cliente** WebDAV/SMB: Gestiona la comunicación entre el Explorador/Finder de Windows y la aplicación de escritorio. Si se recupera, crea, modifica, elimina, mueve o copia un archivo, el cliente WebDAV/SMB del sistema operativo (SO) comunica esta operación a la aplicación de escritorio. Tras recibir la comunicación, la aplicación de escritorio la convierte en llamadas de API remotas nativas de AEM. Por ejemplo, si un usuario crea un archivo en el directorio montado, el cliente WebDAV/SMB inicia una solicitud, que la aplicación de escritorio convierte en una solicitud HTTP que crea el archivo en DAM. El cliente WebDAV/SMB es un componente integrado del sistema operativo. No está afiliado de ninguna manera con la aplicación de escritorio, AEM ni Adobe.
 * **Instancia** de Adobe Experience Manager: Proporciona acceso a los recursos almacenados en el repositorio DAM de AEM Assets. Además, realiza las acciones solicitadas por la aplicación de escritorio en nombre de las aplicaciones de escritorio locales que interactúan con el recurso compartido de red montado. La instancia de AEM de destino debe ejecutar AEM versión 6.1 o superior. Las instancias de AEM que ejecutan versiones anteriores de AEM podrían necesitar paquetes de funciones y correcciones rápidas adicionales instalados para poder funcionar completamente.
 
@@ -133,7 +133,7 @@ Puede mejorar el rendimiento en AEM habilitando flujos de trabajo transitorios p
 
 ### Ajustar cola de flujo de trabajo transitorio de granito {#adjust-granite-transient-workflow-queue}
 
-Otro método para mejorar el rendimiento de AEM es configurar el valor de los trabajos paralelos máximos para el trabajo de cola de flujo de trabajo transitorio de Granite. El valor recomendado es aproximadamente la mitad del número de CPU disponibles con el servidor. Para ajustar el valor, siga estos pasos:
+Otro método para mejorar el rendimiento de AEM es configurar el valor de los trabajos paralelos máximos para el trabajo de cola de flujo de trabajo transitorio de Granite. El valor recomendado es aproximadamente la mitad del número de CPU disponible con el servidor. Para ajustar el valor, siga estos pasos:
 
 1. Vaya a */system/console/configMgr* en la instancia de AEM que se va a configurar (por ejemplo, <http://&lt;Server&gt;:&lt;Port&gt;/system/console/configMgr>).
 1. Busque **QueueConfiguration** y haga clic para abrir cada trabajo hasta que encuentre el trabajo de **Granite Transient Workflow Queue** . Haga clic en el icono Editar que hay junto a él.
@@ -155,7 +155,7 @@ Existen algunas limitaciones conocidas en la manera de interactuar con los archi
 
 ### General {#general}
 
-Al escribir en un archivo extraído, el bloqueo solo se aplica en la implementación de WebDAV de AEM. En consecuencia, el bloqueo solo lo aplican los clientes que utilizan WebDAV, como la aplicación de escritorio. El bloqueo no se aplica a través de la interfaz web de AEM. La interfaz de AEM solo muestra un icono de candado en la vista de tarjeta para los recursos extraídos. El icono es estético y no afecta al comportamiento de AEM.
+Al escribir en un archivo extraído, el bloqueo solo se aplica en la implementación de AEM WebDAV. En consecuencia, el bloqueo solo lo aplican los clientes que utilizan WebDAV, como la aplicación de escritorio. El bloqueo no se aplica a través de la interfaz web de AEM. La interfaz de AEM solo muestra un icono de candado en la vista de tarjeta para los recursos extraídos. El icono es estético y no afecta al comportamiento de AEM.
 
 En general, los clientes de WebDAV no siempre se comportan de la manera esperada. Puede haber problemas adicionales. Sin embargo, actualizar o comprobar el recurso en AEM es una buena forma de comprobar que no se está modificando un recurso. Este comportamiento es típico de los clientes WebDAV de OS, que no están bajo el control de Adobe.
 
@@ -212,7 +212,7 @@ La manera más sencilla de solucionar esta situación es abrir el archivo en con
 
 La eliminación de la caché de AEM Desktop es una tarea preliminar de solución de problemas que puede resolver varios problemas de AEM Desktop.
 
-Puede borrar la caché eliminando el directorio de caché de la aplicación en las siguientes ubicaciones: Windows: %LocalAppData%\Adobe\AssetsCompanion\Cache\
+Puede borrar la caché eliminando el directorio de caché de la aplicación en las siguientes ubicaciones:Windows: %LocalAppData%\Adobe\AssetsCompanion\Cache\
 
 Mac: ~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/
 
