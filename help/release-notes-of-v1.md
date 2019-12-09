@@ -9,22 +9,22 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: 75e7cbaaa23b441b5e3a6e55381cd5f548231537
 
 ---
 
 
 # Notas de la versión de la aplicación de escritorio de AEM v1.x{#aem-desktop-app-release-notes}
 
-## Información de la versión {#release-information}
+Para la versión v1.x de la aplicación de escritorio, los vínculos de descarga y la información de compatibilidad de AEM son los siguientes.
 
 | Productos | Aplicación de escritorio de Adobe Experience Manager (AEM) |
 |---------------|--------------------------------------------------------------------|
 | Versión | 1.10 (1.10.0.3 en Mac y Windows) |
 | Tipo | Versión menor |
 | Fecha | 31 de agosto de 2018 |
-| Descargar direcciones URL | [Mac OS X 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-1.10.0.3.dmg); [Windows de 32 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-1.10.0.3.exe); [Windows de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-1.10.0.3.exe) |
-| Compatibilidad | AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| Direcciones URL de descarga | [Mac OS X 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-1.10.0.3.dmg); [Windows de 32 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-1.10.0.3.exe); [Windows de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-1.10.0.3.exe) |
+| Compatibilidad | AEM 6.5.x; AEM 6.4.x; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 
 >[!NOTE]
 >
@@ -37,13 +37,13 @@ AEM Desktop es compatible con los siguientes sistemas operativos:
 * Mac OS X 10.10 o posterior, con las últimas correcciones de errores.
 * Windows 7 y Windows 10 con los paquetes de servicios y las correcciones de errores más recientes.
 
-Adobe recomienda encarecidamente utilizar la versión más reciente de AEM Desktop para aprovechar la funcionalidad más reciente, las correcciones de errores más recientes y el mejor rendimiento posible.
+Adobe recomienda encarecidamente utilizar la versión más reciente de la aplicación de escritorio de AEM para aprovechar la funcionalidad más reciente, las correcciones de errores más recientes y el mejor rendimiento posible.
 
-La versión de la aplicación AEM Destkop que tiene previsto instalar en su equipo local requiere una versión específica del servidor de AEM o componentes adicionales del servidor (paquetes de servicios, correcciones rápidas o paquetes de funciones). Asegúrese de que el servidor AEM está configurado correctamente antes de conectarse a él por primera vez. Si necesita ayuda, póngase en contacto con el administrador de AEM.
+La versión de la aplicación de escritorio de AEM que tiene previsto instalar en su equipo local requiere una versión específica del servidor de AEM o componentes adicionales del servidor (paquetes de servicios, correcciones rápidas o paquetes de funciones). Asegúrese de que el servidor AEM está configurado correctamente antes de conectarse a él por primera vez. Si necesita ayuda, póngase en contacto con el administrador de AEM.
 
 Consulte la matriz [de compatibilidad](#compatibilitymatrix) detallada al final de este documento para evaluar los requisitos previos de la configuración.
 
-## Novedades de la aplicación de escritorio AEM 1.10 {#what-s-new-in-aem-desktop-app}
+## What's New in AEM desktop app 1.10 {#what-s-new-in-aem-desktop-app}
 
 La aplicación de escritorio AEM 1.10 se centra en mejorar la experiencia del usuario en cuanto a las cargas grandes, la información sobre las operaciones en segundo plano y la experiencia optimizada al abrir recursos con archivos vinculados (como InDesign).
 
@@ -55,7 +55,7 @@ La aplicación de escritorio AEM 1.10 se centra en mejorar la experiencia del us
 
 **Notificaciones para conflictos** de actualización: Cuando la aplicación detecta un conflicto al intentar actualizar un recurso, muestra una notificación para que el usuario pueda revisarla sin necesidad de supervisar la ventana de estado. Cuando se inicia la aplicación, se comprueba la existencia de todos los conflictos para que el usuario pueda resolverlos.
 
-**Mejor manejo de las pérdidas** de conexión: Las cargas masivas se pausarán si se produce una pérdida de conexión y el usuario podrá reanudarlas más tarde. Hay disponible un botón de reintento para volver a intentar una carga fallida de un archivo individual.
+**Mejor manejo de las pérdidas** de conexión: Las cargas masivas se pausarán si se produce una pérdida de conexión y el usuario podrá reanudarlas más tarde. Hay disponible un botón Reintentar para reintentar una carga fallida de un archivo individual.
 
 ## Instrucciones de instalación {#installation-instructions}
 
@@ -93,7 +93,7 @@ Cambios
 * Las cargas con errores 3 veces mostrarán un mensaje de error
 * Archivos en conflicto mostrados con un icono en el que el usuario puede hacer clic. Al hacer clic en el icono se muestra un cuadro de diálogo con una explicación y dos opciones:
    * "Keep Mine": carga inmediatamente el archivo en el servidor
-   * "Sobrescribir mío": elimina inmediatamente el archivo local y descarga una copia nueva del servidor
+   * "Sobrescribir mío": elimina inmediatamente el archivo local y descarga una nueva copia del servidor
 
 Descargas
 
@@ -131,7 +131,7 @@ La aplicación de escritorio AEM 1.8.1 versión de seguimiento rápido ha añadi
    * (Mac) Añada compatibilidad para conectarse a AEM mediante la configuración proxy .pac (CQ-4233430)
    * (Win) corrige problemas con el cuadro de diálogo Avanzadas: URL de inicio de sesión (CQ-4236061)
 * Correcciones de errores:
-   * Cuadro de diálogo Más información de recursos * a veces la barra de acciones no estaba visible (CQ-4208540)
+   * Cuadro de diálogo Más información de recursos: a veces la barra de acciones no estaba visible (CQ-4208540)
    * (Win) Ahora, el archivo se puede sincronizar después de revertir a una versión anterior desde la interfaz de usuario de AEM Assets (CQ-4216411)
 
 ### Mejoras disponibles desde la aplicación de escritorio AEM 1.7{#Enhancements-Available-Since-AEM-Desktop-App-17}
@@ -293,7 +293,7 @@ Dado que la carpeta /Volumes ya no requiere derechos administrativos, este cambi
 
 **Utilice certificados SSL firmados por CA.** Tenga en cuenta que la aplicación de escritorio de AEM no admite certificados SSL con firma automática al conectarse a AEM mediante una conexión segura HTTPS. Se requiere un certificado firmado por CA en el servidor para dichas conexiones. (CQ-87941)
 
-## Known issues {#known-issues}
+## Problemas conocidos {#known-issues}
 
 * General:
    * Las direcciones URL del servidor son necesarias para apuntar al servidor sin una ruta (p. ej. `http://server`, `https://server`, `http://server:port`o `https://server:port`). No se admiten rutas de contexto ni subcarpetas distintas de /content/dam (CQ-89343, CQ-87272)
@@ -301,9 +301,9 @@ Dado que la carpeta /Volumes ya no requiere derechos administrativos, este cambi
    * Los nombres de archivos y carpetas con caracteres reservados no se gestionan correctamente. Asegúrese de utilizar nombres de archivos y carpetas que se ajusten a los requisitos de AEM (CQ-93361, CQ-93308, CQ-89276, CQ-4217183)
    * Algunas aplicaciones como Adobe Illustrator pueden crear archivos con nombres no admitidos en AEM. Por ejemplo, agregar `Converted` después de convertir un archivo, lo que impide que se cargue (CQ-4216985)
    * Los recursos con nombres internacionales pueden aparecer y desaparecer cada pocos segundos
-* Cierre de compra/cierre de compra:
+* Registro de entrada y salida:
    * Un recurso extraído por un usuario no se puede abrir para otro usuario, ya sea mediante la acción Abrir desde la IU táctil o directamente en el escritorio. Algunas aplicaciones podrían informarlo como bloqueadas, pero también como dañadas o incluso bloqueadas al intentar abrir. (CQ-4199234)
-   * Cambiar archivos simultáneamente por varios usuarios puede hacer que se pierdan algunas modificaciones. La solución consiste en utilizar la funcionalidad de desprotección/cierre de compra para evitar que varios usuarios cambien el mismo archivo (CQ-97035)
+   * Cambiar archivos simultáneamente por varios usuarios puede hacer que se pierdan algunas modificaciones. La solución consiste en utilizar la funcionalidad de protección y cierre de compra para evitar que varios usuarios cambien el mismo archivo (CQ-97035)
    * Ciertas aplicaciones no admiten correctamente el indicador de solo lectura, que permite al usuario guardar un archivo extraído por otro usuario. El archivo modificado no se transfiere hasta que el otro usuario no verifique el archivo. Ambas modificaciones están disponibles en AEM como versiones diferentes del recurso (CQ-89551, CQ-87572, CQ-89615)
    * El estado de retirada y de solo lectura se notifica de forma independiente en Finder. Esto resulta en dos iconos de bloqueo cuando un usuario cierra la compra de un recurso (CQ-89507)
 * Integración de Finder:
@@ -315,7 +315,7 @@ Dado que la carpeta /Volumes ya no requiere derechos administrativos, este cambi
 * Funcionalidad Copiar/Pegar: Pegar está disponible cuando no se ha copiado ningún recurso en el portapapeles
 * Windows:
    * Los archivos con flujos de datos alternativos (ADS) solo son totalmente compatibles con NTFS. Si copia estos archivos al recurso compartido WebDAV proporcionado por la aplicación de escritorio, se mostrará un cuadro de diálogo de advertencia en el que se avisará al usuario de que el archivo tiene propiedades que no se pueden copiar en la nueva ubicación. Esto suele ser correcto, ya que las propiedades solo son relevantes para una aplicación en particular en el escritorio del usuario y no tienen nada que ver con el contenido real del archivo (CQ-103770) (Win)
-   * la aplicación de escritorio en Windows debe ser instalada por el usuario que la va a utilizar (CQ-4216389) (win)
+   * la aplicación de escritorio en Windows debe instalarla el usuario que la va a utilizar (CQ-4216389) (win)
    * La aplicación puede bloquearse al hacer clic en el botón Reintentar en una carga fallida en determinadas circunstancias después de haber reanudado la carga por lotes al desconectarse (CQ-4251884) (Win)
 
 ## Recursos útiles {#helpful-resources}
@@ -326,11 +326,11 @@ Dado que la carpeta /Volumes ya no requiere derechos administrativos, este cambi
 
 ## Matriz de compatibilidad y requisitos previos {#compatibilitymatrix}
 
-La aplicación de escritorio de AEM funciona con varias versiones de AEM. Consulte la matriz de compatibilidad para las versiones compatibles.
+La aplicación de escritorio AEM funciona con varias versiones de AEM. Consulte la matriz de compatibilidad para las versiones compatibles.
 
 | Versión | Revisión | Fecha de lanzamiento | Compatibilidad |
 |---------|------------------------|--------------|-------------------------------------------------------------|
-| 1.10 | 1.10.0.3 (Mac y Win) | 31 de agosto de 2018 | AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
-| 1.9 | 1.9.1.1 (Mac y Win) | 21 de junio de 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
-| 1.8 | 1.8.1.0 (Mac y Win) | 28 de marzo de 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
-| 1.7 | 1.7.0.3 (Mac y Win) | 10 de enero de 2018 |  AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1.10 | 1.10.0.3 (Mac y Win) | 31 de agosto de 2018 | AEM 6.5; AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1.9 | 1.9.1.1 (Mac y Win) | 21 de junio de 2018 | AEM 6.4;AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1.8 | 1.8.1.0 (Mac y Win) | 28 de marzo de 2018 | AEM 6.4;AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1.7 | 1.7.0.3 (Mac y Win) | 10 de enero de 2018 | AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
