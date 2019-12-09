@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -59,13 +59,13 @@ En la segunda fase, la aplicación de escritorio carga el archivo actualizado en
 
 ## Conectar con una instancia de AEM detrás de un despachante {#connect-to-an-aem-instance-behind-a-dispatcher}
 
-Los métodos Copy and Move de la API de recursos requieren que se pasen a AEM los siguientes encabezados adicionales:
+Los métodos de copiar y mover de la API de recursos requieren que los siguientes encabezados adicionales se pasen a AEM:
 
 * X-Destination
 * Profundidad X
 * X-Overwrite
 
-AEM Desktop se conecta a AEM mediante una URL que incluye el puerto predeterminado. Por lo tanto, la configuración *virtualhosts* de la configuración del despachante debe incluir el número de puerto predeterminado. Para obtener más información sobre la configuración de hosts virtuales, consulte [Identificación de hosts](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)virtuales.
+AEM Desktop se conecta a AEM mediante una URL que incluye el puerto predeterminado. Por lo tanto, la `virtualhosts` configuración de la configuración del despachante debe incluir el número de puerto predeterminado. Para obtener más información sobre `virtualhosts` la configuración, consulte [Identificación de hosts](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)virtuales.
 
 Para obtener información adicional sobre cómo configurar el despachante para que pase por estos encabezados adicionales, consulte [Especificación de encabezados](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)HTTP.
 
