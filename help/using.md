@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -40,9 +40,9 @@ Antes de empezar a usar la aplicación, debe comprender [cómo funciona](release
 
 * El estado del archivo es **[!UICONTROL Modified remotely]**: La aplicación indica si un recurso que ha descargado ha cambiado en el servidor AEM. La aplicación también ofrece la opción de descargar la versión más reciente y actualizar la copia local. Consulte [cómo evitar conflictos](using.md#adv-workflow-collaborate-avoid-conflicts)de edición.
 
-* **Cierre de compra**: Si está editando un archivo o tiene intención de editarlo, puede alternar el estado para extraerlo. Agrega un icono de candado al recurso en la aplicación y en la interfaz web de AEM. El icono de candado indica a los demás usuarios que eviten editar simultáneamente el mismo recurso, ya que provoca un conflicto de edición.
+* **[!UICONTROL Check-out]**:: Si está editando un archivo o tiene intención de editarlo, puede alternar el estado para extraerlo. Agrega un icono de candado al recurso en la aplicación y en la interfaz web de AEM. El icono de candado indica a los demás usuarios que eviten editar simultáneamente el mismo recurso, ya que provoca un conflicto de edición.
 
-* **Registro**: Marque el recurso como seguro para que otros usuarios lo editen sin provocar un conflicto de edición. Al cargar los cambios, el icono de bloqueo se elimina automáticamente. Al cambiar el estado de la protección también se elimina el icono de bloqueo, aunque se recomienda no registrarse manualmente sin cargar los cambios. Si descarta los cambios, active manualmente la protección.
+* **[!UICONTROL Check-in]**:: Marque el recurso como seguro para que otros usuarios lo editen sin provocar un conflicto de edición. Al cargar los cambios, el icono de bloqueo se elimina automáticamente. Al cambiar el estado de la protección también se elimina el icono de bloqueo, aunque se recomienda no registrarse manualmente sin cargar los cambios. Si descarta los cambios, active manualmente la protección.
 
 * **[!UICONTROL Open]** acción: Basta con abrir el recurso para previsualizarlo en la aplicación nativa. No se recomienda editar el recurso mediante esta acción, ya que no cierra la compra del recurso y otros usuarios pueden realizar modificaciones que conduzcan a conflictos de edición.
 
@@ -169,11 +169,11 @@ En los siguientes casos, es posible que desee descartar los cambios y las edicio
 * Empiece a realizar cambios en el recurso original después de guardar algunos cambios.
 * Deje de editar el recurso porque ya no lo necesita.
 
-Si es necesario, active la desprotección. El recurso actualizado se elimina de la carpeta de caché local y se descarga de nuevo al editarlo o abrirlo.
+Si es necesario, active la desprotección. El recurso actualizado se elimina de la carpeta de caché local y se descarga nuevamente cuando lo edita o lo abre.
 
 ## Carga y adición de nuevos recursos a AEM {#upload-and-add-new-assets-to-aem}
 
-Los usuarios pueden agregar recursos nuevos al repositorio de DAM. Por ejemplo, puede ser un fotógrafo o contratista de la agencia que quiera añadir un gran número de fotos de una sesión fotográfica al repositorio de AEM. Para añadir contenido nuevo a AEM, haga clic en el icono ![](assets/do-not-localize/upload_to_cloud_da2.png) Cargar en la nube en la barra superior de la aplicación. Busque los archivos de recursos en el sistema de archivos local y haga clic en **[!UICONTROL Select]**. La aplicación comienza a cargar el recurso y muestra una barra de progreso en la parte inferior si el recurso tarda más en cargarse.  No utilice espacios en blanco ni caracteres no válidos al crear o cargar carpetas. Consulte una lista de caracteres en [Creación de carpetas en Recursos](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)AEM.
+Los usuarios pueden agregar recursos nuevos al repositorio de DAM. Por ejemplo, puede ser un fotógrafo o contratista de la agencia que quiera añadir un gran número de fotos de una sesión fotográfica al repositorio de AEM. Para añadir contenido nuevo a AEM, haga clic en el icono ![](assets/do-not-localize/upload_to_cloud_da2.png) Cargar en la nube en la barra superior de la aplicación. Busque los archivos de recursos en el sistema de archivos local y haga clic en **[!UICONTROL Select]**. La aplicación comienza a cargar el recurso y muestra una barra de progreso en la parte inferior si el recurso tarda más en cargarse. No utilice espacios en blanco ni caracteres no válidos al crear o cargar carpetas. Consulte una lista de caracteres en [Creación de carpetas en Recursos](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)AEM.
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
