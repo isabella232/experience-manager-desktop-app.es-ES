@@ -1,5 +1,5 @@
 ---
-title: Notas de la versión de la aplicación de escritorio de AEM
+title: Notas de la versión de la aplicación de AEM Desktop
 description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad y vínculos de descarga para la aplicación de escritorio de AEM.
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
 contentOwner: AG
@@ -8,21 +8,22 @@ discoiquuid: 3052549b-fe75-44fb-a55e-5cc612868f54
 index: y
 internal: n
 snippet: y
+mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
+source-git-commit: b2015bd65db70a25e4c52e62a4de45a01a6748d5
 
 ---
 
 
-# Notas de la versión de la aplicación de escritorio de AEM {#release-notes-v2}
+# AEM desktop app release notes {#release-notes-v2}
 
 | Productos | Aplicación de escritorio de Adobe Experience Manager (AEM) |
 |---------------|--------------------------------------------------------------------|
-| Versión de la aplicación (revisión) | 2.0 (2.0.0.4) |
+| Versión de la aplicación (revisión) | 2.0 (2.0.1.1) |
 | Versiones de AEM compatibles | AEM 6.5, AEM 6.4, AEM 6.3 (con paquete de compatibilidad) |
-| Tipo | Versión principal |
-| Fecha de lanzamiento | 30 de agosto de 2019 (Mac), 9 de septiembre de 2019 (Win) |
-| Direcciones URL de descarga | [MacOS de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.0.4.dmg); [Windows de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.0.4.exe); [Windows de 32 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.0.4.exe) |
+| Tipo | Versión menor |
+| Fecha de lanzamiento | 12 de diciembre de 2019 (Mac y Win) |
+| Direcciones URL de descarga | [MacOS de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.1.1.dmg); [Windows de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.1.1.exe); [Windows de 32 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.1.1.exe) |
 
 ## Requisitos y requisitos previos del sistema {#system-requirements-and-prerequisites-v2}
 
@@ -36,12 +37,15 @@ La aplicación funciona con las siguientes versiones de AEM, tanto si se impleme
 * [AEM 6.5.0](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) o posterior
 * [AEM 6.4.4](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) o posterior
 * AEM 6.4.0 - 6.4.3 con [paquete de compatibilidad](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
-* AEM 6.3.3.1 y posterior con [paquete de compatibilidad](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
-* En AEM 6.3, no se [han planificado paquetes de servicios](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html). Adobe recomienda actualizar a una versión posterior de AEM.
+
+>[!NOTE]
+>
+>La compatibilidad de la aplicación de escritorio con AEM 6.3 ya no se utiliza. Adobe recomienda actualizar a una versión de AEM más reciente y compatible.
+>AEM 6.3.3.1 o posterior funciona con la aplicación de escritorio después de instalar el paquete [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilidad. Este paquete no está disponible para AEM 6.3, ya que no hay paquetes [de servicios planificados](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
 
 La versión de la aplicación que planea instalar en su equipo local requiere una versión específica del servidor de Adobe Experience Manager o componentes adicionales del servidor (paquetes de servicio, correcciones rápidas o paquetes de funciones). Póngase en contacto con el administrador de AEM para obtener ayuda.
 
-### Compatibilidad con distintos tipos de recursos y archivos {#support-for-file-types}
+### Support for different assets and file types {#support-for-file-types}
 
 La aplicación admite recursos almacenados en AEM que representan archivos binarios para sus operaciones básicas. La apertura de archivos en la aplicación de escritorio nativa depende de la asociación de sistema operativo de los tipos de archivo específicos, como PNG o JPG, a aplicaciones específicas, como Vista previa de Mac o Adobe Photoshop.
 
@@ -51,16 +55,22 @@ Algunos tipos de archivo admiten la colocación de recursos vinculados en el arc
 * Archivos de Adobe Illustrator (formato AI)
 * Archivos de Adobe Photoshop (formato PS)
 
-La función es compatible con las versiones de Adobe Creative Cloud 2018 y Creative Cloud 2019 de la aplicación anterior. La aplicación utiliza un método heurístico que busca la mejor coincidencia para asignar las rutas de escritorio locales de los recursos vinculados a las URL en el servidor de AEM. Se basa en algunos supuestos:
+La función es compatible con las versiones de Adobe Creative Cloud 2018 y Adobe Creative Cloud 2019 de la aplicación anterior. La aplicación utiliza un método heurístico que busca la mejor coincidencia para asignar las rutas de escritorio locales de los recursos vinculados a las URL en el servidor de AEM. Se basa en algunos supuestos:
 
-* Las rutas para colocar archivos en la aplicación nativa usan una ruta de escritorio global (desde el recurso compartido de red local que se muestra con la opción "Revelar")
-* La aplicación nativa almacena las rutas en el registro XMP del archivo
-* AEM ha extraído el registro XMP con las rutas al registro de metadatos del recurso
-* Las rutas pueden coincidir con los recursos en AEM (es decir, los archivos colocados también están en AEM en una ruta coincidente)
+* Paths to placed files in the native application use a global desktop path (placed from the local network share shown with [!UICONTROL Reveal] option).
+* La aplicación nativa almacena las rutas en el registro XMP del archivo.
+* AEM ha extraído el registro XMP con las rutas al registro de metadatos del recurso.
+* Las rutas pueden coincidir con los recursos en AEM, es decir, los archivos colocados también están en AEM en una ruta coincidente).
 
 ## Nuevas funciones y mejoras {#whats-new-added}
 
-Para obtener más información, consulte [Novedades de la aplicación](introduction.md#whats-new-v2).
+To know the details, see [What's new in v2.0](introduction.md#whats-new-v2).
+
+Las correcciones de errores y las actualizaciones realizadas en la versión 2.0.1 son:
+
+* Permitir la opción de configurar `%Temp%` el directorio para que coincida con la `%APPDATA%` ruta. <!-- CQ-4282665 -->
+* Permita que los usuarios inicien sesión en AEM Author mediante la autenticación de Okta SAML. <!-- CQ-4278134 -->
+
 
 ## Instrucciones de instalación {#installation-instructions-v2}
 
@@ -89,6 +99,7 @@ En el diagrama siguiente se ilustra el flujo de recursos y archivos desde la nub
 ## Problemas conocidos {#known-issues-v2}
 
 **Problemas de la interfaz de usuario:**
+
 * En ocasiones, la interfaz de la aplicación de escritorio puede quedar en blanco. Right-click and click [!UICONTROL Refresh] to re-load the application. Después de esta actualización, se inicia en la raíz del repositorio DAM. Se conservan las actualizaciones o los estados de los recursos. <!-- CQ-4270267 -->
 * Difícil desplazarse por las carpetas o los resultados de la búsqueda sin un panel de seguimiento o un puntero del ratón. The scroll-bar might not appear with mouse devices without mouse wheel. <!-- CQ-4269947 -->
 * De forma poco frecuente, la barra de progreso no se muestra correctamente cuando se producen cambios en el recurso que se carga.
@@ -96,18 +107,20 @@ En el diagrama siguiente se ilustra el flujo de recursos y archivos desde la nub
 * En ocasiones, cuando se conecta a una dirección URL que no tiene el servidor AEM en ejecución, la pantalla de conexión deja de responder. Salga de la aplicación y vuelva a iniciarla.
 
 **Problemas de CRUD (Crear, Leer, Actualizar y Eliminar):**
+
 * La aplicación intenta cargar archivos incluso cuando incluye caracteres no válidos, lo que puede provocar un error de carga en el servidor. <!-- CQ-4273652 -->
 * Al cargar cambios en un recurso con comentarios, los comentarios se almacenan con el recurso en AEM, pero no se pueden ver como comentarios de versiones. Este problema se ha resuelto en AEM 6.4.5 y AEM 6.5.1. Adobe recomienda encarecidamente instalar los Service Packs más recientes. <!-- CQ-4268990 -->
 * El usuario no puede cancelar las transferencias de recursos. Si ha activado una transferencia de gran volumen sin querer, salga de la aplicación y vuelva a iniciarla. <!-- CQ-4278940 -->
 
 **Problemas de la plataforma:**
+
 * En ocasiones, en Windows, el estado de un recurso puede cambiar inmediatamente a [!UICONTROL Edited Locally] después de abrirlo, aunque no lo haya editado. Haga clic en [!UICONTROL Refresh] para actualizar.
 
 >[!MORELIKETHIS]
 >
 >* [Documentación de AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html)
->* [Documentación de AEM Assets 6.5](https://docs.adobe.com/content/help/en/experience-manager-64/assets/home.html)
->* [Uso de la aplicación de escritorio de AEM](using.md)
+>* [Documentación de AEM Assets 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/assets/home.html)
+>* [Cómo utilizar la aplicación de escritorio de AEM](using.md)
 >* [Instalación y actualización de la aplicación de escritorio](install-upgrade.md)
 >* [Procedimientos recomendados y sugerencias para la solución de problemas](troubleshoot.md)
 
