@@ -9,14 +9,18 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
+source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
 
 ---
 
 
 # Instalación y configuración de la aplicación de escritorio de AEM v1.x {#install-and-configure-aem-desktop-app}
 
-Instale y configure la aplicación de escritorio de AEM para que funcione con los servidores de AEM Assets y descargue los recursos en el sistema de archivos local. Para utilizar la aplicación de escritorio de AEM,
+Con la aplicación de escritorio de AEM, los recursos de AEM son fácilmente accesibles en el escritorio local y se pueden usar en cualquier aplicación de escritorio. Los recursos se pueden mostrar fácilmente en Mac Finder o en el Explorador de Windows, abrirse en aplicaciones de escritorio y cambiarse localmente; los cambios se guardan de nuevo en AEM cuando se carga y se crea una nueva versión en el repositorio.
+
+Esta integración permite que varios roles de la organización gestionen los recursos de forma centralizada en Recursos AEM y accedan a ellos en Creative Cloud y otras aplicaciones, al tiempo que facilita el cumplimiento de los distintos estándares, incluida la marca.
+
+Para utilizar la aplicación de escritorio de AEM,
 
 * Asegúrese de que la versión del servidor AEM sea compatible con la aplicación de escritorio AEM. Consulte la matriz [de](release-notes-of-v1.md#compatibilitymatrix)compatibilidad.
 * Descargue e instale la aplicación.
@@ -38,7 +42,7 @@ Para obtener más información, consulte [Instalación y conexión de la aplicac
 
 La aplicación de escritorio de AEM utiliza el proxy predefinido del sistema para conectarse a Internet a través de HTTPS. La aplicación solo se puede conectar mediante un proxy de red que no requiera autenticación adicional.
 
-Si configura o modifica la configuración del servidor proxy para Windows (Opciones de Internet &gt; Configuración de LAN), reinicie la aplicación de escritorio de AEM para que los cambios surtan efecto.
+Si configura o modifica la configuración del servidor proxy para Windows (Opciones de Internet > Configuración de LAN), reinicie la aplicación de escritorio de AEM para que los cambios surtan efecto.
 
 Si el proxy requiere autenticación, el equipo de TI puede incluir la URL de AEM Assets en la lista de direcciones permitidas en la configuración del servidor proxy para permitir el paso del tráfico de la aplicación.
 
@@ -86,7 +90,7 @@ En Mac OS X, hay un directorio similar en `~/Library/Group Containers/group.com.
 
 ### Opción en la aplicación para administrar la caché {#in-app-option-to-manage-cache}
 
-Puede controlar la cantidad de espacio en disco disponible para su almacenamiento en caché local. Los artefactos del servidor de AEM Assets se almacenan en caché localmente para una experiencia más fluida. Puede cambiar los valores predeterminados para adaptarlos a sus necesidades. Además, puede borrar la caché para recuperar todos los recursos de nuevo. Para establecer las opciones deseadas, haga clic en el icono de la aplicación y haga clic en **[!UICONTROL Advanced]** &gt; **[!UICONTROL Manage Cache]**. ****
+Puede controlar la cantidad de espacio en disco disponible para su almacenamiento en caché local. Los artefactos del servidor de AEM Assets se almacenan en caché localmente para una experiencia más fluida. Puede cambiar los valores predeterminados para adaptarlos a sus necesidades. Además, puede borrar la caché para recuperar todos los recursos de nuevo. Para establecer las opciones deseadas, haga clic en el icono de la aplicación y haga clic en **[!UICONTROL Advanced]**>**[!UICONTROL Manage Cache]**. ****
 
 >[!NOTE]
 >
@@ -108,11 +112,11 @@ Para dirigir la aplicación a una carpeta o unidad diferente, edite el archivo d
 
    Se requieren privilegios de administrador para guardar los cambios en este archivo.
 
-1. Busque la cadena "ProxyCacheRoot". Verá que su valor está establecido en la ubicación de caché "%LocalAppData%\Adobe\AssetsCompanion\Cache". Simplemente cambie este valor a cualquier ruta válida.
+1. Busque la cadena &quot;ProxyCacheRoot&quot;. Verá que su valor está establecido en la ubicación de caché &quot;%LocalAppData%\Adobe\AssetsCompanion\Cache&quot;. Simplemente cambie este valor a cualquier ruta válida.
 
    >[!NOTE]
    >
-   >La aplicación crea automáticamente un subdirectorio *&lt;Encoded AEM Endpoint&gt;* ; este comportamiento no se puede configurar.
+   >La aplicación crea automáticamente un subdirectorio *&lt;Encoded AEM Endpoint>* ; este comportamiento no se puede configurar.
 
 ## Recursos adicionales {#additional-resources}
 
