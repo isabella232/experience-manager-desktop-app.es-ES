@@ -9,14 +9,24 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
 
 ---
 
 
 # Instalación de la aplicación de escritorio AEM {#install-app-v2}
 
-## Requisitos del sistema {#tech-specs-v2}
+Con la aplicación de escritorio de AEM, los recursos de AEM son fácilmente accesibles en el escritorio local y se pueden usar en cualquier aplicación de escritorio. Los recursos se pueden mostrar fácilmente en Mac Finder o en el Explorador de Windows, abrirse en aplicaciones de escritorio y cambiarse localmente; los cambios se guardan de nuevo en AEM cuando se carga y se crea una nueva versión en el repositorio.
+
+Esta integración permite que varios roles de la organización gestionen los recursos de forma centralizada en Recursos AEM y accedan a ellos en Creative Cloud y otras aplicaciones, al tiempo que facilita el cumplimiento de los distintos estándares, incluida la marca.
+
+Para utilizar la aplicación de escritorio de AEM,
+
+* Asegúrese de que la versión del servidor AEM sea compatible con la aplicación de escritorio AEM. Consulte la matriz [de](release-notes-of-v1.md#compatibilitymatrix)compatibilidad.
+* Descargue e instale la aplicación.
+* Pruebe la conexión con algunos recursos. Consulte [Acceso y apertura de recursos en el escritorio](use-app-v1.md#openondesktop).
+
+## Requisitos previos del sistema y vínculos de descarga {#tech-specs-v2}
 
 Para obtener información detallada, consulte las notas de la versión de la aplicación de escritorio de [AEM](release-notes.md).
 
@@ -44,7 +54,7 @@ Para instalar la aplicación de escritorio, siga estos pasos. Desinstale cualqui
 1. Ejecute el archivo binario del programa de instalación y siga las instrucciones que aparecen en pantalla para instalarlo.
 1. En Windows, el programa de instalación puede solicitar la instalación `Visual Studio C++ Redistributable 2015`. Siga las instrucciones que aparecen en pantalla para instalarlo. Si la instalación falla, instálela manualmente. Descargue el instalador desde [aquí](https://www.microsoft.com/en-us/download/details.aspx?id=52685) e instale tanto `vc_redist.x64.exe` como `vc_redist.x86.exe` archivos. Vuelva a ejecutar el instalador de la aplicación de escritorio de AEM.
 1. Reinicie el equipo como se le solicite. Inicie la aplicación de escritorio para configurarla.
-1. Para conectar la aplicación con un repositorio de AEM, haga clic en el icono de la aplicación en la bandeja para iniciar la aplicación. Proporcione la dirección de la instancia de AEM. Haga clic en **[!UICONTROL Connect]** y proporcione las credenciales.
+1. Para conectar la aplicación con un repositorio de AEM, haga clic en el icono de la aplicación en la bandeja para iniciar la aplicación. Proporcione la dirección de la instancia de AEM. Haga clic en **[!UICONTROL Connect]**y proporcione las credenciales.
 
    ![Pantalla de conexión de la aplicación de escritorio a la](assets/connect_da2.png "dirección del servidor de entradaPantalla de conexión a la dirección del servidor de entrada")
 
@@ -62,12 +72,12 @@ Para instalar la aplicación de escritorio, siga estos pasos. Desinstale cualqui
 
 ## Configuración de preferencias {#set-preferences}
 
-Para cambiar las preferencias, haga clic en el icono ![](assets/do-not-localize/more_options_da2.png) Más opciones y en el icono **[!UICONTROL Preference]**![Preferencias](assets/do-not-localize/preferences_icon_da2.png). En la **[!UICONTROL Preferences]** ventana, ajuste los valores de lo siguiente:
+Para cambiar las preferencias, haga clic en el icono ![](assets/do-not-localize/more_options_da2.png) Más opciones y en el icono **[!UICONTROL Preference]**![Preferencias](assets/do-not-localize/preferences_icon_da2.png). En la**[!UICONTROL Preferences]** ventana, ajuste los valores de lo siguiente:
 
 * [!UICONTROL Launch application on login].
 * [!UICONTROL Show window when application starts].
 * **[!UICONTROL Cache Directory]**:: Ubicación de la caché local de la aplicación (contiene los recursos descargados localmente).
-* **[!UICONTROL Network Drive Letter]**:: Letra de unidad utilizada para asignar a AEM DAM. No lo cambie si no está seguro. La aplicación puede asignarse a cualquier letra de unidad en Windows. Si dos usuarios colocan recursos de distintas letras de unidad, no podrán ver los recursos colocados entre ellos. La ruta de los recursos cambia. Los recursos permanecen colocados en el archivo binario (digamos INDD) y no se eliminan. La aplicación muestra todas las letras de unidad disponibles y, de forma predeterminada, utiliza la última letra disponible que suele ser `Z`.
+* **[!UICONTROL Network Drive Letter]**:: Letra de unidad utilizada para asignar a AEM DAM. No lo cambie si no está seguro. La aplicación puede asignarse a cualquier letra de unidad en Windows. Si dos usuarios colocan recursos de distintas letras de unidad, no podrán ver los recursos colocados entre ellos. La ruta de los recursos cambia. Los recursos permanecen colocados en el archivo binario (digamos INDD) y no se eliminan. La aplicación muestra todas las letras de unidad disponibles y, de forma predeterminada, utiliza la última letra disponible que suele ser`Z`.
 * **[!UICONTROL Maximum Cache Size]**:: Caché permitida en el disco duro en GB que se utiliza para almacenar recursos descargados localmente.
 * **[!UICONTROL Current cache size]**:: Tamaño de almacenamiento de los recursos descargados localmente. La información solo se muestra después de descargar los recursos con la aplicación.
 * **[!UICONTROL Automatically download linked assets]**:: Los recursos que se colocan en las aplicaciones nativas de Creative Cloud admitidas se recuperan automáticamente si descarga el archivo original.
