@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
+source-git-commit: ab63bfd7eea356be924e1ed62eef387796913e6c
 
 ---
 
@@ -66,6 +66,8 @@ AEM Desktop no es adecuado para realizar una manipulación intensiva del sistema
 * Compresión o descompresión de archivos
 
 Debido a las limitaciones del sistema operativo, Windows tiene una limitación de tamaño de archivo de 4.294.967.295 bytes (aproximadamente 4,29 GB). Se debe a una configuración del Registro que define el tamaño que puede tener un archivo en un recurso compartido de red. El valor de la configuración del Registro es un DWORD con un tamaño máximo igual al número al que se hace referencia.
+
+La aplicación de escritorio de Experience Manager no tiene un valor de tiempo de espera configurable que desconecte la conexión entre el servidor de Experience Manager y la aplicación de escritorio después de un intervalo de tiempo fijo. Cuando se cargan recursos de gran tamaño, si la conexión se agota después de un tiempo, la aplicación vuelve a intentar cargar el recurso varias veces aumentando el tiempo de espera de carga. No se recomienda cambiar la configuración de tiempo de espera predeterminada.
 
 ## Almacenamiento en caché y comunicación con AEM {#caching-and-communication-with-aem}
 
@@ -126,7 +128,7 @@ Si el rendimiento de WebDAV/SMB se degrada drásticamente cuando varios usuarios
 Puede mejorar el rendimiento en AEM habilitando flujos de trabajo transitorios para el flujo de trabajo de recursos de actualización de DAM. La activación de flujos de trabajo transitorios reduce la potencia de procesamiento necesaria para actualizar recursos cuando se crean o modifican en AEM.
 
 1. Vaya a `/miscadmin` la instancia de AEM que se va a configurar (por ejemplo, `http://[Server]:[Port]/miscadmin`).
-1. En el árbol de navegación, expanda **Herramientas** &gt; **Flujo de trabajo** &gt; **Modelos** &gt; **presa**.
+1. En el árbol de navegación, expanda **Herramientas** > **Flujo de trabajo** > **Modelos** > **presa**.
 1. Haga doble clic en **DAM Update Asset**.
 1. En el panel de herramientas flotantes, cambie a la ficha **Página** y, a continuación, haga clic en Propiedades **de página**.
 1. Seleccione la casilla de verificación Flujo de trabajo **** transitorio y haga clic en **Aceptar**.
@@ -218,7 +220,7 @@ Mac: ~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/
 
 Sin embargo, la ubicación puede cambiar según el punto final de AEM Desktop configurado. El valor es una versión codificada de la dirección URL de destino. Por ejemplo, si la aplicación está segmentada `http://localhost:4502`, el nombre del directorio es `http%3A%2F%2Flocalhost%3A4502%2F`.
 
-Para borrar la caché, elimine el directorio &lt;Encabezado de AEM codificado&gt;.
+Para borrar la caché, elimine el directorio &lt;Encabezado de AEM codificado>.
 
 >[!NOTE]
 >
@@ -238,7 +240,7 @@ Haga clic en el icono de AEM Desktop y, a continuación, elija **Acerca de**. El
 
 En ocasiones pueden producirse problemas al actualizar la aplicación de escritorio de AEM en macOS. Esto se debe a que la carpeta de sistema heredada de la aplicación de escritorio AEM impide que las nuevas versiones de AEM Desktop se carguen correctamente. Para solucionar este problema, se pueden quitar manualmente las siguientes carpetas y archivos.
 
-Antes de ejecutar los pasos a continuación, arrastre la aplicación "Adobe Experience Manager Desktop" de la carpeta Aplicaciones macOS a la papelera. A continuación, abra terminal y ejecute el siguiente comando, proporcionando su contraseña cuando se le solicite.
+Antes de ejecutar los pasos a continuación, arrastre la aplicación &quot;Adobe Experience Manager Desktop&quot; de la carpeta Aplicaciones macOS a la papelera. A continuación, abra terminal y ejecute el siguiente comando, proporcionando su contraseña cuando se le solicite.
 
 ```shell
 sudo rm -rf ~/Library/Application\ Support/com.adobe.aem.desktop
