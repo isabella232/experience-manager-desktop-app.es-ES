@@ -1,5 +1,5 @@
 ---
-title: Prácticas recomendadas para la solución de problemas de la aplicación de escritorio AEM
+title: Prácticas recomendadas para la aplicación de escritorio de Adobe Experience Manager y solución de problemas
 description: Siga las optimizaciones y solucione los problemas ocasionales relacionados con la instalación, actualización, configuración, etc.
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
 contentOwner: AG
@@ -9,14 +9,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
+source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
 
 ---
 
 
-# Troubleshoot AEM desktop app {#troubleshoot-v2}
+# Troubleshoot Adobe Experience Manager desktop app {#troubleshoot-v2}
 
-La aplicación de escritorio de Adobe Experience Manager (AEM) se conecta al repositorio de gestión de recursos digitales (DAM) de una implementación remota de AEM. La aplicación obtiene información del repositorio y resultados de búsqueda en el equipo, descarga y carga archivos y carpetas, e incluye funciones para gestionar conflictos con la interfaz de usuario de Recursos AEM.
+La aplicación de escritorio de Adobe Experience Manager (AEM) se conecta al repositorio de Digital Asset Management (DAM) de la implementación remota de Experience Manager. La aplicación obtiene información del repositorio y resultados de búsqueda en el equipo, descarga y carga archivos y carpetas, e incluye funciones para gestionar conflictos con la interfaz de usuario de Recursos AEM.
 
 Siga leyendo para solucionar problemas de la aplicación, conozca las prácticas recomendadas y descubra las limitaciones.
 
@@ -26,19 +26,21 @@ Siga las siguientes optimizaciones para evitar problemas comunes y solucionar pr
 
 * **Comprenda cómo funciona** la aplicación de escritorio: Antes de empezar a usar la aplicación, dedique unos minutos a saber cómo funciona. Obtenga información sobre la vinculación entre la interfaz de usuario web y el escritorio, la asignación de repositorios, el almacenamiento en caché de recursos, el almacenamiento local y la carga en segundo plano. Vea [cómo funciona](release-notes.md#how-app-works).
 
-* **Evite los caracteres no admitidos en los nombres** de carpetas: No utilice espacios en blanco ni caracteres no válidos al crear o cargar carpetas. Consulte una lista de caracteres en [Creación de carpetas en Recursos](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)AEM. Algunos casos de uso de AEM pueden verse afectados por caracteres no admitidos en el nombre de la carpeta.
+* **Evite los caracteres no admitidos en los nombres** de carpetas: No utilice espacios en blanco ni caracteres no válidos al crear o cargar carpetas. Consulte una lista de caracteres en [Crear carpetas en Experience Manager Assets](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders). Algunos casos de uso de Adobe Experience Manager pueden verse afectados por caracteres no admitidos en el nombre de la carpeta.
 
 * **Prácticas recomendadas para evitar conflictos**: Para evitar conflictos potenciales al colaborar en varios recursos, consulte [Evitar conflictos](using.md#adv-workflow-collaborate-avoid-conflicts)de edición.
 
-* **Utilice la carga de carpetas para carpetas** grandes y jerárquicas: En lugar de utilizar la interfaz web de Recursos u otros métodos, utilice la aplicación de escritorio de AEM para cargar carpetas grandes. La aplicación carga los recursos en segundo plano con el registro y la supervisión. Consulte Carga [masiva de recursos](using.md#bulk-upload-assets).
+* **Utilice la carga de carpetas para carpetas** grandes y jerárquicas: En lugar de utilizar la interfaz web de Recursos u otros métodos, utilice la aplicación de escritorio de Experience Manager para cargar carpetas grandes. La aplicación carga los recursos en segundo plano con el registro y la supervisión. Consulte Carga [masiva de recursos](using.md#bulk-upload-assets).
 
-* **Utilice la versión** más reciente: Utilice la versión más reciente de la aplicación y compruebe siempre la compatibilidad antes de instalar una nueva versión de la aplicación o antes de actualizar a una versión más reciente de AEM. Consulte las notas [de la versión](release-notes.md).
+* **Utilice la versión** más reciente: Utilice la versión más reciente de la aplicación y compruebe siempre la compatibilidad antes de instalar una nueva versión de la aplicación o antes de actualizar a una versión más reciente de Adobe Experience Manager. See [release notes](release-notes.md).
 
-* **Utilice la misma letra** de unidad: Utilice la misma letra de unidad en una organización para asignarla a AEM DAM. Para ver los recursos colocados por otros usuarios, las rutas deben ser las mismas. El uso de la misma letra de unidad garantiza una ruta constante a los recursos DAM. Los recursos permanecen colocados y no se eliminan incluso si distintos usuarios utilizan distintas letras de unidad.
+* **Utilice la misma letra** de unidad: Utilice la misma letra de unidad en una organización para asignarla al DAM de Adobe Experience Manager. Para ver los recursos colocados por otros usuarios, las rutas deben ser las mismas. El uso de la misma letra de unidad garantiza una ruta constante a los recursos DAM. Los recursos permanecen colocados y no se eliminan incluso si distintos usuarios utilizan distintas letras de unidad.
 
-* **Tenga en cuenta la red**: El rendimiento de la red es fundamental para el rendimiento de la aplicación de escritorio de AEM. Si se enfrenta a una respuesta lenta a las transferencias de archivos o a las operaciones masivas, desactive las funciones o aplicaciones que pueden causar mucho tráfico de red.
+* **Tenga en cuenta la red**: El rendimiento de la red es fundamental para el rendimiento de la aplicación de escritorio de Experience Manager. Si se enfrenta a una respuesta lenta a las transferencias de archivos o a las operaciones masivas, desactive las funciones o aplicaciones que pueden causar mucho tráfico de red.
 
 * **Casos de uso no admitidos para la aplicación** de escritorio: No utilice la aplicación para la migración de recursos (necesita planificación y otras herramientas); para operaciones DAM de gran capacidad (como mover carpetas grandes, cargas grandes, buscar archivos mediante búsquedas avanzadas de metadatos); y como cliente de sincronización (los principios de diseño y los patrones de uso son diferentes de los clientes en sincronización como Microsoft OneDrive o Adobe Creative Cloud para escritorio).
+
+* **Tiempo de espera**: Actualmente, la aplicación de escritorio no tiene un valor de tiempo de espera configurable que desconecte la conexión entre el servidor de Experience Manager y la aplicación de escritorio después de un intervalo de tiempo fijo. Cuando se cargan recursos de gran tamaño, si la conexión se agota después de un tiempo, la aplicación vuelve a intentar cargar el recurso varias veces aumentando el tiempo de espera de carga. No se recomienda cambiar la configuración de tiempo de espera predeterminada.
 
 ## Cómo solucionar problemas {#troubleshooting-prep}
 
@@ -80,7 +82,7 @@ Sin embargo, la ubicación puede cambiar según el punto final de AEM configurad
 
 ### Conozca la versión de la aplicación de escritorio de AEM {#know-app-version-v2}
 
-Haga clic en el menú ![](assets/do-not-localize/more_options_da2.png) Aplicación para abrir el menú de la aplicación y haga clic en **[!UICONTROL Help]** &gt; **[!UICONTROL About]**.
+Haga clic en el menú ![](assets/do-not-localize/more_options_da2.png) Aplicación para abrir el menú de la aplicación y haga clic en **[!UICONTROL Help]**>**[!UICONTROL About]**.
 
 ## No se pueden ver los recursos colocados {#placed-assets-missing}
 
