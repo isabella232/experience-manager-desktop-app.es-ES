@@ -1,6 +1,6 @@
 ---
-title: Notas de la versión de la aplicación de AEM Desktop
-description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad y vínculos de descarga para la aplicación de escritorio de AEM.
+title: Notas de la versión de la aplicación de escritorio de Adobe Experience Manager
+description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad y vínculos de descarga para la aplicación de escritorio de Adobe Experience Manager.
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -10,12 +10,12 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b2015bd65db70a25e4c52e62a4de45a01a6748d5
+source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
 
 ---
 
 
-# AEM desktop app release notes {#release-notes-v2}
+# Notas de la versión de la aplicación de escritorio de Adobe Experience Manager {#release-notes-v2}
 
 | Productos | Aplicación de escritorio de Adobe Experience Manager (AEM) |
 |---------------|--------------------------------------------------------------------|
@@ -27,56 +27,55 @@ source-git-commit: b2015bd65db70a25e4c52e62a4de45a01a6748d5
 
 ## Requisitos y requisitos previos del sistema {#system-requirements-and-prerequisites-v2}
 
-La aplicación de escritorio de AEM es compatible con los siguientes sistemas operativos:
+La aplicación de escritorio Adobe Experience Manager es compatible con los siguientes sistemas operativos:
 
 * Mac OS X 10.10 o posterior, con las últimas correcciones de errores.
 * Windows 7 y Windows 10 con los paquetes de servicios y las correcciones de errores más recientes.
 
-La aplicación funciona con las siguientes versiones de AEM, tanto si se implementa in situ como en Adobe Managed Services (AMS):
+La aplicación funciona con las siguientes versiones de Experience Manager, tanto si se implementa in situ como en los servicios gestionados de Adobe (AMS):
 
-* [AEM 6.5.0](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) o posterior
-* [AEM 6.4.4](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) o posterior
-* AEM 6.4.0 - 6.4.3 con [paquete de compatibilidad](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
+* [Experience Manager 6.5.0](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) o posterior
+* [Experience Manager 6.4.4](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) o posterior
+* Experience Manager 6.4.0 - 6.4.3 con paquete de [compatibilidad](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
 
 >[!NOTE]
 >
->La compatibilidad de la aplicación de escritorio con AEM 6.3 ya no se utiliza. Adobe recomienda actualizar a una versión de AEM más reciente y compatible.
->AEM 6.3.3.1 o posterior funciona con la aplicación de escritorio después de instalar el paquete [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilidad. Este paquete no está disponible para AEM 6.3, ya que no hay paquetes [de servicios planificados](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
+>La compatibilidad de la aplicación de escritorio con Experience Manager 6.3 está obsoleta. Adobe recomienda actualizar a una versión más reciente y compatible de Adobe Experience Manager.
+>Experience Manager 6.3.3.1 o posterior funciona con la aplicación de escritorio después de instalar el paquete [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilidad. Este paquete no está disponible para Experience Manager 6.3, ya que no hay paquetes [de servicios planificados](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
 
-La versión de la aplicación que planea instalar en su equipo local requiere una versión específica del servidor de Adobe Experience Manager o componentes adicionales del servidor (paquetes de servicio, correcciones rápidas o paquetes de funciones). Póngase en contacto con el administrador de AEM para obtener ayuda.
+La versión de la aplicación que planea instalar en su equipo local requiere una versión específica del servidor de Adobe Experience Manager o componentes adicionales del servidor (paquetes de servicio, correcciones rápidas o paquetes de funciones). Póngase en contacto con el administrador de Adobe Experience Manager para obtener ayuda.
 
 ### Support for different assets and file types {#support-for-file-types}
 
-La aplicación admite recursos almacenados en AEM que representan archivos binarios para sus operaciones básicas. La apertura de archivos en la aplicación de escritorio nativa depende de la asociación de sistema operativo de los tipos de archivo específicos, como PNG o JPG, a aplicaciones específicas, como Vista previa de Mac o Adobe Photoshop.
+La aplicación admite recursos almacenados en Adobe Experience Manager que representan archivos binarios para sus operaciones básicas. La apertura de archivos en la aplicación de escritorio nativa depende de la asociación de sistema operativo de los tipos de archivo específicos, como PNG o JPG, a aplicaciones específicas, como Vista previa de Mac o Adobe Photoshop.
 
-Algunos tipos de archivo admiten la colocación de recursos vinculados en el archivo binario. La aplicación descarga previamente los recursos vinculados si el recurso está presente en el repositorio de AEM cuando estos archivos binarios se abren con la aplicación de escritorio. Los tipos de archivo admitidos actualmente son:
+Algunos tipos de archivo admiten la colocación de recursos vinculados en el archivo binario. La aplicación descarga previamente los recursos vinculados si el recurso está presente en el repositorio de Experience Manager cuando estos archivos binarios se abren con la aplicación de escritorio. Los tipos de archivo admitidos actualmente son:
 
 * Archivos de Adobe InDesign (formato INDD)
 * Archivos de Adobe Illustrator (formato AI)
 * Archivos de Adobe Photoshop (formato PS)
 
-La función es compatible con las versiones de Adobe Creative Cloud 2018 y Adobe Creative Cloud 2019 de la aplicación anterior. La aplicación utiliza un método heurístico que busca la mejor coincidencia para asignar las rutas de escritorio locales de los recursos vinculados a las URL en el servidor de AEM. Se basa en algunos supuestos:
+La función es compatible con las versiones de Adobe Creative Cloud 2018 y Adobe Creative Cloud 2019 de la aplicación anterior. La aplicación utiliza un método heurístico y de mejor coincidencia para asignar las rutas de escritorio locales de los recursos vinculados a las direcciones URL en el servidor de Experience Manager. Se basa en algunos supuestos:
 
 * Paths to placed files in the native application use a global desktop path (placed from the local network share shown with [!UICONTROL Reveal] option).
 * La aplicación nativa almacena las rutas en el registro XMP del archivo.
-* AEM ha extraído el registro XMP con las rutas al registro de metadatos del recurso.
-* Las rutas pueden coincidir con los recursos en AEM, es decir, los archivos colocados también están en AEM en una ruta coincidente).
+* Experience Manager ha extraído el registro XMP con las rutas al registro de metadatos del recurso.
+* Las rutas pueden coincidir con los recursos de Experience Manager, es decir, los archivos colocados también se encuentran en Experience Manager en una ruta coincidente).
 
 ## Nuevas funciones y mejoras {#whats-new-added}
 
-To know the details, see [What's new in v2.0](introduction.md#whats-new-v2).
+To know the details, see [What&#39;s new in v2.0](introduction.md#whats-new-v2).
 
 Las correcciones de errores y las actualizaciones realizadas en la versión 2.0.1 son:
 
 * Permitir la opción de configurar `%Temp%` el directorio para que coincida con la `%APPDATA%` ruta. <!-- CQ-4282665 -->
 * Permita que los usuarios inicien sesión en AEM Author mediante la autenticación de Okta SAML. <!-- CQ-4278134 -->
 
-
 ## Instrucciones de instalación {#installation-instructions-v2}
 
-Para obtener información sobre cómo instalar y configurar la aplicación, consulte [Instalación de la aplicación de escritorio de AEM](install-upgrade.md).
+To know how to install and configure the app, see [Install Experience Manager desktop app](install-upgrade.md).
 
-Si va a realizar la actualización desde una aplicación de escritorio de AEM anterior, debe seguir estos procedimientos recomendados para la transición y que se enumeran en [Actualización de la aplicación v1.x a la aplicación v2](install-upgrade.md#upgrade-from-previous-version).
+If you are upgrading from a previous Experience Manager desktop app, you must follow these best practices for transitioning that are listed at [upgrade from previous version](install-upgrade.md#upgrade-from-previous-version).
 
 ## Notas importantes sobre el funcionamiento de la aplicación {#how-app-works}
 
@@ -85,7 +84,7 @@ Es importante comprender lo siguiente sobre la aplicación y su funcionamiento.
 * La aplicación proporciona control total sobre las operaciones que requieren la transferencia completa de archivos binarios de recursos desde y hacia AEM (abrir, editar, cargar cambios y cargar recursos).
    * Si desea trabajar con el recurso en el escritorio, debe abrir, editar o descargar contenido en el mismo escritorio, ya sea de forma individual, en una carpeta o mediante selección múltiple.
    * Si desea realizar cambios locales en los recursos cargados en AEM, debe seleccionarlos [!UICONTROL Upload Changes], ya sea de forma individual o mediante selección múltiple.
-   * La aplicación no es un "cliente de sincronización" que sincroniza recursos en el escritorio y en AEM.
+   * La aplicación no es un &quot;cliente de sincronización&quot; que sincroniza recursos en el escritorio y en AEM.
    * La aplicación no proporciona un recurso compartido de red que asigne el repositorio de AEM como una estructura de carpetas virtuales.
 * La aplicación muestra una lista de recursos que se basa en el estado del repositorio de AEM Assets. La aplicación no muestra ni administra ningún archivo descargado localmente y cuyo nombre haya cambiado en los archivos locales o en la carpeta de caché.
 * Si la aplicación no muestra los resultados esperados, haga clic en el icono de actualización situado en la barra superior.
@@ -120,7 +119,7 @@ En el diagrama siguiente se ilustra el flujo de recursos y archivos desde la nub
 >
 >* [Documentación de AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html)
 >* [Documentación de AEM Assets 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/assets/home.html)
->* [Cómo utilizar la aplicación de escritorio de AEM](using.md)
+>* [Cómo utilizar la aplicación de escritorio de Experience Manager](using.md)
 >* [Instalación y actualización de la aplicación de escritorio](install-upgrade.md)
 >* [Procedimientos recomendados y sugerencias para la solución de problemas](troubleshoot.md)
 
