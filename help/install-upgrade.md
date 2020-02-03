@@ -1,6 +1,6 @@
 ---
-title: Instalación y configuración de la aplicación de escritorio de AEM
-description: Instale y configure la aplicación de escritorio de AEM para que funcione con los servidores de AEM Assets y descargue los recursos en el sistema de archivos local.
+title: Instalación y configuración de la aplicación de escritorio de Adobe Experience Manager
+description: Instale y configure la aplicación de escritorio de Adobe Experience Manager para trabajar con los servidores de recursos de Adobe Experience Manager y descargar los recursos en el sistema de archivos local.
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -9,26 +9,26 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
+source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
 
 ---
 
 
-# Instalación de la aplicación de escritorio AEM {#install-app-v2}
+# Install Adobe Experience Manager desktop app {#install-app-v2}
 
-Con la aplicación de escritorio de AEM, los recursos de AEM son fácilmente accesibles en el escritorio local y se pueden usar en cualquier aplicación de escritorio. Los recursos se pueden mostrar fácilmente en Mac Finder o en el Explorador de Windows, abrirse en aplicaciones de escritorio y cambiarse localmente; los cambios se guardan de nuevo en AEM cuando se carga y se crea una nueva versión en el repositorio.
+Con la aplicación de escritorio Adobe Experience Manager, los recursos de Experience Manager son fácilmente accesibles en el escritorio local y se pueden usar en cualquier aplicación de escritorio. Los recursos se pueden mostrar fácilmente en Mac Finder o en el Explorador de Windows, abrir en aplicaciones de escritorio y cambiar localmente; los cambios se guardan en Experience Manager cuando se carga y se crea una nueva versión en el repositorio.
 
-Esta integración permite que varios roles de la organización gestionen los recursos de forma centralizada en Recursos AEM y accedan a ellos en Creative Cloud y otras aplicaciones, al tiempo que facilita el cumplimiento de los distintos estándares, incluida la marca.
+Esta integración permite que varios roles de la organización gestionen los recursos de forma centralizada en Recursos Adobe Experience Manager y accedan a ellos en Creative Cloud y otras aplicaciones, al tiempo que facilita el cumplimiento de los distintos estándares, incluida la marca.
 
-Para utilizar la aplicación de escritorio de AEM,
+Para utilizar la aplicación de escritorio de Experience Manager,
 
-* Asegúrese de que la versión del servidor AEM sea compatible con la aplicación de escritorio AEM. Consulte la matriz [de](release-notes-of-v1.md#compatibilitymatrix)compatibilidad.
+* Asegúrese de que la versión del servidor de Experience Manager sea compatible con la aplicación de escritorio de Experience Manager. Consulte la matriz [de](release-notes-of-v1.md#compatibilitymatrix)compatibilidad.
 * Descargue e instale la aplicación.
 * Pruebe la conexión con algunos recursos. Consulte [Acceso y apertura de recursos en el escritorio](use-app-v1.md#openondesktop).
 
 ## Requisitos previos del sistema y vínculos de descarga {#tech-specs-v2}
 
-Para obtener información detallada, consulte las notas de la versión de la aplicación de escritorio de [AEM](release-notes.md).
+Para obtener información detallada, consulte las notas de la versión de la aplicación de escritorio de [Experience Manager](release-notes.md).
 
 ## Actualización de la aplicación v1.x a la aplicación v2 {#upgrade-from-previous-version}
 
