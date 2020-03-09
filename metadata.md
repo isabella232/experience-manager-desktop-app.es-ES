@@ -7,11 +7,11 @@ getting-started-title: Introducción
 getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
 tutorials-title: Tutoriales
 tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html
-mini-toc-levels: '2'
-git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-desktop-app.en
+mini-toc-levels: 2
+git-repo: https://github.com/AdobeDocs/experience-manager-desktop-app.en
 index: n
 translation-type: tm+mt
-source-git-commit: 83af3806686b46f31d44673388e9cd6c78124051
+source-git-commit: f42f9437de9d9b96d1fcf1c3e1730fd74548eec1
 
 ---
 
