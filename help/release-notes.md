@@ -10,20 +10,20 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
+source-git-commit: aca68b0c2eb363e33c8a6edec2370758124a4b9e
 
 ---
 
 
 # Notas de la versión de la aplicación de escritorio de Adobe Experience Manager {#release-notes-v2}
 
-| Productos | Aplicación de escritorio de Adobe Experience Manager (AEM) |
-|---------------|--------------------------------------------------------------------|
-| Versión de la aplicación (revisión) | 2.0 (2.0.1.1) |
-| Versiones de AEM compatibles | AEM 6.5, AEM 6.4, AEM 6.3 (con paquete de compatibilidad) |
+| Productos | Aplicación de escritorio de Adobe Experience Manager |
+|----|----|
+| Versión de la aplicación (revisión) | 2.0 (2.0.2.0) |
+| Versiones de AEM compatibles | AEM como servicio de nube; AEM 6.5; AEM 6.4; AEM 6.3 (con paquete de compatibilidad) |
 | Tipo | Versión menor |
-| Fecha de lanzamiento | 12 de diciembre de 2019 (Mac y Win) |
-| Direcciones URL de descarga | [MacOS de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.1.1.dmg); [Windows de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.1.1.exe); [Windows de 32 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.1.1.exe) |
+| Fecha de lanzamiento | 15 de abril de 2020 (Mac y Win) |
+| Direcciones URL de descarga | [macOS de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.2.0.dmg); [Windows de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.2.0.exe); [Windows de 32 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.2.0.exe) |
 
 ## Requisitos y requisitos previos del sistema {#system-requirements-and-prerequisites-v2}
 
@@ -32,10 +32,11 @@ La aplicación de escritorio Adobe Experience Manager es compatible con los sigu
 * Mac OS X 10.10 o posterior, con las últimas correcciones de errores.
 * Windows 7 y Windows 10 con los paquetes de servicios y las correcciones de errores más recientes.
 
-La aplicación funciona con las siguientes versiones de Experience Manager, tanto si se implementa in situ como en los servicios gestionados de Adobe (AMS):
+La aplicación funciona con las siguientes versiones de Experience Manager, tanto si se implementa como un servicio de nube, en los servicios gestionados de Adobe (AMS) como in situ:
 
-* [Experience Manager 6.5.0](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) o posterior
-* [Experience Manager 6.4.4](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) o posterior
+* [Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/home.html)
+* [Experience Manager 6.5.0+](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html) o posterior
+* [Experience Manager 6.4.4+](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/release-notes.html) o posterior
 * Experience Manager 6.4.0 - 6.4.3 con paquete de [compatibilidad](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
 
 >[!NOTE]
@@ -60,13 +61,25 @@ La función es compatible con las versiones de Adobe Creative Cloud 2018 y Adobe
 * Paths to placed files in the native application use a global desktop path (placed from the local network share shown with [!UICONTROL Reveal] option).
 * La aplicación nativa almacena las rutas en el registro XMP del archivo.
 * Experience Manager ha extraído el registro XMP con las rutas al registro de metadatos del recurso.
-* Las rutas pueden coincidir con los recursos de Experience Manager, es decir, los archivos colocados también se encuentran en Experience Manager en una ruta coincidente).
+* Las rutas pueden coincidir con los recursos de Experience Manager, es decir, los archivos colocados también están en Experience Manager bajo una ruta coincidente.
 
 ## Nuevas funciones y mejoras {#whats-new-added}
 
 To know the details, see [What&#39;s new in v2.0](introduction.md#whats-new-v2).
 
-Las correcciones de errores y las actualizaciones realizadas en la versión 2.0.1 son:
+**Actualizaciones en la aplicación v2.0.2**
+
+Las correcciones y actualizaciones de errores son:
+
+* Para mejorar el rendimiento de carga, aumente la aceleración de carga en [!UICONTROL Preferences]. Cuando se activa esta opción, la aplicación utiliza más subprocesos de CPU locales y utiliza más recursos.
+* Se ha corregido un problema con las cargas de recursos cuando los nombres de archivo o las rutas contienen determinados caracteres GB18030. <!-- CQ-4283494 -->
+* La opción Ordenar por relevancia está disponible después de cambiar a otro tipo de ordenación en los resultados de búsqueda. <!-- CQ-4286874 -->
+* La aplicación de escritorio ahora lista subcarpetas sin necesidad de actualizarlas explícitamente. <!-- CQ-4285711 -->
+* (Windows) Se ha corregido un problema poco frecuente de la interfaz de la aplicación no utilizable en algunos equipos Windows. Los usuarios no pueden hacer clic en la interfaz de la aplicación, ya que parece distorsionada con el área de clic de los elementos de la interfaz que se &#39;desplazan&#39; hacia un lado. <!-- CQ-4280785 -->
+
+**Actualizaciones en la aplicación v2.0.1**
+
+Las correcciones y actualizaciones de errores son:
 
 * Permitir la opción de configurar `%Temp%` el directorio para que coincida con la `%APPDATA%` ruta. <!-- CQ-4282665 -->
 * Permita que los usuarios inicien sesión en AEM Author mediante la autenticación de Okta SAML. <!-- CQ-4278134 -->
@@ -99,7 +112,7 @@ En el diagrama siguiente se ilustra el flujo de recursos y archivos desde la nub
 
 **Problemas de la interfaz de usuario:**
 
-* En ocasiones, la interfaz de la aplicación de escritorio puede quedar en blanco. Right-click and click [!UICONTROL Refresh] to re-load the application. Después de esta actualización, se inicia en la raíz del repositorio DAM. Se conservan las actualizaciones o los estados de los recursos. <!-- CQ-4270267 -->
+* En ocasiones, la interfaz de la aplicación de escritorio puede quedar en blanco. Right-click and click [!UICONTROL Refresh] to re-load the application. Después de una actualización de este tipo, inicio en la raíz del repositorio DAM. Se conservan las actualizaciones o los estados de los recursos. <!-- CQ-4270267 -->
 * Difícil desplazarse por las carpetas o los resultados de la búsqueda sin un panel de seguimiento o un puntero del ratón. The scroll-bar might not appear with mouse devices without mouse wheel. <!-- CQ-4269947 -->
 * De forma poco frecuente, la barra de progreso no se muestra correctamente cuando se producen cambios en el recurso que se carga.
 * Después de aplicar y quitar el filtro para buscar todos los recursos editados a nivel local, la aplicación no lleva a los usuarios a la vista de carpetas o a los resultados de búsqueda con los que los usuarios empezaron. La aplicación muestra la carpeta raíz del repositorio de DAM.
@@ -117,8 +130,8 @@ En el diagrama siguiente se ilustra el flujo de recursos y archivos desde la nub
 
 >[!MORELIKETHIS]
 >
->* [Documentación de AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html)
->* [Documentación de AEM Assets 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/assets/home.html)
+>* [Documentación de AEM como servicio de nube](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
+>* [Documentación de AEM as a Cloud Service Assets](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/home.html)
 >* [Cómo utilizar la aplicación de escritorio de Experience Manager](using.md)
 >* [Instalación y actualización de la aplicación de escritorio](install-upgrade.md)
 >* [Procedimientos recomendados y sugerencias para la solución de problemas](troubleshoot.md)
