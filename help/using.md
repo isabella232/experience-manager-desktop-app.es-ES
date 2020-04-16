@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e706fe5fe148deff519cadc72b724572f11ddf3c
+source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 ---
 
@@ -183,6 +183,8 @@ Puede cargar carpetas o archivos individuales desde el sistema de archivos local
 Para vista de la lista de los recursos transferidos en una sesión determinada, haga clic en **[!UICONTROL View]** > **[!UICONTROL Assets transfers]**. La lista le permite realizar vistas y comprobar rápidamente las transferencias de archivos de la sesión actual.
 
 ![Lista de los activos transferidos en una](assets/assets_transfered_da2.png "sesión determinada Lista de los activos transferidos en una sesión determinada")
+
+Puede controlar la concurrencia de carga (aceleración) en **[!UICONTROL Preferences]** > **[!UICONTROL Upload acceleration]** . La mayor concurrencia suele proporcionar cargas más rápidas, pero puede requerir muchos recursos, lo que consume más potencia de procesamiento de la máquina local. Si experimenta un sistema lento, vuelva a intentar cargar con un valor de concurrencia inferior.
 
 >[!NOTE]
 >
