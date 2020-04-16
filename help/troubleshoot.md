@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
+source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 ---
 
@@ -40,7 +40,7 @@ Siga las siguientes optimizaciones para evitar problemas comunes y solucionar pr
 
 * **Casos de uso no admitidos para la aplicación** de escritorio: No utilice la aplicación para la migración de recursos (necesita planificación y otras herramientas); para operaciones DAM de gran capacidad (como mover carpetas grandes, cargas grandes, buscar archivos mediante búsquedas avanzadas de metadatos); y como cliente de sincronización (los principios de diseño y los patrones de uso son diferentes de los clientes en sincronización como Microsoft OneDrive o Adobe Creative Cloud para escritorio).
 
-* **Tiempo de espera**: Actualmente, la aplicación de escritorio no tiene un valor de tiempo de espera configurable que desconecte la conexión entre el servidor de Experience Manager y la aplicación de escritorio después de un intervalo de tiempo fijo. Cuando se cargan recursos de gran tamaño, si la conexión se agota después de un tiempo, la aplicación vuelve a intentar cargar el recurso varias veces aumentando el tiempo de espera de carga. No se recomienda cambiar la configuración de tiempo de espera predeterminada.
+* **Tiempo de espera**: Actualmente, la aplicación de escritorio no tiene un valor de tiempo de espera configurable que desconecte la conexión entre el servidor de Experience Manager y la aplicación de escritorio después de un intervalo de tiempo fijo. Cuando se cargan recursos de gran tamaño, si la conexión se agota después de un tiempo, la aplicación tiene el reintentos de cargar el recurso varias veces aumentando el tiempo de espera de carga. No se recomienda cambiar la configuración de tiempo de espera predeterminada.
 
 ## Cómo solucionar problemas {#troubleshooting-prep}
 
@@ -56,19 +56,19 @@ Para solucionar problemas, puede habilitar el modo de depuración y obtener más
 
 ### Ubicación de los archivos de registro {#check-log-files-v2}
 
-Puede encontrar los archivos de registro de la aplicación de escritorio de AEM en las siguientes ubicaciones. Al cargar muchos recursos, si algunos archivos no se pueden cargar, consulte `backend.log` el archivo en la ubicación anterior para identificar las cargas fallidas.
+Puede encontrar los archivos de registro de la aplicación de escritorio de AEM en las siguientes ubicaciones. Al cargar muchos recursos, si algunos archivos no se pueden cargar, consulte `backend.log` el archivo para identificar las cargas fallidas.
 
-* En Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
+* Ruta en Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
 
-* En Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+* Ruta en Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
 
 >[!NOTE]
 >
->Al trabajar con el Servicio de atención al cliente de Adobe en una solicitud o entrada de asistencia, se le puede pedir que comparta los archivos de registro para ayudar al equipo de asistencia técnica a comprender el problema. Archive toda la `Logs` carpeta y compártala con el servicio de atención al cliente.
+>Al trabajar con el Servicio de atención al cliente de Adobe en una solicitud o entrada de asistencia, se le puede pedir que comparta los archivos de registro para ayudar al equipo de atención al cliente a comprender el problema. Archive toda la `Logs` carpeta y compártala con el contacto del Servicio de atención al cliente.
 
 ### Borrar caché {#clear-cache-v2}
 
-La eliminación de la caché de la aplicación de escritorio de AEM es una tarea preliminar de solución de problemas que puede resolver varios problemas. Borre la caché de las preferencias de la aplicación. Consulte [Configuración de preferencias](install-upgrade.md#set-preferences). La ubicación predeterminada de la carpeta de caché es:
+La eliminación de la caché de la aplicación de escritorio de AEM es una tarea de solución de problemas preliminar que puede resolver varios problemas. Borre la caché de las preferencias de la aplicación. Consulte [Configuración de preferencias](install-upgrade.md#set-preferences). La ubicación predeterminada de la carpeta de caché es:
 
 * En Windows: `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
 
@@ -82,7 +82,7 @@ Sin embargo, la ubicación puede cambiar según el punto final de AEM configurad
 
 ### Conozca la versión de la aplicación de escritorio de AEM {#know-app-version-v2}
 
-Haga clic en el menú ![](assets/do-not-localize/more_options_da2.png) Aplicación para abrir el menú de la aplicación y haga clic en **[!UICONTROL Help]**>**[!UICONTROL About]**.
+Haga clic en el menú ![](assets/do-not-localize/more_options_da2.png) Aplicación para abrir el menú de la aplicación y haga clic en **[!UICONTROL Help]** > **[!UICONTROL About]**.
 
 ## No se pueden ver los recursos colocados {#placed-assets-missing}
 
@@ -123,7 +123,7 @@ Raramente la aplicación puede no responder, mostrar solo una pantalla en blanco
 1. Haga clic con el botón derecho en la interfaz de la aplicación y haga clic en **[!UICONTROL Refresh]**.
 1. Salga de la aplicación y reiníciela.
 
-En ambos métodos, la aplicación se inicia en la carpeta DAM raíz.
+En ambos métodos, la aplicación inicio en la carpeta DAM raíz.
 
 >[!MORELIKETHIS]
 >
