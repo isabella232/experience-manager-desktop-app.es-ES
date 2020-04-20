@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
+source-git-commit: 0301538b5cc00a187709b484bed8f0ca7b799f03
 
 ---
 
@@ -33,26 +33,28 @@ Para utilizar la aplicación de escritorio de Experience Manager,
 
 Para obtener información detallada, consulte las notas de la versión de la aplicación de escritorio de [Experience Manager](release-notes.md).
 
-## Actualización de la aplicación v1.x a la aplicación v2 {#upgrade-from-previous-version}
+## Upgrade from a previous version {#upgrade-from-previous-version}
 
-Si ya es usuario de la aplicación, comprenda las diferencias y similitudes entre la versión anterior y la última de la aplicación. Además, siga estas directrices para la transición de v1.x a la versión más reciente.
+Si es un usuario de la versión 1.x de la aplicación de escritorio, comprenda las diferencias y similitudes entre la versión anterior y la última de la aplicación. Vea [las novedades de la aplicación](introduction.md#whats-new-v2) de escritorio y [cómo funciona](release-notes.md#how-app-works)
 
 >[!NOTE]
 >
->Las aplicaciones de escritorio v1.x y v2 no pueden coexistir en un equipo. Antes de instalar una versión, desinstale la otra versión.
+>Dos versiones de la aplicación de escritorio no pueden coexistir en un equipo. Antes de instalar una versión, desinstale la otra versión.
 
-Para actualizar de v1.x a la versión más reciente de la aplicación, siga estas instrucciones:
+Para actualizar desde una versión anterior de la aplicación, siga estas instrucciones:
 
-1. Antes de actualizar, sincronice todos los recursos. Cargue todos los cambios con la aplicación v1.x. Esto sirve para evitar perder los cambios al desinstalar la aplicación v1.x.
-1. Desinstalar la aplicación v1.x. Al desinstalar v1.x, borre la caché.
+1. Antes de actualizar, sincronice todos los recursos y cargue los cambios en Experience Manager. Esto sirve para evitar perder las ediciones al desinstalar la aplicación.
+1. Desinstale la versión anterior de la aplicación. Al desinstalar, seleccione la opción para borrar la caché.
 1. Reinicie el equipo.
-1. Descargue e instale la aplicación más reciente. Siga las instrucciones a continuación.
+1. [Descargue](release-notes.md) e [instale](#install-v2) la aplicación más reciente. Siga las instrucciones a continuación.
 
 ## Instalar {#install-v2}
 
 Para instalar la aplicación de escritorio, siga estos pasos. Desinstale cualquier aplicación de escritorio de Adobe Experience Manager v1.x existente antes de instalar la aplicación más reciente. Para obtener más información, consulte arriba.
 
+1. Descargue el instalador más reciente de la página de notas [de la](release-notes.md) versión.
 1. Tenga a mano la dirección URL y las credenciales de la implementación de Experience Manager.
+1. Si va a realizar la actualización desde otra versión de la aplicación, consulte [Actualización de la aplicación](#upgrade-from-previous-version)de escritorio.
 1. Omita este paso si utiliza Experience Manager como servicio de nube, Experience Manager 6.4.4 o posterior, o Experience Manager 6.5.0 o posterior. Asegúrese de que la configuración de Experience Manager cumple los requisitos de compatibilidad mencionados en las notas de la [versión](release-notes.md). Si es necesario, descargue el paquete [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) compatibilidad aplicable e instálelo mediante el Administrador de paquetes de Experience Manager como administrador de Experience Manager. Para instalar un paquete, consulte [Cómo trabajar con paquetes](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
 1. Ejecute el archivo binario del programa de instalación y siga las instrucciones que aparecen en pantalla para instalarlo.
 1. En Windows, el programa de instalación puede solicitar la instalación `Visual Studio C++ Redistributable 2015`. Siga las instrucciones que aparecen en pantalla para instalarlo. Si la instalación falla, instálela manualmente. Descargue el instalador desde [aquí](https://www.microsoft.com/en-us/download/details.aspx?id=52685) e instale tanto `vc_redist.x64.exe` como `vc_redist.x86.exe` archivos. Vuelva a ejecutar el instalador de la aplicación de escritorio de AEM.
