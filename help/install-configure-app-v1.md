@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: bb71cfdfef674be25d059f104a37a9199681358c
 
 ---
 
@@ -118,11 +118,10 @@ Para dirigir la aplicación a una carpeta o unidad diferente, edite el archivo d
    >
    >La aplicación crea automáticamente un subdirectorio *&lt;Encoded AEM Endpoint>* ; este comportamiento no se puede configurar.
 
-## Recursos adicionales {#additional-resources}
-
+>[!MORELIKETHIS]
 * [Introducción a la aplicación de escritorio de AEM](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
 * [Uso de la aplicación de escritorio de AEM](use-app-v1.md)
-
 * [Obtenga información sobre la llegada y la salida con la aplicación de escritorio de AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 * [Uso de la aplicación de escritorio con AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 * [Solución de problemas de la aplicación de escritorio AEM](troubleshoot-app-v1.md)
+
