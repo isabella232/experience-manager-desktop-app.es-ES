@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: 52f70e5b95318d8b3b3930be1233cc51aa997914
 
 ---
 
@@ -105,7 +105,7 @@ La buena experiencia de los usuarios que utilizan la aplicación de escritorio d
 
 Para conocer las prácticas recomendadas sobre la configuración de red de AEM Assets, consulte el documento de consideraciones [de red de](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/assets-migration-guide.html) AEM Assets. Algunos de los aspectos importantes que ayudan a optimizar la experiencia de los usuarios con las aplicaciones de escritorio de AEM son:
 
-* **Usar Dispatcher configurado correctamente:** Use AEM Dispatcher para obtener seguridad adicional y asegúrese de que está configurado para la conexión de la aplicación de escritorio de [AEM a AEM tras un distribuidor](using.md)
+* **Usar Dispatcher configurado correctamente:** Use AEM Dispatcher para obtener seguridad adicional y asegúrese de que está configurado para la conexión de la aplicación de escritorio de [AEM a AEM tras un distribuidor](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
 * **Guardar ancho de banda:** Considere desactivar la previsualización de iconos en Finder en Mac al explorar el repositorio montado con Finder. Finder solicita a cada archivo que genere una previsualización y hace que la aplicación de escritorio descargue y almacene en caché el recurso localmente. Tenga en cuenta que, al ahorrar ancho de banda, también disminuiría la experiencia del usuario en el escritorio, por lo que debería hacerse al trabajar con repositorios con recursos grandes y/o ancho de banda limitado.
 
