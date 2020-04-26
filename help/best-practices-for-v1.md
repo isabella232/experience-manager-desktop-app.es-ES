@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
@@ -26,7 +26,7 @@ La aplicación de escritorio monta el repositorio de AEM Assets como recurso com
 
 >[!NOTE]
 >
->Antes de leer este documento, puede revisar las prácticas [recomendadas generales de integración de](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html) AEM y Creative Cloud para obtener una descripción general de nivel superior del tema.
+>Antes de leer este documento, puede consultar las prácticas recomendadas [generales de integración de](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html) AEM y Creative Cloud para obtener una descripción general de nivel superior del tema.
 
 ## AEM desktop app architecture {#aem-desktop-app-architecture}
 
@@ -45,8 +45,8 @@ Las funciones clave de la aplicación de escritorio AEM incluyen:
 * Guardar cambios en archivos: Cualquier cambio que guarde en el archivo del recurso compartido de red se carga automáticamente en AEM y se crea una nueva versión.
 * Colocar recursos vinculados en otros documentos: En aplicaciones como Creative Cloud (PS, ID, AI, etc.), puede colocar un archivo externo como vínculo (por ejemplo, puede colocar una imagen en un documento de InDesign). En este caso, el montaje del recurso compartido de red permite examinar y seleccionar recursos de AEM para su colocación. La colocación de archivos vinculados también funciona en algunas aplicaciones que no son de Adobe, como MS Office.
 * Resolución de referencia en AEM: Si tanto los archivos colocados como el archivo principal con vínculos se almacenan en AEM, puede proporcionar automáticamente información del lado del servidor sobre las referencias de recursos.
-* Acceda al recurso desde el escritorio: En el recurso compartido de red montado, un menú contextual proporciona un cuadro de diálogo Más información (vista previa más grande, metadatos clave) y la capacidad de abrir un recurso en la interfaz de usuario de AEM.
-* Carga masiva de carpetas jerárquicas de gran tamaño: Si utiliza la opción Crear &gt; Carga de carpetas en la interfaz de usuario de AEM para cargar recursos, la aplicación de escritorio de AEM carga la jerarquía de carpetas seleccionada en AEM en segundo plano. El progreso de la carga se puede supervisar con una interfaz de usuario dedicada en la aplicación de escritorio.
+* Acceda al recurso desde el escritorio: En el recurso compartido de red montado, un menú contextual proporciona un cuadro de diálogo Más información (previsualización más grande, metadatos clave) y la capacidad de abrir un recurso en la interfaz de usuario de AEM.
+* Carga masiva de carpetas jerárquicas de gran tamaño: Si utiliza la opción Crear > Carga de carpetas en la interfaz de usuario de AEM para cargar recursos, la aplicación de escritorio de AEM carga la jerarquía de carpetas seleccionada en AEM en segundo plano. El progreso de la carga se puede supervisar con una interfaz de usuario dedicada en la aplicación de escritorio.
 
 ## Uso inapropiado de la aplicación de escritorio de AEM {#inappropriate-use-of-aem-desktop-app}
 
@@ -54,9 +54,9 @@ Las funciones clave de la aplicación de escritorio AEM incluyen:
    * Interfaz de usuario web de AEM Assets para la gestión de recursos digitales (búsqueda/uso compartido de recursos, metadatos, copiar/mover, etc.)
    * Carga de carpetas de la aplicación de escritorio de AEM para cargar carpetas jerárquicas y grandes
 
-* No trate la aplicación de escritorio de AEM como un cliente de "sincronización de escritorio" para AEM Assets. La ventaja clave de la aplicación de escritorio de AEM aquí es que proporciona acceso "virtual" a todo el repositorio, y las aplicaciones de sincronización de escritorio suelen sincronizar solo los recursos que pertenecen a un usuario. La aplicación de escritorio de AEM proporciona cierto nivel de almacenamiento en caché y carga en segundo plano; sin embargo, funciona de forma muy distinta a las aplicaciones de "sincronización" típicas, como la aplicación de escritorio Adobe Creative Cloud o Microsoft OneDrive.
+* No trate la aplicación de escritorio de AEM como un cliente de &quot;sincronización de escritorio&quot; para AEM Assets. La ventaja clave de la aplicación de escritorio de AEM aquí es que proporciona acceso &quot;virtual&quot; a todo el repositorio, y las aplicaciones de sincronización de escritorio suelen sincronizar solo los recursos que pertenecen a un usuario. La aplicación de escritorio de AEM proporciona cierto nivel de almacenamiento en caché y carga en segundo plano; sin embargo, funciona de forma muy distinta a las aplicaciones de &quot;sincronización&quot; típicas, como la aplicación de escritorio Adobe Creative Cloud o Microsoft OneDrive.
 * No utilice unidades de red de aplicaciones de escritorio de AEM para guardar recursos con frecuencia. Todas las operaciones de guardado se transmiten a Recursos AEM. Por lo tanto, no es práctico realizar operaciones de edición intensivas directamente en el repositorio de Recursos AEM montado. La edición de un recurso directamente en el repositorio montado bloquea la línea de tiempo del recurso con versiones irrelevantes e impone cargas adicionales en el servidor.
-* No utilice la aplicación de escritorio de AEM para migrar grandes cantidades de datos de una instancia de AEM a otra. Consulte la Guía [de](https://helpx.adobe.com/experience-manager/6-4/assets/using/assets-migration-guide.html) migración para planificar y ejecutar migraciones de recursos. Por el contrario, la aplicación de escritorio [admite la carga](use-app-v1.md#bulkupload) masiva de un gran número de recursos por primera vez en AEM.
+* No utilice la aplicación de escritorio de AEM para migrar grandes cantidades de datos de una instancia de AEM a otra. Consulte la Guía [de](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html) migración para planificar y ejecutar migraciones de recursos. Por el contrario, la aplicación de escritorio [admite la carga](use-app-v1.md#bulkupload) masiva de un gran número de recursos por primera vez en AEM.
 
 ## Recomendaciones para casos de uso seleccionados {#recommendations-for-selected-use-cases}
 
@@ -67,7 +67,7 @@ La aplicación de escritorio de AEM proporciona acceso virtual a todo el reposit
 * Utilice las funciones de colaboración de la interfaz de usuario web de Recursos AEM para proporcionar un acceso más directo a los recursos adecuados para el usuario creativo. Compartir carpetas o colecciones, proporcionar colecciones inteligentes (búsquedas guardadas) o enviar notificaciones con punteros a los recursos adecuados son algunos de ellos. Los usuarios creativos pueden utilizar las acciones de escritorio en la interfaz de usuario web para acceder rápidamente a estos recursos en su escritorio.
 * Considere los permisos adecuados para los recursos (control de acceso) para simplificar la vista en el repositorio DAM para los usuarios creativos, limitando básicamente su acceso a los recursos que necesitan o que están interesados en:
 
-   * Es posible que se denieguen determinadas áreas que no son relevantes para los usuarios creativos para sus grupos de usuarios, para eliminarlas de la vista, también en el escritorio
+   * Es posible que se denieguen determinadas áreas que no son relevantes para los usuarios creativos para sus grupos de usuarios, para eliminarlas de su vista, también en el escritorio
    * La mayoría de los recursos de DAM son definitivos y no están destinados a cambiarse; deben ser de solo lectura para los usuarios creativos
    * Solo los recursos que requieren cambios o retoques deben estar habilitados para escritura para los usuarios creativos. Algunas organizaciones utilizan proyectos AEM y las carpetas que crean para alojar recursos que siguen sujetos a cambios.
 
@@ -78,7 +78,7 @@ Para buscar un archivo que desea abrir en el escritorio:
 * Utilice la interfaz de usuario web de Recursos AEM para localizar el recurso. La búsqueda no solo es potente en Recursos AEM (facetas de búsqueda, búsquedas guardadas), sino que también proporciona funciones adicionales para encontrar el recurso correcto. Estos incluyen filtros adicionales, como la capacidad de buscar recursos en función del estado (aprobación, caducidad), colecciones, tareas, notificaciones y compartir carpetas/colecciones con otros usuarios/grupos.
 * Después de localizar el recurso, utilice las acciones de escritorio en la interfaz de usuario de AEM para acceder al recurso en el escritorio.
 
-### Actualización de recursos abiertos con la aplicación de escritorio de AEM {#updating-assets-opened-using-aem-desktop-app}
+### Actualización de recursos abiertos con la aplicación de escritorio AEM {#updating-assets-opened-using-aem-desktop-app}
 
 Si edita un recurso directamente en la ubicación asignada de Recursos AEM a un recurso compartido de red local, el recurso se carga en AEM cada vez que lo guarda en el escritorio. Además, AEM crea una versión y genera representaciones.
 
@@ -103,20 +103,20 @@ La buena experiencia de los usuarios que utilizan la aplicación de escritorio d
 
 ### Consideraciones de red {#network-considerations}
 
-Para conocer las prácticas recomendadas sobre la configuración de red de AEM Assets, consulte el documento Consideraciones [de red de Recursos](https://helpx.adobe.com/experience-manager/6-4/assets/using/assets-network-considerations.html) AEM. Algunos de los aspectos importantes que ayudan a optimizar la experiencia de los usuarios con las aplicaciones de escritorio de AEM son:
+Para conocer las prácticas recomendadas sobre la configuración de red de AEM Assets, consulte el documento de consideraciones [de red de](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/assets-migration-guide.html) AEM Assets. Algunos de los aspectos importantes que ayudan a optimizar la experiencia de los usuarios con las aplicaciones de escritorio de AEM son:
 
-* **** Usar Dispatcher configurado correctamente: Use AEM Dispatcher para obtener seguridad adicional y asegúrese de que está configurado para la conexión de la aplicación de escritorio de [AEM a AEM tras un distribuidor](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html#ConnectingtoAEMBehindaDispatcher)
+* **Usar Dispatcher configurado correctamente:** Use AEM Dispatcher para obtener seguridad adicional y asegúrese de que está configurado para la conexión de la aplicación de escritorio de [AEM a AEM tras un distribuidor](using.md)
 
-* **** Guardar ancho de banda: Considere desactivar la vista previa de iconos en Finder en Mac al explorar el repositorio montado con Finder. Finder solicita a cada archivo que genere una vista previa y hace que la aplicación de escritorio descargue y almacene en caché el recurso localmente. Tenga en cuenta que, al ahorrar ancho de banda, también disminuiría la experiencia del usuario en el escritorio, por lo que debería hacerse al trabajar con repositorios con recursos grandes y/o ancho de banda limitado.
+* **Guardar ancho de banda:** Considere desactivar la previsualización de iconos en Finder en Mac al explorar el repositorio montado con Finder. Finder solicita a cada archivo que genere una previsualización y hace que la aplicación de escritorio descargue y almacene en caché el recurso localmente. Tenga en cuenta que, al ahorrar ancho de banda, también disminuiría la experiencia del usuario en el escritorio, por lo que debería hacerse al trabajar con repositorios con recursos grandes y/o ancho de banda limitado.
 
 >[!NOTE]
 >
->Para desactivar las vistas previas de iconos, en el Buscador vaya a Ver, seleccione Ver opciones y, a continuación, desmarque la opción "Mostrar vista previa de iconos". Esto solo funciona para la carpeta actual; para que sea predeterminada, haga clic en el botón "Usar como predeterminado" en la misma ventana.
+>Para desactivar las previsualizaciones de iconos, en Finder vaya a Vista, seleccione Opciones de Vista y, a continuación, desmarque la opción &quot;Mostrar previsualización de iconos&quot;. Esto solo funciona para la carpeta actual; para que sea predeterminada, haga clic en el botón &quot;Usar como predeterminado&quot; en la misma ventana.
 
 ### Optimización del rendimiento del servidor {#optimizing-server-performance}
 
-Para saber cómo se debe optimizar el rendimiento del servidor de Recursos AEM, consulte la Guía [de ajuste del rendimiento de Recursos](https://helpx.adobe.com/in/experience-manager/6-4/assets/using/performance-tuning-guidelines.html)AEM. Algunos de los aspectos importantes del rendimiento del servidor para la aplicación de escritorio AEM están relacionados con la optimización de la configuración del flujo de trabajo para que funcione correctamente en las cargas de recursos:
+Para saber cómo se debe optimizar el rendimiento del servidor de Recursos AEM, consulte la Guía [de ajuste del rendimiento de Recursos](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html)AEM. Algunos de los aspectos importantes del rendimiento del servidor para la aplicación de escritorio AEM están relacionados con la optimización de la configuración del flujo de trabajo para que funcione correctamente en las cargas de recursos:
 
-* **** Carga de recursos de más rendimiento: Configure el modelo de flujo de trabajo de actualización de recursos de [AEM para que sea transitorio](https://helpx.adobe.com/experience-manager/6-4/assets/using/performance-tuning-guidelines.html#Workflows).
+* **Carga de recursos de más rendimiento:** Configure el modelo de flujo de trabajo de actualización de recursos de [AEM para que sea transitorio](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html#Workflows).
 
-* **** Limitar la CPU del servidor para cargas: Asegúrese de que el parámetro de trabajo de flujo de trabajo paralelo máximo esté configurado correctamente, de modo que las cargas no agoten toda la CPU.
+* **Limitar la CPU del servidor para cargas:** Asegúrese de que el parámetro de trabajo de flujo de trabajo paralelo máximo esté configurado correctamente, de modo que las cargas no agoten toda la CPU.
