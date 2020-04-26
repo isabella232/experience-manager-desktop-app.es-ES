@@ -9,12 +9,12 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f1ea381cc88b5382288b2479d26e976dc7289b88
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
 
-# Notas de la versión de la aplicación de escritorio de AEM v1.x{#aem-desktop-app-release-notes}
+# Notas de la versión de la aplicación de escritorio de AEM v1.x {#aem-desktop-app-release-notes}
 
 Para la versión v1.x de la aplicación de escritorio, los vínculos de descarga y la información de compatibilidad de AEM son los siguientes.
 
@@ -120,7 +120,7 @@ Cargas masivas: Al cargar jerarquías de carpetas grandes mediante Crear > Carga
 **Recuperación previa de recursos**vinculados Para mejorar la experiencia del usuario al trabajar con documentos de InDesign que incluyen recursos vinculados almacenados en AEM, la aplicación de escritorio intentará recuperar previamente estos archivos vinculados en la caché local antes de que se descargue y abra el documento de InDesign. De este modo, el usuario tendrá los archivos vinculados disponibles localmente y no tendrá que esperar más cuando acceda a ellos en InDesign (en el panel Vínculos).
 Tenga en cuenta que la recuperación previa solo funciona si AEM reconoce los vínculos en el servidor. Un recurso con vínculos reconocidos tendrá una lista de &quot;Referencias&quot; en la vista Propiedades del recurso de InDesign.
 
-### Mejoras disponibles desde la aplicación de escritorio AEM 1.8.x{#enhancements-available-since-aem-desktop-app-18x}
+### Mejoras disponibles desde la aplicación de escritorio AEM 1.8.x {#enhancements-available-since-aem-desktop-app-18x}
 
 La aplicación de escritorio AEM 1.8.1 versión de seguimiento rápido ha añadido mejoras al abrir varios archivos a la vez desde la interfaz de usuario de AEM a la versión 1.8 (CQ-4237747, CQ-4238780). Las mejoras en la aplicación de escritorio AEM 1.8 son:
 
@@ -134,11 +134,11 @@ La aplicación de escritorio AEM 1.8.1 versión de seguimiento rápido ha añadi
    * cuando caduca una sesión de AEM, ahora se notifica al usuario y puede hacer clic en la notificación para volver a iniciar sesión (CQ-4202028)
    * (Mac) Añada la compatibilidad con la conexión a AEM mediante la configuración proxy .pac (CQ-4233430)
    * (Win) corrige problemas con el cuadro de diálogo Avanzadas: URL de inicio de sesión (CQ-4236061)
-* Correcciones de errores:
+* Corrección de errores:
    * Cuadro de diálogo Más información de recursos: a veces la barra de acciones no estaba visible (CQ-4208540)
    * (Win) Ahora, el archivo se puede sincronizar después de revertir a una versión anterior desde la interfaz de usuario de AEM Assets (CQ-4216411)
 
-### Mejoras disponibles desde la aplicación de escritorio AEM 1.7{#Enhancements-Available-Since-AEM-Desktop-App-17}
+### Mejoras disponibles desde la aplicación de escritorio AEM 1.7 {#Enhancements-Available-Since-AEM-Desktop-App-17}
 
 * Estabilidad:
    * Se ha mejorado la estabilidad cuando la aplicación de escritorio de AEM se conecta a un servidor AEM sobrecargado (CQ-4224803)
@@ -158,7 +158,7 @@ La aplicación de escritorio AEM 1.8.1 versión de seguimiento rápido ha añadi
 >
 >Los problemas encontrados en las cargas beta 1.7 de la aplicación de escritorio de AEM (que no estaban presentes en la versión 1.6 no se incluyen en las notas de la versión).
 
-### Mejoras disponibles desde la aplicación de escritorio AEM 1.6{#Enhancements-Available-Since-AEM-Desktop-App-16}
+### Mejoras disponibles desde la aplicación de escritorio AEM 1.6 {#Enhancements-Available-Since-AEM-Desktop-App-16}
 
 * Documentación: Nuevas [prácticas recomendadas para la documentación de la aplicación](https://helpx.adobe.com/experience-manager/6-3/assets/using/aem-desktop-app-best-practices.html) v1.x.
 * Se ha mejorado el proceso de inicio de sesión en AEM:
@@ -182,7 +182,7 @@ La aplicación de escritorio AEM 1.8.1 versión de seguimiento rápido ha añadi
    * Uso elevado de CPU (CQ-4218070).
    * Error al arrastrar y soltar archivos al cargar en AEM (CQ-4217006).
 
-### Mejoras disponibles desde la aplicación de escritorio AEM 1.5{#Enhancements-Available-Since-AEM-Desktop-App-15}
+### Mejoras disponibles desde la aplicación de escritorio AEM 1.5 {#Enhancements-Available-Since-AEM-Desktop-App-15}
 
 **Versión 1.5.1.5 para Mac OS X:** La versión 1.5.1.5 ofrece las siguientes ventajas:
 
@@ -223,7 +223,7 @@ Se esperan ambos casos y son efectos secundarios de la arquitectura de &quot;sin
    * Varias mejoras en la estabilidad (CQ-4207539, CQ-4200378)
    * Mejor gestión de la URL de AEM Assets en Preferencias (CQ-97388)
 
-### Mejoras disponibles desde la aplicación de escritorio AEM 1.4{#Enhancements-Available-Since-AEM-Desktop-App-14}
+### Mejoras disponibles desde la aplicación de escritorio AEM 1.4 {#Enhancements-Available-Since-AEM-Desktop-App-14}
 
 * Carga simplificada de carpetas jerárquicas mediante la nueva acción Crear > Cargar carpeta en la IU táctil
    * La acción inicia una operación de carga de carpetas realizada por la aplicación de escritorio
@@ -235,7 +235,7 @@ Se esperan ambos casos y son efectos secundarios de la arquitectura de &quot;sin
 * Compatibilidad mejorada con las últimas versiones del sistema operativo
 * Correcciones informadas por el cliente
 
-### Mejoras disponibles desde la aplicación de escritorio AEM 1.3{#Enhancements-Available-Since-AEM-Desktop-App-13}
+### Mejoras disponibles desde la aplicación de escritorio AEM 1.3 {#Enhancements-Available-Since-AEM-Desktop-App-13}
 
 * Mayor eficiencia. Los usuarios invierten menos tiempo esperando a que se completen las operaciones de red.
 * Se mejoró la integración de Finder, que proporciona más estabilidad y acceso a funciones como, por ejemplo, miniaturas.
