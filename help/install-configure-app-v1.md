@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
@@ -50,11 +50,11 @@ Si el proxy requiere autenticación, el equipo de TI puede incluir la URL de AEM
 
 Al cambiar un archivo desde una ubicación de recurso compartido de red montada por la aplicación de escritorio, los archivos se guardan en esa ubicación en dos fases. En la primera fase, un archivo se guarda localmente. Un usuario puede guardar el archivo y seguir trabajando en él sin esperar a que se complete la transferencia.
 
-En la segunda fase, la aplicación de escritorio carga el archivo actualizado en el servidor AEM tras un retraso predefinido (por ejemplo, 30 segundos). Esta operación se produce en segundo plano. Utilice la opción Ver estado del recurso para ver el estado de la operación de carga.
+En la segunda fase, la aplicación de escritorio carga el archivo actualizado en el servidor AEM tras un retraso predefinido (por ejemplo, 30 segundos). Esta operación se produce en segundo plano. Utilice la opción Estado del recurso de Vista para vista del estado de la operación de carga.
 
 1. Cargue un recurso en Recursos AEM.
 1. Toque o haga clic en el icono de la aplicación de escritorio de AEM en la barra de herramientas.
-1. En el menú, seleccione la opción Ver estado del recurso.
+1. En el menú, seleccione la opción Estado del recurso de Vista.
 1. En el cuadro de diálogo, revise el estado de la operación de carga.
 
 >[!NOTE]
@@ -90,7 +90,7 @@ En Mac OS X, hay un directorio similar en `~/Library/Group Containers/group.com.
 
 ### Opción en la aplicación para administrar la caché {#in-app-option-to-manage-cache}
 
-Puede controlar la cantidad de espacio en disco disponible para su almacenamiento en caché local. Los artefactos del servidor de AEM Assets se almacenan en caché localmente para una experiencia más fluida. Puede cambiar los valores predeterminados para adaptarlos a sus necesidades. Además, puede borrar la caché para recuperar todos los recursos de nuevo. Para establecer las opciones deseadas, haga clic en el icono de la aplicación y haga clic en **[!UICONTROL Advanced]**>**[!UICONTROL Manage Cache]**. ****
+Puede controlar la cantidad de espacio en disco disponible para su almacenamiento en caché local. Los artefactos del servidor de AEM Assets se almacenan en caché localmente para una experiencia más fluida. Puede cambiar los valores predeterminados para adaptarlos a sus necesidades. Además, puede borrar la caché para recuperar todos los recursos de nuevo. Para establecer las opciones deseadas, haga clic en el icono de la aplicación y haga clic en **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**. ****
 
 >[!NOTE]
 >
@@ -120,9 +120,9 @@ Para dirigir la aplicación a una carpeta o unidad diferente, edite el archivo d
 
 ## Recursos adicionales {#additional-resources}
 
-* [Introducción a la aplicación de escritorio de AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
+* [Introducción a la aplicación de escritorio de AEM](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
 * [Uso de la aplicación de escritorio de AEM](use-app-v1.md)
 
-* [Obtenga información sobre la llegada y la salida con la aplicación de escritorio de AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
-* [Uso de la aplicación de escritorio con AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
+* [Obtenga información sobre la llegada y la salida con la aplicación de escritorio de AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+* [Uso de la aplicación de escritorio con AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 * [Solución de problemas de la aplicación de escritorio AEM](troubleshoot-app-v1.md)
