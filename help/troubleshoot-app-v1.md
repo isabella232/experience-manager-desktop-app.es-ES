@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ab63bfd7eea356be924e1ed62eef387796913e6c
+source-git-commit: a18aa9c3dad8802c3de929ba4ebb1a1583b47165
 
 ---
 
@@ -30,13 +30,13 @@ la aplicación de escritorio incluye los siguientes componentes:
 
 * **La aplicación** de escritorio: La aplicación monta o desmonta DAM como un sistema de archivos remoto y traduce las llamadas del sistema de archivos entre el recurso compartido de red montado localmente y la instancia remota de AEM a la que se conecta.
 * **Sistema operativo cliente** WebDAV/SMB: Gestiona la comunicación entre el Explorador/Finder de Windows y la aplicación de escritorio. Si se recupera, crea, modifica, elimina, mueve o copia un archivo, el cliente WebDAV/SMB del sistema operativo (SO) comunica esta operación a la aplicación de escritorio. Tras recibir la comunicación, la aplicación de escritorio la convierte en llamadas de API remotas nativas de AEM. Por ejemplo, si un usuario crea un archivo en el directorio montado, el cliente WebDAV/SMB inicia una solicitud, que la aplicación de escritorio convierte en una solicitud HTTP que crea el archivo en DAM. El cliente WebDAV/SMB es un componente integrado del sistema operativo. No está afiliado de ninguna manera con la aplicación de escritorio, AEM ni Adobe.
-* **Instancia** de Adobe Experience Manager: Proporciona acceso a los recursos almacenados en el repositorio DAM de AEM Assets. Además, realiza las acciones solicitadas por la aplicación de escritorio en nombre de las aplicaciones de escritorio locales que interactúan con el recurso compartido de red montado. La instancia de AEM de destino debe ejecutar AEM versión 6.1 o superior. Las instancias de AEM que ejecutan versiones anteriores de AEM podrían necesitar paquetes de funciones y correcciones rápidas adicionales instalados para poder funcionar completamente.
+* **Instancia** de Adobe Experience Manager: Proporciona acceso a los recursos almacenados en el repositorio DAM de AEM Assets. Además, realiza las acciones solicitadas por la aplicación de escritorio en nombre de las aplicaciones de escritorio locales que interactúan con el recurso compartido de red montado. La instancia de AEM de destinatario debe ejecutar AEM versión 6.1 o posterior. Las instancias de AEM que ejecutan versiones anteriores de AEM podrían necesitar paquetes de funciones y correcciones rápidas adicionales instalados para poder funcionar completamente.
 
 ## Casos de uso previstos para la aplicación de escritorio de AEM {#intended-use-cases-for-aem-desktop-app}
 
 La aplicación de escritorio de AEM utiliza la tecnología de uso compartido de la red para asignar un repositorio de AEM remoto a un escritorio local. Sin embargo, no se pretende sustituir a un recurso compartido de red que tenga activos, donde los usuarios realizan operaciones de gestión de activos digitales directamente desde su escritorio local. Estos incluyen mover o copiar varios archivos, o arrastrar estructuras de carpetas grandes al recurso compartido de red Recursos AEM directamente en Finder/Explorer.
 
-La aplicación de escritorio de AEM proporciona una forma cómoda de acceder (abrir) y editar (guardar) recursos DAM entre la interfaz de usuario táctil de AEM Assets y el escritorio local. Vincula los recursos del servidor de AEM Assets con los flujos de trabajo basados en escritorio.
+La aplicación de escritorio de AEM proporciona una forma cómoda de acceder (abrir) y editar (guardar) recursos DAM entre la interfaz de usuario táctil de AEM Assets y el escritorio local. Vincula los recursos del servidor de AEM Assets con los flujos de trabajo de escritorio.
 
 El siguiente ejemplo de caso de uso ilustra cómo se debe utilizar AEM Desktop:
 
@@ -44,13 +44,13 @@ El siguiente ejemplo de caso de uso ilustra cómo se debe utilizar AEM Desktop:
 * Con las funciones de acción de escritorio de la interfaz de usuario web de AEM, el usuario abre, muestra o edita el recurso en el escritorio según sea necesario.
 * AEM Desktop abre el recurso en el editor predeterminado para el tipo de archivo del recurso.
 * El usuario realiza los cambios deseados en el recurso.
-* Una vez modificado un archivo, el usuario puede ver el estado de sincronización del archivo mediante la ventana de estado de sincronización en segundo plano de AEM Desktop.
+* Una vez modificado un archivo, el usuario puede realizar la vista del estado de sincronización del archivo mediante la ventana de estado de sincronización en segundo plano de AEM Desktop.
 * Con el menú contextual de AEM Desktop, el usuario inicia o cierra la compra del recurso o regresa a la interfaz de usuario de DAM.
 * Tras completar los cambios realizados en el archivo, el usuario vuelve a la interfaz de usuario web de AEM
 
 Este no es el único caso de uso. Sin embargo, ilustra cómo AEM Desktop es un mecanismo práctico para acceder a los recursos y editarlos localmente. Se le recomienda utilizar la interfaz de usuario web DAM tanto como sea posible, ya que proporciona una mejor experiencia. Proporciona a Adobe más flexibilidad para cumplir con los requisitos del cliente.
 
-## Restricciones {#limitations}
+## Restricciones          {#limitations}
 
 El recurso compartido de red WebDAV/SMB1 proporciona la comodidad de trabajar con archivos en una ventana del Explorador/Finder. Sin embargo, Explorer/Finder y AEM se comunican a través de una conexión de red con ciertas limitaciones. Por ejemplo, el tiempo que se tarda en copiar un archivo de 1 GB en el directorio WebDAV/SMB montado es aproximadamente el mismo que el tiempo necesario para cargar un archivo de 1 GB en un sitio Web mediante un explorador Web. De hecho, en el primer caso, la duración puede ser mayor debido a las ineficiencias del protocolo WebDAV/SMB y de los clientes WebDAV/SMB del sistema operativo (particularmente Mac OS X).
 
@@ -61,13 +61,13 @@ Adobe recomienda realizar algunas pruebas de casos de uso antes de confirmar a u
 AEM Desktop no es adecuado para realizar una manipulación intensiva del sistema de archivos, que incluye, entre otras cosas:
 
 * Mover o copiar archivos y directorios
-* Adición de muchos recursos a AEM
+* Añadir muchos recursos a AEM
 * Búsqueda y apertura de archivos a través del sistema de archivos, excepto para explorar carpetas
 * Compresión o descompresión de archivos
 
 Debido a las limitaciones del sistema operativo, Windows tiene una limitación de tamaño de archivo de 4.294.967.295 bytes (aproximadamente 4,29 GB). Se debe a una configuración del Registro que define el tamaño que puede tener un archivo en un recurso compartido de red. El valor de la configuración del Registro es un DWORD con un tamaño máximo igual al número al que se hace referencia.
 
-La aplicación de escritorio de Experience Manager no tiene un valor de tiempo de espera configurable que desconecte la conexión entre el servidor de Experience Manager y la aplicación de escritorio después de un intervalo de tiempo fijo. Cuando se cargan recursos de gran tamaño, si la conexión se agota después de un tiempo, la aplicación vuelve a intentar cargar el recurso varias veces aumentando el tiempo de espera de carga. No se recomienda cambiar la configuración de tiempo de espera predeterminada.
+La aplicación de escritorio de Experience Manager no tiene un valor de tiempo de espera configurable que desconecte la conexión entre el servidor de Experience Manager y la aplicación de escritorio después de un intervalo de tiempo fijo. Cuando se cargan recursos de gran tamaño, si la conexión se agota después de un tiempo, la aplicación tiene el reintentos de cargar el recurso varias veces aumentando el tiempo de espera de carga. No se recomienda cambiar la configuración de tiempo de espera predeterminada.
 
 ## Almacenamiento en caché y comunicación con AEM {#caching-and-communication-with-aem}
 
@@ -75,12 +75,16 @@ La aplicación de escritorio AEM ofrece funciones de almacenamiento en caché in
 
 A diferencia de Creative Cloud Desktop u otras soluciones de sincronización de archivos, como Microsoft One Drive, la aplicación de escritorio AEM no es un cliente de sincronización de escritorio completo. Esto se debe a que proporciona acceso a todo el repositorio de Recursos AEM, que puede ser extremadamente grande (cientos de gigabytes o terabytes) para una sincronización completa.
 
-El almacenamiento en caché permite limitar la sobrecarga de red/almacenamiento a un subconjunto de recursos relevantes para el usuario.
+El almacenamiento en caché permite limitar la sobrecarga de red/almacenamiento a sólo un subconjunto de recursos relevantes para el usuario.
+
+>[!CAUTION]
+>
+>Adobe recomienda desactivar la generación de miniaturas para acelerar la navegación. Si activa las previsualizaciones de iconos, la aplicación almacenará en caché los recursos digitales al navegar por la carpeta montada. La aplicación también descarga recursos que al usuario no le importan, lo que agrega carga al servidor, consume el ancho de banda del usuario y utiliza más espacio en disco del usuario.
 
 A continuación se muestra cómo la aplicación de escritorio AEM realiza el almacenamiento en caché:
 
-* Al abrir una carpeta en Finder y mostrar miniaturas o vistas previas de archivos, o al abrir un archivo en una aplicación, la aplicación de escritorio almacena en caché el archivo binario.
-* Cuando almacena archivos mediante Finder u otras aplicaciones de escritorio, el archivo se almacena primero localmente (en caché) y se notifica al sistema operativo. A continuación, el archivo se pone en cola para su carga en el servidor en segundo plano y, finalmente, se carga a través de la red. En caso de error de red, la aplicación de escritorio vuelve a intentar cargar todo el archivo durante un máximo de tres veces. Si el archivo no se puede cargar después de tres reintentos, se marca como un archivo en conflicto y el estado se muestra mediante la ventana Estado de la cola de carga en segundo plano. la aplicación de escritorio ya no intenta actualizar el archivo. El usuario debe actualizar el archivo y volver a cargarlo una vez restaurada la conectividad
+* Al abrir una carpeta en Finder y mostrar miniaturas/previsualizaciones de archivos, o al abrir un archivo en una aplicación, la aplicación de escritorio almacena en caché el archivo binario.
+* Cuando almacena archivos mediante Finder u otras aplicaciones de escritorio, el archivo se almacena primero localmente (en caché) y se notifica al sistema operativo. A continuación, el archivo se pone en cola para su carga en el servidor en segundo plano y, finalmente, se carga a través de la red. En caso de error de red, la aplicación de escritorio reintentos la carga de todo el archivo durante un máximo de tres veces. Si el archivo no se carga después de tres reintentos, se marca como un archivo en conflicto y el estado se muestra mediante la ventana Estado de la cola de carga en segundo plano. la aplicación de escritorio ya no intenta actualizar el archivo. El usuario debe actualizar el archivo y volver a cargarlo una vez restaurada la conectividad
 
 Todas las operaciones no se almacenan en caché localmente. Los siguientes mensajes se transmiten al servidor AEM inmediatamente sin almacenamiento en caché local:
 
@@ -109,15 +113,15 @@ Cuando interactúa con un archivo localmente, AEM Desktop comprueba si hay una v
 
 Cuando se modifica el mismo archivo tanto localmente como en AEM, la versión modificada localmente sobrescribe la versión en AEM. En este caso, la versión anterior está disponible en la línea de tiempo del recurso. Puede verificar ambas versiones y resolver cualquier conflicto.
 
-Si un archivo local no es coherente con la versión disponible en el servidor, el cuadro de diálogo de estado de carga en segundo plano le notifica sobre el conflicto. Para resolver el problema, abra el archivo en conflicto y guárdelo. Al guardar el archivo, AEM Desktop se ve obligado a sincronizar los últimos cambios locales con AEM. Puede ver versiones anteriores del recurso en la línea de tiempo y resolver cualquier conflicto.
+Si un archivo local no es coherente con la versión disponible en el servidor, el cuadro de diálogo de estado de carga en segundo plano le notifica sobre el conflicto. Para resolver el problema, abra el archivo en conflicto y guárdelo. Al guardar el archivo, AEM Desktop se ve obligado a sincronizar los últimos cambios locales con AEM. Puede realizar la vista de versiones anteriores del recurso en la línea de tiempo y resolver cualquier conflicto.
 
 Debe tener en cuenta factores adicionales cuando varios usuarios intenten trabajar en directorios montados separados que tengan como objetivo la misma instancia de AEM. En particular, son importantes los siguientes factores:
 
 * Cantidad de ancho de banda disponible en la red de origen de los usuarios
 * Configuración de red, como servidores de seguridad o proxies, de la red de origen
-* Cantidad de ancho de banda disponible en la red de la instancia de AEM de destino
-* Indica si un distribuidor está presente antes de la instancia de AEM de destino
-* Carga actual en la instancia de AEM de destino
+* Cantidad de ancho de banda disponible en la red de la instancia de AEM de destinatario
+* Si hay un despachante antes de la instancia de AEM de destinatario
+* Carga actual en la instancia de AEM de destinatario
 
 ## Configuraciones adicionales de AEM {#additional-aem-configurations}
 
@@ -125,11 +129,11 @@ Si el rendimiento de WebDAV/SMB se degrada drásticamente cuando varios usuarios
 
 ## Actualizar flujos de trabajo transitorios de recursos {#update-asset-transient-workflows}
 
-Puede mejorar el rendimiento en AEM habilitando flujos de trabajo transitorios para el flujo de trabajo de recursos de actualización de DAM. La activación de flujos de trabajo transitorios reduce la potencia de procesamiento necesaria para actualizar recursos cuando se crean o modifican en AEM.
+Puede mejorar el rendimiento en AEM habilitando flujos de trabajo transitorios para el flujo de trabajo de recursos de actualización de DAM. La activación de flujos de trabajo transitorios reduce la potencia de procesamiento necesaria para actualizar los recursos al crearlos o modificarlos en AEM.
 
 1. Vaya a `/miscadmin` la instancia de AEM que se va a configurar (por ejemplo, `http://[Server]:[Port]/miscadmin`).
-1. En el árbol de navegación, expanda **Herramientas** > **Flujo de trabajo** > **Modelos** > **presa**.
-1. Haga doble clic en **DAM Update Asset**.
+1. En el árbol de navegación, expanda **Herramientas** > **Flujo de trabajo** > **Modelos** > **Dam**.
+1. Haga clic con el botón Doble **en Actualizar recurso** DAM.
 1. En el panel de herramientas flotantes, cambie a la ficha **Página** y, a continuación, haga clic en Propiedades **de página**.
 1. Seleccione la casilla de verificación Flujo de trabajo **** transitorio y haga clic en **Aceptar**.
 
@@ -143,7 +147,7 @@ Otro método para mejorar el rendimiento de AEM es configurar el valor de los tr
 
 ## Configuración de AWS {#aws-configuration}
 
-Debido a las limitaciones de ancho de banda de la red, el rendimiento de WebDAV/SMB puede degradarse cuando varios usuarios trabajan simultáneamente. Adobe recomienda aumentar el tamaño de la instancia de AWS para una instancia de AEM de destino que se ejecute en AWS para mejorar el rendimiento de WebDAV/SMB.
+Debido a las limitaciones de ancho de banda de la red, el rendimiento de WebDAV/SMB puede degradarse cuando varios usuarios trabajan simultáneamente. Adobe recomienda aumentar el tamaño de la instancia de AWS para una instancia de AEM de destinatario que se ejecute en AWS para mejorar el rendimiento de WebDAV/SMB.
 
 Esta medida aumenta específicamente la cantidad de ancho de banda de red disponible para el servidor. Aquí algunos detalles:
 
@@ -157,7 +161,7 @@ Existen algunas limitaciones conocidas en la manera de interactuar con los archi
 
 ### General {#general}
 
-Al escribir en un archivo extraído, el bloqueo solo se aplica en la implementación de AEM WebDAV. En consecuencia, el bloqueo solo lo aplican los clientes que utilizan WebDAV, como la aplicación de escritorio. El bloqueo no se aplica a través de la interfaz web de AEM. La interfaz de AEM solo muestra un icono de candado en la vista de tarjeta para los recursos extraídos. El icono es estético y no afecta al comportamiento de AEM.
+Al escribir en un archivo extraído, el bloqueo solo se aplica en la implementación de AEM WebDAV. En consecuencia, el bloqueo solo lo aplican los clientes que utilizan WebDAV, como la aplicación de escritorio. El bloqueo no se aplica a través de la interfaz web de AEM. La interfaz de AEM solo muestra un icono de candado en la vista de tarjetas para los recursos extraídos. El icono es estético y no afecta al comportamiento de AEM.
 
 En general, los clientes de WebDAV no siempre se comportan de la manera esperada. Puede haber problemas adicionales. Sin embargo, actualizar o comprobar el recurso en AEM es una buena forma de comprobar que no se está modificando un recurso. Este comportamiento es típico de los clientes WebDAV de OS, que no están bajo el control de Adobe.
 
@@ -212,9 +216,9 @@ La manera más sencilla de solucionar esta situación es abrir el archivo en con
 
 ## Borrado de la caché de AEM Desktop {#clearing-aem-desktop-cache}
 
-La eliminación de la caché de AEM Desktop es una tarea preliminar de solución de problemas que puede resolver varios problemas de AEM Desktop.
+La eliminación de la memoria caché de AEM Desktop es una tarea de solución de problemas preliminar que puede resolver varios problemas de AEM Desktop.
 
-Puede borrar la caché eliminando el directorio de caché de la aplicación en las siguientes ubicaciones:Windows: %LocalAppData%\Adobe\AssetsCompanion\Cache\
+Puede borrar la caché eliminando el directorio de caché de la aplicación en las siguientes ubicaciones: Windows: %LocalAppData%\Adobe\AssetsCompanion\Cache\
 
 Mac: ~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/
 
@@ -271,10 +275,10 @@ El motivo más común de los problemas con la conexión de AEM Desktop a la inst
 
 1. Abra un navegador web.
 1. En la barra de direcciones, especifique la dirección URL `/content/dam.json`.
-1. Reemplace la URL con la instancia de AEM de destino, por ejemplo `http://localhost:4502/content/dam.json`.
+1. Reemplace la URL con la instancia de destinatario AEM, por ejemplo `http://localhost:4502/content/dam.json`.
 1. Inicie sesión en AEM.
 1. Después de iniciar sesión, compruebe la dirección actual del explorador en la barra de direcciones. Debe coincidir con la dirección URL que introdujo inicialmente.
-1. Compruebe que todo lo anterior `/content/dam.json` coincide con el valor de AEM de destino configurado en AEM Desktop.
+1. Compruebe que todo lo anterior `/content/dam.json` coincide con el valor AEM de destinatario configurado en AEM Desktop.
 
 ### Problema de configuración de SSL {#ssl-configuration-issue}
 
