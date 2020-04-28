@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb71cfdfef674be25d059f104a37a9199681358c
+source-git-commit: 68cc5ee80aa12c08b48098ad666ca694b843405a
 
 ---
 
@@ -38,14 +38,6 @@ Para obtener más información, consulte [Instalación y conexión de la aplicac
 >
 >Solo se puede instalar y activar una instancia de la aplicación de escritorio de AEM a la vez.
 
-## Compatibilidad con proxy {#proxy-support}
-
-La aplicación de escritorio de AEM utiliza el proxy predefinido del sistema para conectarse a Internet a través de HTTPS. La aplicación solo se puede conectar mediante un proxy de red que no requiera autenticación adicional.
-
-Si configura o modifica la configuración del servidor proxy para Windows (Opciones de Internet > Configuración de LAN), reinicie la aplicación de escritorio de AEM para que los cambios surtan efecto.
-
-Si el proxy requiere autenticación, el equipo de TI puede incluir la URL de AEM Assets en la lista de direcciones permitidas en la configuración del servidor proxy para permitir el paso del tráfico de la aplicación.
-
 ## Gestión de archivos {#file-handling}
 
 Al cambiar un archivo desde una ubicación de recurso compartido de red montada por la aplicación de escritorio, los archivos se guardan en esa ubicación en dos fases. En la primera fase, un archivo se guarda localmente. Un usuario puede guardar el archivo y seguir trabajando en él sin esperar a que se complete la transferencia.
@@ -72,6 +64,18 @@ Los métodos de copiar y mover de la API de recursos requieren que los siguiente
 AEM Desktop se conecta a AEM mediante una URL que incluye el puerto predeterminado. Por lo tanto, la `virtualhosts` configuración de la configuración del despachante debe incluir el número de puerto predeterminado. Para obtener más información sobre `virtualhosts` la configuración, consulte [Identificación de hosts](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)virtuales.
 
 Para obtener información adicional sobre cómo configurar el despachante para que pase por estos encabezados adicionales, consulte [Especificación de encabezados](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)HTTP.
+
+### Compatibilidad con proxy {#proxy-support}
+
+La aplicación de escritorio de AEM utiliza el proxy predefinido del sistema para conectarse a Internet a través de HTTPS. La aplicación solo se puede conectar mediante un proxy de red que no requiera autenticación adicional.
+
+Si configura o modifica la configuración del servidor proxy para Windows (Opciones de Internet > Configuración de LAN), reinicie la aplicación de escritorio de AEM para que los cambios surtan efecto.
+
+>[!NOTE]
+>
+>La configuración de proxy solo se aplica cuando se inicio la aplicación de escritorio. Cierre y vuelva a iniciar la aplicación para que se apliquen los cambios.
+
+Si el proxy requiere autenticación, el equipo de TI puede incluir la URL de AEM Assets en la lista de direcciones permitidas en la configuración del servidor proxy para permitir el paso del tráfico de la aplicación.
 
 ## Personalización del cuadro de diálogo Información del recurso {#customize-the-asset-info-dialog}
 
