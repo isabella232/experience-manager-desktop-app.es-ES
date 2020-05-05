@@ -10,7 +10,7 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: aca68b0c2eb363e33c8a6edec2370758124a4b9e
+source-git-commit: 63cb82b6bdafeb87d296a895d68cb3912045839a
 
 ---
 
@@ -75,7 +75,7 @@ Las correcciones y actualizaciones de errores son:
 * Se ha corregido un problema con las cargas de recursos cuando los nombres de archivo o las rutas contienen determinados caracteres GB18030. <!-- CQ-4283494 -->
 * La opción Ordenar por relevancia está disponible después de cambiar a otro tipo de ordenación en los resultados de búsqueda. <!-- CQ-4286874 -->
 * La aplicación de escritorio ahora lista subcarpetas sin necesidad de actualizarlas explícitamente. <!-- CQ-4285711 -->
-* (Windows) Se ha corregido un problema poco frecuente de la interfaz de la aplicación no utilizable en algunos equipos Windows. Los usuarios no pueden hacer clic en la interfaz de la aplicación, ya que parece distorsionada con el área de clic de los elementos de la interfaz que se &#39;desplazan&#39; hacia un lado. <!-- CQ-4280785 -->
+* (Windows) Se ha corregido un problema poco frecuente de la interfaz de la aplicación no utilizable en algunos equipos Windows. Los usuarios no pueden hacer clic en la interfaz de la aplicación, ya que parece distorsionada con el área de clic de los elementos de la interfaz &#39;cambiados&#39; en el lateral. <!-- CQ-4280785 -->
 
 **Actualizaciones en la aplicación v2.0.1**
 
