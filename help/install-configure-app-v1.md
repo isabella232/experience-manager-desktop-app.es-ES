@@ -1,6 +1,6 @@
 ---
 title: Instalación y configuración de la versión 1.x de la aplicación de escritorio de AEM
-description: Instale y configure la versión 1.x de la aplicación de escritorio de AEM para que funcione con los servidores de AEM Assets y asigne los recursos que desea montar como unidad en el escritorio.
+description: Instale y configure la versión 1.x de la aplicación de escritorio de AEM para que funcione con los servidores AEM Assets y asigne los recursos que desea montar como unidad en el escritorio.
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -9,7 +9,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 68cc5ee80aa12c08b48098ad666ca694b843405a
+source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+workflow-type: tm+mt
+source-wordcount: '992'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 68cc5ee80aa12c08b48098ad666ca694b843405a
 
 Con la aplicación de escritorio de AEM, los recursos de AEM son fácilmente accesibles en el escritorio local y se pueden usar en cualquier aplicación de escritorio. Los recursos se pueden mostrar fácilmente en Mac Finder o en el Explorador de Windows, abrirse en aplicaciones de escritorio y cambiarse localmente; los cambios se guardan de nuevo en AEM cuando se carga y se crea una nueva versión en el repositorio.
 
-Esta integración permite que varios roles de la organización gestionen los recursos de forma centralizada en Recursos AEM y accedan a ellos en Creative Cloud y otras aplicaciones, al tiempo que facilita el cumplimiento de los distintos estándares, incluida la marca.
+Esta integración permite que varios roles de la organización gestionen los recursos de forma centralizada en AEM Assets y accedan a ellos en Creative Cloud y otras aplicaciones, al tiempo que facilita el cumplimiento de los distintos estándares, incluida la marca.
 
 Para utilizar la aplicación de escritorio de AEM,
 
@@ -44,7 +47,7 @@ Al cambiar un archivo desde una ubicación de recurso compartido de red montada 
 
 En la segunda fase, la aplicación de escritorio carga el archivo actualizado en el servidor AEM tras un retraso predefinido (por ejemplo, 30 segundos). Esta operación se produce en segundo plano. Utilice la opción Estado del recurso de Vista para vista del estado de la operación de carga.
 
-1. Cargue un recurso en Recursos AEM.
+1. Cargue un recurso a AEM Assets.
 1. Toque o haga clic en el icono de la aplicación de escritorio de AEM en la barra de herramientas.
 1. En el menú, seleccione la opción Estado del recurso de Vista.
 1. En el cuadro de diálogo, revise el estado de la operación de carga.
@@ -75,7 +78,7 @@ Si configura o modifica la configuración del servidor proxy para Windows (Opcio
 >
 >La configuración de proxy solo se aplica cuando se inicio la aplicación de escritorio. Cierre y vuelva a iniciar la aplicación para que se apliquen los cambios.
 
-Si el proxy requiere autenticación, el equipo de TI puede incluir la URL de AEM Assets en la lista de direcciones permitidas en la configuración del servidor proxy para permitir el paso del tráfico de la aplicación.
+Si el proxy requiere autenticación, el equipo de TI puede permitir que la URL de recursos de Experience Manager en la configuración del servidor proxy permita el paso del tráfico de la aplicación.
 
 ## Personalización del cuadro de diálogo Información del recurso {#customize-the-asset-info-dialog}
 
