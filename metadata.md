@@ -11,10 +11,10 @@ mini-toc-levels: 1
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-desktop-app.es-ES
 index: y
 translation-type: tm+mt
-source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+source-git-commit: e9a59807d48ea2d8619d3b03255c4291fca85138
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 6%
+source-wordcount: '155'
+ht-degree: 9%
 
 ---
 
@@ -25,17 +25,17 @@ El archivo metadata.md incluye metadatos de nivel de repos que pasan a los archi
 
 | metadata | lo que hace |
 |--- |--- |
-| solution-title | Se utiliza en el encabezado del artículo como vínculo |
-| solution-hub-url | Abre la página del concentrador de asistencia |
-| solution-icon | Muestra el icono de la solución junto al título de la solución. No implementado aún |
-| getting-started-url | Vínculo a la página de introducción |
-| tutorials-url | Vínculo a tutoriales de vídeo: tutoriales de ayuda o tutoriales de KT |
-| niveles de mini toc | Determina el número de niveles de encabezado que aparecen en el carril derecho. el valor predeterminado es 2 |
-| git-repo | Especifica la ubicación de la repo principal para uso interno |
+| solution-title | Se utiliza en el encabezado del artículo como vínculo. |
+| solution-hub-url | Abre la página del centro de aprendizaje y asistencia técnica. |
+| solution-icon | Muestra el icono de la solución junto al título de la solución. Aún no se ha implementado. |
+| getting-started-url | Vínculo a la página de introducción. |
+| tutorials-url | Vínculo a los tutoriales de vídeo. |
+| niveles de mini toc | Determina el número de niveles de encabezado que aparecen en el carril derecho. El valor predeterminado es 2. |
+| git-repo | Especifica la ubicación de la repo principal para uso interno. |
 
 En el archivo TOC.md
 
 | metadata | lo que hace |
 |--- |--- |
-| user-guide-title | Se utiliza en el encabezado del artículo como vínculo |
-| user-guide-url | Abre la página del concentrador de ayuda |
+| user-guide-title | Se utiliza en el encabezado del artículo como vínculo. |
+| user-guide-url | Abre la página del centro de aprendizaje y asistencia técnica. |
