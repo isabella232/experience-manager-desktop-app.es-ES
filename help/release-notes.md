@@ -10,10 +10,10 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a7a803edce0b6300b4a4142dcdc2f61d8347acea
+source-git-commit: eda366b969edb3c266ae8a5900ea7c0409846db0
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 50%
+source-wordcount: '1326'
+ht-degree: 49%
 
 ---
 
@@ -23,29 +23,29 @@ ht-degree: 50%
 | Productos | Aplicación de escritorio de Adobe Experience Manager |
 |----|----|
 | Versión de la aplicación (revisión) | 2.0 (2.0.2.0) |
-| Versiones de AEM compatibles | AEM como servicio de nube; AEM 6.5; AEM 6.4; AEM 6.3 (con paquete de compatibilidad) |
+| Versiones de AEM compatibles | AEM como Cloud Service; AEM 6.5; AEM 6.4; AEM 6.3 (con paquete de compatibilidad) |
 | Tipo | Versión menor |
 | Fecha de lanzamiento | 15 de abril de 2020 (Mac y Win) |
 | Direcciones URL de descarga | [macOS de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.2.0.dmg); [Windows de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.2.0.exe); [Windows de 32 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.2.0.exe) |
 
 ## Requisitos y requisitos previos del sistema {#system-requirements-and-prerequisites-v2}
 
-La aplicación de escritorio Adobe Experience Manager es compatible con los siguientes sistemas operativos:
+La aplicación de escritorio de Adobe Experience Manager es compatible con los siguientes sistemas operativos:
 
 * Mac OS X 10.14 o posterior, con las últimas correcciones de errores.
 * Windows 7 y Windows 10 con los paquetes de servicios y las correcciones de errores más recientes.
 
-La aplicación funciona con las siguientes versiones de Experience Manager, tanto si se implementa como un servicio de nube, en los servicios gestionados de Adobe (AMS) como in situ:
+La aplicación funciona con las siguientes versiones de Experience Manager, tanto si se implementa como Cloud Service, en Adobes Managed Services (AMS) como in situ:
 
-* [Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/home.html)
+* [Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/release-notes/home.html)
 * [Experience Manager 6.5.0](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html) o posterior
 * [Experience Manager 6.4.4](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/release-notes.html) o posterior
-* Experience Manager 6.4.0 - 6.4.3 con paquete de [compatibilidad](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
+* Experience Manager 6.4.0 - 6.4.3 con paquete de [compatibilidad](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
 
 >[!NOTE]
 >
->La compatibilidad de la aplicación de escritorio con Experience Manager 6.3 está obsoleta. Adobe recomienda actualizar a una versión más reciente y compatible de Adobe Experience Manager.
->Experience Manager 6.3.3.1 o posterior funciona con la aplicación de escritorio después de instalar el paquete [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilidad. Este paquete no está disponible para Experience Manager 6.3, ya que no hay paquetes [de servicios planificados](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
+>La compatibilidad de la aplicación de escritorio con Experience Manager 6.3 está obsoleta. Adobe recomienda actualizar a una versión de Adobe Experience Manager más reciente y compatible.
+>Experience Manager 6.3.3.1 o posterior funciona con la aplicación de escritorio después de instalar el paquete [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilidad. Este paquete no está disponible para Experience Manager 6.3, ya que no se han planificado [paquetes](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html)de servicios.
 
 La versión de la aplicación que planea instalar en su equipo local requiere una versión específica del servidor de Adobe Experience Manager o componentes adicionales del servidor (paquetes de servicio, correcciones rápidas o paquetes de funciones). Póngase en contacto con el administrador de Adobe Experience Manager para obtener ayuda.
 
@@ -53,18 +53,18 @@ La versión de la aplicación que planea instalar en su equipo local requiere un
 
 La aplicación admite recursos almacenados en Adobe Experience Manager que representan archivos binarios para sus operaciones básicas. La apertura de archivos en la aplicación de escritorio nativa depende de la asociación de sistema operativo de los tipos de archivo específicos, como PNG o JPG, a aplicaciones específicas, como Vista previa de Mac o Adobe Photoshop.
 
-Algunos tipos de archivo admiten la colocación de recursos vinculados en el archivo binario. La aplicación descarga previamente los recursos vinculados si el recurso está presente en el repositorio de Experience Manager cuando estos archivos binarios se abren con la aplicación de escritorio. Los tipos de archivo admitidos actualmente son:
+Algunos tipos de archivo admiten la colocación de recursos vinculados en el archivo binario. La aplicación descarga previamente los recursos vinculados si el recurso está presente en el repositorio de Experience Manager cuando se abren dichos archivos binarios con la aplicación de escritorio. Los tipos de archivo admitidos actualmente son:
 
 * Archivos de Adobe InDesign (formato INDD)
 * Archivos de Adobe Illustrator (formato AI)
 * Archivos de Adobe Photoshop (formato PS)
 
-La función es compatible con las versiones de Adobe Creative Cloud 2018 y Adobe Creative Cloud 2019 de la aplicación anterior. La aplicación utiliza un método heurístico y de mejor coincidencia para asignar las rutas de escritorio locales de los recursos vinculados a las direcciones URL en el servidor de Experience Manager. Se basa en algunos supuestos:
+La función es compatible con las versiones de Adobe Creative Cloud 2018 y Adobe Creative Cloud 2019 de la aplicación anterior. La aplicación utiliza un método heurístico y de mejor coincidencia para asignar las rutas de escritorio locales de los recursos vinculados a las URL del servidor Experience Manager. Se basa en algunos supuestos:
 
 * Paths to placed files in the native application use a global desktop path (placed from the local network share shown with [!UICONTROL Reveal] option).
 * La aplicación nativa almacena las rutas en el registro XMP del archivo.
 * Experience Manager ha extraído el registro XMP con las rutas al registro de metadatos del recurso.
-* Las rutas pueden coincidir con los recursos de Experience Manager, es decir, los archivos colocados también están en Experience Manager bajo una ruta coincidente.
+* Las rutas pueden coincidir con los recursos en Experience Manager, es decir, los archivos colocados también están en Experience Manager bajo una ruta coincidente.
 
 ## Nuevas funciones y mejoras {#whats-new-added}
 
@@ -85,7 +85,7 @@ Las correcciones y actualizaciones de errores son:
 Las correcciones y actualizaciones de errores son:
 
 * Permitir la opción de configurar `%Temp%` el directorio para que coincida con la `%APPDATA%` ruta. <!-- CQ-4282665 -->
-* Permita que los usuarios inicien sesión en AEM Author mediante la autenticación de Okta SAML. <!-- CQ-4278134 -->
+* Permita que los usuarios inicien sesión en el AEM Author mediante la autenticación de Okta SAML. <!-- CQ-4278134 -->
 
 ## Instrucciones de instalación {#installation-instructions-v2}
 
@@ -133,9 +133,9 @@ En el diagrama siguiente se ilustra el flujo de recursos y archivos desde la nub
 
 >[!MORELIKETHIS]
 >
->* [Documentación de AEM como servicio de nube](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
->* [Documentación de AEM as a Cloud Service Assets](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/home.html)
->* [Cómo utilizar la aplicación de escritorio de Experience Manager](using.md)
+>* [Documentación de AEM como Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
+>* [Documentación de AEM como Cloud Service Assets](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/assets/home.html)
+>* [Cómo utilizar la aplicación de escritorio Experience Manager](using.md)
 >* [Instalación y actualización de la aplicación de escritorio](install-upgrade.md)
 >* [Procedimientos recomendados y sugerencias para la solución de problemas](troubleshoot.md)
 
