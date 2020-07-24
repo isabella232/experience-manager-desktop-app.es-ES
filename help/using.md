@@ -1,28 +1,31 @@
 ---
-title: Uso de la aplicación de escritorio Adobe Experience Manager
-description: Aprenda a instalar y utilizar la aplicación de escritorio Adobe Experience Manager para trabajar con los recursos DAM de Adobe Experience Manager directamente desde el escritorio de Windows o Mac. Conozca las prácticas recomendadas y la información de solución de problemas.
+title: Uso de la aplicación de escritorio de Adobe Experience Manager
+description: Obtenga información sobre cómo instalar y utilizar la aplicación de escritorio de Adobe Experience Manager para trabajar con recursos DAM de Adobe Experience Manager desde su escritorio Win o Mac. Conozca las prácticas recomendadas y la información de solución de problemas.
 uuid: 55057617-89de-43cd-8419-1252a42ab2fb
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: 27cc0ba26622016ce82b758fb0607652176f6992
+workflow-type: tm+mt
+source-wordcount: '3995'
+ht-degree: 0%
 
 ---
 
 
 # Use Adobe Experience Manager desktop app {#use-aem-desktop-app-v2}
 
-Utilice la aplicación de escritorio Adobe Experience Manager (AEM) para acceder fácilmente a los recursos DAM de Adobe Experience Manager en el escritorio local y utilizar estos recursos en cualquier aplicación de escritorio. Puede abrir los recursos en aplicaciones de escritorio y editarlos localmente; vuelva a cargar los cambios en Experience Manager con control de versiones para compartirlos con otros usuarios. También puede cargar nuevos archivos y jerarquías de carpetas en Experience Manager, crear carpetas y eliminar recursos o carpetas de Experience Manager DAM.
+Utilice la aplicación de escritorio de Adobe Experience Manager (AEM) para acceder fácilmente a los recursos DAM de Adobe Experience Manager en el escritorio local y utilizarlos en cualquier aplicación de escritorio. Puede abrir los recursos en aplicaciones de escritorio y editarlos localmente; vuelva a cargar los cambios en el Experience Manager con control de versiones para compartirlos con otros usuarios. También puede cargar nuevos archivos y jerarquías de carpetas al Experience Manager, crear carpetas y eliminar recursos o carpetas del DAM de Experience Manager.
 
-La integración permite que diversas funciones de la organización gestionen los recursos de forma centralizada en Experience Manager Assets y accedan a los recursos en el escritorio local en las aplicaciones nativas en Windows o Mac OS.
+La integración permite que diversas funciones de la organización gestionen los recursos de forma centralizada en Recursos Experience Manager y accedan a los recursos en el escritorio local en las aplicaciones nativas en Windows o Mac OS.
 
-Cuando abra la aplicación después de cerrar la sesión o por primera vez, proporcione la URL de su servidor de Experience Manager. Haga clic en Conectar. Proporcione sus credenciales para conectar la aplicación con el servidor.
+Cuando abra la aplicación después de cerrar la sesión o por primera vez, proporcione la URL de su servidor Experience Manager. Haga clic en Conectar. Proporcione sus credenciales para conectar la aplicación con el servidor.
 
-Las tareas clave que realiza con la aplicación de escritorio de Experience Manager son:
+Las tareas clave que realiza con la aplicación de escritorio Experience Manager son:
 
-![Flujos de trabajo y tareas que puede realizar con la](assets/aem_desktop_app_usecases_v2.png "aplicación de escritorio de Experience ManagerFlujos de trabajo y tareas que puede realizar con la aplicación")de escritorio de Adobe Experience Manager Descargue [este](assets/aem_desktop_app_usecases_print.pdf) archivo PDF listo para imprimir.
+![Flujos de trabajo y tareas que puede realizar con [!DNL Experience Manager] la aplicación de escritorioFlujos de trabajo y tareas que puede realizar con la aplicación](assets/aem_desktop_app_usecases_v2.png "de Adobe Experience Manager para escritorio Descargue")este [](assets/aem_desktop_app_usecases_print.pdf) archivo PDF listo para imprimir.
 
 ## Funcionamiento de la aplicación de escritorio {#how-app-works2}
 
@@ -30,7 +33,7 @@ Antes de realizar el inicio con la aplicación, debe comprender [cómo funciona]
 
 * **[!UICONTROL Desktop Actions]**:: Desde la interfaz web Recursos, desde dentro de un navegador, puede explorar las ubicaciones de los recursos o la retirada y abrir el recurso para editarlo en la aplicación de escritorio nativa. Estas acciones están disponibles en la interfaz web y utilizan la funcionalidad de la aplicación de escritorio. Consulte [cómo habilitar las acciones](using.md#desktopactions-v2)de escritorio.
 
-* El estado del archivo es **[!UICONTROL Cloud Only]**: Estos recursos no se descargan en el equipo local y solo están disponibles en el servidor de Experience Manager.
+* El estado del archivo es **[!UICONTROL Cloud Only]**: Estos recursos no se descargan en el equipo local y solo están disponibles en el servidor Experience Manager.
 
 * El estado del archivo es **[!UICONTROL Available locally]**: Los recursos se descargan y están disponibles en el equipo local tal como están. Los recursos no se modifican.
 
@@ -155,7 +158,7 @@ Utilice **[!UICONTROL Toggle Check-out]** para bloquear el recurso para evitar c
 * Ha empezado a editar un recurso sin desprotegerlo primero (por ejemplo, solo abriéndolo).
 * Tiene la intención de editar un inicio en breve y no desea que otros usuarios lo editen.
 
-Una vez que haya terminado de realizar las ediciones, la aplicación muestra el estado de los **[!UICONTROL Edited Locally]** recursos modificados. Todos los cambios guardados en los recursos son solo locales hasta que se carguen los cambios en AEM. Para cargar un recurso individual o algunos recursos uno a uno, haga clic en **[!UICONTROL Upload Changes]** las opciones de un recurso. Crea una versión del recurso en AEM. Con la interfaz web de Recursos AEM, puede ver el historial de recursos en la vista [de la](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/activity-stream.html)línea de tiempo.
+Una vez que haya terminado de realizar las ediciones, la aplicación muestra el estado de los **[!UICONTROL Edited Locally]** recursos modificados. Todos los cambios guardados en los recursos son solo locales hasta que se carguen los cambios en AEM. Para cargar un recurso individual o algunos recursos uno a uno, haga clic en **[!UICONTROL Upload Changes]** las opciones de un recurso. Crea una versión del recurso en AEM. Con la interfaz web de AEM Assets, puede ver el historial de recursos en la vista [de](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/activity-stream.html)línea de tiempo.
 
 ![Opción de carga de cambios en la opción de cambios](assets/upload_changes_single1_da2.png "appCargar en la aplicación")
 
@@ -173,7 +176,7 @@ Si es necesario, active la desprotección. El recurso actualizado se elimina de 
 
 ## Carga y adición de nuevos recursos a AEM {#upload-and-add-new-assets-to-aem}
 
-Los usuarios pueden agregar recursos nuevos al repositorio de DAM. Por ejemplo, puede ser un fotógrafo o contratista de la agencia que quiera añadir un gran número de fotos de una sesión fotográfica al repositorio de AEM. Para añadir contenido nuevo a AEM, haga clic en el icono ![](assets/do-not-localize/upload_to_cloud_da2.png) Cargar en la nube en la barra superior de la aplicación. Busque los archivos de recursos en el sistema de archivos local y haga clic en **[!UICONTROL Select]**. La aplicación inicio la carga del recurso y muestra una barra de progreso en la parte inferior si el recurso tarda más en cargarse. No utilice espacios en blanco ni caracteres no válidos al crear o cargar carpetas. Consulte una lista de caracteres en [Creación de carpetas en Recursos](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)AEM.
+Los usuarios pueden agregar recursos nuevos al repositorio de DAM. Por ejemplo, puede ser un fotógrafo o contratista de la agencia que quiera añadir un gran número de fotos de una sesión fotográfica al repositorio de AEM. Para añadir contenido nuevo a AEM, haga clic en el icono ![](assets/do-not-localize/upload_to_cloud_da2.png) Cargar en la nube en la barra superior de la aplicación. Busque los archivos de recursos en el sistema de archivos local y haga clic en **[!UICONTROL Select]**. La aplicación inicio la carga del recurso y muestra una barra de progreso en la parte inferior si el recurso tarda más en cargarse. No utilice espacios en blanco ni caracteres no válidos al crear o cargar carpetas. Consulte una lista de caracteres en [Crear carpetas en AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders).
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
@@ -220,7 +223,7 @@ La aplicación proporciona una vista, llamada **[!UICONTROL Edited locally]**, p
 
 ### Carga masiva de recursos {#bulk-upload-assets}
 
-Los usuarios o la organización, como fotógrafos o agencias creativas, pueden crear numerosos recursos locales en escenarios como, por ejemplo, fotografías, retoques o la selección de un conjunto mayor realizado fuera de AEM. Pueden cargar estas carpetas locales de gran tamaño a Recursos AEM directamente desde la aplicación de escritorio. Las jerarquías de carpetas se conservan y se cargan todas las subcarpetas anidadas y los recursos incluidos. Los recursos cargados también están disponibles de inmediato para otros usuarios del mismo servidor para su consumo. Los recursos se cargan en segundo plano, por lo que la operación no está vinculada a una sesión del explorador web.
+Los usuarios o la organización, como fotógrafos o agencias creativas, pueden crear numerosos recursos locales en escenarios como, por ejemplo, fotografías, retoques o la selección de un conjunto mayor realizado fuera de AEM. Pueden cargar estas carpetas locales grandes a AEM Assets directamente desde la aplicación de escritorio. Las jerarquías de carpetas se conservan y se cargan todas las subcarpetas anidadas y los recursos incluidos. Los recursos cargados también están disponibles de inmediato para otros usuarios del mismo servidor para su consumo. Los recursos se cargan en segundo plano, por lo que la operación no está vinculada a una sesión del explorador web.
 
 ![Carga masiva de varias carpetas locales desde el escritorio en](assets/upload_local_folders_da2.png "AEMBulk carga varias carpetas locales desde el escritorio en AEM")
 
@@ -236,7 +239,7 @@ Para vista de la lista de recursos transferidos en una sesión determinada, cons
 
 ## Flujo de trabajo avanzado: inicio de la interfaz web de AEM Assets {#adv-workflow-start-from-aem-ui}
 
-Si es necesario, inicie el flujo de trabajo desde la interfaz web de Recursos AEM. La aplicación de escritorio se integra con AEM para hacerse cargo cuando se solicita mediante las acciones de escritorio.
+Si es necesario, inicie el flujo de trabajo desde la interfaz web de AEM Assets. La aplicación de escritorio se integra con AEM para hacerse cargo cuando se solicita mediante las acciones de escritorio.
 
 Un caso especial de inicio del flujo de trabajo desde la interfaz web es la detección de recursos. La interfaz de usuario de la barra de Omniture en Recursos oferta una experiencia de búsqueda avanzada y enriquecida. Es posible que primero desee ubicar un recurso deseado en la web y, a continuación, iniciar el flujo de trabajo en la aplicación mediante [!UICONTROL Desktop Actions]. Algunos ejemplos de casos incluyen el filtrado de resultados de búsqueda mediante facetas, la localización de un recurso específico con licencia de Adobe Stock o una personalización implementada por su organización que le permita realizar un mejor descubrimiento desde la interfaz web.
 
