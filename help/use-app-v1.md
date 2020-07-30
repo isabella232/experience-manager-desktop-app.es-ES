@@ -3,7 +3,7 @@ title: Utilice AEM versión 1.x de la aplicación de escritorio.
 description: Aprenda a utilizar la versión 1.x de la aplicación de escritorio de Adobe Experience Manager y a optimizar su trabajo con los recursos en el escritorio.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f1bd50a439059ac66e0368eeefc6af67ff160d9b
+source-git-commit: 67e117648de8298f78992afea5ae0962fd2c698b
 workflow-type: tm+mt
 source-wordcount: '2516'
 ht-degree: 0%
@@ -113,7 +113,7 @@ Desde la interfaz de usuario de Recursos, puede explorar las ubicaciones de los 
 
 Al hacer clic en **Abrir** para abrir un recurso en un equipo local, la aplicación descarga el recurso en su caché interna. La aplicación inicia la aplicación de escritorio nativa asociada al tipo de archivo del recurso descargado.
 
-En Mac, seleccione **Abrir** en el menú contextual para abrir un recurso a través de AEM aplicación de escritorio. En Windows, seleccione Abrir en Web en el menú contextual para abrir el recurso. En la ventana Estado del recurso, toque o haga clic en el icono ![](assets/aemassets_icon_openondesktop.png) Abrir en escritorio para abrir el recurso.
+En Mac, seleccione **Abrir** en el menú contextual para abrir un recurso a través de AEM aplicación de escritorio. En Windows, seleccione Abrir en Web en el menú contextual para abrir el recurso. En la ventana Estado del recurso, toque o haga clic en el icono ![](assets/do-not-localize/aemassets_icon_openondesktop.png) Abrir en escritorio para abrir el recurso.
 
 Para archivos Adobe InDesign (INDD), seleccione **[!UICONTROL Open]** en el menú contextual. Al hacer clic en esta opción, la aplicación descarga los recursos vinculados en el sistema de archivos local y, a continuación, abre el archivo INDD en Adobe InDesign. Este método garantiza que los recursos necesarios estén disponibles localmente al editar el archivo INDD.
 
@@ -141,19 +141,19 @@ Después de asignar el repositorio de AEM Assets a la unidad local, puede activa
 
    Estas acciones de escritorio también están disponibles al hacer clic en el icono Acciones **de** escritorio de la barra de herramientas después de seleccionar el recurso o de la barra de herramientas de la página de recursos.
 
-1. Para abrir el recurso en la aplicación de escritorio asociada a la extensión de archivo específica, toque o haga clic en el icono **** Abrir en escritorio ![Acción rápida](assets/aemassets_icon_openondesktop.png)Abrir en escritorio.
+1. Para abrir el recurso en la aplicación de escritorio asociada a la extensión de archivo específica, toque o haga clic en el icono **** Abrir en escritorio ![Acción rápida](assets/do-not-localize/aemassets_icon_openondesktop.png)Abrir en escritorio.
 
    También puede seleccionar **Abrir** en el menú Acciones **de** escritorio de la barra de herramientas.
 
-Para localizar el recurso concreto en el sistema de archivos local, haga clic en el icono **Mostrar** acción rápida ![Mostrar](assets/aemassets_reveal_icon.png). También puede seleccionar **Mostrar** en el menú Acciones **de** escritorio de la barra de herramientas.
+Para localizar el recurso concreto en el sistema de archivos local, haga clic en el icono **Mostrar** acción rápida ![Mostrar](assets/do-not-localize/aemassets_reveal_icon.png). También puede seleccionar **Mostrar** en el menú Acciones **de** escritorio de la barra de herramientas.
 
 ## Comprender los estados de los recursos {#understand-the-asset-statuses}
 
-| ![Icono de aplicación predeterminado de Windows](assets/win_default.png) | La aplicación está conectada al servidor y todos los recursos están sincronizados. |
-|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![Icono deshabilitado de Windows](assets/win_disabled.png) | La aplicación se inicia pero no está conectada con el servidor. Es posible que algunos recursos estén pendientes de sincronización. |
-| ![Icono de sincronización de archivos de Windows](assets/win_sync.png) | Los recursos se están sincronizando. Los archivos se están cargando o descargando. Puede ver los estados exactos y pausar las transferencias desde la ventana Estado del activo. |
-| ![Icono de reconexión de Windows](assets/win_refresh.png) | La aplicación está intentando volver a conectarse. Potencialmente, los problemas de red están provocando que se desconecte. |
+| ![Icono de aplicación predeterminado de Windows](assets/do-not-localize/win_default.png) | La aplicación está conectada al servidor y todos los recursos están sincronizados. |
+--- |--- |
+| ![Icono deshabilitado de Windows](assets/do-not-localize/win_disabled.png) | La aplicación se inicia pero no está conectada con el servidor. Es posible que algunos recursos estén pendientes de sincronización. |
+| ![Icono de sincronización de archivos de Windows](assets/do-not-localize/win_sync.png) | Los recursos se están sincronizando. Los archivos se están cargando o descargando. Puede ver los estados exactos y pausar las transferencias desde la ventana Estado del activo. |
+| ![Icono de reconexión de Windows](assets/do-not-localize/win_refresh.png) | La aplicación está intentando volver a conectarse. Potencialmente, los problemas de red están provocando que se desconecte. |
 
 ## Trabajar con sus recursos {#workonassets}
 
@@ -169,7 +169,7 @@ Existen dos formas de extraer recursos de la interfaz web AEM. Para obtener info
 
    Estas acciones de escritorio también están disponibles cuando toca o hace clic en el icono Acciones de escritorio en la barra de herramientas después de seleccionar el recurso o en la barra de herramientas de la página de recursos.
 
-1. Para abrir el recurso, toque o haga clic en el icono ![Abrir en escritorio Acción rápida](assets/aemassets_icon_openondesktop.png)Abrir en escritorio.
+1. Para abrir el recurso, toque o haga clic en el icono ![Abrir en escritorio Acción rápida](assets/do-not-localize/aemassets_icon_openondesktop.png)Abrir en escritorio.
 
    También puede seleccionar Abrir en el menú Acciones de escritorio de la barra de herramientas.
 
@@ -177,7 +177,7 @@ Existen dos formas de extraer recursos de la interfaz web AEM. Para obtener info
    >
    >Cuando edita un archivo que se acaba de abrir y no se ha extraído, otros usuarios no llegan a saber que usted está actualizando un recurso.
 
-1. Para abrir un recurso para editarlo en una aplicación de Adobe Creative Cloud, toque o haga clic en el icono ![Editar escritorio acción rápida](assets/aemassets_icon_editdesktop.png)Editar escritorio. Esto también cierra la compra del recurso para editarlo. Una vez que haya terminado de editar, desproteja el recurso para actualizar los cambios en los AEM Assets.
+1. Para abrir un recurso para editarlo en una aplicación de Adobe Creative Cloud, toque o haga clic en el icono ![Editar escritorio acción rápida](assets/do-not-localize/aemassets_icon_editdesktop.png)Editar escritorio. Esto también cierra la compra del recurso para editarlo. Una vez que haya terminado de editar, desproteja el recurso para actualizar los cambios en los AEM Assets.
 
    También puede seleccionar Editar en el menú Acciones de escritorio de la barra de herramientas.
 
@@ -219,7 +219,7 @@ La aplicación le permite extraer archivos de recursos para evitar que otros usu
 
    ![Icono de cierre de compra](assets/chlimage_1-8.png)
 
-1. Revise el recurso en el Explorador. El icono de candado del icono ![de candado de](assets/aemassets_icon_lockcheckout.png) recursos indica que ha extraído el recurso.
+1. Revise el recurso en el Explorador. El icono de candado del icono ![de candado de](assets/do-not-localize/aemassets_icon_lockcheckout.png) recursos indica que ha extraído el recurso.
 
    >[!NOTE]
    >
@@ -231,7 +231,7 @@ La aplicación le permite extraer archivos de recursos para evitar que otros usu
 
 Cuando haya terminado de editar los recursos, guárdelos en la aplicación de escritorio. En el menú contextual, seleccione **Más información** de recursos y haga clic en Registrar.
 
-Los recursos se cargan en AEM servidor. Si lo desea, puede comprobar el estado de la carga seleccionando Estado **del recurso de** Vista en el icono de la bandeja del sistema. También puede registrar un recurso desde la interfaz web AEM. Haga clic en los recursos extraídos o selecciónelos. En la barra de herramientas, haga clic en el icono de ![protección](assets/aemassets_icon_checkin.png).
+Los recursos se cargan en AEM servidor. Si lo desea, puede comprobar el estado de la carga seleccionando Estado **del recurso de** Vista en el icono de la bandeja del sistema. También puede registrar un recurso desde la interfaz web AEM. Haga clic en los recursos extraídos o selecciónelos. En la barra de herramientas, haga clic en el icono de ![protección](assets/do-not-localize/aemassets_icon_checkin.png).
 
 Un recurso se carga en AEM automáticamente después de guardar los cambios localmente. El registro pone el recurso a disposición de otros usuarios de AEM para su edición.
 
