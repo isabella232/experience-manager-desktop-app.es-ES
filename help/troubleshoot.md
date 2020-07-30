@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9954d0b290c4e1071a6068be4f858b29d26dc712
+source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 1%
@@ -41,7 +41,7 @@ Siga las siguientes optimizaciones para evitar problemas comunes y solucionar pr
 
 * **Tenga en cuenta la red**: El rendimiento de la red es fundamental para el rendimiento de la aplicación de escritorio Experience Manager. Si se enfrenta a una respuesta lenta a las transferencias de archivos o a las operaciones masivas, desactive las funciones o aplicaciones que pueden causar mucho tráfico en la red.
 
-* **Casos de uso no admitidos para la aplicación** de escritorio: No utilice la aplicación para la migración de recursos (necesita planificación y otras herramientas); para operaciones DAM de gran capacidad (como mover carpetas grandes, cargas grandes, buscar archivos mediante búsquedas avanzadas de metadatos); y como cliente de sincronización (los principios de diseño y los patrones de uso son diferentes de los clientes en sincronización como Microsoft OneDrive o Adobe Creative Cloud para escritorio).
+* **Casos de uso no admitidos para la aplicación** de escritorio: No utilice la aplicación para la migración de recursos (necesita planificación y otras herramientas); para operaciones DAM de gran capacidad (como mover carpetas grandes, cargas grandes, buscar archivos mediante búsquedas avanzadas de metadatos); y como cliente de sincronización (los principios de diseño y los patrones de uso son diferentes de los clientes en sincronización, como Microsoft OneDrive o la sincronización de escritorio de Adobe Creative Cloud).
 
 * **Tiempo de espera**: Actualmente, la aplicación de escritorio no tiene un valor de tiempo de espera configurable que desconecte la conexión entre el servidor Experience Manager y la aplicación de escritorio después de un intervalo de tiempo fijo. Cuando se cargan recursos de gran tamaño, si la conexión se agota después de un tiempo, la aplicación tiene el reintentos de cargar el recurso varias veces aumentando el tiempo de espera de carga. No se recomienda cambiar la configuración de tiempo de espera predeterminada.
 
@@ -73,7 +73,7 @@ Para habilitar el modo de depuración en Windows, siga estos pasos:
 
 ### Ubicación de los archivos de registro {#check-log-files-v2}
 
-Puede encontrar los archivos de registro de la aplicación de escritorio de AEM en las siguientes ubicaciones. Al cargar muchos recursos, si algunos archivos no se pueden cargar, consulte `backend.log` el archivo para identificar las cargas fallidas.
+Puede encontrar los archivos de registro de AEM aplicación de escritorio en las siguientes ubicaciones. Al cargar muchos recursos, si algunos archivos no se pueden cargar, consulte `backend.log` el archivo para identificar las cargas fallidas.
 
 * Ruta en Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
 
@@ -81,23 +81,23 @@ Puede encontrar los archivos de registro de la aplicación de escritorio de AEM 
 
 >[!NOTE]
 >
->Al trabajar con el Servicio de atención al cliente de Adobe en una solicitud o entrada de asistencia, se le puede pedir que comparta los archivos de registro para ayudar al equipo de atención al cliente a comprender el problema. Archive toda la `Logs` carpeta y compártala con el contacto del Servicio de atención al cliente.
+>Cuando trabaje con el Servicio de atención al cliente de Adobe en una solicitud o entrada de asistencia, puede que se le pida que comparta los archivos de registro para ayudar al equipo de atención al cliente a comprender el problema. Archive toda la `Logs` carpeta y compártala con el contacto del Servicio de atención al cliente.
 
 ### Borrar caché {#clear-cache-v2}
 
-La eliminación de la caché de la aplicación de escritorio de AEM es una tarea de solución de problemas preliminar que puede resolver varios problemas. Borre la caché de las preferencias de la aplicación. Consulte [Configuración de preferencias](install-upgrade.md#set-preferences). La ubicación predeterminada de la carpeta de caché es:
+La eliminación de la caché de AEM aplicación de escritorio es una tarea preliminar para solucionar problemas que puede resolver varios problemas. Borre la caché de las preferencias de la aplicación. Consulte [Configuración de preferencias](install-upgrade.md#set-preferences). La ubicación predeterminada de la carpeta de caché es:
 
 * En Windows: `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
 
 * En Mac: `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
 
-Sin embargo, la ubicación puede cambiar según el punto final de AEM configurado para AEM Desktop. El valor es una versión codificada de la dirección URL de destino. Por ejemplo, si la aplicación está segmentada `http://localhost:4502`, el nombre del directorio es `http%3A%2F%2Flocalhost%3A4502%2F`. Para borrar la caché, elimine la carpeta adecuada. Otra razón para borrar la caché es liberar espacio en disco cuando se está ejecutando con poco espacio en disco.
+Sin embargo, la ubicación puede cambiar en función del extremo de AEM configurado AEM escritorio. El valor es una versión codificada de la dirección URL de destino. Por ejemplo, si la aplicación está segmentada `http://localhost:4502`, el nombre del directorio es `http%3A%2F%2Flocalhost%3A4502%2F`. Para borrar la caché, elimine la carpeta adecuada. Otra razón para borrar la caché es liberar espacio en disco cuando se está ejecutando con poco espacio en disco.
 
 >[!CAUTION]
 >
->Si borra la caché de escritorio de AEM, las modificaciones de recursos locales que no se sincronizan con el servidor AEM se pierden irrevocablemente.
+>Si borra AEM caché de escritorio, las modificaciones de recursos locales que no se sincronizan con AEM servidor se pierden irrevocablemente.
 
-### Conozca la versión de la aplicación de escritorio de AEM {#know-app-version-v2}
+### Conozca la versión de la aplicación de escritorio AEM {#know-app-version-v2}
 
 Haga clic en el menú ![](assets/do-not-localize/more_options_da2.png) Aplicación para abrir el menú de la aplicación y haga clic en **[!UICONTROL Help]** > **[!UICONTROL About]**.
 
@@ -107,12 +107,12 @@ Si no puede ver los recursos que usted u otros profesionales creativos colocaron
 
 * Conexión al servidor. La conectividad de red deficiente puede detener las descargas de recursos.
 * Tamaño de archivo. Los recursos grandes tardan más en descargarse y mostrarse.
-* Consistencia de la letra de unidad. Si usted u otro colaborador colocó los recursos mientras asignaba AEM DAM a una letra de unidad diferente, no se muestran los recursos colocados.
+* Consistencia de la letra de unidad. Si usted u otro colaborador colocó los recursos mientras asignaba el DAM AEM a una letra de unidad diferente, no se muestran los recursos colocados.
 * Permisos. Para comprobar si tiene permisos para recuperar los recursos colocados, póngase en contacto con el administrador de AEM.
 
 ## Problemas al actualizar en macOS {#issues-when-upgrading-on-macos}
 
-En ocasiones pueden producirse problemas al actualizar la aplicación de escritorio de AEM en macOS. Esto se debe a que la carpeta de sistema heredada de la aplicación de escritorio de AEM impide que las nuevas versiones de la aplicación de escritorio de AEM se carguen correctamente. Para solucionar este problema, se pueden quitar manualmente las siguientes carpetas y archivos.
+En ocasiones pueden producirse problemas al actualizar AEM aplicación de escritorio en macOS. Esto se debe a que la carpeta del sistema heredada de AEM aplicación de escritorio impide que las nuevas versiones de AEM aplicación de escritorio se carguen correctamente. Para solucionar este problema, se pueden quitar manualmente las siguientes carpetas y archivos.
 
 Antes de ejecutar los siguientes pasos, arrastre la `Adobe Experience Manager Desktop` aplicación de la carpeta Aplicaciones macOS a la papelera. A continuación, abra terminal, ejecute el siguiente comando y proporcione su contraseña cuando se le solicite.
 
@@ -131,7 +131,7 @@ Si utiliza una aplicación de escritorio con AEM 6.5.1 o posterior, actualice el
 
 ## Problema de configuración de SSL {#ssl-config-v2}
 
-Las bibliotecas que utiliza la aplicación de escritorio de AEM para la comunicación HTTP utilizan una estricta aplicación SSL. En ocasiones, una conexión puede funcionar correctamente con un navegador, pero no con la aplicación de escritorio de AEM. Para configurar SSL correctamente, instale el certificado intermedio que falta en Apache. Consulte [Cómo instalar un certificado de CA intermedio en Apache](https://access.redhat.com/solutions/43575).
+Las bibliotecas que AEM aplicación de escritorio utiliza para la comunicación HTTP utilizan una estricta aplicación SSL. A veces, una conexión puede funcionar correctamente con un navegador, pero falla al usar AEM aplicación de escritorio. Para configurar SSL correctamente, instale el certificado intermedio que falta en Apache. Consulte [Cómo instalar un certificado de CA intermedio en Apache](https://access.redhat.com/solutions/43575).
 
 ## La aplicación no responde {#unresponsive}
 
@@ -146,3 +146,4 @@ En ambos métodos, la aplicación inicio en la carpeta DAM raíz.
 >
 >* [Problemas conocidos](release-notes.md#known-issues-v2)
 >* [Evitar conflictos de edición](using.md#adv-workflow-collaborate-avoid-conflicts)
+
