@@ -10,7 +10,7 @@ getting-started-url: https://docs.adobe.com/content/help/es-ES/experience-manage
 tutorials-title: Tutoriales de AEM
 tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-tutorials.html
 translation-type: tm+mt
-source-git-commit: 0ec8430e53800eedffa86099e1f6c6782b2b27a4
+source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 100%
@@ -31,3 +31,4 @@ ht-degree: 100%
    + [Uso de la aplicación v1](use-app-v1.md)
    + [Prácticas recomendadas v1](best-practices-for-v1.md)
    + [Solución de problemas v1](troubleshoot-app-v1.md)
+
