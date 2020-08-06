@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 3e10be1fd9dd1ff5293e96b46565825e6be1fc4f
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1705'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Información general {#overview}
 
-La aplicación de escritorio de Adobe Experience Manager (AEM) vincula la solución de administración de recursos digitales (DAM) con el escritorio para que pueda abrir los archivos disponibles en la interfaz de usuario web de AEM directamente en el escritorio. Si guarda un recurso desde el escritorio, se carga en AEM en la ubicación adecuada.
+La aplicación de escritorio de Adobe Experience Manager (AEM) vincula la solución de administración de recursos digitales (DAM) con el escritorio para que pueda abrir los archivos disponibles en la interfaz de usuario web AEM directamente en el escritorio. Si guarda un recurso desde el escritorio, se carga en AEM en la ubicación adecuada.
 
 AEM aplicación de escritorio elimina las posibilidades de actualizar copias locales incorrectas o actualizar un recurso incorrecto en AEM. el flujo de trabajo fácil de usar de la aplicación de escritorio se habilita mediante la tecnología de uso compartido de red que proporcionan los sistemas operativos de escritorio.
 
@@ -33,7 +33,7 @@ La aplicación de escritorio monta el repositorio de AEM Assets como recurso com
 
 ## AEM desktop app architecture {#aem-desktop-app-architecture}
 
-AEM aplicación de escritorio utiliza recursos compartidos de red WebDAV (Windows) o SMB (Mac) para montar recursos compartidos de red. El recurso compartido de red montado solo es local. AEM aplicación de escritorio intercepta las llamadas (abrir, leer, escribir) y proporciona almacenamiento en caché local adicional. Traduce las llamadas remotas al servidor de AEM Assets para optimizar AEM solicitudes HTTP. En el diagrama siguiente se muestra la arquitectura de la aplicación de escritorio AEM.
+AEM aplicación de escritorio utiliza recursos compartidos de red WebDAV (Windows) o SMB (Mac) para montar recursos compartidos de red. El recurso compartido de red montado solo es local. AEM aplicación de escritorio intercepta las llamadas (abrir, leer, escribir) y proporciona almacenamiento en caché local adicional. Traduce llamadas remotas al servidor de AEM Assets para optimizar AEM solicitudes HTTP. En el diagrama siguiente se muestra la arquitectura de la aplicación de escritorio AEM.
 
 ![Arquitectura de aplicaciones de escritorio AEM](assets/chlimage_1.png)
 
@@ -69,7 +69,7 @@ Las funciones clave de AEM aplicación de escritorio incluyen:
 
 * No trate AEM aplicación de escritorio como un cliente de &quot;sincronización de escritorio&quot; para AEM Assets. La ventaja clave de AEM aplicación de escritorio es que proporciona acceso &quot;virtual&quot; a todo el repositorio, y las aplicaciones de sincronización de escritorio generalmente sincronizan solo los recursos que pertenecen a un usuario. AEM aplicación de escritorio proporciona cierto nivel de almacenamiento en caché y carga en segundo plano; sin embargo, funciona de forma muy distinta a las aplicaciones de &quot;sincronización&quot; típicas, como la aplicación de escritorio de Adobe Creative Cloud o Microsoft OneDrive.
 
-* No utilice AEM unidades de red de aplicaciones de escritorio para guardar los recursos con frecuencia. Todas las operaciones de guardado se transmiten a los AEM Assets. Por lo tanto, no es práctico realizar operaciones intensivas de edición directamente en el repositorio de AEM Assets montados. La edición de un recurso directamente en el repositorio montado bloquea la línea de tiempo del recurso con versiones irrelevantes e impone cargas adicionales en el servidor.
+* No utilice AEM unidades de red de aplicaciones de escritorio para guardar los recursos con frecuencia. Todas las operaciones de guardado se transmiten a AEM Assets. Por lo tanto, no es práctico realizar operaciones intensivas de edición directamente en el repositorio de AEM Assets montado. La edición de un recurso directamente en el repositorio montado bloquea la línea de tiempo del recurso con versiones irrelevantes e impone cargas adicionales en el servidor.
 
 * No utilice AEM aplicación de escritorio para migrar grandes cantidades de datos de una instancia de AEM a otra. Consulte la Guía [de](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html) migración para planificar y ejecutar migraciones de recursos. Por el contrario, la aplicación de escritorio [admite la carga](use-app-v1.md#bulkupload) masiva de un gran número de recursos por primera vez en [!DNL Adobe Experience Manager].
 
@@ -99,7 +99,7 @@ Para buscar un archivo que desea abrir en el escritorio:
 
 ### Actualización de recursos abiertos con AEM aplicación de escritorio {#updating-assets-opened-using-aem-desktop-app}
 
-Si edita un recurso directamente en la ubicación asignada de AEM Assets a un recurso compartido de red local, el recurso se carga en AEM cada vez que lo guarda en el escritorio. Además, AEM crea una versión y genera representaciones.
+Si edita un recurso directamente en la ubicación asignada desde AEM Assets a un recurso compartido de red local, el recurso se carga en AEM cada vez que lo guarda en el escritorio. Además, AEM crea una versión y genera representaciones.
 
 Si un recurso almacenado en AEM necesita una actualización:
 
@@ -129,7 +129,7 @@ La buena experiencia de los usuarios que utilizan la aplicación de escritorio A
 
 Para conocer las prácticas recomendadas en cuanto a la configuración de red de AEM Assets, consulte el documento de consideraciones [de red de](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/assets-migration-guide.html) AEM Assets. Algunos de los aspectos importantes que ayudan a optimizar AEM experiencia de la aplicación de escritorio para los usuarios son:
 
-* **Utilice Dispatcher** configurado correctamente. Use AEM Dispatcher para obtener seguridad adicional y asegúrese de que está configurado para que [AEM conexión de la aplicación de escritorio AEM detrás de un despachante](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
+* **Use Dispatcher** configurado correctamente. Use AEM Dispatcher para obtener seguridad adicional y asegúrese de que está configurado para que [AEM conexión de la aplicación de escritorio AEM detrás de un despachante](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
 * **Ahorre ancho de banda**. Considere desactivar la previsualización de iconos en Finder en Mac al explorar el repositorio montado con Finder. Finder solicita a cada archivo que genere una previsualización y hace que la aplicación de escritorio descargue y almacene en caché el recurso localmente. Tenga en cuenta que, al ahorrar ancho de banda, también disminuiría la experiencia del usuario en el escritorio, por lo que debería hacerse al trabajar con repositorios con recursos grandes y/o ancho de banda limitado.
 
@@ -139,7 +139,7 @@ Para conocer las prácticas recomendadas en cuanto a la configuración de red de
 
 ### Optimización del rendimiento del servidor {#optimizing-server-performance}
 
-Para comprender cómo se debe optimizar el rendimiento del servidor de AEM Assets, consulte la Guía [de ajuste de rendimiento de](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html)AEM Assets. Algunos de los aspectos importantes del rendimiento del servidor para AEM aplicación de escritorio son la optimización de la configuración del flujo de trabajo para que funcione correctamente en las cargas de recursos:
+Para comprender cómo se debe optimizar el rendimiento del servidor de AEM Assets, consulte la Guía [de ajuste del rendimiento de](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html)AEM Assets. Algunos de los aspectos importantes del rendimiento del servidor para AEM aplicación de escritorio son la optimización de la configuración del flujo de trabajo para que funcione correctamente en las cargas de recursos:
 
 * **Carga** de recursos de mayor rendimiento. Configure el modelo de flujo de trabajo de actualización de recursos [AEM para que sea transitorio](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html#Workflows).
 
