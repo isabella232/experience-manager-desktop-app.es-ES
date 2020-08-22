@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: a6f33efdd5702cc2f411d0deed8f54e7335c09ed
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1238'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Install Adobe Experience Manager desktop app {#install-app-v2}
 
-Con la aplicación de escritorio de Adobe Experience Manager, los recursos de Experience Manager están fácilmente disponibles en el escritorio local y se pueden utilizar en cualquier aplicación de escritorio nativa. Los recursos se pueden previsualizar, abrir en aplicaciones de escritorio nativas, mostrar en Mac Finder o el Explorador de Windows para colocarlos en otros documentos y cambiar localmente; los cambios se guardan de nuevo en Experience Manager al cargar y se crea una nueva versión en el repositorio.
+Con la aplicación de escritorio de Adobe Experience Manager, los recursos de Experience Manager están fácilmente disponibles en el escritorio local y se pueden usar en cualquier aplicación de escritorio nativa. Los recursos se pueden previsualizar, abrir en aplicaciones de escritorio nativas, mostrar en Mac Finder o el Explorador de Windows para colocarlos en otros documentos y cambiar localmente; los cambios se guardan de nuevo en Experience Manager cuando se carga y se crea una nueva versión en el repositorio.
 
 Esta integración permite que diversas funciones de la organización,
 
@@ -81,7 +81,7 @@ Para instalar la aplicación de escritorio, siga estos pasos. Desinstale cualqui
 
    *Figura: Pantalla de conexión a la dirección del servidor de entrada*
 
-   >[!Csubasta]
+   >[!CAUTION]
    >
    >Asegúrese de que no haya espacios al inicio o al final antes o después de la dirección del servidor AEM. De lo contrario, la aplicación no se puede conectar al servidor de AEM.
 
@@ -93,7 +93,7 @@ Para instalar la aplicación de escritorio, siga estos pasos. Desinstale cualqui
 
 1. (Experience Manager 6.5.1 o posterior) Si utiliza una aplicación de escritorio con Experience Manager 6.5.1 o posterior, actualice el conector S3 o Azure a la versión 1.10.4 o posterior. Consulte Conector [](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AzureDataStore) de Azure o conector [S3](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AmazonS3DataStore).
 
-   Si es cliente de Adobes Managed Services (AMS), póngase en contacto con el Servicio de atención al cliente de Adobe.
+   Si es cliente de Adobe Managed Services (AMS), póngase en contacto con el servicio de atención al cliente de Adobe.
 
 ## Configuración de preferencias {#set-preferences}
 
@@ -109,7 +109,7 @@ Para cambiar las preferencias, haga clic en el icono ![](assets/do-not-localize/
 
 * **[!UICONTROL Maximum Cache Size]**:: Caché permitida en el disco duro en GB que se utiliza para almacenar recursos descargados localmente.
 
-* **[!UICONTROL Current cache size]**:: Tamaño del Almacenamiento de los recursos descargados localmente. La información solo se muestra después de descargar los recursos con la aplicación.
+* **[!UICONTROL Current cache size]**:: Tamaño del almacenamiento de los recursos descargados localmente. La información solo se muestra después de descargar los recursos con la aplicación.
 
 * **[!UICONTROL Automatically download linked assets]**:: Los recursos que se colocan en las aplicaciones de Creative Cloud nativas admitidas se recuperan automáticamente si descarga el archivo original.
 
