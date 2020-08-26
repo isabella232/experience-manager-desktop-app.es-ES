@@ -10,7 +10,7 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 519fe85e5642eb88dd45515948e898185e262003
+source-git-commit: 6763474c278ab8d8f52a0a466657e66a08b0748b
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 46%
@@ -32,9 +32,9 @@ ht-degree: 46%
 
 La aplicación de escritorio de Adobe Experience Manager es compatible con los siguientes sistemas operativos:
 
-Mac OS X 10.14 o posterior, con las últimas correcciones de errores.
+* Mac OS X 10.14 o posterior, con las últimas correcciones de errores.
 
-Windows 10 con los paquetes de servicios y las correcciones de errores más recientes.
+* Windows 10 con los paquetes de servicios y las correcciones de errores más recientes.
 
 >[!NOTE]
 >
