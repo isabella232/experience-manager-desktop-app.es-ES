@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 9de9d086be4c0eccda7a60bd3dcbe68735394fad
 workflow-type: tm+mt
-source-wordcount: '3857'
+source-wordcount: '3869'
 ht-degree: 2%
 
 ---
@@ -35,10 +35,15 @@ Para la versión v1.x de la aplicación de escritorio, los vínculos de descarga
 
 ## Requisitos y requisitos previos del sistema {#system-requirements-and-prerequisites}
 
-AEM Desktop es compatible con los siguientes sistemas operativos:
+[!DNL Adobe Experience Manager]La aplicación de escritorio de es compatible con los siguientes sistemas operativos:
 
 * Mac OS X 10.10 o posterior, con las últimas correcciones de errores.
-* Windows 7 y Windows 10 con los paquetes de servicios y las correcciones de errores más recientes.
+
+* Windows 10 con los paquetes de servicios y las correcciones de errores más recientes.
+
+>[!NOTE]
+>
+>Windows 7 ya no es compatible con el proveedor (https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020).
 
 Adobe recomienda encarecidamente utilizar la versión más reciente de AEM aplicación de escritorio para aprovechar la funcionalidad más reciente, las correcciones de errores más recientes y el mejor rendimiento posible.
 
@@ -88,7 +93,7 @@ Esta versión amplía y reemplaza las versiones anteriores de la aplicación de 
 
 ### Mejoras disponibles desde AEM aplicación de escritorio 1.9 {#Enhancements-Available-Since-AEM-Desktop-App-19x}
 
-La aplicación de escritorio Adobe Experience Manager (AEM) 1.9.1 era una versión de parche que soluciona algunos problemas clave de los clientes relacionados con la retirada de recursos y la copia de archivos del recurso compartido de red a un directorio local.
+La aplicación de escritorio de Adobe Experience Manager (AEM) 1.9.1 era una versión de parche que soluciona algunos problemas clave de los clientes relacionados con la retirada de recursos y la copia de archivos del recurso compartido de red a un directorio local.
 
 * Los recursos desprotegidos por un usuario no deben estar disponibles para su modificación por otros usuarios (CQ-4246009)
 
@@ -181,7 +186,7 @@ AEM aplicación de escritorio 1.8.1 versión de seguimiento rápido ha añadido 
 
    * Cuadro de diálogo Más información de recursos: a veces la barra de acciones no estaba visible (CQ-4208540).
 
-   * (Win) El archivo ahora se puede sincronizar después de revertir a una versión anterior desde la interfaz de usuario de AEM Assets (CQ-4216411).
+   * (Win) Ahora, el archivo se puede sincronizar después de revertir a una versión anterior desde la interfaz de usuario de AEM Assets (CQ-4216411).
 
 ### Mejoras disponibles desde AEM aplicación de escritorio 1.7 {#Enhancements-Available-Since-AEM-Desktop-App-17}
 
@@ -318,13 +323,13 @@ Se esperan ambos casos y son efectos secundarios de la arquitectura de &quot;sin
 
    * Varias mejoras en la estabilidad (CQ-4207539, CQ-4200378).
 
-   * Mejor gestión de la URL de los AEM Assets en Preferencias (CQ-97388).
+   * Mejor administración de la URL de AEM Assets en Preferencias (CQ-97388).
 
 ### Mejoras disponibles desde AEM aplicación de escritorio 1.4 {#Enhancements-Available-Since-AEM-Desktop-App-14}
 
 * Carga simplificada de carpetas jerárquicas mediante la nueva acción Crear > Cargar carpeta en la IU táctil.
    * La acción inicia una operación de carga de carpetas realizada por la aplicación de escritorio
-   * La aplicación de escritorio atraviesa la jerarquía de carpetas dada en el escritorio en segundo plano y carga los archivos a los AEM Assets
+   * La aplicación de escritorio atraviesa la jerarquía de carpetas dada en el escritorio en segundo plano y carga los archivos en AEM Assets
    * El usuario puede supervisar el progreso en la nueva ventana Estado de la cola de carga con barra de progreso para las operaciones en curso
    * El estado de la cola de carga también proporciona mejor información de resolución de problemas (por ejemplo, sin conexión al servidor)
 * Nueva acción Editar en la IU táctil, que combina las operaciones Desproteger y Abrir en una sola
@@ -380,7 +385,7 @@ Dado que la carpeta /Volumes ya no requiere derechos administrativos, este cambi
 
 **Carga de carpetas.** Se recomienda utilizar la nueva función de carga de carpetas para cargar carpetas jerárquicas más grandes en AEM, en lugar de utilizar una copia o arrastrar y soltar en un repositorio AEM montado desde el nivel Finder o Explorer. Al utilizar la función de carga de carpetas, la aplicación de escritorio se comunica directamente con AEM y, por tanto, tiene un control mucho mejor sobre el proceso en general.
 
-**Mantenga AEM sesión disponible.** AEM aplicación de escritorio depende de una sesión abierta al servidor de AEM Assets para garantizar el correcto funcionamiento. Para los usuarios que trabajan con la aplicación de escritorio todos los días, se recomienda desmontar AEM Assets al final del día para forzar la salida de la sesión y, a continuación, &quot;Montar AEM Assets&quot; por la mañana para garantizar que inician sesión y que el recurso compartido de red está operativo.
+**Mantenga AEM sesión disponible.** AEM aplicación de escritorio depende de una sesión abierta al servidor de AEM Assets para garantizar el correcto funcionamiento. Para los usuarios que trabajan con la aplicación de escritorio todos los días, se recomienda desmontar AEM Assets al final del día para forzar la salida de la sesión y, a continuación, &quot;Montar AEM Assets&quot; por la mañana para garantizar que han iniciado sesión y que el recurso compartido de red está operativo.
 
 **Desactive &quot;Previsualización de iconos&quot; en Finder.** Para navegar con gran rendimiento por las carpetas grandes con Finder, especialmente con conectividad de red deficiente, asegúrese de que tanto &quot;Icon&quot; como &quot;Icon Previsualización&quot; están desactivados. De lo contrario, Finder inicio la descarga de cada recurso en una carpeta para generar una pequeña previsualización, lo que puede conducir a un bajo rendimiento y a una alta utilización del ancho de banda (CQ-4219779)
 
@@ -416,7 +421,7 @@ Dado que la carpeta /Volumes ya no requiere derechos administrativos, este cambi
 * Funcionalidad Copiar/Pegar: Pegar está disponible cuando no se ha copiado ningún recurso en el portapapeles
 * Windows:
    * Los archivos con flujos de datos alternativos (ADS) solo son totalmente compatibles con NTFS. Si copia estos archivos al recurso compartido WebDAV proporcionado por la aplicación de escritorio, se mostrará un cuadro de diálogo de advertencia en el que se avisará al usuario de que el archivo tiene propiedades que no se pueden copiar en la nueva ubicación. Esto suele ser correcto, ya que las propiedades solo son relevantes para una aplicación en particular en el escritorio del usuario y no tienen nada que ver con el contenido real del archivo (CQ-103770) (Win)
-   * la aplicación de escritorio en Windows debe instalarla el usuario que la va a utilizar (CQ-4216389) (win)
+   * la aplicación de escritorio en Windows debe ser instalada por el usuario que la va a utilizar (CQ-4216389) (win)
    * La aplicación puede bloquearse al hacer clic en el botón Reintentar en una carga fallida en determinadas circunstancias después de haber reanudado la carga por lotes al desconectarse (CQ-4251884) (Win)
 
 ## Recursos útiles {#helpful-resources}
