@@ -10,10 +10,10 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 519fe85e5642eb88dd45515948e898185e262003
 workflow-type: tm+mt
-source-wordcount: '1320'
-ht-degree: 48%
+source-wordcount: '1364'
+ht-degree: 46%
 
 ---
 
@@ -22,21 +22,25 @@ ht-degree: 48%
 
 | Productos | Aplicación de escritorio de Adobe Experience Manager |
 |--- |--- |
-| Versión de la aplicación (revisión) | 2.0 (2.0.2.0) |
+| Versión de la aplicación (revisión) | 2.0 (2.0.3.0) |
 | Versiones de AEM compatibles | AEM como Cloud Service; AEM 6.5; AEM 6.4; AEM 6.3 (con paquete de compatibilidad) |
 | Tipo | Versión menor |
-| Fecha de lanzamiento | 15 de abril de 2020 (Mac y Win) |
-| Direcciones URL de descarga | [macOS de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.2.0.dmg); [Windows de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.2.0.exe); [Windows de 32 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.2.0.exe) |
+| Fecha de lanzamiento | 27 de agosto de 2020 (Mac y Win) |
+| Direcciones URL de descarga | [macOS de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.3.2.dmg); [Windows de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.3.2.exe); [Windows de 32 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.3.2.exe) |
 
 ## Requisitos y requisitos previos del sistema {#system-requirements-and-prerequisites-v2}
 
 La aplicación de escritorio de Adobe Experience Manager es compatible con los siguientes sistemas operativos:
 
-* Mac OS X 10.14 o posterior, con las últimas correcciones de errores.
+Mac OS X 10.14 o posterior, con las últimas correcciones de errores.
 
-* Windows 7 y Windows 10 con los paquetes de servicios y las correcciones de errores más recientes.
+Windows 10 con los paquetes de servicios y las correcciones de errores más recientes.
 
-La aplicación funciona con las siguientes versiones de Experience Manager, tanto si se implementa como Cloud Service, en Adobes Managed Services (AMS) como in situ:
+>[!NOTE]
+>
+>Windows 7 ya no es compatible con el proveedor (https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020).
+
+La aplicación funciona con las siguientes versiones de Experience Manager, tanto si se implementa como Cloud Service, en los servicios gestionados de Adobe (AMS) como in situ:
 
 * [Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/release-notes/home.html).
 
@@ -77,6 +81,12 @@ La función es compatible con las versiones Adobe Creative Cloud 2018 y Adobe Cr
 
 To know the details, see [What&#39;s new in v2.0](introduction.md#whats-new-v2).
 
+**Actualizaciones en la aplicación v2.0.3**
+
+El error corregido en la versión actual es:
+
+* Se ha corregido el problema de inicio de sesión que tenían los usuarios de Windows que intentaban acceder al repositorio de DAM en la instancia [!DNL Adobe Experience Manager] 6.5.5.0 que utilizaba la aplicación.
+
 **Actualizaciones en la aplicación v2.0.2**
 
 Las correcciones y actualizaciones de errores son:
@@ -97,7 +107,7 @@ Las correcciones y actualizaciones de errores son:
 
 * Permitir la opción de configurar `%Temp%` el directorio para que coincida con la `%APPDATA%` ruta. <!-- CQ-4282665 -->
 
-* Permita que los usuarios inicien sesión en el AEM Author mediante la autenticación de Okta SAML. <!-- CQ-4278134 -->
+* Permita que los usuarios inicien sesión en AEM Author mediante la autenticación de Okta SAML. <!-- CQ-4278134 -->
 
 ## Instrucciones de instalación {#installation-instructions-v2}
 
@@ -149,7 +159,7 @@ En el diagrama siguiente se ilustra el flujo de recursos y archivos desde la nub
 
 * La aplicación intenta cargar archivos incluso cuando incluye caracteres no válidos, lo que puede provocar un error de carga en el servidor. <!-- CQ-4273652 -->
 
-* Cuando se cargan cambios en un recurso con comentarios, los comentarios se almacenan con el recurso en AEM pero no se pueden ver como comentarios de versiones. Este problema se resuelve en las AEM 6.4.5 y AEM 6.5.1. Adobe recomienda encarecidamente instalar los Service Packs más recientes. <!-- CQ-4268990 -->
+* Al cargar cambios en un recurso con comentarios, los comentarios se almacenan con el recurso en AEM pero no se pueden ver como comentarios de versiones. Este problema se resuelve en las AEM 6.4.5 y AEM 6.5.1. Adobe recomienda encarecidamente instalar los Service Packs más recientes. <!-- CQ-4268990 -->
 
 * El usuario no puede cancelar las transferencias de recursos. Si ha activado una transferencia de gran volumen sin querer, salga de la aplicación y vuelva a iniciarla. <!-- CQ-4278940 -->
 
