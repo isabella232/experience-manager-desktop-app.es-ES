@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a6f33efdd5702cc2f411d0deed8f54e7335c09ed
+source-git-commit: 29bbcc21f01dd0c1338fdbf3e979ef363a93533c
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1241'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,9 @@ Para instalar la aplicación de escritorio, siga estos pasos. Desinstale cualqui
 
 1. Reinicie el equipo como se le solicite. Inicie y configure la aplicación de escritorio.
 
-1. Para conectar la aplicación con un repositorio AEM, haga clic en el icono de la aplicación en la bandeja para iniciar la aplicación. Proporcione la dirección de la instancia de AEM. Haga clic en **[!UICONTROL Connect]** y proporcione las credenciales.
+1. Para conectar la aplicación con un repositorio AEM, haga clic en el icono de la aplicación en la bandeja e inicie la aplicación. Proporcione la dirección del servidor AEM en el formato `https://[aem-server-url]:[port]/`.
+
+   Haga clic en **[!UICONTROL Connect]** y proporcione las credenciales.
 
    ![Pantalla de conexión de la aplicación de escritorio a la dirección del servidor de entrada](assets/connect_da2.png)
 
