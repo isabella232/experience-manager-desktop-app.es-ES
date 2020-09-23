@@ -3,13 +3,13 @@ title: Solución de problemas de AEM versión 1.x de la aplicación de escritori
 description: Solucione los problemas de AEM aplicación de escritorio versión 1.x para resolver los problemas ocasionales relacionados con la instalación, actualización, configuración, etc.
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '3374'
 ht-degree: 1%
@@ -33,13 +33,13 @@ la aplicación de escritorio incluye los siguientes componentes:
 
 * **La aplicación** de escritorio: La aplicación monta o desmonta DAM como un sistema de archivos remoto y traduce las llamadas del sistema de archivos entre el recurso compartido de red montado localmente y la instancia de AEM remota a la que se conecta.
 * **Sistema operativo cliente** WebDAV/SMB: Gestiona la comunicación entre el Explorador/Finder de Windows y la aplicación de escritorio. Si se recupera, crea, modifica, elimina, mueve o copia un archivo, el cliente WebDAV/SMB del sistema operativo (SO) comunica esta operación a la aplicación de escritorio. Tras recibir la comunicación, la aplicación de escritorio la convierte en llamadas de API nativas AEM remotas. Por ejemplo, si un usuario crea un archivo en el directorio montado, el cliente WebDAV/SMB inicia una solicitud, que la aplicación de escritorio convierte en una solicitud HTTP que crea el archivo en DAM. El cliente WebDAV/SMB es un componente integrado del sistema operativo. No está afiliado de ninguna manera con la aplicación de escritorio, AEM o Adobe.
-* **Instancia** de Adobe Experience Manager: Proporciona acceso a los recursos almacenados en el repositorio DAM de AEM Assets. Además, realiza las acciones solicitadas por la aplicación de escritorio en nombre de las aplicaciones de escritorio locales que interactúan con el recurso compartido de red montado. La instancia de destinatario AEM debe ejecutar AEM versión 6.1 o superior. AEM instancias que ejecutan versiones anteriores de AEM podrían requerir paquetes de funciones adicionales y correcciones rápidas instalados para ser totalmente funcionales.
+* **Instancia** de Adobe Experience Manager: Proporciona acceso a los recursos almacenados en el repositorio de AEM Assets DAM. Además, realiza las acciones solicitadas por la aplicación de escritorio en nombre de las aplicaciones de escritorio locales que interactúan con el recurso compartido de red montado. La instancia de destinatario AEM debe ejecutar AEM versión 6.1 o superior. AEM instancias que ejecutan versiones anteriores de AEM podrían requerir paquetes de funciones adicionales y correcciones rápidas instalados para ser totalmente funcionales.
 
 ## Casos de uso previstos para AEM aplicación de escritorio {#intended-use-cases-for-aem-desktop-app}
 
 AEM aplicación de escritorio utiliza la tecnología de uso compartido de la red para asignar un repositorio AEM remoto a un escritorio local. Sin embargo, no se pretende sustituir a un recurso compartido de red que tenga activos, donde los usuarios realizan operaciones de gestión de activos digitales directamente desde su escritorio local. Estos incluyen mover o copiar varios archivos, o arrastrar estructuras de carpetas grandes al recurso compartido de red de AEM Assets directamente en Finder/Explorer.
 
-AEM aplicación de escritorio proporciona una forma práctica de acceder (abrir) y editar (guardar) recursos DAM entre la IU táctil de los AEM Assets y el escritorio local. Vincula los recursos del servidor de AEM Assets con los flujos de trabajo basados en escritorio.
+AEM aplicación de escritorio proporciona una forma práctica de acceder (abrir) y editar (guardar) recursos DAM entre la IU AEM Assets Touch y el escritorio local. Vincula los recursos del servidor de AEM Assets con los flujos de trabajo basados en escritorio.
 
 El siguiente ejemplo de caso de uso ilustra cómo se debe utilizar AEM Desktop:
 
@@ -51,7 +51,7 @@ El siguiente ejemplo de caso de uso ilustra cómo se debe utilizar AEM Desktop:
 * Con el menú contextual de AEM escritorio, el usuario inicia o cierra la compra del recurso o regresa a la interfaz de usuario de DAM.
 * Tras completar los cambios realizados en el archivo, el usuario vuelve a la interfaz de usuario web AEM
 
-Este no es el único caso de uso. Sin embargo, ilustra cómo AEM Desktop es un mecanismo práctico para acceder a los recursos y editarlos localmente. Se le recomienda utilizar la interfaz de usuario web DAM tanto como sea posible, ya que proporciona una mejor experiencia. Proporciona al Adobe más flexibilidad para cumplir con los requerimientos del cliente.
+Este no es el único caso de uso. Sin embargo, ilustra cómo AEM Desktop es un mecanismo práctico para acceder a los recursos y editarlos localmente. Se le recomienda utilizar la interfaz de usuario web DAM tanto como sea posible, ya que ofrece una mejor experiencia. Proporciona al Adobe más flexibilidad para cumplir con los requerimientos del cliente.
 
 ## Restricciones     {#limitations}
 
@@ -136,7 +136,7 @@ Puede mejorar el rendimiento en el lado AEM habilitando flujos de trabajo transi
 
 1. Vaya a `/miscadmin` la instancia de AEM que se va a configurar (por ejemplo, `http://[Server]:[Port]/miscadmin`).
 1. En el árbol de navegación, expanda **Herramientas** > **Flujo de trabajo** > **Modelos** > **Dam**.
-1. Haga clic con el botón Doble **en Actualizar recurso** DAM.
+1. Haga clic con el botón doble **en Actualizar recurso** DAM.
 1. En el panel de herramientas flotantes, cambie a la ficha **Página** y, a continuación, haga clic en Propiedades **de página**.
 1. Seleccione la casilla de verificación Flujo de trabajo **** transitorio y haga clic en **Aceptar**.
 
@@ -246,7 +246,7 @@ Haga clic en el icono AEM Escritorio y, a continuación, elija **Acerca de**. El
 
 ## Actualización de AEM aplicación de escritorio en macOS {#upgrading-aem-desktop-app-on-macos}
 
-En ocasiones pueden producirse problemas al actualizar AEM aplicación de escritorio en macOS. Esto se debe a que la carpeta del sistema heredada de AEM aplicación de escritorio impide que las nuevas versiones de AEM Desktop se carguen correctamente. Para solucionar este problema, se pueden quitar manualmente las siguientes carpetas y archivos.
+En ocasiones pueden producirse problemas al actualizar AEM aplicación de escritorio en macOS. Esto se debe a que la carpeta de sistema heredada de AEM aplicación de escritorio impide que las nuevas versiones de AEM Desktop se carguen correctamente. Para solucionar este problema, se pueden quitar manualmente las siguientes carpetas y archivos.
 
 Antes de ejecutar los pasos a continuación, arrastre la aplicación &quot;Adobe Experience Manager Desktop&quot; de la carpeta Aplicaciones macOS a la papelera. A continuación, abra terminal y ejecute el siguiente comando, proporcionando su contraseña cuando se le solicite.
 
@@ -269,7 +269,7 @@ Independientemente del comportamiento, el archivo permanece sin cambios cuando l
 
 ## Solución de problemas relacionados con el desplazamiento de archivos {#troubleshooting-problems-around-moving-files}
 
-La API de servidor requiere que se pasen encabezados adicionales, X-Destination, X-Depth y X-Overwrite, para que funcionen las operaciones de mover y copiar. El despachante no pasa estos encabezados de forma predeterminada, lo que provoca que se produzcan errores en estas operaciones. Para obtener más información, consulte [Conexión a AEM tras un Dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher).
+La API de servidor requiere que se pasen encabezados adicionales, X-Destination, X-Depth y X-Overwrite, para que funcionen las operaciones de mover y copiar. El despachante no pasa estos encabezados de forma predeterminada, lo que provoca que se produzcan errores en estas operaciones. Para obtener más información, consulte [Conexión a AEM detrás de un despachante](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher).
 
 ## Solución de problemas de conexión AEM Desktop {#troubleshooting-aem-desktop-connection-issues}
 
