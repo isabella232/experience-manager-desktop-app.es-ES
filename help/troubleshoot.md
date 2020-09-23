@@ -1,15 +1,15 @@
 ---
-title: Prácticas recomendadas para la aplicación de escritorio de Adobe Experience Manager y solución de problemas
-description: Siga las optimizaciones y solucione los problemas ocasionales relacionados con la instalación, actualización, configuración, etc.
+title: Prácticas recomendadas para la aplicación de escritorio de Adobe Experience Manager y resolución de problemas
+description: Siga las prácticas recomendadas y resuelva los problemas ocasionales relacionados con la instalación, actualización, configuración, etc.
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Troubleshoot Adobe Experience Manager desktop app {#troubleshoot-v2}
 
-La aplicación de escritorio de Adobe Experience Manager (AEM) se conecta al repositorio de administración de recursos digitales (DAM) de una implementación de Experience Manager remoto. La aplicación obtiene información del repositorio y resultados de búsqueda en el equipo, descarga y carga archivos y carpetas, e incluye funciones para gestionar conflictos con la interfaz de usuario de AEM Assets.
+La aplicación de escritorio de Adobe Experience Manager (AEM) se conecta al repositorio de Digital Asset Management (DAM) de una implementación de Experience Manager remoto. La aplicación obtiene información del repositorio y resultados de búsqueda en el equipo, descarga y carga archivos y carpetas, e incluye funciones para gestionar conflictos con la interfaz de usuario de AEM Assets.
 
 Siga leyendo para solucionar problemas de la aplicación, conozca las prácticas recomendadas y descubra las limitaciones.
 
@@ -37,11 +37,11 @@ Siga las siguientes optimizaciones para evitar problemas comunes y solucionar pr
 
 * **Utilice la versión** más reciente: Utilice la versión más reciente de la aplicación y compruebe siempre la compatibilidad antes de instalar una nueva versión de la aplicación o antes de actualizar a una versión más reciente de Adobe Experience Manager. See [release notes](release-notes.md).
 
-* **Utilice la misma letra** de unidad: Utilice la misma letra de unidad en una organización para asignarla a DAM de Adobe Experience Manager. Para ver los recursos colocados por otros usuarios, las rutas deben ser las mismas. El uso de la misma letra de unidad garantiza una ruta constante a los recursos DAM. Los recursos permanecen colocados y no se eliminan incluso si distintos usuarios utilizan distintas letras de unidad.
+* **Utilice la misma letra** de unidad: Utilice la misma letra de unidad en una organización para asignarla a Adobe Experience Manager DAM. Para ver los recursos colocados por otros usuarios, las rutas deben ser las mismas. El uso de la misma letra de unidad garantiza una ruta constante a los recursos DAM. Los recursos permanecen colocados y no se eliminan incluso si distintos usuarios utilizan distintas letras de unidad.
 
 * **Tenga en cuenta la red**: El rendimiento de la red es fundamental para el rendimiento de la aplicación de escritorio Experience Manager. Si se enfrenta a una respuesta lenta a las transferencias de archivos o a las operaciones masivas, desactive las funciones o aplicaciones que pueden causar mucho tráfico en la red.
 
-* **Casos de uso no admitidos para la aplicación** de escritorio: No utilice la aplicación para la migración de recursos (necesita planificación y otras herramientas); para operaciones DAM de gran capacidad (como mover carpetas grandes, cargas grandes, buscar archivos mediante búsquedas avanzadas de metadatos); y como cliente de sincronización (los principios de diseño y los patrones de uso son diferentes de los clientes en sincronización, como Microsoft OneDrive o la sincronización de escritorio de Adobe Creative Cloud).
+* **Casos de uso no admitidos para la aplicación** de escritorio: No utilice la aplicación para la migración de recursos (necesita planificación y otras herramientas); para operaciones DAM de gran capacidad (como mover carpetas grandes, cargas grandes, buscar archivos mediante búsquedas avanzadas de metadatos); y como cliente de sincronización (los principios de diseño y los patrones de uso son diferentes de los clientes en sincronización como la sincronización de escritorio de Microsoft OneDrive o Adobe Creative Cloud).
 
 * **Tiempo de espera**: Actualmente, la aplicación de escritorio no tiene un valor de tiempo de espera configurable que desconecte la conexión entre el servidor Experience Manager y la aplicación de escritorio después de un intervalo de tiempo fijo. Cuando se cargan recursos de gran tamaño, si la conexión se agota después de un tiempo, la aplicación tiene el reintentos de cargar el recurso varias veces aumentando el tiempo de espera de carga. No se recomienda cambiar la configuración de tiempo de espera predeterminada.
 
