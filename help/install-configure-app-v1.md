@@ -1,15 +1,15 @@
 ---
 title: Instalar y configurar AEM versión 1.x de la aplicación de escritorio
-description: Instale y configure AEM aplicación de escritorio versión 1.x para trabajar con los servidores AEM Assets y asigne los recursos que desea montar como unidad en el escritorio.
+description: Instale y configure AEM aplicación de escritorio versión 1.x para que funcione con los servidores de AEM Assets y asigne los recursos que desea montar como unidad en el escritorio.
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS,SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f6365302-1690-4719-9b8c-035719422740
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Con la aplicación de escritorio AEM, los recursos de AEM son fácilmente accesibles en el escritorio local y se pueden utilizar en cualquier aplicación de escritorio. Los recursos se pueden mostrar fácilmente en Mac Finder o en el Explorador de Windows, abrirse en aplicaciones de escritorio y cambiarse localmente; los cambios se guardan en AEM al cargar y se crea una nueva versión en el repositorio.
 
-Esta integración permite que diversas funciones de la organización gestionen los activos de forma centralizada en AEM Assets y accedan a ellos en el Creative Cloud y en otras aplicaciones, al tiempo que facilita el cumplimiento de las diversas normas, incluida la promoción de marca.
+Esta integración permite que diversas funciones de la organización gestionen los activos de forma centralizada en AEM Assets y accedan a ellos en el Creative Cloud y en otras aplicaciones, al tiempo que facilita el cumplimiento de los distintos estándares, incluida la marca.
 
 Para utilizar AEM aplicación de escritorio,
 
@@ -49,7 +49,7 @@ Al cambiar un archivo desde una ubicación de recurso compartido de red montada 
 
 En la segunda fase, la aplicación de escritorio carga el archivo actualizado en AEM servidor tras un retraso predefinido (por ejemplo, 30 segundos). Esta operación se produce en segundo plano. Utilice la opción Estado del recurso de Vista para vista del estado de la operación de carga.
 
-1. Cargue un recurso a AEM Assets.
+1. Cargue un recurso en AEM Assets.
 
 1. Toque o haga clic en el icono de la aplicación de escritorio AEM de la barra de herramientas.
 
