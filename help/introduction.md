@@ -1,12 +1,12 @@
 ---
 title: Introducción a la aplicación de escritorio de Adobe Experience Manager
-description: Aprenda a utilizar la aplicación de escritorio de Adobe Experience Manager para optimizar los flujos de trabajo de administración de recursos para los usuarios creativos al utilizar Recursos de Adobe Experience Manager directamente desde su escritorio.
+description: Obtenga información sobre cómo utilizar la aplicación de escritorio de Adobe Experience Manager para optimizar los flujos de trabajo de administración de recursos para los usuarios creativos al usar Adobe Experience Manager Assets directamente desde su escritorio.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 67%
@@ -18,13 +18,13 @@ ht-degree: 67%
 
 Adobe ofrece flujos de trabajo conectados en todas sus soluciones para permitir una mejora de la productividad para los usuarios de la línea de negocios y los profesionales creativos. La aplicación de escritorio de Adobe Experience Manager conecta repositorios y aplicaciones de escritorio, incluidas las de Adobe y otras de terceros, para proporcionar un acceso más rápido a los recursos y a los flujos de trabajo optimizados. Gracias a ello, se ahorra tiempo y se reduce el esfuerzo, así que mejora la eficacia de los usuarios que trabajan con recursos de Adobe Experience Manager en sus flujos de trabajo de escritorio.
 
-Con la aplicación, los recursos de Adobe Experience Manager Assets son fácilmente accesibles en el escritorio local y se pueden utilizar en cualquier aplicación de escritorio. Puede abrir y editar los recursos en las aplicaciones de escritorio que desee. Las ediciones locales están disponibles en Adobe Experience Manager como una nueva versión del recurso solo cuando se decide cargar los cambios, lo que permite gestionar la edición de recursos en curso de forma eficaz en el escritorio. La aplicación admite la carga de recursos y carpetas anidadas en el Experience Manager, lo que simplifica la adición de nuevo contenido al repositorio.
+Con la aplicación, los recursos de Adobe Experience Manager Assets son fácilmente accesibles en el escritorio local y se pueden utilizar en cualquier aplicación de escritorio. Puede abrir y editar los recursos en las aplicaciones de escritorio que desee. Las ediciones locales solo están disponibles en Adobe Experience Manager como una nueva versión del recurso cuando se decide cargar los cambios, lo que permite gestionar la edición de recursos en curso de forma eficaz en el escritorio. La aplicación admite la carga de recursos y carpetas anidadas en el Experience Manager, lo que simplifica la adición de nuevo contenido al repositorio.
 
 Esta integración permite que diversas funciones de la organización gestionen los recursos de forma centralizada en Recursos Experience Manager. Los especialistas en marketing y los usuarios empresariales pueden garantizar el cumplimiento de las diversas normas, incluidas la promoción de la marca y la concesión de licencias. Los usuarios creativos que también dispongan de una herramienta [Adobe Asset Link](https://www.adobe.com/es/marketing/experience-manager-assets/adobe-asset-link.html) especializada para trabajar con recursos en Adobe Photoshop, Illustrator e InDesign, tendrán la oportunidad de acceder a recursos en el escritorio de Creative Cloud y otras aplicaciones nativas.
 
 >[!NOTE]
 >
->La aplicación de escritorio de Adobe Experience Manager se introdujo en la versión 6.1 de Adobe Experience Manager y anteriormente se denominaba Aplicación Adobe Experience Manager Assets Companion. Para obtener ayuda sobre la versión 1.x de la aplicación, consulte la tabla de contenido en la barra lateral izquierda. Adobe recomienda actualizar a la versión 2 más reciente.
+>La aplicación de escritorio de Adobe Experience Manager se introdujo en la versión 6.1 de Adobe Experience Manager y anteriormente se denominaba Aplicación Companion de Adobe Experience Manager Assets. Para obtener ayuda sobre la versión 1.x de la aplicación, consulte la tabla de contenido en la barra lateral izquierda. Adobe recomienda actualizar a la versión 2 más reciente.
 
 La documentación de la aplicación de escritorio contiene información sobre las siguientes funciones y casos de uso.
 
