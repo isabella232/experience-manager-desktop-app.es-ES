@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_E
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: f5f65fa8ddceae62f2e046f2d20e853aef572f2c
 workflow-type: tm+mt
-source-wordcount: '3997'
+source-wordcount: '3999'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Utilice la aplicación de escritorio de Adobe Experience Manager (AEM) para acce
 
 La integración permite que diversas funciones de la organización gestionen los recursos de forma centralizada en Recursos Experience Manager y accedan a los recursos en el escritorio local en las aplicaciones nativas en Windows o Mac OS.
 
-Cuando abra la aplicación después de cerrar la sesión o por primera vez, proporcione la URL del servidor Experience Manager en el formato `https://[aem-server-url]:[port]/`. Haga clic en Conectar. Proporcione credenciales para conectar la aplicación con el servidor.
+Cuando abra la aplicación después de cerrar la sesión o por primera vez, proporcione la URL del servidor Experience Manager en el formato `https://[aem-server-url]:[port]/`. A continuación, seleccione la [!UICONTROL Connect] opción. Proporcione credenciales para conectar la aplicación con el servidor.
 
 Las tareas clave que realiza con la aplicación de escritorio Experience Manager son:
 
