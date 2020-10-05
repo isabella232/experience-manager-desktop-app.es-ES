@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: 381e586077c7db63dd57a468b1c6abc60c63e34e
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1537'
 ht-degree: 1%
 
 ---
@@ -51,37 +51,41 @@ Para solucionar problemas de aplicaciones de escritorio, tenga en cuenta la sigu
 
 ### Habilitar modo de depuración {#enable-debug-mode}
 
-Para solucionar problemas, puede habilitar el modo de depuración y obtener más información en los registros. Para utilizar la aplicación en modo de depuración en Mac, utilice las siguientes opciones de línea de comandos en un terminal o en el símbolo del sistema: `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`.
-
-Para habilitar el modo de depuración en Windows, siga estos pasos:
-
-1. Busque `Adobe Experience Manager Desktop.exe.config` el archivo en la carpeta de instalación de la aplicación de escritorio. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop`.
-
-1. Localice `<level value="INFO"/>` hacia el final del archivo. Cambie el valor de `INFO` a `DEBUG`, que es `<level value="DEBUG"/>`. Guarde y cierre el archivo.
-
-1. Busque `logging.json` el archivo en la carpeta de instalación de la aplicación de escritorio. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`.
-
-1. En `logging.json` archivo, busque todas las instancias de `"level": "info"`. Cambie los valores de `info` a `debug`, que es `"level": "debug"`. Guarde y cierre el archivo.
-
-1. Borre los directorios en caché que se encuentran en la ubicación establecida en las [preferencias](/help/install-upgrade.md#set-preferences)de la aplicación.
-
-1. Reinicie la aplicación de escritorio.
-
-<!-- The Windows command doesn't work for now.
-* On Windows: `SET AEM_DESKTOP_LOG_LEVEL=DEBUG & "C:\Program Files\Adobe\Adobe Experience Manager Desktop\Adobe Experience Manager Desktop.exe"`
--->
-
-### Ubicación de los archivos de registro {#check-log-files-v2}
-
-Puede encontrar los archivos de registro de AEM aplicación de escritorio en las siguientes ubicaciones. Al cargar muchos recursos, si algunos archivos no se pueden cargar, consulte `backend.log` el archivo para identificar las cargas fallidas.
-
-* Ruta en Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
-
-* Ruta en Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+Para solucionar problemas, puede habilitar el modo de depuración y obtener más información en los registros.
 
 >[!NOTE]
 >
->Cuando trabaje con el Servicio de atención al cliente de Adobe en una solicitud o entrada de asistencia, puede que se le pida que comparta los archivos de registro para ayudar al equipo de atención al cliente a comprender el problema. Archive toda la `Logs` carpeta y compártala con el contacto del Servicio de atención al cliente.
+>Los niveles de registro válidos son DEBUG, INFO, WARN o ERROR. La gran cantidad de registros es mayor en DEBUG y menor en ERROR.
+
+Para utilizar la aplicación en modo de depuración en Mac:
+
+1. Abra una ventana de terminal o un símbolo del sistema.
+
+1. Inicie la aplicación de escritorio [!DNL Experience Manager] ejecutando el siguiente comando:
+
+   `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`.
+
+Para habilitar el modo de depuración en Windows:
+
+1. Abra una ventana de comandos.
+
+1. Inicie la aplicación [!DNL Experience Manager] de escritorio mediante el siguiente comando:
+
+`AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`.
+
+### Ubicación de los archivos de registro {#check-log-files-v2}
+
+[!DNL Experience Manager] la aplicación de escritorio almacena sus archivos de registro en las siguientes ubicaciones según el sistema operativo:
+
+En Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
+
+En Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+
+Al cargar muchos recursos, si algunos archivos no se pueden cargar, consulte `backend.log` el archivo para identificar las cargas fallidas.
+
+>[!NOTE]
+>
+>Cuando trabaje con el Servicio de atención al cliente de Adobe en una solicitud de asistencia o un ticket, se le puede pedir que comparta los archivos de registro para ayudar al equipo de atención al cliente a comprender el problema. Archive toda la `Logs` carpeta y compártala con el contacto del Servicio de atención al cliente.
 
 ### Borrar caché {#clear-cache-v2}
 
@@ -129,7 +133,60 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 Si utiliza una aplicación de escritorio con AEM 6.5.1 o posterior, actualice el conector S3 o Azure a la versión 1.10.4 o posterior. Resuelve el problema de error de carga de archivos relacionado con [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Consulte las instrucciones [de instalación](install-upgrade.md#install-v2).
 
-## Problema de configuración de SSL {#ssl-config-v2}
+## [!DNL Experience Manager] problemas de conexión de la aplicación de escritorio {#connection-issues}
+
+### La autenticación de inicio de sesión SAML no funciona {#da-connection-issue-with-saml-aem}
+
+Si [!DNL Experience Manager] la aplicación de escritorio no se conecta a la instancia habilitada para SSO (SAML) [!DNL Adobe Experience Manager] , lea esta sección para solucionar problemas. Los procesos de SSO son variados, a veces complejos, y el diseño de la aplicación hace todo lo posible para dar cabida a estos tipos de conexiones. Sin embargo, algunas configuraciones requieren resolución de problemas adicional.
+
+A veces, el proceso SAML no redirige a la ruta solicitada originalmente o la redirección final es a un host distinto al configurado en la aplicación de [!DNL Adobe Experience Manager] escritorio. Para verificar que no sea así:
+
+1. Abra un navegador web.
+
+1. Escriba la dirección URL `<AEM host>/content/dam.json` en la barra de direcciones.
+
+   Reemplazar `<AEM host>` por la instancia de destinatario [!DNL Adobe Experience Manager] , por ejemplo `http://localhost:4502/content/dam.json`.
+
+1. Inicie sesión en la [!DNL Adobe Experience Manager] instancia.
+
+1. Cuando el inicio de sesión se haya completado, observe la dirección actual del explorador en la barra de direcciones. Debe coincidir exactamente con la dirección URL introducida inicialmente.
+
+1. Compruebe también que todo lo anterior `/content/dam.json` coincide con el valor de destinatario [!DNL Adobe Experience Manager] configurado en la configuración de la aplicación de [!DNL Adobe Experience Manager] escritorio.
+
+**El proceso SAML de inicio de sesión funciona correctamente según los pasos anteriores, pero los usuarios siguen sin poder iniciar sesión**
+
+La ventana de la aplicación de escritorio que muestra el proceso de inicio de sesión es simplemente un navegador web que muestra la interfaz de usuario web de la instancia de destinatario [!DNL Adobe Experience Manager] [!DNL Adobe Experience Manager] :
+
+* La versión Mac utiliza [WebView](https://developer.apple.com/documentation/webkit/webview).
+
+* La versión de Windows utiliza [CefSharp](https://cefsharp.github.io/)basado en Chrome.
+
+Asegúrese de que el proceso SAML sea compatible con esos exploradores.
+
+Para solucionar problemas adicionales, es posible realizar la vista de las direcciones URL exactas que el explorador intenta cargar. Para ver esta información:
+
+1. Siga las instrucciones para iniciar la aplicación en modo [de](#enable-debug-mode)depuración.
+
+1. Vuelva a producir el intento de inicio de sesión.
+
+1. Vaya al directorio [de](#check-log-files-v2) registro de la aplicación
+
+1. Para Windows:
+
+   1. Abra &quot;aemcompanionlog.txt&quot;.
+
+   1. Busque mensajes que comiencen con &quot;La dirección del navegador de inicio de sesión ha cambiado a&quot;. Estas entradas también contienen la dirección URL que cargó la aplicación.
+
+   Para Mac:
+
+   1. `com.adobe.aem.desktop-nnnnnnnn-nnnnnn.log`, donde los **n** se reemplazan por los números que se encuentren en el nombre de archivo más reciente.
+
+   1. Busque mensajes que comiencen con &quot;marco cargado&quot;. Estas entradas también contienen la dirección URL que cargó la aplicación.
+
+
+El observar la secuencia de URL que se está cargando puede ayudar a solucionar problemas al final de SAML para determinar qué es lo que está mal.
+
+### Problema de configuración de SSL {#ssl-config-v2}
 
 Las bibliotecas que AEM aplicación de escritorio utiliza para la comunicación HTTP utilizan una estricta aplicación SSL. A veces, una conexión puede funcionar correctamente con un navegador, pero falla al usar AEM aplicación de escritorio. Para configurar SSL correctamente, instale el certificado intermedio que falta en Apache. Consulte [Cómo instalar un certificado de CA intermedio en Apache](https://access.redhat.com/solutions/43575).
 
