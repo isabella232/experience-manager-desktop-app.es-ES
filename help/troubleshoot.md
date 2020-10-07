@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a7a334df5eaa2b8a8d0412bff1ed2a47d39ca1a2
+source-git-commit: 540821ad10f14ad855c66a2b93d356ba118515c7
 workflow-type: tm+mt
 source-wordcount: '2230'
 ht-degree: 0%
@@ -143,7 +143,7 @@ La caché se borra eliminando el directorio de caché de la aplicación, que se 
 
 Para borrar la caché, elimine el directorio de extremo codificado [!DNL Adobe Experience Manager] que desee. Como alternativa, si se elimina el directorio completo especificado en las preferencias, se borrará la caché de todas las instancias que haya utilizado la aplicación.
 
-Borrado de la caché de la aplicación de escritorio [!DNL Adobe Experience Manager]] es una tarea de solución de problemas preliminar que puede resolver varios problemas. Borre la caché de las preferencias de la aplicación. Consulte [Configuración de preferencias](install-upgrade.md#set-preferences). La ubicación predeterminada de la carpeta de caché es:
+La eliminación de la caché de la aplicación de [!DNL Adobe Experience Manager] escritorio es una tarea de solución de problemas preliminar que puede resolver varios problemas. Borre la caché de las preferencias de la aplicación. Consulte [Configuración de preferencias](install-upgrade.md#set-preferences). La ubicación predeterminada de la carpeta de caché es:
 
 ### Conozca la versión de la aplicación de [!DNL Adobe Experience Manager] escritorio {#know-app-version-v2}
 
