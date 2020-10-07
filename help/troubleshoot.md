@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b4add64df21991495d5cc01e6250bbc9fc444ff0
+source-git-commit: a7a334df5eaa2b8a8d0412bff1ed2a47d39ca1a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2230'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,48 @@ Siga las siguientes optimizaciones para evitar problemas comunes y solucionar pr
 
 Para solucionar problemas de aplicaciones de escritorio, tenga en cuenta la siguiente información. Además, le prepara para transmitir mejor los problemas al Servicio de atención al cliente de Adobe si decide solicitar asistencia.
 
+### Ubicación de los archivos de registro {#check-log-files-v2}
+
+[!DNL Experience Manager] la aplicación de escritorio almacena sus archivos de registro en las siguientes ubicaciones según el sistema operativo:
+
+En Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
+
+En Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+
+Al cargar muchos recursos, si algunos archivos no se pueden cargar, consulte `backend.log` el archivo para identificar las cargas fallidas.
+
+>[!NOTE]
+>
+>Cuando trabaje con el Servicio de atención al cliente de Adobe en una solicitud de asistencia o un ticket, se le puede pedir que comparta los archivos de registro para ayudar al equipo de atención al cliente a comprender el problema. Archive toda la `Logs` carpeta y compártala con el contacto del Servicio de atención al cliente.
+
+### Cambiar el nivel de detalles en los archivos de registro {#level-of-details-in-log}
+
+Para cambiar el nivel de detalles en los archivos de registro:
+
+1. Asegúrese de que la aplicación no se esté ejecutando.
+
+1. En el sistema Windows:
+
+   1. Abra una ventana de comandos.
+
+   1. Inicie [!DNL Adobe Experience Manager] la aplicación de escritorio ejecutando el comando:
+
+   ```shell
+   set AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe
+   ```
+
+   En el sistema Mac:
+
+   1. Abra una ventana de terminal.
+
+   1. Inicie [!DNL Adobe Experience Manager] la aplicación de escritorio ejecutando el comando:
+
+   ```shell
+   AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app
+   ```
+
+Los niveles de registro válidos son DEBUG, INFO, WARN o ERROR. La gran cantidad de registros es mayor en DEBUG y menor en ERROR.
+
 ### Habilitar modo de depuración {#enable-debug-mode}
 
 Para solucionar problemas, puede habilitar el modo de depuración y obtener más información en los registros.
@@ -73,46 +115,61 @@ Para habilitar el modo de depuración en Windows:
 
 `AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`.
 
-### Ubicación de los archivos de registro {#check-log-files-v2}
-
-[!DNL Experience Manager] la aplicación de escritorio almacena sus archivos de registro en las siguientes ubicaciones según el sistema operativo:
-
-En Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
-
-En Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
-
-Al cargar muchos recursos, si algunos archivos no se pueden cargar, consulte `backend.log` el archivo para identificar las cargas fallidas.
-
->[!NOTE]
->
->Cuando trabaje con el Servicio de atención al cliente de Adobe en una solicitud de asistencia o un ticket, se le puede pedir que comparta los archivos de registro para ayudar al equipo de atención al cliente a comprender el problema. Archive toda la `Logs` carpeta y compártala con el contacto del Servicio de atención al cliente.
-
 ### Borrar caché {#clear-cache-v2}
 
-La eliminación de la caché de AEM aplicación de escritorio es una tarea preliminar para solucionar problemas que puede resolver varios problemas. Borre la caché de las preferencias de la aplicación. Consulte [Configuración de preferencias](install-upgrade.md#set-preferences). La ubicación predeterminada de la carpeta de caché es:
+Siga estos pasos:
 
-* En Windows: `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
+1. Inicio la aplicación y conecte una instancia de AEM.
 
-* En Mac: `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
+1. Para abrir las preferencias de la aplicación, haga clic en las elipses de la esquina superior derecha y seleccione [!UICONTROL Preferences].
 
-Sin embargo, la ubicación puede cambiar en función del extremo de AEM configurado AEM escritorio. El valor es una versión codificada de la dirección URL de destino. Por ejemplo, si la aplicación está segmentada `http://localhost:4502`, el nombre del directorio es `http%3A%2F%2Flocalhost%3A4502%2F`. Para borrar la caché, elimine la carpeta adecuada. Otra razón para borrar la caché es liberar espacio en disco cuando se está ejecutando con poco espacio en disco.
+1. Busque la entrada que muestra el [!UICONTROL Current Cache Size]. Haga clic en el icono de papelera situado junto a este elemento.
+
+Para borrar manualmente la caché, siga los pasos a continuación.
 
 >[!CAUTION]
 >
->Si borra AEM caché de escritorio, las modificaciones de recursos locales que no se sincronizan con AEM servidor se pierden irrevocablemente.
+>Se trata de una operación potencialmente destructiva. Si hay cambios en los archivos locales que no se cargan en [!DNL Adobe Experience Manager], se perderán dichos cambios.
 
-### Conozca la versión de la aplicación de escritorio AEM {#know-app-version-v2}
+La caché se borra eliminando el directorio de caché de la aplicación, que se encuentra en las preferencias de la aplicación.
 
-Haga clic en el menú ![](assets/do-not-localize/more_options_da2.png) Aplicación para abrir el menú de la aplicación y haga clic en **[!UICONTROL Help]** > **[!UICONTROL About]**.
+1. Inicio la aplicación.
+
+1. Para abrir las preferencias de la aplicación, seleccione las elipses en la esquina superior derecha y seleccione [!UICONTROL Preferences].
+
+1. Observe el [!UICONTROL Cache Directory] valor.
+
+   En este directorio hay subdirectorios con el nombre de los extremos codificados [!DNL Adobe Experience Manager] . Los nombres son una versión codificada de la [!DNL Adobe Experience Manager] dirección URL de destino. Por ejemplo, si la aplicación está segmentando `localhost:4502` entonces el nombre del directorio será `localhost_4502`.
+
+Para borrar la caché, elimine el directorio de extremo codificado [!DNL Adobe Experience Manager] que desee. Como alternativa, si se elimina el directorio completo especificado en las preferencias, se borrará la caché de todas las instancias que haya utilizado la aplicación.
+
+Borrado de la caché de la aplicación de escritorio [!DNL Adobe Experience Manager]] es una tarea de solución de problemas preliminar que puede resolver varios problemas. Borre la caché de las preferencias de la aplicación. Consulte [Configuración de preferencias](install-upgrade.md#set-preferences). La ubicación predeterminada de la carpeta de caché es:
+
+### Conozca la versión de la aplicación de [!DNL Adobe Experience Manager] escritorio {#know-app-version-v2}
+
+Para ver el número de versión:
+
+1. Inicio la aplicación.
+
+1. Haga clic en las elipses de la esquina superior derecha, pase el ratón por encima [!UICONTROL Help]y haga clic en [!UICONTROL About].
+
+   El número de versión aparece en esta pantalla.
 
 ### No se pueden ver los recursos colocados {#placed-assets-missing}
 
 Si no puede ver los recursos que usted u otros profesionales creativos colocaron en los archivos de soporte (por ejemplo, archivos INDD), compruebe lo siguiente:
 
 * Conexión al servidor. La conectividad de red deficiente puede detener las descargas de recursos.
+
 * Tamaño de archivo. Los recursos grandes tardan más en descargarse y mostrarse.
+
 * Consistencia de la letra de unidad. Si usted u otro colaborador colocó los recursos mientras asignaba el DAM AEM a una letra de unidad diferente, no se muestran los recursos colocados.
+
 * Permisos. Para comprobar si tiene permisos para recuperar los recursos colocados, póngase en contacto con el administrador de AEM.
+
+### Las ediciones realizadas en archivos de la interfaz de usuario de la aplicación de escritorio no se reflejan [!DNL Adobe Experience Manager] inmediatamente {#changes-on-da-not-visible-on-aem}
+
+[!DNL Adobe Experience Manager] la aplicación de escritorio deja al usuario la decisión de cuándo se completan todas las ediciones de un archivo. En función del tamaño y la complejidad de un archivo, se tarda un tiempo considerable en transferir la nueva versión de un archivo a [!DNL Adobe Experience Manager]. El diseño de la aplicación requiere minimizar el número de veces que se transfiere un archivo de forma sucesiva, en lugar de adivinar cuándo se completan las ediciones del archivo y se cargan automáticamente. Se recomienda que el usuario inicie la transferencia del archivo nuevamente a [!DNL Adobe Experience Manager] cargando los cambios de un archivo.
 
 ### Problemas al actualizar en macOS {#issues-when-upgrading-on-macos}
 
@@ -247,6 +304,22 @@ Raramente la aplicación puede no responder, mostrar solo una pantalla en blanco
 * Salga de la aplicación y ábrala de nuevo.
 
 En ambos métodos, la aplicación inicio en la carpeta DAM raíz.
+
+### Necesita ayuda adicional con la aplicación [!DNL Experience Manager] de escritorio {#additional-help}
+
+Cree un ticket de Jira con la siguiente información:
+
+* Utilícelo `DAM - Companion App` como el [!UICONTROL Component].
+
+* Pasos detallados para reproducir el problema en [!UICONTROL Description].
+
+* Registros de nivel DEBUG que se capturaron al reproducir el problema.
+
+* Destinatario AEM versión.
+
+* Versión del sistema operativo.
+
+* [!DNL Adobe Experience Manager] versión de la aplicación de escritorio. Para conocer la versión de la aplicación, consulte [Búsqueda de la versión](#know-app-version-v2)de la aplicación de escritorio.
 
 >[!MORELIKETHIS]
 >
