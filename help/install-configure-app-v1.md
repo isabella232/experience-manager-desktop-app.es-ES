@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ef87dc011297fda181a9a7643a261e8a42e35a8b
+source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -134,9 +134,7 @@ Para dirigir la aplicación a una carpeta o unidad diferente, edite el archivo d
    >La aplicación crea automáticamente un subdirectorio *&lt;Encoded AEM Endpoint>* . Este comportamiento no se puede configurar.
 
 >[!MORELIKETHIS]
-* [Introducción a la aplicación de escritorio de AEM](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
-* [Uso de la aplicación de escritorio de AEM](use-app-v1.md)
-* [Comprender el registro y la salida con AEM aplicación de escritorio](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
-* [Uso de la aplicación de escritorio con AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
-* [Solución de problemas de AEM aplicación de escritorio](troubleshoot-app-v1.md)
+* [Introducción a la aplicación de escritorio de AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
+* [Uso de la aplicación de escritorio de AEM](use-app-v1.md).
+* [Solución de problemas de AEM aplicación](troubleshoot-app-v1.md)de escritorio.
 
