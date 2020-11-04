@@ -1,11 +1,11 @@
 ---
 title: Utilice AEM versión 1.x de la aplicación de escritorio.
-description: Aprenda a utilizar la versión 1.x de la aplicación de escritorio de Adobe Experience Manager y a optimizar su trabajo con los recursos en el escritorio.
+description: Aprenda a utilizar la versión 1.x de la aplicación de escritorio de Adobe Experience Manager y a optimizar su trabajo con recursos en el escritorio.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 67e117648de8298f78992afea5ae0962fd2c698b
+source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
 workflow-type: tm+mt
-source-wordcount: '2516'
+source-wordcount: '2500'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Con la aplicación, los recursos de AEM son fácilmente accesibles en el escritorio local y se pueden utilizar en cualquier aplicación de escritorio. Los recursos se pueden revelar fácilmente en Mac Finder o el Explorador de Windows, abrirse en aplicaciones de escritorio y cambiarse localmente; los cambios se guardan de nuevo en AEM con una nueva versión creada en el repositorio.
 
-Esta integración permite que diversas funciones de la organización gestionen los activos de forma centralizada en AEM Assets y accedan a ellos en el Creative Cloud y en otras aplicaciones, al tiempo que facilita el cumplimiento de las diversas normas, incluida la promoción de marca.
+Esta integración permite que diversas funciones de la organización gestionen los activos de forma centralizada en AEM Assets y accedan a ellos en el Creative Cloud y en otras aplicaciones, al tiempo que facilita el cumplimiento de los distintos estándares, incluida la marca.
 
 Las tareas clave que se realizan con la aplicación de escritorio AEM v1 incluyen:
 
@@ -72,9 +72,9 @@ La aplicación permite que la configuración se conecte y desconecte de los serv
 
 **Explorar recursos** Abra la unidad local en la que se monta el repositorio de AEM Assets. En otras palabras, explore los recursos que ahora están disponibles en su equipo local.
 
-**Estado** del recurso de Vista Cuando se cargan los recursos modificados o se añaden nuevos al repositorio de AEM Assets, la aplicación carga los recursos en segundo plano. La carga en segundo plano permite realizar operaciones sin problemas, sin tener que esperar a que finalice la carga, especialmente en el caso de los recursos de gran tamaño. Puede guardar los cambios localmente y olvidarlos. La aplicación tarda algún tiempo en enviar estos recursos al servidor, según el ancho de banda disponible. Puede comprobar el estado de la carga, junto con información más básica.
+**Estado** de los recursos de vista Cuando se cargan los recursos modificados o se añaden nuevos al repositorio de AEM Assets, la aplicación carga los recursos en segundo plano. La carga en segundo plano permite realizar operaciones sin problemas, sin tener que esperar a que finalice la carga, especialmente en el caso de los recursos de gran tamaño. Puede guardar los cambios localmente y olvidarlos. La aplicación tarda algún tiempo en enviar estos recursos al servidor, según el ancho de banda disponible. Puede comprobar el estado de la carga, junto con información más básica.
 
-**Opciones** Haga clic o toque Opciones en la bandeja de aplicaciones de AEM Desktop para acceder a la configuración e iniciar la aplicación cuando el sistema inicio; para conectarse al servidor de AEM cuando se inicie la aplicación; y cambiar la letra de la unidad local donde los AEM Assets están disponibles después de montarlos.
+**Opciones** Haga clic o toque Opciones en la bandeja de aplicaciones de AEM Desktop para acceder a la configuración e iniciar la aplicación cuando el sistema inicio; para conectarse al servidor de AEM cuando se inicie la aplicación; y cambiar la letra de unidad local donde AEM Assets está disponible después de montarla.
 
 **Avanzadas > Administrar caché** Puede controlar la cantidad de espacio en disco disponible para el almacenamiento en caché local. Los artefactos del servidor de AEM Assets se almacenan en caché localmente para una experiencia más fluida. Puede cambiar los valores predeterminados para adaptarlos a sus necesidades. Además, puede borrar la caché para recuperar todos los recursos de nuevo. Cuando borra la caché, conserva los cambios no guardados. Los recursos que no estén protegidos en AEM servidor se conservan y no se eliminan.
 
@@ -92,7 +92,7 @@ La aplicación admite la configuración proxy en Mac y Windows. La configuració
 
 1. En la pantalla de inicio de sesión, especifique el nombre de usuario y la contraseña de su instancia. Para especificar una instancia de AEM alternativa, seleccione la **[!UICONTROL Alternate Login URL]** opción.
 
-   ![Proporcione las credenciales de AEM servidor en la pantalla de inicio de sesión de AEM Desktop](assets/chlimage_1-2.png)
+   ![Proporcione las credenciales de AEM servidor en la pantalla de inicio de sesión de AEM aplicación de escritorio](assets/login_screen_v1.png)
 
 ### Habilitar acciones de escritorio en AEM interfaz web {#desktopactions}
 
@@ -105,7 +105,7 @@ Desde la interfaz de usuario de Recursos, puede explorar las ubicaciones de los 
 
 1. En el cuadro de diálogo Preferencias de usuario, seleccione **[!UICONTROL Show Desktop Actions For Assets]**. Haga clic **[!UICONTROL Accept]**.
 
-   ![Marque Mostrar acciones de escritorio para recursos para habilitar las acciones de escritorio](assets/chlimage_1-3.png)
+   ![Marque [!UICONTROL Show Desktop Actions For Assets] para habilitar las acciones de escritorio](assets/enable_desktop_actions.png)
 
    *Figura: Marque Mostrar acciones de escritorio para recursos para habilitar las acciones de escritorio.*
 
@@ -127,7 +127,7 @@ Para archivos Adobe InDesign (INDD), seleccione **[!UICONTROL Open]** en el men�
 
 >[!NOTE]
 >
->Adobe recomienda que vaya a Opciones de Vista de Finder en Mac y desactive las opciones **Mostrar información** de elementos, **Mostrar previsualización** de elementos y **Mostrar columna** de previsualización para la carpeta de AEM Assets montada. Mejora el rendimiento.
+>Adobe recomienda que vaya a Opciones de Vista de Finder en Mac y desactive las opciones **Mostrar información** de elementos, **Mostrar previsualización** de elementos y **Mostrar columna** de previsualización para la carpeta AEM Assets montada. Mejora el rendimiento.
 
 ### Opciones adicionales en AEM interfaz {#additional-options-in-aem-assets}
 
@@ -135,13 +135,13 @@ Después de asignar el repositorio de AEM Assets a la unidad local, puede activa
 
 1. Abra la interfaz de AEM Assets y coloque el puntero sobre una carpeta o un recurso para mostrar las acciones de escritorio como acciones rápidas en la vista de tarjetas.
 
-   ![En la interfaz de usuario de Recursos, abra el menú de acciones rápidas para ver las acciones de escritorio](assets/chlimage_1-4.png)
+   ![En la interfaz de usuario de Recursos, abra el menú de acciones rápidas para ver las acciones de escritorio](assets/desktop_actions_in_card_view.png)
 
    *Figura: En la interfaz de usuario de Recursos, abra el menú de acciones rápidas para ver las acciones de escritorio.*
 
-   Estas acciones de escritorio también están disponibles al hacer clic en el icono Acciones **de** escritorio de la barra de herramientas después de seleccionar el recurso o de la barra de herramientas de la página de recursos.
+   Estas acciones de escritorio también están disponibles cuando se hace clic en la opción Acciones **de** escritorio de la barra de herramientas después de seleccionar el recurso o desde la barra de herramientas de la página de recursos.
 
-1. Para abrir el recurso en la aplicación de escritorio asociada a la extensión de archivo específica, toque o haga clic en el icono **** Abrir en escritorio ![Acción rápida](assets/do-not-localize/aemassets_icon_openondesktop.png)Abrir en escritorio.
+1. Para abrir el recurso en la aplicación de escritorio asociada a la extensión de archivo específica, haga clic en el icono **** Abrir en escritorio ![acción rápida](assets/do-not-localize/aemassets_icon_openondesktop.png)Abrir en escritorio.
 
    También puede seleccionar **Abrir** en el menú Acciones **de** escritorio de la barra de herramientas.
 
@@ -159,13 +159,13 @@ Para localizar el recurso concreto en el sistema de archivos local, haga clic en
 
 ### Extraer recursos de la interfaz web AEM {#check-out-assets-from-the-aem-web-interface}
 
-Los AEM Assets le permiten desproteger los recursos para editarlos y volver a protegerlos después de realizar los cambios. Después de retirar un recurso, solo podrá editarlo, anotarlo, publicarlo, moverlo o eliminarlo. Al retirar un recurso, éste se bloquea y se impide que otros usuarios realicen cualquiera de estas operaciones. Para poder extraer o registrar recursos, necesita tener acceso de escritura en ellos.
+AEM Assets le permite retirar recursos para editarlos y volver a protegerlos una vez que haya realizado los cambios. Después de retirar un recurso, solo podrá editarlo, anotarlo, publicarlo, moverlo o eliminarlo. Al retirar un recurso, éste se bloquea y se impide que otros usuarios realicen cualquiera de estas operaciones. Para poder extraer o registrar recursos, necesita tener acceso de escritura en ellos.
 
 Existen dos formas de extraer recursos de la interfaz web AEM. Para obtener información detallada sobre el primer método, consulte [protección y cierre de compra de archivos desde la interfaz de usuario](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/check-out-and-submit-assets.html)de Assets. Siga estos pasos para ver los segundos métodos para desproteger y abrir el recurso cuando se instale AEM aplicación de escritorio.
 
 1. Abra la interfaz de AEM Assets y coloque el puntero sobre una carpeta o un recurso para mostrar las acciones de escritorio como acciones rápidas en la vista de tarjetas.
 
-   ![Propiedades, opción en Vista de tarjeta](assets/chlimage_1-4.png)
+   ![Propiedades, opción en Vista de tarjeta](assets/desktop_actions_in_card_view.png)
 
    Estas acciones de escritorio también están disponibles cuando toca o hace clic en el icono Acciones de escritorio en la barra de herramientas después de seleccionar el recurso o en la barra de herramientas de la página de recursos.
 
@@ -177,7 +177,7 @@ Existen dos formas de extraer recursos de la interfaz web AEM. Para obtener info
    >
    >Cuando edita un archivo que se acaba de abrir y no se ha extraído, otros usuarios no llegan a saber que usted está actualizando un recurso.
 
-1. Para abrir un recurso para editarlo en una aplicación de Adobe Creative Cloud, toque o haga clic en el icono ![Editar escritorio acción rápida](assets/do-not-localize/aemassets_icon_editdesktop.png)Editar escritorio. Esto también cierra la compra del recurso para editarlo. Una vez que haya terminado de editar, desproteja el recurso para actualizar los cambios en los AEM Assets.
+1. Para abrir un recurso para editarlo en una aplicación de Adobe Creative Cloud, toque o haga clic en el icono ![Editar escritorio acción rápida](assets/do-not-localize/aemassets_icon_editdesktop.png)Editar escritorio. Esto también cierra la compra del recurso para editarlo. Una vez que haya terminado de editar, desproteja el recurso para actualizar los cambios en AEM Assets.
 
    También puede seleccionar Editar en el menú Acciones de escritorio de la barra de herramientas.
 
@@ -195,13 +195,10 @@ La aplicación le permite extraer archivos de recursos para evitar que otros usu
    Opciones de menú contextual para acceder y abrir recursos con AEM aplicación de escritorio
 
 1. Desplácese hasta el recurso que desee desproteger.
-
-   ![Abrir en el menú contextual AEM Assets en Mac](assets/chlimage_1-5.png)
-
 1. Haga clic con el botón derecho en el recurso y seleccione Más información de recursos en el menú contextual.
 1. En el cuadro de diálogo Información del recurso, toque o haga clic en el icono Cierre de compra para extraer el recurso. El icono Cierre de compra se desplaza al icono de ingreso después de tocar o hacer clic en él.
 
-   ![Explorar hasta el recurso para realizar la compra](assets/chlimage_1-6.png)
+   ![Explorar hasta el recurso para realizar la compra](assets/browse_assets_to_checkout.png)
 
 1. Para desproteger el recurso para que esté disponible para otros usuarios, toque o haga clic en el icono de protección del cuadro de diálogo Información del recurso.
 
@@ -211,13 +208,10 @@ La aplicación le permite extraer archivos de recursos para evitar que otros usu
 
 1. En el menú Contexto, seleccione Explorar recursos para abrir el Explorador.
 1. En el Explorador, navegue a la ubicación del recurso que desee desproteger.
-
-   ![Icono de cierre de compra](assets/chlimage_1-7.png)
-
 1. Haga clic con el botón derecho en el recurso y seleccione Abrir en Web en el menú contextual.
 1. En el cuadro de diálogo Información del recurso, toque o haga clic en el icono Cierre de compra. El icono Cierre de compra se desplaza al icono de ingreso.
 
-   ![Icono de cierre de compra](assets/chlimage_1-8.png)
+   ![Icono de cierre de compra](assets/checkout_icon_toggles.png)
 
 1. Revise el recurso en el Explorador. El icono de candado del icono ![de candado de](assets/do-not-localize/aemassets_icon_lockcheckout.png) recursos indica que ha extraído el recurso.
 
@@ -237,7 +231,7 @@ Un recurso se carga en AEM automáticamente después de guardar los cambios loca
 
 ### Carga masiva de recursos y carpetas en AEM servidor {#bulkupload}
 
-Con AEM Desktop, puede cargar a AEM Assets una carpeta completa que contenga recursos del directorio de archivos local. De este modo, todos los recursos de la carpeta se cargan de forma masiva en lugar de tener que cargarlos de uno en uno.
+Con AEM Desktop, puede cargar en AEM Assets una carpeta completa que contenga recursos del directorio de archivos local. De este modo, todos los recursos de la carpeta se cargan de forma masiva en lugar de tener que cargarlos de uno en uno.
 
 1. En la interfaz de usuario de Recursos, toque o haga clic en **Crear** en la barra de herramientas y elija **Cargar carpeta** en el menú.
 1. Vaya a la carpeta que desee cargar y selecciónela.
