@@ -3,9 +3,9 @@ title: Utilice AEM versión 1.x de la aplicación de escritorio.
 description: Aprenda a utilizar la versión 1.x de la aplicación de escritorio de Adobe Experience Manager y a optimizar su trabajo con recursos en el escritorio.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
+source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
 workflow-type: tm+mt
-source-wordcount: '2500'
+source-wordcount: '2474'
 ht-degree: 0%
 
 ---
@@ -253,7 +253,5 @@ Como alternativa, seleccione los archivos o carpetas que desea cargar en AEM en 
 
 >[!MORELIKETHIS]
 >
->* [Introducción a la aplicación de escritorio de AEM](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
->* [Comprender el registro de entrada y salida con AEM aplicación de escritorio](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 >* [Solución de problemas de AEM aplicación de escritorio](troubleshoot-app-v1.md)
 
