@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -35,7 +35,7 @@ La aplicación de escritorio monta el repositorio de AEM Assets como recurso com
 
 AEM aplicación de escritorio utiliza recursos compartidos de red WebDAV (Windows) o SMB (Mac) para montar recursos compartidos de red. El recurso compartido de red montado solo es local. AEM aplicación de escritorio intercepta las llamadas (abrir, leer, escribir) y proporciona almacenamiento en caché local adicional. Traduce llamadas remotas al servidor de AEM Assets para optimizar AEM solicitudes HTTP. En el diagrama siguiente se muestra la arquitectura de la aplicación de escritorio AEM.
 
-![Arquitectura de aplicaciones de escritorio AEM](assets/chlimage_1.png)
+![Arquitectura de aplicaciones de escritorio AEM](assets/arch_v1.png)
 
 *Figura: arquitectura de aplicaciones de escritorio*
 
