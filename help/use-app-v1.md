@@ -3,9 +3,9 @@ title: Utilice AEM versión 1.x de la aplicación de escritorio.
 description: Aprenda a utilizar la versión 1.x de la aplicación de escritorio de Adobe Experience Manager y a optimizar su trabajo con recursos en el escritorio.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2472'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ Para localizar el recurso concreto en el sistema de archivos local, haga clic en
 
 AEM Assets le permite retirar recursos para editarlos y volver a protegerlos una vez que haya realizado los cambios. Después de retirar un recurso, solo podrá editarlo, anotarlo, publicarlo, moverlo o eliminarlo. Al retirar un recurso, éste se bloquea y se impide que otros usuarios realicen cualquiera de estas operaciones. Para poder extraer o registrar recursos, necesita tener acceso de escritura en ellos.
 
-Existen dos formas de extraer recursos de la interfaz web AEM. Para obtener información detallada sobre el primer método, consulte [protección y cierre de compra de archivos desde la interfaz de usuario](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/check-out-and-submit-assets.html)de Assets. Siga estos pasos para ver los segundos métodos para desproteger y abrir el recurso cuando se instale AEM aplicación de escritorio.
+Existen dos formas de extraer recursos de la interfaz web AEM. Para obtener información detallada sobre el primer método, consulte [protección y cierre de compra de archivos desde la interfaz de usuario](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/check-out-and-submit-assets.html)de Assets. Siga estos pasos para ver los segundos métodos para desproteger y abrir el recurso cuando se instale AEM aplicación de escritorio.
 
 1. Abra la interfaz de AEM Assets y coloque el puntero sobre una carpeta o un recurso para mostrar las acciones de escritorio como acciones rápidas en la vista de tarjetas.
 
