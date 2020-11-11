@@ -1,17 +1,10 @@
 ---
 title: Prácticas recomendadas de AEM versión 1.x de la aplicación de escritorio
 description: Funciones clave y uso recomendado de la versión 1.x de la aplicación de escritorio de Adobe Experience Manager.
-uuid: ba8fbc74-e1ad-4085-a031-ffd317628ba6
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 57d5cd78-abce-4ede-a50e-7c161ddb43ae
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -29,7 +22,7 @@ La aplicación de escritorio monta el repositorio de AEM Assets como recurso com
 
 >[!NOTE]
 >
->Antes de leer este documento, puede revisar las optimizaciones [generales de integración de](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html) AEM y Creative Cloud para obtener una descripción general de nivel superior del tema.
+>Antes de leer este documento, puede revisar las optimizaciones [generales de integración de](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-integration-best-practices.html) AEM y Creative Cloud para obtener una descripción general de nivel superior del tema.
 
 ## AEM desktop app architecture {#aem-desktop-app-architecture}
 
@@ -71,7 +64,7 @@ Las funciones clave de AEM aplicación de escritorio incluyen:
 
 * No utilice AEM unidades de red de aplicaciones de escritorio para guardar los recursos con frecuencia. Todas las operaciones de guardado se transmiten a AEM Assets. Por lo tanto, no es práctico realizar operaciones intensivas de edición directamente en el repositorio de AEM Assets montado. La edición de un recurso directamente en el repositorio montado bloquea la línea de tiempo del recurso con versiones irrelevantes e impone cargas adicionales en el servidor.
 
-* No utilice AEM aplicación de escritorio para migrar grandes cantidades de datos de una instancia de AEM a otra. Consulte la Guía [de](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html) migración para planificar y ejecutar migraciones de recursos. Por el contrario, la aplicación de escritorio [admite la carga](use-app-v1.md#bulkupload) masiva de un gran número de recursos por primera vez en [!DNL Adobe Experience Manager].
+* No utilice AEM aplicación de escritorio para migrar grandes cantidades de datos de una instancia de AEM a otra. Consulte la Guía [de](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html) migración para planificar y ejecutar migraciones de recursos. Por el contrario, la aplicación de escritorio [admite la carga](use-app-v1.md#bulkupload) masiva de un gran número de recursos por primera vez en [!DNL Adobe Experience Manager].
 
 ## Recommendations para casos de uso seleccionados {#recommendations-for-selected-use-cases}
 
@@ -127,7 +120,7 @@ La buena experiencia de los usuarios que utilizan la aplicación de escritorio A
 
 ### Consideraciones de red {#network-considerations}
 
-Para conocer las prácticas recomendadas en cuanto a la configuración de red de AEM Assets, consulte el documento de consideraciones [de red de](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/assets-migration-guide.html) AEM Assets. Algunos de los aspectos importantes que ayudan a optimizar AEM experiencia de la aplicación de escritorio para los usuarios son:
+Para conocer las prácticas recomendadas en cuanto a la configuración de red de AEM Assets, consulte el documento de consideraciones [de red de](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-migration-guide.html) AEM Assets. Algunos de los aspectos importantes que ayudan a optimizar AEM experiencia de la aplicación de escritorio para los usuarios son:
 
 * **Use Dispatcher** configurado correctamente. Use AEM Dispatcher para obtener seguridad adicional y asegúrese de que está configurado para que [AEM conexión de la aplicación de escritorio AEM detrás de un despachante](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
@@ -139,8 +132,8 @@ Para conocer las prácticas recomendadas en cuanto a la configuración de red de
 
 ### Optimización del rendimiento del servidor {#optimizing-server-performance}
 
-Para comprender cómo se debe optimizar el rendimiento del servidor de AEM Assets, consulte la Guía [de ajuste del rendimiento de](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html)AEM Assets. Algunos de los aspectos importantes del rendimiento del servidor para AEM aplicación de escritorio son la optimización de la configuración del flujo de trabajo para que funcione correctamente en las cargas de recursos:
+Para comprender cómo se debe optimizar el rendimiento del servidor de AEM Assets, consulte la Guía [de ajuste del rendimiento de](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html)AEM Assets. Algunos de los aspectos importantes del rendimiento del servidor para AEM aplicación de escritorio son la optimización de la configuración del flujo de trabajo para que funcione correctamente en las cargas de recursos:
 
-* **Carga** de recursos de mayor rendimiento. Configure el modelo de flujo de trabajo de actualización de recursos [AEM para que sea transitorio](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html#Workflows).
+* **Carga** de recursos de mayor rendimiento. Configure el modelo de flujo de trabajo de actualización de recursos [AEM para que sea transitorio](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html).
 
 * **Limitar la CPU del servidor para cargas**. Asegúrese de que el parámetro de trabajo de flujo de trabajo paralelo máximo esté configurado correctamente, de modo que las cargas no agoten toda la CPU.
