@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
+source-git-commit: 9c11f0b8ace17e7f596bcfe26e69f4ca649e0126
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -69,9 +69,9 @@ Los métodos de copiar y mover de la API de recursos requieren que se pasen a AE
 * Profundidad X
 * X-Overwrite
 
-AEM escritorio se conecta a AEM con una dirección URL que incluye el puerto predeterminado. Por lo tanto, la `virtualhosts` configuración de la configuración del despachante debe incluir el número de puerto predeterminado. Para obtener más información sobre `virtualhosts` la configuración, consulte [Identificación de hosts](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)virtuales.
+AEM escritorio se conecta a AEM con una dirección URL que incluye el puerto predeterminado. Por lo tanto, la `virtualhosts` configuración de la configuración del despachante debe incluir el número de puerto predeterminado. Para obtener más información sobre `virtualhosts` la configuración, consulte [Identificación de hosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)virtuales.
 
-Para obtener información adicional sobre cómo configurar el despachante para que pase por estos encabezados adicionales, consulte [Especificación de encabezados](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)HTTP.
+Para obtener información adicional sobre cómo configurar el despachante para que pase por estos encabezados adicionales, consulte [Especificación de encabezados](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)HTTP.
 
 ### Compatibilidad con proxy {#proxy-support}
 
@@ -134,7 +134,7 @@ Para dirigir la aplicación a una carpeta o unidad diferente, edite el archivo d
    >La aplicación crea automáticamente un subdirectorio *&lt;Encoded AEM Endpoint>* . Este comportamiento no se puede configurar.
 
 >[!MORELIKETHIS]
-* [Introducción a la aplicación de escritorio de AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
+* [Introducción a la aplicación de escritorio de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
 * [Uso de la aplicación de escritorio de AEM](use-app-v1.md).
 * [Solución de problemas de AEM aplicación](troubleshoot-app-v1.md)de escritorio.
 
