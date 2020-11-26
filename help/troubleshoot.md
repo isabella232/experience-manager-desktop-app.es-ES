@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2171'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Troubleshoot Adobe Experience Manager desktop app {#troubleshoot-v2}
 
-La aplicación de escritorio de Adobe Experience Manager (AEM) se conecta al repositorio de Digital Asset Management (DAM) de una implementación de Experience Manager remoto. La aplicación obtiene información del repositorio y resultados de búsqueda en el equipo, descarga y carga archivos y carpetas, e incluye funciones para gestionar conflictos con la interfaz de usuario de AEM Assets.
+La aplicación de escritorio de Adobe Experience Manager se conecta al repositorio de Digital Asset Management (DAM) de la implementación de un Experience Manager remoto. La aplicación obtiene información del repositorio y resultados de búsqueda en el equipo, descarga y carga archivos y carpetas, e incluye funciones para gestionar conflictos con la interfaz de usuario de Recursos.
 
 Siga leyendo para solucionar problemas de la aplicación, conozca las prácticas recomendadas y descubra las limitaciones.
 
@@ -119,7 +119,7 @@ Para habilitar el modo de depuración en Windows:
 
 Siga estos pasos:
 
-1. Inicio la aplicación y conecte una instancia de AEM.
+1. Inicio la aplicación y conecte una instancia de Experience Manager.
 
 1. Para abrir las preferencias de la aplicación, haga clic en las elipses de la esquina superior derecha y seleccione [!UICONTROL Preferences].
 
@@ -163,9 +163,9 @@ Si no puede ver los recursos que usted u otros profesionales creativos colocaron
 
 * Tamaño de archivo. Los recursos grandes tardan más en descargarse y mostrarse.
 
-* Consistencia de la letra de unidad. Si usted u otro colaborador colocó los recursos mientras asignaba el DAM AEM a una letra de unidad diferente, no se muestran los recursos colocados.
+* Consistencia de la letra de unidad. Si usted u otro colaborador colocó los recursos mientras asignaba el DAM Experience Manager a una letra de unidad diferente, no se muestran los recursos colocados.
 
-* Permisos. Para comprobar si tiene permisos para recuperar los recursos colocados, póngase en contacto con el administrador de AEM.
+* Permisos. Para comprobar si tiene permisos para recuperar los recursos colocados, póngase en contacto con el administrador del Experience Manager.
 
 ### Las ediciones realizadas en archivos de la interfaz de usuario de la aplicación de escritorio no se reflejan [!DNL Adobe Experience Manager] inmediatamente {#changes-on-da-not-visible-on-aem}
 
@@ -173,7 +173,7 @@ Si no puede ver los recursos que usted u otros profesionales creativos colocaron
 
 ### Problemas al actualizar en macOS {#issues-when-upgrading-on-macos}
 
-En ocasiones pueden producirse problemas al actualizar AEM aplicación de escritorio en macOS. Esto se debe a que la carpeta del sistema heredada de AEM aplicación de escritorio impide que las nuevas versiones de AEM aplicación de escritorio se carguen correctamente. Para solucionar este problema, se pueden quitar manualmente las siguientes carpetas y archivos.
+En ocasiones pueden producirse problemas al actualizar la aplicación de escritorio Experience Manager en macOS. Esto se debe a que la carpeta de sistema heredada de la aplicación de escritorio Experience Manager impide que las nuevas versiones de la aplicación de escritorio Experience Manager se carguen correctamente. Para solucionar este problema, se pueden quitar manualmente las siguientes carpetas y archivos.
 
 Antes de ejecutar los siguientes pasos, arrastre la `Adobe Experience Manager Desktop` aplicación de la carpeta Aplicaciones macOS a la papelera. A continuación, abra terminal, ejecute el siguiente comando y proporcione su contraseña cuando se le solicite.
 
@@ -188,7 +188,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 ### No se pueden cargar archivos {#upload-fails}
 
-Si utiliza una aplicación de escritorio con AEM 6.5.1 o posterior, actualice el conector S3 o Azure a la versión 1.10.4 o posterior. Resuelve el problema de error de carga de archivos relacionado con [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Consulte las instrucciones [de instalación](install-upgrade.md#install-v2).
+Si utiliza una aplicación de escritorio con Experience Manager 6.5.1 o posterior, actualice el conector S3 o Azure a la versión 1.10.4 o posterior. Resuelve el problema de error de carga de archivos relacionado con [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Consulte las instrucciones [de instalación](install-upgrade.md#install-v2).
 
 ### [!DNL Experience Manager] problemas de conexión de la aplicación de escritorio {#connection-issues}
 
@@ -213,13 +213,9 @@ Si [!DNL Experience Manager] la aplicación de escritorio no se conecta a la ins
 
 A veces, el proceso SAML no redirige a la ruta solicitada originalmente o la redirección final es a un host distinto al configurado en la aplicación de [!DNL Adobe Experience Manager] escritorio. Para verificar que no sea así:
 
-1. Abra un navegador web.
+1. Abra un navegador web. Access `https://[aem_server]:[port]/content/dam.json` URL.
 
-1. Escriba la dirección URL `<AEM host>/content/dam.json` en la barra de direcciones.
-
-   Reemplazar `<AEM host>` por la instancia de destinatario [!DNL Adobe Experience Manager] , por ejemplo `http://localhost:4502/content/dam.json`.
-
-1. Inicie sesión en la [!DNL Adobe Experience Manager] instancia.
+1. Inicie sesión en la implementación [!DNL Adobe Experience Manager] .
 
 1. Cuando el inicio de sesión se haya completado, observe la dirección actual del explorador en la barra de direcciones. Debe coincidir exactamente con la dirección URL introducida inicialmente.
 
@@ -260,10 +256,9 @@ El observar la secuencia de URL que se está cargando puede ayudar a solucionar 
 
 #### Problema de configuración de SSL {#ssl-config-v2}
 
-Las bibliotecas que AEM aplicación de escritorio utiliza para la comunicación HTTP utilizan una estricta aplicación SSL. A veces, una conexión puede funcionar correctamente con un navegador, pero falla al usar AEM aplicación de escritorio. Para configurar SSL correctamente, instale el certificado intermedio que falta en Apache. Consulte [Cómo instalar un certificado de CA intermedio en Apache](https://access.redhat.com/solutions/43575).
+Las bibliotecas que utiliza la aplicación de escritorio de Experience Manager para la comunicación HTTP utilizan una estricta aplicación SSL. A veces, una conexión puede funcionar correctamente con un navegador, pero falla al usar la aplicación de escritorio Experience Manager. Para configurar SSL correctamente, instale el certificado intermedio que falta en Apache. Consulte [Cómo instalar un certificado de CA intermedio en Apache](https://access.redhat.com/solutions/43575).
 
-
-Las bibliotecas que AEM Desktop utiliza para la comunicación HTTP utilizan una estricta aplicación SSL. Por lo tanto, puede haber casos en los que las conexiones SSL que se ejecutan con éxito a través de un navegador fallan con la aplicación [!DNL Adobe Experience Manager] de escritorio. Esto es bueno porque fomenta la configuración correcta de SSL y aumenta la seguridad, pero puede resultar frustrante cuando la aplicación no puede conectarse.
+Las bibliotecas que Experience Manager Desktop utiliza para la comunicación HTTP utilizan una estricta aplicación SSL. Por lo tanto, puede haber casos en los que las conexiones SSL que se ejecutan con éxito a través de un navegador fallan con la aplicación [!DNL Adobe Experience Manager] de escritorio. Esto es bueno porque fomenta la configuración correcta de SSL y aumenta la seguridad, pero puede resultar frustrante cuando la aplicación no puede conectarse.
 
 El método recomendado en este caso es utilizar una herramienta para analizar el certificado SSL de un servidor e identificar problemas para que se puedan corregir. Hay sitios web que inspeccionan el certificado de un servidor al proporcionar su dirección URL.
 
@@ -305,21 +300,23 @@ Raramente la aplicación puede no responder, mostrar solo una pantalla en blanco
 
 En ambos métodos, la aplicación inicio en la carpeta DAM raíz.
 
-### Necesita ayuda adicional con la aplicación [!DNL Experience Manager] de escritorio {#additional-help}
+<!--
+### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}
 
-Cree un ticket de Jira con la siguiente información:
+Create Jira ticket with the following information:
 
-* Utilícelo `DAM - Companion App` como el [!UICONTROL Component].
+* Use `DAM - Companion App` as the [!UICONTROL Component].
 
-* Pasos detallados para reproducir el problema en [!UICONTROL Description].
+* Detailed steps to reproduce the issue in [!UICONTROL Description].
 
-* Registros de nivel DEBUG que se capturaron al reproducir el problema.
+* DEBUG level logs that were captured while reproducing the issue.
 
-* Destinatario AEM versión.
+* Target Experience Manager version.
 
-* Versión del sistema operativo.
+* Operating system version.
 
-* [!DNL Adobe Experience Manager] versión de la aplicación de escritorio. Para conocer la versión de la aplicación, consulte [Búsqueda de la versión](#know-app-version-v2)de la aplicación de escritorio.
+* [!DNL Adobe Experience Manager] desktop app version. To know your app version, see [finding the desktop app version](#know-app-version-v2).
+-->
 
 >[!MORELIKETHIS]
 >
