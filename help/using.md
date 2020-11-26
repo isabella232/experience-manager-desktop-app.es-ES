@@ -1,23 +1,19 @@
 ---
 title: Uso de la aplicación de escritorio de Adobe Experience Manager
 description: Aprenda a instalar y utilizar la aplicación de escritorio de Adobe Experience Manager para trabajar con los recursos de Adobe Experience Manager DAM directamente desde el escritorio de Windows o Mac. Conozca las prácticas recomendadas y la información de solución de problemas.
-uuid: 55057617-89de-43cd-8419-1252a42ab2fb
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '3993'
+source-wordcount: '4022'
 ht-degree: 0%
 
 ---
 
 
-# Use Adobe Experience Manager desktop app {#use-aem-desktop-app-v2}
+# Use [!DNL Adobe Experience Manager] desktop app {#use-aem-desktop-app-v2}
 
-Utilice la aplicación de escritorio de Adobe Experience Manager (AEM) para acceder fácilmente a los recursos de Adobe Experience Manager DAM en el escritorio local y utilizar estos recursos en cualquier aplicación de escritorio. Puede abrir los recursos en aplicaciones de escritorio y editarlos localmente; vuelva a cargar los cambios en el Experience Manager con control de versiones para compartirlos con otros usuarios. También puede cargar nuevos archivos y jerarquías de carpetas al Experience Manager, crear carpetas y eliminar recursos o carpetas del DAM de Experience Manager.
+Utilice la aplicación de escritorio para acceder fácilmente a los recursos de Adobe Experience Manager DAM en el escritorio local y utilizar estos recursos en cualquier aplicación de escritorio. [!DNL Adobe Experience Manager] Puede abrir los recursos en aplicaciones de escritorio y editarlos localmente; vuelva a cargar los cambios en el Experience Manager con control de versiones para compartirlos con otros usuarios. También puede cargar nuevos archivos y jerarquías de carpetas al Experience Manager, crear carpetas y eliminar recursos o carpetas del DAM de Experience Manager.
 
 La integración permite que diversas funciones de la organización gestionen los recursos de forma centralizada en Recursos Experience Manager y accedan a los recursos en el escritorio local en las aplicaciones nativas en Windows o Mac OS.
 
@@ -43,25 +39,25 @@ Antes de realizar el inicio con la aplicación, debe comprender [cómo funciona]
 
 * El estado del archivo es **[!UICONTROL Modified remotely]**: La aplicación indica si un recurso que ha descargado ha cambiado en el servidor de Experience Manager. La aplicación también ofrece la opción de descargar la versión más reciente y actualizar la copia local. Consulte [cómo evitar conflictos](using.md#adv-workflow-collaborate-avoid-conflicts)de edición.
 
-* **[!UICONTROL Check-out]**:: Si está editando un archivo o tiene intención de editarlo, puede alternar el estado para extraerlo. Agrega un icono de candado al recurso en la aplicación y en AEM interfaz web. El icono de candado indica a los demás usuarios que eviten editar simultáneamente el mismo recurso, ya que provoca un conflicto de edición.
+* **[!UICONTROL Check-out]**:: Si está editando un archivo o tiene intención de editarlo, puede alternar el estado para extraerlo. Agrega un icono de candado al recurso en la aplicación y en la interfaz web del Experience Manager. El icono de candado indica a los demás usuarios que eviten editar simultáneamente el mismo recurso, ya que provoca un conflicto de edición.
 
 * **[!UICONTROL Check-in]**:: Marque el recurso como seguro para que otros usuarios lo editen sin provocar un conflicto de edición. Al cargar los cambios, el icono de bloqueo se elimina automáticamente. Al cambiar el estado de la protección también se elimina el icono de bloqueo, aunque se recomienda no registrarse manualmente sin cargar los cambios. Si descarta los cambios, active manualmente la protección.
 
 * **[!UICONTROL Open]** acción: Basta con abrir el recurso para previsualización en la aplicación nativa. No se recomienda editar el recurso mediante esta acción, ya que no cierra la compra del recurso y otros usuarios pueden realizar modificaciones que conduzcan a conflictos de edición.
 
-* **[!UICONTROL Edit]** acción: Utilice la acción para modificar la imagen. Al hacer clic en [!UICONTROL Edit] acción, se extrae automáticamente el recurso y se agrega un icono de candado al recurso. Después de hacer clic en Editar, si no desea editar el recurso, haga clic en [!UICONTROL Toggle check-in]. Para eliminar, cambiar el nombre o mover recursos en AEM jerarquía de carpetas DAM, utilice las acciones de interfaz web AEM y no la acción de edición.
+* **[!UICONTROL Edit]** acción: Utilice la acción para modificar la imagen. Al hacer clic en [!UICONTROL Edit] acción, se extrae automáticamente el recurso y se agrega un icono de candado al recurso. Después de hacer clic en Editar, si no desea editar el recurso, haga clic en [!UICONTROL Toggle check-in]. Para eliminar, cambiar el nombre o mover recursos en la jerarquía de carpetas DAM de Experience Manager, utilice las acciones de la interfaz web de Experience Manager y no la acción de edición.
 
 * **[!UICONTROL Download]** acción: Descargue el recurso en el equipo local. Ahora puede descargar los recursos y editarlos más tarde; trabajar sin conexión y cargar los cambios más tarde. Los recursos se descargan en una carpeta de caché del sistema de archivos.
 
 * **[!UICONTROL Reveal File]** o **[!UICONTROL Reveal Folder]** acción: Mientras los recursos se descargan en una carpeta de caché local, la aplicación imita una unidad de red local y proporciona una ruta local para cada recurso. Para conocer esta ruta, utilice la opción de revelación adecuada en la aplicación. Se requiere la acción de revelar para colocar recursos en la aplicación Creative Cloud. Consulte [Colocación de recursos](using.md#place-assets-in-native-documents).
 
-* **[!UICONTROL Open In Web]** acción: Para vista del recurso en AEM interfaz web, ábralo en web. Puede iniciar más flujos de trabajo desde AEM interfaz, como actualizar metadatos o detección de recursos.
+* **[!UICONTROL Open In Web]** acción: Para vista del recurso en la interfaz web de Experience Manager, ábralo en web. Puede iniciar más flujos de trabajo desde la interfaz de Experience Manager, como actualizar metadatos o detección de recursos.
 
-* **[!UICONTROL Delete]** acción: Elimine el recurso del repositorio de DAM AEM. La acción elimina la copia original del recurso en el servidor de AEM. Si solo desea descartar las modificaciones del recurso local, consulte [Descartar cambios](using.md#edit-assets-upload-updated-assets).
+* **[!UICONTROL Delete]** acción: Elimine el recurso del repositorio DAM de Experience Manager. La acción elimina la copia original del recurso en el servidor Experience Manager. Si solo desea descartar las modificaciones del recurso local, consulte [Descartar cambios](using.md#edit-assets-upload-updated-assets).
 
-* **[!UICONTROL Upload Changes]**:: La aplicación de escritorio carga el recurso actualizado solo cuando se carga explícitamente en AEM servidor. Al guardar las ediciones, los cambios solo se guardan en el equipo local. Al cargar, el recurso se protege automáticamente y se elimina el icono de bloqueo. Consulte [Edición de recursos](using.md#edit-assets-upload-updated-assets).
+* **[!UICONTROL Upload Changes]**:: La aplicación de escritorio carga el recurso actualizado solo cuando se carga explícitamente en el servidor Experience Manager. Al guardar las ediciones, los cambios solo se guardan en el equipo local. Al cargar, el recurso se protege automáticamente y se elimina el icono de bloqueo. Consulte [Edición de recursos](using.md#edit-assets-upload-updated-assets).
 
-## Habilitar acciones de escritorio en AEM interfaz web {#desktopactions-v2}
+## Habilitar acciones de escritorio en la interfaz web de Experience Manager {#desktopactions-v2}
 
 Desde la interfaz de usuario de Recursos en un navegador, puede explorar las ubicaciones de los recursos o el cierre de compra y abrir el recurso para editarlo en la aplicación de escritorio. Estas opciones se llaman [!UICONTROL Desktop Actions] y no están activadas de forma predeterminada. Para habilitarlo, siga estos pasos.
 
@@ -75,7 +71,7 @@ Desde la interfaz de usuario de Recursos en un navegador, puede explorar las ubi
 
 ## Examinar, buscar y previsualización de recursos {#browse-search-preview-assets}
 
-Puede buscar, buscar y previsualización los recursos disponibles en el repositorio de AEM, todo ello desde la aplicación de escritorio. Pruebe lo siguiente en la aplicación:
+Puede buscar, buscar y previsualización los recursos disponibles en el repositorio de Experience Manager desde la aplicación de escritorio. Pruebe lo siguiente en la aplicación:
 
 1. Vaya a una carpeta y vea información básica sobre los recursos disponibles en ella, junto con miniaturas pequeñas de todos los recursos.
 
@@ -86,7 +82,7 @@ Puede buscar, buscar y previsualización los recursos disponibles en el reposito
    ![Ver una previsualización más grande de un recurso y](assets/large_preview_actions_da2.png "accionesVer una previsualización más grande de un recurso y acciones")
 
 1. Haga clic **[!UICONTROL Open]** o **[!UICONTROL Edit]** para descargar el archivo localmente y solo tiene que vista o editarlo en la aplicación nativa, respectivamente.
-1. Busque con palabras clave para encontrar un recurso relacionado en el repositorio de AEM. Use `?` y `*` como comodines. Estos comodines sustituyen a un solo carácter o a varios caracteres, respectivamente. Filtre y ordene los resultados según sea necesario.
+1. Busque con palabras clave para encontrar un recurso relacionado en el repositorio de Experience Manager. Use `?` y `*` como comodines. Estos comodines sustituyen a un solo carácter o a varios caracteres, respectivamente. Filtre y ordene los resultados según sea necesario.
 
    ![Búsqueda de muestra con](assets/search_wildcard_da2.png "comodín asterisco Búsqueda de muestra con comodín asterisco")
 
@@ -98,7 +94,7 @@ Puede buscar, buscar y previsualización los recursos disponibles en el reposito
 
 ## Descargar recursos {#download-assets}
 
-Puede descargar los recursos en el sistema de archivos local. La aplicación obtiene los recursos de AEM servidor y guarda la misma copia en el sistema de archivos local.
+Puede descargar los recursos en el sistema de archivos local. La aplicación obtiene los recursos del servidor de Experience Manager y guarda la misma copia en el sistema de archivos local.
 
 Haga clic en el icono ![](assets/do-not-localize/more2_da2.png) Más opciones para ver las opciones y haga clic en el icono ![](assets/do-not-localize/download_cloud_da2.png) Descargar para descargar.
 
@@ -112,7 +108,7 @@ Si el tamaño de la cola es grande o si tiene algún problema de red, la descarg
 
 ![La aplicación confirma la descarga de un número relativamente grande de](assets/download_confirmation_da2.png "recursosApp confirma la descarga de un número relativamente grande de recursos")
 
-Si las carpetas están seleccionadas y descargadas, la aplicación solo descarga los recursos almacenados directamente en las carpetas de AEM. No descarga recursos de subcarpetas automáticamente.
+Si las carpetas están seleccionadas y descargadas, la aplicación solo descarga los recursos almacenados directamente en las carpetas de Experience Manager. No descarga recursos de subcarpetas automáticamente.
 
 ## Abrir recursos en el escritorio {#openondesktop-v2}
 
@@ -135,21 +131,21 @@ En algunos casos, por ejemplo, al colocar un recurso en un documento nativo, se 
 
 ![Acción Revelar archivo para un](assets/revealfile_action_da2.png "recurso Acción Revelar archivo para un recurso")
 
-Haga clic **[!UICONTROL Reveal File]**, o **[!UICONTROL Reveal Folder]** en una carpeta, para abrir el Explorador de Windows o el Buscador de Mac con el archivo o la carpeta preseleccionados en el equipo local. La opción es útil, por ejemplo, para colocar los archivos AEM en las aplicaciones nativas que admiten la colocación o vinculación de archivos locales. Para ver cómo colocar archivos en Adobe InDesign, consulte [Colocación de gráficos](https://helpx.adobe.com/indesign/using/placing-graphics.html).
+Haga clic **[!UICONTROL Reveal File]**, o **[!UICONTROL Reveal Folder]** en una carpeta, para abrir el Explorador de Windows o el Buscador de Mac con el archivo o la carpeta preseleccionados en el equipo local. La opción es útil, por ejemplo, para colocar los archivos Experience Manager en las aplicaciones nativas que admiten la colocación o vinculación de archivos locales. Para ver cómo colocar archivos en Adobe InDesign, consulte [Colocación de gráficos](https://helpx.adobe.com/indesign/using/placing-graphics.html).
 
-La **[!UICONTROL Reveal File]** acción abre un recurso compartido de red local, que solo muestra los recursos disponibles localmente, es decir, muestra los recursos que se han revelado, descargado o abierto/editado con la aplicación. El recurso compartido de red local no carga ningún cambio en AEM. Para cargar los cambios, use **[!UICONTROL Upload Changes]** o **[!UICONTROL Upload]** acciones explícitamente en la aplicación.
+La **[!UICONTROL Reveal File]** acción abre un recurso compartido de red local, que solo muestra los recursos disponibles localmente, es decir, muestra los recursos que se han revelado, descargado o abierto/editado con la aplicación. El recurso compartido de red local no carga ningún cambio en el Experience Manager. Para cargar los cambios, use **[!UICONTROL Upload Changes]** o **[!UICONTROL Upload]** acciones explícitamente en la aplicación.
 
 >[!NOTE]
 >
->Para la compatibilidad con versiones anteriores con AEM aplicación de escritorio v1.x, los archivos mostrados se proporcionan desde un recurso compartido de red local, lo que solo expone los archivos disponibles localmente. Las rutas de escritorio de los archivos revelados son las mismas que las rutas creadas por la aplicación v1.x.
+>Para la compatibilidad con versiones anteriores con la aplicación de escritorio Experience Manager v1.x, los archivos mostrados se proporcionan desde un recurso compartido de red local, lo que solo expone los archivos disponibles localmente. Las rutas de escritorio de los archivos revelados son las mismas que las rutas creadas por la aplicación v1.x.
 
 >[!CAUTION]
 >
 >No utilice **[!UICONTROL Reveal File]** la opción para editar recursos en aplicaciones nativas. En su lugar, utilice las **[!UICONTROL Edit]** acciones. Para obtener más información, consulte Flujo de trabajo [avanzado: colaborar en los mismos archivos y evitar conflictos](#adv-workflow-collaborate-avoid-conflicts)de edición.
 
-## Editar recursos y cargar recursos actualizados a AEM {#edit-assets-upload-updated-assets}
+## Editar recursos y cargar recursos actualizados en el Experience Manager {#edit-assets-upload-updated-assets}
 
-Abra los recursos para editarlos cuando desee realizar cambios y cargue los recursos actualizados en AEM servidor. Para evitar conflictos con las ediciones de otros usuarios, utilice la aplicación para iniciar una sesión de edición. Antes de editar el inicio, asegúrese de que el recurso no tiene un icono de candado, es decir, que otro usuario no está editando el recurso.
+Abra recursos para editarlos cuando desee realizar cambios y cargue los recursos actualizados en el servidor de Experience ManagerEM. Para evitar conflictos con las ediciones de otros usuarios, utilice la aplicación para iniciar una sesión de edición. Antes de editar el inicio, asegúrese de que el recurso no tiene un icono de candado, es decir, que otro usuario no está editando el recurso.
 
 Para editar un recurso, busque el recurso o navegue hasta su ubicación. Haga clic en el icono ![](assets/do-not-localize/more2_da2.png) Más y luego en **[!UICONTROL Edit]**.
 
@@ -158,7 +154,7 @@ Utilice **[!UICONTROL Toggle Check-out]** para bloquear el recurso para evitar c
 * Ha empezado a editar un recurso sin desprotegerlo primero (por ejemplo, solo abriéndolo).
 * Tiene la intención de editar un inicio en breve y no desea que otros usuarios lo editen.
 
-Una vez que haya terminado de realizar las ediciones, la aplicación muestra el estado de los **[!UICONTROL Edited Locally]** recursos modificados. Todos los cambios guardados en los recursos son solo locales hasta que se carguen los cambios en AEM. Para cargar un recurso individual o algunos recursos uno a uno, haga clic en **[!UICONTROL Upload Changes]** las opciones de un recurso. Crea una versión del recurso en AEM. Con la interfaz web de AEM Assets, puede ver el historial de recursos en la vista [de](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/activity-stream.html)línea de tiempo.
+Una vez que haya terminado de realizar las ediciones, la aplicación muestra el estado de los **[!UICONTROL Edited Locally]** recursos modificados. Todos los cambios guardados en los recursos son solo locales hasta que se cargan los cambios en Experience Manager. Para cargar un recurso individual o algunos recursos uno a uno, haga clic en **[!UICONTROL Upload Changes]** las opciones de un recurso. Crea una versión del recurso en Experience Manager. Con la interfaz web de [!DNL Assets], puede ver el historial de recursos en la vista [de la](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/activity-stream.html)línea de tiempo.
 
 ![Opción de carga de cambios en la opción de cambios](assets/upload_changes_single1_da2.png "appCargar en la aplicación")
 
@@ -168,15 +164,15 @@ Para conocer las prácticas recomendadas sobre la edición en colaboración, con
 
 En los siguientes casos, es posible que desee descartar los cambios y las ediciones en el recurso local. Haga clic **[!UICONTROL Discard Changes]**.
 
-* Si no desea guardar los cambios locales en AEM.
+* Si no desea guardar los cambios locales en Experience Manager.
 * Inicio realizando cambios en el recurso original después de guardar algunos cambios.
 * Deje de editar el recurso porque ya no lo necesita.
 
 Si es necesario, active la desprotección. El recurso actualizado se elimina de la carpeta de caché local y se descarga nuevamente cuando lo edita o lo abre.
 
-## Cargar y agregar recursos nuevos a AEM {#upload-and-add-new-assets-to-aem}
+## Carga y adición de recursos nuevos al Experience Manager {#upload-and-add-new-assets-to-aem}
 
-Los usuarios pueden agregar recursos nuevos al repositorio de DAM. Por ejemplo, puede ser un fotógrafo o contratista de la agencia que desee agregar un gran número de fotos de una sesión fotográfica al repositorio de AEM. Para añadir contenido nuevo a AEM, haga clic en el icono ![](assets/do-not-localize/upload_to_cloud_da2.png) Cargar en la nube en la barra superior de la aplicación. Busque los archivos de recursos en el sistema de archivos local y haga clic en **[!UICONTROL Select]**. La aplicación inicio la carga del recurso y muestra una barra de progreso en la parte inferior si el recurso tarda más en cargarse. No utilice espacios en blanco ni caracteres no válidos al crear o cargar carpetas. Consulte una lista de caracteres en [Crear carpetas en AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
+Los usuarios pueden agregar recursos nuevos al repositorio de DAM. Por ejemplo, puede ser un fotógrafo o contratista de la agencia que desee agregar un gran número de fotos de una sesión fotográfica al repositorio de Experience Manager. Para añadir contenido nuevo al Experience Manager, haga clic en el icono ![](assets/do-not-localize/upload_to_cloud_da2.png) Cargar en la nube en la barra superior de la aplicación. Busque los archivos de recursos en el sistema de archivos local y haga clic en **[!UICONTROL Select]**. La aplicación inicio la carga del recurso y muestra una barra de progreso en la parte inferior si el recurso tarda más en cargarse. No utilice espacios en blanco ni caracteres no válidos al crear o cargar carpetas. Consulte una lista de caracteres en [Crear carpetas en [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
@@ -195,7 +191,7 @@ Puede controlar la concurrencia de carga (aceleración) en **[!UICONTROL Prefere
 
 >[!NOTE]
 >
->Si los archivos no se pueden cargar y se está conectando a la implementación de AEM 6.5.1 o posterior, consulte esta información [de](troubleshoot.md#upload-fails)solución de problemas.
+>Si los archivos no se pueden cargar y se está conectando a la implementación de Experience Manager 6.5.1 o posterior, consulte esta información [de](troubleshoot.md#upload-fails)solución de problemas.
 
 ## Trabajar con varios recursos {#work-with-multiple-assets}
 
@@ -223,23 +219,23 @@ La aplicación proporciona una vista, llamada **[!UICONTROL Edited locally]**, p
 
 ### Carga masiva de recursos {#bulk-upload-assets}
 
-Los usuarios o la organización, como fotógrafos o agencias creativas, pueden crear numerosos recursos locales en escenarios, como fotografías, retoques o la selección de un conjunto más grande hecho fuera de AEM. Pueden cargar estas carpetas locales grandes a AEM Assets directamente desde la aplicación de escritorio. Las jerarquías de carpetas se conservan y se cargan todas las subcarpetas anidadas y los recursos incluidos. Los recursos cargados también están disponibles de inmediato para otros usuarios del mismo servidor para su consumo. Los recursos se cargan en segundo plano, por lo que la operación no está vinculada a una sesión del explorador web.
+Los usuarios o la organización, como fotógrafos o agencias creativas, pueden crear numerosos recursos locales en escenarios, como fotografías, retoques o la selección de un conjunto mayor realizado fuera del Experience Manager. Pueden cargar estas grandes carpetas locales directamente desde [!DNL Assets] la aplicación de escritorio. Las jerarquías de carpetas se conservan y se cargan todas las subcarpetas anidadas y los recursos incluidos. Los recursos cargados también están disponibles de inmediato para otros usuarios del mismo servidor para su consumo. Los recursos se cargan en segundo plano, por lo que la operación no está vinculada a una sesión del explorador web.
 
-![Cargue varias carpetas locales desde el escritorio en](assets/upload_local_folders_da2.png "AEMBulk y cargue varias carpetas locales desde el escritorio en AEM")
+![Carga masiva de varias carpetas locales desde el escritorio en Experience](assets/upload_local_folders_da2.png "Manager Carga masiva de varias carpetas locales desde el escritorio en el Experience Manager")
 
 Después de cargar, si los cambios esperados no se reflejan en la aplicación, haga clic en el icono ![](assets/do-not-localize/refresh.png)Actualizar.
 
 >[!NOTE]
 >
->No utilice la funcionalidad de carga para migrar recursos en dos implementaciones AEM. En su lugar, consulte la guía [de](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html)migración.
+>No utilice la función de carga para migrar recursos en dos implementaciones de Experience Manager. En su lugar, consulte la guía [de](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html)migración.
 
 ### Lista de los activos transferidos {#list-of-transferred-assets}
 
-Para vista de la lista de los recursos transferidos en una sesión determinada, consulte [Carga de recursos en AEM](#upload-and-add-new-assets-to-aem).
+Para vista de la lista de los recursos transferidos en una sesión determinada, consulte [Carga de recursos a Experience Manager](#upload-and-add-new-assets-to-aem).
 
-## Flujo de trabajo avanzado: inicio de la interfaz web de AEM Assets {#adv-workflow-start-from-aem-ui}
+## Flujo de trabajo avanzado: inicio desde la interfaz [!DNL Assets] web {#adv-workflow-start-from-aem-ui}
 
-Si es necesario, inicie el flujo de trabajo desde la interfaz web de AEM Assets. La aplicación de escritorio se integra con la AEM para tomar el control cuando se solicita mediante las acciones de escritorio.
+Si es necesario, inicie el flujo de trabajo desde la interfaz web de Recursos. La aplicación de escritorio se integra con el Experience Manager para tomar el control cuando se solicita mediante las acciones de escritorio.
 
 Un caso especial de inicio del flujo de trabajo desde la interfaz web es la detección de recursos. La interfaz de usuario de la barra de Omniture en Recursos oferta una experiencia de búsqueda avanzada y enriquecida. Es posible que primero desee ubicar un recurso deseado en la web y, a continuación, iniciar el flujo de trabajo en la aplicación mediante [!UICONTROL Desktop Actions]. Algunos ejemplos de casos incluyen el filtrado de resultados de búsqueda mediante facetas, la localización de un recurso específico con licencia de Adobe Stock o una personalización implementada por su organización que le permite realizar un mejor descubrimiento desde la interfaz web.
 
@@ -251,7 +247,7 @@ La funcionalidad de la aplicación de escritorio se utiliza cuando se intentan r
 
 Por ejemplo, las acciones de la interfaz web disponibles para un recurso extraído en la aplicación son [!UICONTROL Open], [!UICONTROL Reveal]y [!UICONTROL Check-in].
 
-![Acciones de escritorio en la](assets/assets_web_actions_da2.png "interfaz web AEMAcciones de escritorio en la interfaz web AEM")
+![Acciones de escritorio en la](assets/assets_web_actions_da2.png "interfaz web del Experience ManagerAcciones de escritorio en la interfaz web del Experience Manager")
 
 >[!NOTE]
 >
@@ -261,7 +257,7 @@ No se puede encontrar la siguiente información o flujo de trabajo mediante la i
 
 * Archivos editados localmente.
 * Archivos que tienen un conflicto de edición y la forma de resolverlo.
-* Cargue los cambios locales en AEM.
+* Cargue los cambios locales en el Experience Manager.
 * Varios estados de los archivos disponibles localmente.
 
 Por el contrario, puede abrir el recurso en la interfaz web a partir de la aplicación de escritorio mediante la **[!UICONTROL Open In Web]** acción.
@@ -278,7 +274,7 @@ En los entornos de colaboración, varios usuarios pueden trabajar en el mismo co
 
 ![Estados de](assets/edits_conflicts_status_da2.png "conflictos de ediciónEstados de conflictos de edición")
 
-Si un recurso descargado localmente se actualiza en el servidor de AEM, la aplicación muestra un **[!UICONTROL Modified remotely]** estado. Puede quitar la copia local o actualizar la copia local haciendo clic en [!UICONTROL Remove] o [!UICONTROL Update] respectivamente. Los vínculos del cuadro de diálogo permiten la vista de ambas versiones del recurso.
+Si un recurso descargado localmente se actualiza en el servidor Experience Manager, la aplicación muestra un **[!UICONTROL Modified remotely]** estado. Puede quitar la copia local o actualizar la copia local haciendo clic en [!UICONTROL Remove] o [!UICONTROL Update] respectivamente. Los vínculos del cuadro de diálogo permiten la vista de ambas versiones del recurso.
 
 ![Opciones para resolver el conflicto cuando se](assets/modified_remotely_dialog_da2.png "modifica el recurso de forma remotaOpciones para resolver el conflicto cuando se modifica el recurso de forma remota")
 
@@ -288,9 +284,9 @@ Si un recurso que está editando localmente también se actualiza en el servidor
 
 ## Flujo de trabajo avanzado: colocar y vincular recursos en el archivo InDesign {#adv-workflow-place-assets-indesign}
 
-Al utilizar AEM aplicación de escritorio para abrir archivos con recursos vinculados, los recursos se descargan previamente y aparecen colocados en las aplicaciones nativas. Para que este flujo de trabajo funcione, la aplicación nativa debe admitir la colocación de vínculos a recursos locales y AEM debe admitir la resolución de estos vínculos en los archivos binarios a referencias de servidor.
+Cuando se utiliza la aplicación de escritorio de Experience Manager para abrir archivos con recursos vinculados, los recursos se descargan previamente y aparecen colocados en las aplicaciones nativas. Para que este flujo de trabajo funcione, la aplicación nativa debe admitir la colocación de vínculos a recursos locales y el Experience Manager debe admitir la resolución de estos vínculos en los archivos binarios a referencias del lado del servidor.
 
-AEM aplicación de escritorio admite este flujo de trabajo con algunas aplicaciones de escritorio y formatos de archivo Adobe Creative Cloud selectos: Adobe InDesign, Adobe Illustrator y Adobe Photoshop. El flujo de trabajo le permite trabajar de forma eficaz con los archivos Creative Cloud admitidos. Por lo tanto, si el usuario A coloca algunos recursos en un archivo InDesign y lo comprueba en AEM, el usuario B ve los recursos en el archivo InDesign aunque los recursos no formen parte del archivo. Los recursos se descargan localmente en el equipo del usuario B.
+La aplicación de escritorio de Experience Manager admite este flujo de trabajo con algunas aplicaciones de escritorio y formatos de archivo Adobe Creative Cloud selectos: Adobe InDesign, Adobe Illustrator y Adobe Photoshop. El flujo de trabajo le permite trabajar de forma eficaz con los archivos Creative Cloud admitidos. Por lo tanto, si el usuario A coloca algunos recursos en un archivo InDesign y lo comprueba en Experience Manager, el usuario B ve los recursos en el archivo InDesign aunque los recursos no formen parte del archivo. Los recursos se descargan localmente en el equipo del usuario B.
 
 >[!NOTE]
 >
@@ -300,16 +296,16 @@ Para conocer las limitaciones de este flujo de trabajo, consulte los requisitos 
 
 Para probar este flujo de trabajo con un InDesign y un recurso de imagen, siga estos pasos:
 
-1. Mantenga a mano un archivo INDD con los recursos colocados en AEM. Para saber cómo crear un archivo INDD de este tipo, consulte [Colocación de gráficos](https://helpx.adobe.com/indesign/using/placing-graphics.html).
-1. Desde la aplicación de escritorio, **[!UICONTROL Edit]** el archivo INDD con los recursos colocados en AEM.
+1. Mantenga a mano un archivo INDD con los recursos colocados en el Experience Manager. Para saber cómo crear un archivo INDD de este tipo, consulte [Colocación de gráficos](https://helpx.adobe.com/indesign/using/placing-graphics.html).
+1. Desde la aplicación de escritorio, **[!UICONTROL Edit]** el archivo INDD con los recursos colocados en el Experience Manager.
 1. La aplicación descarga tanto el archivo InDesign como los recursos vinculados. Cuando InDesign abre el documento, los vínculos se resuelven, los recursos se descargan y los recursos se muestran en el documento de InDesign.
 1. Para colocar un nuevo gráfico en el archivo InDesign, utilice **[!UICONTROL Reveal File]** action en el recurso. La acción descarga el recurso localmente y abre la ubicación del recurso compartido de red local en el Explorador de Windows o en el Buscador de Mac.
 1. Coloque el recurso revelado en el documento de InDesign. Esto crea un vínculo en el documento.
-1. Una vez que haya completado los cambios en el documento de InDesign, guárdelo y cárguelo a AEM mediante la aplicación de escritorio.
+1. Una vez que haya completado los cambios en el documento de InDesign, guárdelo y cárguelo a Experience Manager mediante la aplicación de escritorio.
 
 ## Flujo de trabajo avanzado: descargar los recursos localmente {#adv-workflow-download-assets-locally}
 
-La aplicación descarga los recursos de AEM servidor localmente en el sistema de archivos en muchos casos. Las descargas consumen ancho de banda y espacio en disco. Conocer los escenarios le ayuda a optimizar el tiempo de espera para que se completen las descargas.
+La aplicación descarga los recursos del servidor Experience Manager localmente en el sistema de archivos en muchos casos. Las descargas consumen ancho de banda y espacio en disco. Conocer los escenarios le ayuda a optimizar el tiempo de espera para que se completen las descargas.
 
 Puede descargar los recursos desde la aplicación a petición. Consulte [Descargar recursos](#download-assets).
 
@@ -317,6 +313,6 @@ Cuando se utiliza la [!UICONTROL Open] acción para abrir un recurso en una apli
 
 Cuando se muestra la ubicación de un recurso o una carpeta desde la aplicación, el recurso o la carpeta se descarga primero localmente y, a continuación, se abre en el equipo en el recurso compartido de red local. Consulte [Abrir recursos](#openondesktop-v2).
 
-Cuando se utiliza la [!UICONTROL Edit] acción para editar un recurso en una aplicación de escritorio nativa, el recurso se descarga localmente si no se encuentra disponible localmente. Consulte [Edición de recursos y carga de recursos actualizados en AEM](#edit-assets-upload-updated-assets).
+Cuando se utiliza la [!UICONTROL Edit] acción para editar un recurso en una aplicación de escritorio nativa, el recurso se descarga localmente si no se encuentra disponible localmente. Consulte [Edición de recursos y carga de recursos actualizados en el Experience Manager](#edit-assets-upload-updated-assets).
 
-Si la aplicación está instalada y tiene permiso para hacerlo, se completan las acciones cuando se utiliza [!UICONTROL Desktop Actions] desde AEM interfaz web. La aplicación descarga el recurso primero y, a continuación, completa la acción.
+Si la aplicación está instalada y tiene permiso para hacerlo, se completan las acciones cuando se utiliza [!UICONTROL Desktop Actions] desde la interfaz web de Experience Manager. La aplicación descarga el recurso primero y, a continuación, completa la acción.
