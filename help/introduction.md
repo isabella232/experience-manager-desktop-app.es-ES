@@ -14,7 +14,7 @@ ht-degree: 67%
 ---
 
 
-# Adobe Experience Manager desktop app overview {#overview-v2}
+# Descripción general de la aplicación de escritorio de Adobe Experience Manager {#overview-v2}
 
 Adobe ofrece flujos de trabajo conectados en todas sus soluciones para permitir una mejora de la productividad para los usuarios de la línea de negocios y los profesionales creativos. La aplicación de escritorio de Adobe Experience Manager conecta repositorios y aplicaciones de escritorio, incluidas las de Adobe y otras de terceros, para proporcionar un acceso más rápido a los recursos y a los flujos de trabajo optimizados. Gracias a ello, se ahorra tiempo y se reduce el esfuerzo, así que mejora la eficacia de los usuarios que trabajan con recursos de Adobe Experience Manager en sus flujos de trabajo de escritorio.
 
