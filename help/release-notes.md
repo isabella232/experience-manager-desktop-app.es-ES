@@ -26,7 +26,7 @@ ht-degree: 33%
 | Versiones de Experience Manager admitidas | Experience Manager como Cloud Service; Experience Manager 6.5; Experience Manager 6.4; Experience Manager 6.3 (con paquete de compatibilidad) |
 | Tipo | Versión menor |
 | Fecha de lanzamiento | 27 de agosto de 2020 (Mac y Win) |
-| Direcciones URL de descarga | [macOS de 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.0.3.2.dmg); [Windows de 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.0.3.2.exe); [Windows de 32 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.0.3.2.exe) |
+| Direcciones URL de descarga | [macOS de 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.0.3.2.dmg);  [Windows de 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.0.3.2.exe);  [Windows de 32 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.0.3.2.exe) |
 
 ## Requisitos y requisitos previos del sistema {#system-requirements-and-prerequisites-v2}
 
@@ -48,16 +48,16 @@ La aplicación funciona con las siguientes versiones de Experience Manager, tant
 
 * [Experience Manager 6.4.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) o posterior.
 
-* Experience Manager 6.4.0 - 6.4.3 con paquete [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilidad.
+* Experience Manager 6.4.0 - 6.4.3 con [paquete de compatibilidad](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support).
 
 >[!NOTE]
 >
 >La compatibilidad de la aplicación de escritorio con Experience Manager 6.3 está obsoleta. Adobe recomienda actualizar a una versión de Adobe Experience Manager más reciente y compatible.
->Experience Manager 6.3.3.1 o posterior funciona con la aplicación de escritorio después de instalar el paquete [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilidad. Este paquete no está disponible para Experience Manager 6.3, ya que no se han planificado [paquetes](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html)de servicios.
+>Experience Manager 6.3.3.1 o posterior funciona con la aplicación de escritorio después de instalar el [paquete de compatibilidad](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). Este paquete no está disponible para Experience Manager 6.3, ya que no se han planificado [Service Packs](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
 
 La versión de la aplicación que planea instalar en su equipo local requiere una versión específica del servidor de Adobe Experience Manager o componentes adicionales del servidor (paquetes de servicio, correcciones rápidas o paquetes de funciones). Póngase en contacto con el administrador de Adobe Experience Manager para obtener ayuda.
 
-### Support for different assets and file types {#support-for-file-types}
+### Compatibilidad con diferentes tipos de archivos y recursos {#support-for-file-types}
 
 La aplicación admite recursos almacenados en Adobe Experience Manager que representan archivos binarios para sus operaciones básicas. La apertura de archivos en la aplicación de escritorio nativa depende de la asociación de sistema operativo de los tipos de archivo específicos, como PNG o JPG, a aplicaciones específicas, como Vista previa de Mac o Adobe Photoshop.
 
@@ -69,7 +69,7 @@ Algunos tipos de archivo admiten la colocación de recursos vinculados en el arc
 
 La función es compatible con las versiones Adobe Creative Cloud 2018 y Adobe Creative Cloud 2019 de la aplicación anterior. La aplicación utiliza un método heurístico y de mejor coincidencia para asignar las rutas de escritorio locales de los recursos vinculados a las URL del servidor Experience Manager. Se basa en algunos supuestos:
 
-* Paths to placed files in the native application use a global desktop path (placed from the local network share shown with [!UICONTROL Reveal] option).
+* Las rutas para colocar archivos en la aplicación nativa utilizan una ruta de escritorio global (desde el recurso compartido de red local que se muestra con la opción [!UICONTROL Reveal]).
 
 * La aplicación nativa almacena las rutas en el registro XMP del archivo.
 
@@ -79,13 +79,13 @@ La función es compatible con las versiones Adobe Creative Cloud 2018 y Adobe Cr
 
 ## Nuevas funciones y mejoras {#whats-new-added}
 
-To know the details, see [What&#39;s new in v2.0](introduction.md#whats-new-v2).
+Para conocer los detalles, consulte [Novedades de v2.0](introduction.md#whats-new-v2).
 
 **Actualizaciones en la aplicación v2.0.3**
 
 El error corregido en la versión actual es:
 
-* Se ha corregido el problema de inicio de sesión que tenían los usuarios de Windows que intentaban acceder al repositorio de DAM en la instancia [!DNL Adobe Experience Manager] 6.5.5.0 que utilizaba la aplicación.
+* Se ha corregido el problema de inicio de sesión que tenían los usuarios de Windows que intentaban acceder al repositorio de DAM en la instancia [!DNL Adobe Experience Manager] 6.5.5.0 que usaba la aplicación.
 
 **Actualizaciones en la aplicación v2.0.2**
 
@@ -105,15 +105,15 @@ Las correcciones y actualizaciones de errores son:
 
 Las correcciones y actualizaciones de errores son:
 
-* Permitir la opción de configurar `%Temp%` el directorio para que coincida con la `%APPDATA%` ruta. <!-- CQ-4282665 -->
+* Permitir la opción de configurar el directorio `%Temp%` para que coincida con la ruta `%APPDATA%`. <!-- CQ-4282665 -->
 
 * Permita que los usuarios inicien sesión en Experience Manager Author mediante la autenticación de Okta SAML. <!-- CQ-4278134 -->
 
 ## Instrucciones de instalación {#installation-instructions-v2}
 
-To know how to install and configure the app, see [Install Experience Manager desktop app](install-upgrade.md).
+Para obtener información sobre cómo instalar y configurar la aplicación, consulte [Instalación de la aplicación de escritorio Experience Manager](install-upgrade.md).
 
-If you are upgrading from a previous Experience Manager desktop app, you must follow these best practices for transitioning that are listed at [upgrade from previous version](install-upgrade.md#upgrade-from-previous-version).
+Si está actualizando desde una aplicación de escritorio de Experience Manager anterior, debe seguir estas optimizaciones para la transición que se enumeran en [actualización desde la versión anterior](install-upgrade.md#upgrade-from-previous-version).
 
 ## Notas importantes sobre el funcionamiento de la aplicación {#how-app-works}
 
@@ -123,7 +123,7 @@ Es importante comprender lo siguiente sobre la aplicación y su funcionamiento.
 
    * Si desea trabajar con el recurso en el escritorio, debe abrir, editar o descargar contenido en el mismo escritorio, ya sea de forma individual, en una carpeta o mediante selección múltiple.
 
-   * If you want to get local changes to assets uploaded to Experience Manager, you need to select [!UICONTROL Upload Changes], either individually or via multi-selection.
+   * Si desea obtener cambios locales en los recursos cargados en Experience Manager, debe seleccionar [!UICONTROL Upload Changes], ya sea individualmente o mediante selección múltiple.
 
    * La aplicación no es un &#39;cliente de sincronización&#39; que sincroniza los recursos en el escritorio y en el Experience Manager.
 
@@ -145,9 +145,9 @@ En el diagrama siguiente se ilustra el flujo de recursos y archivos desde la nub
 
 **Problemas de la interfaz de usuario:**
 
-* En ocasiones, la interfaz de la aplicación de escritorio puede quedar en blanco. Right-click and click [!UICONTROL Refresh] to re-load the application. Después de una actualización de este tipo, inicio en la raíz del repositorio DAM. Se conservan las actualizaciones o los estados de los recursos. <!-- CQ-4270267 -->
+* En ocasiones, la interfaz de la aplicación de escritorio puede quedar en blanco. Haga clic con el botón derecho y haga clic en [!UICONTROL Refresh] para volver a cargar la aplicación. Después de una actualización de este tipo, inicio en la raíz del repositorio DAM. Se conservan las actualizaciones o los estados de los recursos. <!-- CQ-4270267 -->
 
-* Difícil desplazarse por las carpetas o los resultados de la búsqueda sin un panel de seguimiento o un puntero del ratón. The scroll-bar might not appear with mouse devices without mouse wheel. <!-- CQ-4269947 -->
+* Difícil desplazarse por las carpetas o los resultados de la búsqueda sin un panel de seguimiento o un puntero del ratón. Es posible que la barra de desplazamiento no aparezca con los dispositivos del ratón sin la rueda del ratón. <!-- CQ-4269947 -->
 
 * De forma poco frecuente, la barra de progreso no se muestra correctamente cuando se producen cambios en el recurso que se carga.
 
