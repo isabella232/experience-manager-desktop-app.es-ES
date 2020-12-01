@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Notas de la versión de AEM aplicación de escritorio v1.x {#aem-desktop-app-release-notes}
+# Notas de la versión v1.x de la aplicación de escritorio de AEM {#aem-desktop-app-release-notes}
 
 Para la versión v1.x de la aplicación de escritorio, los vínculos de descarga y la información de compatibilidad de AEM son los siguientes.
 
@@ -26,7 +26,7 @@ Para la versión v1.x de la aplicación de escritorio, los vínculos de descarga
 | Versión | 1.10 (1.10.0.6 en Mac y 1.10.0.3 en Windows) |
 | Tipo | Versión menor |
 | Fecha | 1.10.0.6 (Mac): 15 de abril de 2020; 1.10.0.3 (Win): 31 de agosto de 2018 |
-| Direcciones URL de descarga | [Mac OS X 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-1.10.0.6.dmg); [Windows de 32 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-1.10.0.3.exe); [Windows de 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-1.10.0.3.exe) |
+| Direcciones URL de descarga | [Mac OS X 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-1.10.0.6.dmg);  [Windows de 32 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-1.10.0.3.exe);  [Windows de 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-1.10.0.3.exe) |
 | Compatibilidad | AEM 6.5.x; AEM 6.4.x; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 
 >[!NOTE]
@@ -49,19 +49,19 @@ Adobe recomienda encarecidamente utilizar la versión más reciente de AEM aplic
 
 La versión de AEM aplicación de escritorio que está planeando instalar en su equipo local requiere una versión específica del servidor AEM/componentes adicionales del servidor (Service Packs, correcciones rápidas o paquetes de funciones). Asegúrese de que el servidor de AEM está configurado correctamente antes de conectarse a él por primera vez. Si necesita ayuda, póngase en contacto con el administrador de AEM.
 
-Consulte la matriz [de compatibilidad](#compatibilitymatrix) detallada al final de este documento para evaluar los requisitos previos de la configuración.
+Consulte la [matriz de compatibilidad detallada](#compatibilitymatrix) al final de este documento para evaluar los requisitos previos de la configuración.
 
-## What&#39;s New in AEM desktop app 1.10 {#what-s-new-in-aem-desktop-app}
+## Novedades de AEM aplicación de escritorio 1.10 {#what-s-new-in-aem-desktop-app}
 
 AEM aplicación de escritorio 1.10 se centra en mejorar la experiencia del usuario en cuanto a las cargas grandes, la información sobre las operaciones en segundo plano y la experiencia optimizada al abrir recursos con archivos vinculados (como InDesign).
 
 >[!NOTE]
 >
->Si utiliza macOS 10.15.4 o posterior, utilice al menos la versión 1.10.0.6 de la aplicación. Esta versión de parche cumple con los requisitos [de notarización de](https://developer.apple.com/news/?id=04102019a)Apple.
+>Si utiliza macOS 10.15.4 o posterior, utilice al menos la versión 1.10.0.6 de la aplicación. Esta revisión cumple con los [requisitos de notarización de Apple](https://developer.apple.com/news/?id=04102019a).
 
 **Edición/salida** local: Las cargas automáticas de los cambios guardados en los recursos se pueden desactivar en la ventana de estado. De este modo, el usuario puede seguir trabajando en los archivos y guardando los cambios y, cuando esté listo, decidir cargar todos los cambios.
 
-**Ventana** Estado de recurso simplificado. Se simplificó la ventana de estado. La [!UICONTROL Uploads] ficha ahora muestra tanto recursos individuales como cargas masivas o de carpetas. Se ha eliminado la ficha Cargas masivas anterior.
+**Ventana** Estado de recurso simplificado. Se simplificó la ventana de estado. La ficha [!UICONTROL Uploads] ahora muestra tanto recursos individuales como cargas masivas o de carpetas. Se ha eliminado la ficha Cargas masivas anterior.
 
 **Icono de aplicación para indicar cargas** masivas. El icono de la aplicación indica que una carga masiva está en curso al mostrar una superposición de &quot;transferencia&quot;.
 
@@ -71,7 +71,7 @@ AEM aplicación de escritorio 1.10 se centra en mejorar la experiencia del usuar
 
 ## Instrucciones de instalación {#installation-instructions}
 
-Para obtener instrucciones detalladas, consulte [Instalar y configurar AEM aplicación](install-configure-app-v1.md)de escritorio.
+Para obtener instrucciones detalladas, consulte [Instalar y configurar AEM aplicación de escritorio](install-configure-app-v1.md).
 
 ## Mejoras en las versiones anteriores {#enhancements-in-the-previous-versions}
 
@@ -101,9 +101,11 @@ La aplicación de escritorio de Adobe Experience Manager (AEM) 1.9.1 era una ver
 
 AEM aplicación de escritorio 1.9 se centra en mejorar la experiencia del usuario en cuanto a las cargas grandes, la información sobre las operaciones en segundo plano y la experiencia optimizada al abrir recursos con archivos vinculados (como InDesign).
 
-**Cargas** reanudables Para cargas, especialmente alrededor de archivos grandes, existe una opción para pausarlas o reanudarlas en la nueva ventana Estado del recurso.
+**Reanudación de**
+cargasPara cargas, especialmente alrededor de archivos grandes, existe la opción de pausarlas o reanudarlas en la nueva ventana Estado del recurso.
 
-**Ventana** Estado de recurso mejoradaUna ventana de estado de recurso mejorada proporciona la siguiente información sobre los recursos.
+**Ventana de estado de recursos mejorada**
+Una ventana de estado de recursos mejorada proporciona la siguiente información sobre los recursos.
 
 [!UICONTROL Changes]
 
@@ -135,11 +137,11 @@ AEM aplicación de escritorio 1.9 se centra en mejorar la experiencia del usuari
 
 * Si un usuario decide abrir o editar varios archivos desde la interfaz de usuario web de Recursos Experience Manager, se agruparán juntos. Por ejemplo, myasset.jpeg y 4 archivos más.
 
-* Al descargar Documentos de InDesign, incluidos los recursos vinculados almacenados en AEM Assets, la aplicación de escritorio descargará primero todos los recursos vinculados antes de abrir el [!UICONTROL Adobe InDesign] documento e indicará la descarga de los recursos vinculados. Por ejemplo, 5 de 24.
+* Al descargar Documentos de InDesign, incluidos los recursos vinculados almacenados en AEM Assets, la aplicación de escritorio descargará primero todos los recursos vinculados antes de abrir el documento [!UICONTROL Adobe InDesign] e indicará la descarga de los recursos vinculados. Por ejemplo, 5 de 24.
 
 [!UICONTROL Bulk Uploads]
 
-Al cargar jerarquías de carpetas grandes mediante [!UICONTROL Create] > [!UICONTROL Upload Folder] en AEM interfaz de usuario web o al copiar y seleccionar &quot;Pegar recursos&quot; en Finder o Explorer en el menú contextual de la aplicación de escritorio, se activará el uso de este cuadro de diálogo.
+Al cargar jerarquías de carpetas grandes mediante [!UICONTROL Create] > [!UICONTROL Upload Folder] en AEM interfaz de usuario web, o al copiar y seleccionar &quot;Pegar recursos&quot; en Finder o Explorer en el menú contextual de la aplicación de escritorio, se activará el uso de este cuadro de diálogo.
 
 * Muestra las cargas en curso, incluida una barra de progreso y el nombre del archivo que se está transfiriendo.
 
@@ -212,7 +214,7 @@ AEM aplicación de escritorio 1.8.1 versión de seguimiento rápido ha añadido 
 
    * (Win) Desinstalación del limpiador (CQ-4220906).
 
-   * [El instalador de Windows de 32 bits] no puede intentar instalar Microsoft .NET Framework v. 4.5 (CQ-4218084).
+   * [Windows 32 ] bitInstaller no pudo instalar Microsoft .NET Framework v. 4.5 (CQ-4218084).
 
    * (Mac) Secuencia de comandos manual para quitar archivos de aplicaciones de escritorio por completo (CQ-4216489).
 
@@ -222,7 +224,7 @@ AEM aplicación de escritorio 1.8.1 versión de seguimiento rápido ha añadido 
 
 ### Mejoras disponibles desde AEM aplicación de escritorio 1.6 {#Enhancements-Available-Since-AEM-Desktop-App-16}
 
-* Documentación: Nuevas [prácticas recomendadas para la documentación de la aplicación](https://helpx.adobe.com/experience-manager/6-3/assets/using/aem-desktop-app-best-practices.html) v1.x.
+* Documentación: Nueva [Documentación de prácticas recomendadas para la aplicación v1.x](https://helpx.adobe.com/experience-manager/6-3/assets/using/aem-desktop-app-best-practices.html).
 
 * Se ha mejorado el proceso de inicio de sesión para AEM:
 
@@ -371,15 +373,15 @@ Dado que la carpeta /Volumes ya no requiere derechos administrativos, este cambi
 
 >[!NOTE]
 >
->En Mac OS X, el cambio del protocolo de unidad de red local de WebDAV a SMB1 da como resultado una ruta local diferente al mismo recurso en el repositorio. Esto podría afectar a los vínculos a archivos colocados en aplicaciones de Adobe Creative Cloud mediante el comando &quot;Colocar&quot;. Consulte la sección [Usar AEM aplicación](use-app-v1.md) de escritorio para obtener más información.
+>En Mac OS X, el cambio del protocolo de unidad de red local de WebDAV a SMB1 da como resultado una ruta local diferente al mismo recurso en el repositorio. Esto podría afectar a los vínculos a archivos colocados en aplicaciones de Adobe Creative Cloud mediante el comando &quot;Colocar&quot;. Consulte [Usar AEM aplicación de escritorio](use-app-v1.md) para obtener más información.
 
-### Gestión de archivos (desde 1.3) {#file-handling-since}
+### Administración de archivos (desde 1.3) {#file-handling-since}
 
 * Las carpetas se actualizan automáticamente tras un retraso predefinido (actualmente de 30 segundos).
 * Los archivos extraídos por otros usuarios se marcan como de solo lectura.
 * Los archivos se guardan en una ubicación de unidad de red montada mediante la aplicación de escritorio en dos fases.
 * En la primera fase, un archivo se guarda localmente. De este modo, el usuario que guarda el archivo no tendrá que esperar hasta que se transfiera completamente a AEM y podrá reanudar el trabajo tan pronto como se guarde el archivo.
-* En la segunda fase, la aplicación de escritorio carga un archivo actualizado en AEM servidor tras un retraso predefinido (por ejemplo, 30 segundos). Esta operación se produce en segundo plano. Utilice la opción **Mostrar estado** de sincronización de archivos de fondo para la vista del estado de la operación de carga.
+* En la segunda fase, la aplicación de escritorio carga un archivo actualizado en AEM servidor tras un retraso predefinido (por ejemplo, 30 segundos). Esta operación se produce en segundo plano. Utilice la opción **Mostrar estado de sincronización de archivos de fondo** para vista del estado de la operación de carga.
 
 ## Avisos importantes {#important-notices}
 
@@ -402,10 +404,10 @@ Dado que la carpeta /Volumes ya no requiere derechos administrativos, este cambi
 ## Problemas conocidos {#known-issues}
 
 * General:
-   * Las direcciones URL del servidor son necesarias para apuntar al servidor sin una ruta (p. ej. `http://server`, `https://server`, `http://server:port`o `https://server:port`). No se admiten rutas de contexto ni subcarpetas distintas de /content/dam (CQ-89343, CQ-87272)
+   * Las direcciones URL del servidor son necesarias para apuntar al servidor sin una ruta (p. ej. `http://server`, `https://server`, `http://server:port` o `https://server:port`). No se admiten rutas de contexto ni subcarpetas distintas de /content/dam (CQ-89343, CQ-87272)
 * Nombres de archivo/localización:
    * Los nombres de archivos y carpetas con caracteres reservados no se gestionan correctamente. Asegúrese de utilizar nombres de archivos y carpetas que se ajusten a los requisitos de AEM (CQ-93361, CQ-93308, CQ-89276, CQ-4217183)
-   * Algunas aplicaciones como Adobe Illustrator pueden crear archivos con nombres no admitidos en AEM. Por ejemplo, agregar `Converted` después de convertir un archivo, lo que impide que se cargue (CQ-4216985)
+   * Algunas aplicaciones como Adobe Illustrator pueden crear archivos con nombres no admitidos en AEM. Por ejemplo, si agrega `Converted` después de convertir un archivo, lo cual impide que se cargue (CQ-4216985)
    * Los recursos con nombres internacionales pueden aparecer y desaparecer cada pocos segundos
 * Registro de entrada y salida:
    * Un recurso extraído por un usuario no se puede abrir para otro usuario, ya sea mediante la acción Abrir desde la IU táctil o directamente en el escritorio. Algunas aplicaciones podrían informarlo como bloqueadas, pero también como dañadas o incluso bloqueadas al intentar abrir. (CQ-4199234)
@@ -414,14 +416,14 @@ Dado que la carpeta /Volumes ya no requiere derechos administrativos, este cambi
    * El estado de retirada y de solo lectura se notifica de forma independiente en Finder. Esto resulta en dos iconos de bloqueo cuando un usuario cierra la compra de un recurso (CQ-89507)
 * Integración de Finder:
    * Al arrastrar y soltar archivos de gran tamaño, es posible que Finder agote el tiempo de espera mientras se transfieren los archivos en segundo plano. Esto resulta en un `Error - 36`. La solución consiste en arrastrar/soltar o volver a abrir el recurso (CQ-4219628)
-   * La recarga manual de carpetas no siempre funciona. Solución:  espere 30 segundos para que la carpeta se actualice automáticamente. (CQ-97389)
+   * La recarga manual de carpetas no siempre funciona. Solución:  esperar   30 segundos para que la carpeta se actualice automáticamente. (CQ-97389)
    * Más información de recursos... está limitado a selecciones de un solo archivo (CQ-89542, CQ-87656)
    * Abrir en AEM Assets... está limitado a selecciones de archivos y carpetas únicos (CQ-83382)
    * Error al cambiar el nombre de recursos que no tienen extensión (CQ-4218971)
 * Funcionalidad Copiar/Pegar: Pegar está disponible cuando no se ha copiado ningún recurso en el portapapeles
 * Windows:
    * Los archivos con flujos de datos alternativos (ADS) solo son totalmente compatibles con NTFS. Si copia estos archivos al recurso compartido WebDAV proporcionado por la aplicación de escritorio, se mostrará un cuadro de diálogo de advertencia en el que se avisará al usuario de que el archivo tiene propiedades que no se pueden copiar en la nueva ubicación. Esto suele ser correcto, ya que las propiedades solo son relevantes para una aplicación en particular en el escritorio del usuario y no tienen nada que ver con el contenido real del archivo (CQ-103770) (Win)
-   * la aplicación de escritorio en Windows debe instalarla el usuario que la va a utilizar (CQ-4216389) (win)
+   * la aplicación de escritorio en Windows debe ser instalada por el usuario que la va a utilizar (CQ-4216389) (win)
    * La aplicación puede bloquearse al hacer clic en el botón Reintentar en una carga fallida en determinadas circunstancias después de haber reanudado la carga por lotes al desconectarse (CQ-4251884) (Win)
 
 ## Recursos útiles {#helpful-resources}
@@ -436,7 +438,7 @@ AEM aplicación de escritorio funciona con varias versiones de AEM. Consulte la 
 
 | Versión | Revisión | Fecha de la versión | Compatibilidad |
 |--- |--- |--- |--- |
-| 1.10 | 1.10.0.3 (Mac y Win) | 31 de agosto de 2018 | AEM 6.5; AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
-| 1.9 | 1.9.1.1 (Mac y Win) | 21 de junio de 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
-| 1.8 | 1.8.1.0 (Mac y Win) | 28 de marzo de 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
-| 1.7 | 1.7.0.3 (Mac y Win) | 10 de enero de 2018 | AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1,10 | 1.10.0.3 (Mac y Win) | 31 de agosto de 2018 | AEM 6.5; AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1,9 | 1.9.1.1 (Mac y Win) | 21 de junio de 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1,8 | 1.8.1.0 (Mac y Win) | 28 de marzo de 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1,7 | 1.7.0.3 (Mac y Win) | 10 de enero de 2018 | AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
