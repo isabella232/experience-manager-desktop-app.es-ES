@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Install Adobe Experience Manager desktop app {#install-app-v2}
+# Instalación de la aplicación de escritorio de Adobe Experience Manager {#install-app-v2}
 
 Con la aplicación de escritorio de Adobe Experience Manager, los recursos de Experience Manager están fácilmente disponibles en el escritorio local y se pueden usar en cualquier aplicación de escritorio nativa. Los recursos se pueden previsualizar, abrir en aplicaciones de escritorio nativas, mostrar en Mac Finder o el Explorador de Windows para colocarlos en otros documentos y cambiar localmente; los cambios se guardan de nuevo en Experience Manager cuando se carga y se crea una nueva versión en el repositorio.
 
@@ -29,19 +29,19 @@ Esta integración permite que diversas funciones de la organización,
 
 Para utilizar la aplicación de escritorio Experience Manager,
 
-* Asegúrese de que la versión de Experience Manager sea compatible con la aplicación de escritorio de Experience Manager. Consulte los requisitos [del sistema](release-notes.md#system-requirements-and-prerequisites-v2) a continuación.
+* Asegúrese de que la versión de Experience Manager sea compatible con la aplicación de escritorio de Experience Manager. Consulte los [requisitos del sistema](release-notes.md#system-requirements-and-prerequisites-v2) a continuación.
 
-* Descargue e instale la aplicación. Consulte [Instalación de la aplicación](#install-v2) de escritorio a continuación.
+* Descargue e instale la aplicación. Consulte [instalación de la aplicación de escritorio](#install-v2) a continuación.
 
 * Pruebe la conexión con algunos recursos. Consulte [cómo examinar y buscar recursos](using.md#browse-search-preview-assets).
 
 ## Requisitos del sistema, requisitos previos y vínculos de descarga {#tech-specs-v2}
 
-Para obtener información detallada, consulte las notas de la versión de la aplicación de escritorio de [Experience Manager](release-notes.md).
+Para obtener información detallada, consulte las [notas de la versión de la aplicación de escritorio de Experience Manager](release-notes.md).
 
-## Upgrade from a previous version {#upgrade-from-previous-version}
+## Actualizar desde una versión anterior {#upgrade-from-previous-version}
 
-Si es un usuario de la versión 1.x de la aplicación de escritorio, comprenda las diferencias y similitudes entre la versión anterior y la última de la aplicación. Vea [las novedades de la aplicación](introduction.md#whats-new-v2) de escritorio y [cómo funciona](release-notes.md#how-app-works)
+Si es un usuario de la versión 1.x de la aplicación de escritorio, comprenda las diferencias y similitudes entre la versión anterior y la última de la aplicación. Consulte [novedades en la aplicación de escritorio](introduction.md#whats-new-v2) y [cómo funciona la aplicación](release-notes.md#how-app-works)
 
 >[!NOTE]
 >
@@ -55,27 +55,27 @@ Para actualizar desde una versión anterior de la aplicación, siga estas instru
 
 1. Reinicie el equipo.
 
-1. [Descargue](release-notes.md) e [instale](#install-v2) la aplicación más reciente. Siga las instrucciones a continuación.
+1. [](release-notes.md) Descargue e  [](#install-v2) instale la aplicación más reciente. Siga las instrucciones a continuación.
 
 ## Instalar {#install-v2}
 
 Para instalar la aplicación de escritorio, siga estos pasos. Desinstale cualquier aplicación de escritorio de Adobe Experience Manager v1.x existente antes de instalar la aplicación más reciente. Para obtener más información, consulte arriba.
 
-1. Descargue el instalador más reciente de la página de notas [de la](release-notes.md) versión.
+1. Descargue el instalador más reciente de la página [notas de la versión](release-notes.md).
 
 1. Tenga a mano la dirección URL y las credenciales de la implementación de Experience Manager.
 
-1. Si va a realizar la actualización desde otra versión de la aplicación, consulte [Actualización de la aplicación](#upgrade-from-previous-version)de escritorio.
+1. Si está actualizando desde otra versión de la aplicación, consulte [actualización de la aplicación de escritorio](#upgrade-from-previous-version).
 
-1. Omita este paso si utiliza Experience Manager como Cloud Service, Experience Manager 6.4.4 o posterior, o Experience Manager 6.5.0 o posterior. Asegúrese de que la configuración del Experience Manager cumple los requisitos de compatibilidad mencionados en las notas de la [versión](release-notes.md). Si es necesario, descargue el paquete [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) compatibilidad aplicable e instálelo mediante el Administrador de paquetes de Experience Manager como administrador de Experience Manager. Para instalar un paquete, consulte [Cómo trabajar con paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
+1. Omita este paso si utiliza Experience Manager como Cloud Service, Experience Manager 6.4.4 o posterior, o Experience Manager 6.5.0 o posterior. Asegúrese de que la configuración del Experience Manager cumpla los requisitos de compatibilidad mencionados en las [notas de la versión](release-notes.md). Si es necesario, descargue el [paquete de compatibilidad](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) aplicable e instálelo mediante el Administrador de paquetes de Experience Manager como administrador de Experience Manager. Para instalar un paquete, consulte [Cómo trabajar con paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Ejecute el archivo binario del programa de instalación y siga las instrucciones que aparecen en pantalla para instalarlo.
 
-1. En Windows, el programa de instalación puede solicitar la instalación `Visual Studio C++ Redistributable 2015`. Siga las instrucciones que aparecen en pantalla para instalarlo. Si la instalación falla, instálela manualmente. Descargue el instalador desde [aquí](https://www.microsoft.com/en-us/download/details.aspx?id=52685) e instale tanto `vc_redist.x64.exe` como `vc_redist.x86.exe` archivos. Vuelva a ejecutar el instalador de la aplicación de escritorio [!DNL Experience Manager] .
+1. En Windows, el instalador puede solicitar la instalación de `Visual Studio C++ Redistributable 2015`. Siga las instrucciones que aparecen en pantalla para instalarlo. Si la instalación falla, instálela manualmente. Descargue el instalador de [aquí](https://www.microsoft.com/en-us/download/details.aspx?id=52685) e instale los archivos `vc_redist.x64.exe` y `vc_redist.x86.exe`. Vuelva a ejecutar el instalador de la aplicación de escritorio [!DNL Experience Manager].
 
 1. Reinicie el equipo como se le solicite. Inicie y configure la aplicación de escritorio.
 
-1. Para conectar la aplicación con un [!DNL Experience Manager] repositorio, haga clic en el icono de la aplicación en la bandeja e inicie la aplicación. Proporcione la dirección del [!DNL Experience Manager] servidor en el formato `https://[aem_server]:[port]/`.
+1. Para conectar la aplicación con un repositorio [!DNL Experience Manager], haga clic en el icono de la aplicación en la bandeja e inicie la aplicación. Proporcione la dirección del servidor [!DNL Experience Manager] con el formato `https://[aem_server]:[port]/`.
 
    Haga clic en **[!UICONTROL Connect]** y proporcione las credenciales.
 
@@ -85,21 +85,21 @@ Para instalar la aplicación de escritorio, siga estos pasos. Desinstale cualqui
 
    >[!CAUTION]
    >
-   >Asegúrese de que no haya espacios al inicio o al final antes o después de la dirección del [!DNL Experience Manager] servidor. De lo contrario, la aplicación no se puede conectar al [!DNL Experience Manager] servidor.
+   >Asegúrese de que no haya espacios al inicio o al final antes o después de la dirección del servidor [!DNL Experience Manager]. De lo contrario, la aplicación no se puede conectar al servidor [!DNL Experience Manager].
 
-1. Tras una conexión correcta, puede realizar la vista de la lista de carpetas y recursos disponibles en la carpeta raíz del [!DNL Experience Manager] DAM. Puede examinar las carpetas desde la aplicación.
+1. Tras una conexión correcta, puede realizar la vista de la lista de las carpetas y los recursos disponibles en la carpeta raíz del [!DNL Experience Manager] DAM. Puede examinar las carpetas desde la aplicación.
 
    ![Al iniciar sesión, la aplicación muestra el contenido de DAM](assets/firstview_da2.png)
 
    *Figura: La aplicación muestra el contenido de DAM después del inicio de sesión*
 
-1. (Experience Manager 6.5.1 o posterior) Si utiliza una aplicación de escritorio con Experience Manager 6.5.1 o posterior, actualice el conector S3 o Azure a la versión 1.10.4 o posterior. Consulte Conector [](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) de Azure o conector [S3](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store).
+1. (Experience Manager 6.5.1 o posterior) Si utiliza una aplicación de escritorio con Experience Manager 6.5.1 o posterior, actualice el conector S3 o Azure a la versión 1.10.4 o posterior. Consulte [Conector de Azure](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) o conector [S3](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store).
 
    Si es cliente de Adobe Managed Services (AMS), póngase en contacto con el servicio de atención al cliente de Adobe.
 
-## Configuración de preferencias {#set-preferences}
+## Definir preferencias {#set-preferences}
 
-Para cambiar las preferencias, haga clic en el icono ![](assets/do-not-localize/more_options_da2.png) Más opciones y en el icono **[!UICONTROL Preference]**![ Preferencias](assets/do-not-localize/preferences_icon_da2.png). En la **[!UICONTROL Preferences]** ventana, ajuste los valores de lo siguiente:
+Para cambiar las preferencias, haga clic en ![Más iconos de opciones](assets/do-not-localize/more_options_da2.png) y **[!UICONTROL Preference]** ![Icono de preferencias](assets/do-not-localize/preferences_icon_da2.png). En la ventana **[!UICONTROL Preferences]**, ajuste los valores de lo siguiente:
 
 * [!UICONTROL Launch application on login].
 
@@ -107,7 +107,7 @@ Para cambiar las preferencias, haga clic en el icono ![](assets/do-not-localize/
 
 * **[!UICONTROL Cache Directory]**:: Ubicación de la caché local de la aplicación (contiene los recursos descargados localmente).
 
-* **[!UICONTROL Network Drive Letter]**:: La letra de unidad utilizada para asignar al [!DNL Experience Manager] DAM. No lo cambie si no está seguro. La aplicación puede asignarse a cualquier letra de unidad en Windows. Si dos usuarios colocan recursos de distintas letras de unidad, no podrán ver los recursos colocados entre ellos. La ruta de los recursos cambia. Los recursos permanecen colocados en el archivo binario (digamos INDD) y no se eliminan. La aplicación lista todas las letras de unidad disponibles y, de forma predeterminada, utiliza la última letra disponible que suele ser `Z`.
+* **[!UICONTROL Network Drive Letter]**:: La letra de unidad utilizada para asignar al  [!DNL Experience Manager] DAM. No lo cambie si no está seguro. La aplicación puede asignarse a cualquier letra de unidad en Windows. Si dos usuarios colocan recursos de distintas letras de unidad, no podrán ver los recursos colocados entre ellos. La ruta de los recursos cambia. Los recursos permanecen colocados en el archivo binario (digamos INDD) y no se eliminan. La aplicación lista todas las letras de unidad disponibles y, de forma predeterminada, utiliza la última letra disponible que suele ser `Z`.
 
 * **[!UICONTROL Maximum Cache Size]**:: Caché permitida en el disco duro en GB que se utiliza para almacenar recursos descargados localmente.
 
@@ -119,7 +119,7 @@ Para cambiar las preferencias, haga clic en el icono ![](assets/do-not-localize/
 
 * **[!UICONTROL Upload Acceleration]**:: Al cargar recursos, la aplicación puede utilizar cargas simultáneas para mejorar la velocidad de carga. Puede aumentar la concurrencia de la carga moviendo el control deslizante hacia la derecha. El control deslizante en el extremo izquierdo significa que no hay concurrencia (carga de un solo subproceso), la posición media corresponde a 10 subprocesos simultáneos y el límite máximo en el extremo derecho corresponde a 20 subprocesos simultáneos. Un límite de concurrencia mayor requiere un mayor consumo de recursos del procesador del equipo local.
 
-Para actualizar las preferencias no disponibles, cierre la sesión del [!DNL Experience Manager] servidor. Después de actualizar las preferencias, haga clic en ![Guardar preferencias](assets/do-not-localize/save_preferences_da2.png) para guardar los cambios.
+Para actualizar las preferencias no disponibles, cierre la sesión del servidor [!DNL Experience Manager]. Después de actualizar las preferencias, haga clic en ![Guardar preferencias](assets/do-not-localize/save_preferences_da2.png) para guardar los cambios.
 
 ![Preferencias y configuración de la aplicación de escritorio](assets/preferences_da2.png)
 
@@ -129,7 +129,7 @@ Para actualizar las preferencias no disponibles, cierre la sesión del [!DNL Exp
 
 Para desinstalar la aplicación en Windows, siga estos pasos:
 
-1. Cargue todos los cambios en para [!DNL Experience Manager] evitar perder las ediciones. Consulte [Edición de recursos y carga de recursos actualizados en [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Cierre la sesión y [!UICONTROL Exit] la aplicación.
+1. Cargue todos los cambios en [!DNL Experience Manager] para evitar perder cualquier edición. Consulte [Editar recursos y cargar recursos actualizados a [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Cierre la sesión y [!UICONTROL Exit] la aplicación.
 
 1. Elimine la aplicación como si eliminara cualquier otra aplicación del sistema operativo. Desinstálela de Añadir y elimine programas en Windows.
 
@@ -141,9 +141,9 @@ Para desinstalar la aplicación en Windows, siga estos pasos:
 
 Para desinstalar la aplicación en Mac, siga estos pasos:
 
-1. Cargue todos los cambios en para [!DNL Experience Manager] evitar perder las ediciones. Consulte [Edición de recursos y carga de recursos actualizados en [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Cierre la sesión y [!UICONTROL Exit] la aplicación.
+1. Cargue todos los cambios en [!DNL Experience Manager] para evitar perder cualquier edición. Consulte [Editar recursos y cargar recursos actualizados a [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Cierre la sesión y [!UICONTROL Exit] la aplicación.
 
-1. Retire el `Adobe Experience Manager Desktop.app` de `/Applications`.
+1. Elimine el `Adobe Experience Manager Desktop.app` de `/Applications`.
 
 Como alternativa, para limpiar las cachés de aplicaciones internas en Mac y desinstalar la aplicación, puede ejecutar el siguiente comando en la terminal:
 
