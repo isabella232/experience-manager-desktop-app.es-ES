@@ -27,7 +27,7 @@ La aplicación de escritorio de Adobe Experience Manager (AEM) incluye utilidade
 
 Con esta arquitectura, la aplicación de escritorio intercepta las llamadas al sistema de archivos (abrir, cerrar, leer, escribir, etc.) al recurso compartido de red montado y las convierte en llamadas HTTP nativas AEM al servidor AEM. Los archivos se almacenan en caché localmente. Para obtener más información, consulte [Uso de AEM aplicación de escritorio v1.x](use-app-v1.md).
 
-## AEM desktop app component overview {#desktop-app-component-overview}
+## Descripción general del componente de la aplicación de escritorio de AEM {#desktop-app-component-overview}
 
 la aplicación de escritorio incluye los siguientes componentes:
 
@@ -96,7 +96,7 @@ Todas las operaciones no se almacenan en caché localmente. Los siguientes datos
 
 ## Operaciones individuales {#individual-operations}
 
-Al solucionar problemas de rendimiento suboptimizado para usuarios individuales, revise primero [las limitaciones](https://helpx.adobe.com/experience-manager/desktop-app/troubleshooting-desktop-app.html#limitations). Las secciones siguientes incluyen sugerencias para mejorar el rendimiento de los usuarios individuales.
+Al solucionar problemas de rendimiento suboptimizado para usuarios individuales, primero revise [Limitaciones](https://helpx.adobe.com/experience-manager/desktop-app/troubleshooting-desktop-app.html#limitations). Las secciones siguientes incluyen sugerencias para mejorar el rendimiento de los usuarios individuales.
 
 ## Recomendaciones de ancho de banda {#bandwidth-recommendations}
 
@@ -134,19 +134,19 @@ Si el rendimiento de WebDAV/SMB se degrada drásticamente cuando varios usuarios
 
 Puede mejorar el rendimiento en el lado AEM habilitando flujos de trabajo transitorios para el flujo de trabajo de recursos de actualización de DAM. Al habilitar flujos de trabajo transitorios, se reduce la potencia de procesamiento necesaria para actualizar los recursos cuando se crean o modifican en AEM.
 
-1. Vaya a `/miscadmin` la instancia de AEM que se va a configurar (por ejemplo, `http://[Server]:[Port]/miscadmin`).
+1. Vaya a `/miscadmin` en la instancia de AEM que se va a configurar (por ejemplo, `http://[Server]:[Port]/miscadmin`).
 1. En el árbol de navegación, expanda **Herramientas** > **Flujo de trabajo** > **Modelos** > **Dam**.
-1. Haga clic con el botón doble **en Actualizar recurso** DAM.
-1. En el panel de herramientas flotantes, cambie a la ficha **Página** y, a continuación, haga clic en Propiedades **de página**.
-1. Seleccione la casilla de verificación Flujo de trabajo **** transitorio y haga clic en **Aceptar**.
+1. Haga clic con el doble **Recurso de actualización de DAM**.
+1. En el panel de herramientas flotantes, cambie a la ficha **Página** y haga clic en **Propiedades de la página**.
+1. Seleccione la casilla de verificación **Flujo de trabajo transitorio** y haga clic en **Aceptar**.
 
 ### Ajustar cola de flujo de trabajo transitorio de granito {#adjust-granite-transient-workflow-queue}
 
 Otro método para mejorar el rendimiento de AEM es configurar el valor de los trabajos paralelos máximos para el trabajo de cola de flujo de trabajo transitorio de Granite. El valor recomendado es aproximadamente la mitad del número de CPU disponible con el servidor. Para ajustar el valor, siga estos pasos:
 
 1. Vaya a */system/console/configMgr* en la instancia de AEM que se va a configurar (por ejemplo, `http://[aem_server]:[port]/system/console/configMgr`).
-1. Busque **QueueConfiguration** y haga clic para abrir cada trabajo hasta que encuentre el trabajo de **Granite Transient Workflow Queue** . Haga clic en Editar junto a ella.
-1. Cambie el valor de Trabajos **paralelos** máximos y haga clic en **Guardar**.
+1. Busque **QueueConfiguration** y haga clic para abrir cada trabajo hasta que encuentre el trabajo **Granite Transient Workflow Queue**. Haga clic en Editar junto a ella.
+1. Cambie el valor **Número máximo de trabajos paralelos** y haga clic en **Guardar**.
 
 ## Configuración de AWS {#aws-configuration}
 
@@ -154,7 +154,7 @@ Debido a las limitaciones de ancho de banda de la red, el rendimiento de WebDAV/
 
 Esta medida aumenta específicamente la cantidad de ancho de banda de red disponible para el servidor. Aquí algunos detalles:
 
-* La cantidad de ancho de banda de red dedicado a una instancia de AWS aumenta a medida que aumenta el tamaño de la instancia. Para obtener información sobre la cantidad de ancho de banda disponible para cada tamaño de instancia, consulte la documentación [de](https://aws.amazon.com/ec2/instance-types/)AWS.
+* La cantidad de ancho de banda de red dedicado a una instancia de AWS aumenta a medida que aumenta el tamaño de la instancia. Para obtener información sobre la cantidad de ancho de banda disponible para cada tamaño de instancia, consulte la [documentación de AWS](https://aws.amazon.com/ec2/instance-types/).
 * Al solucionar problemas de un cliente grande, Adobe configuró el tamaño de su instancia de AEM a c4.8xlarge, principalmente para los 4000 Mbps de ancho de banda dedicado que proporciona.
 * Si hay un despachante por delante de la instancia de AEM, asegúrese de que tenga el tamaño adecuado. Si la instancia de AEM proporciona 4000 Mbps pero el despachante sólo proporciona 500 Mbps, el ancho de banda efectivo es de sólo 500 Mbps. Es porque el despachante crea un cuello de botella de red.
 
@@ -226,7 +226,7 @@ En Windows, `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
 
 En Mac, `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
 
-Sin embargo, la ubicación puede cambiar en función del extremo de AEM configurado AEM Desktop. El valor es una versión codificada de la dirección URL de destino. Por ejemplo, si la aplicación está segmentada `http://localhost:4502`, el nombre del directorio es `http%3A%2F%2Flocalhost%3A4502%2F`.
+Sin embargo, la ubicación puede cambiar en función del extremo de AEM configurado AEM Desktop. El valor es una versión codificada de la dirección URL de destino. Por ejemplo, si la aplicación está dirigiendo `http://localhost:4502`, el nombre del directorio es `http%3A%2F%2Flocalhost%3A4502%2F`.
 
 Para borrar la caché, elimine el directorio &lt;Encoded AEM Endpoint>.
 
@@ -259,7 +259,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop" | xargs rm -rf
 sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-plugin" | xargs rm -rf
 ```
 
-## Guardar un archivo extraído por otros usuarios {#saving-a-file-checked-out-by-others}
+## Guardar un archivo extraído por otros {#saving-a-file-checked-out-by-others}
 
 Las limitaciones técnicas del sistema operativo impiden que los usuarios tengan una experiencia uniforme al intentar sobrescribir un archivo extraído por otros usuarios. La experiencia varía según la aplicación utilizada para editar el archivo extraído. En ocasiones, la aplicación muestra un mensaje de error que indica un error de escritura en el disco o un error genérico o aparentemente no relacionado. En otras ocasiones, no se muestra ningún mensaje de error y la operación parece realizarse correctamente.
 
@@ -269,11 +269,11 @@ Independientemente del comportamiento, el archivo permanece sin cambios cuando l
 
 ## Solución de problemas relacionados con el desplazamiento de archivos {#troubleshooting-problems-around-moving-files}
 
-La API de servidor requiere que se pasen encabezados adicionales, X-Destination, X-Depth y X-Overwrite, para que funcionen las operaciones de mover y copiar. El despachante no pasa estos encabezados de forma predeterminada, lo que provoca que se produzcan errores en estas operaciones. Para obtener más información, consulte [Conexión a AEM detrás de un despachante](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher).
+La API de servidor requiere que se pasen encabezados adicionales, X-Destination, X-Depth y X-Overwrite, para que funcionen las operaciones de mover y copiar. El despachante no pasa estos encabezados de forma predeterminada, lo que provoca que se produzcan errores en estas operaciones. Para obtener más información, consulte [Conexión a AEM Detrás de un despachante](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher).
 
-## Solución de problemas de conexión AEM Desktop {#troubleshooting-aem-desktop-connection-issues}
+## Solución de problemas de conexión de AEM Desktop {#troubleshooting-aem-desktop-connection-issues}
 
-### Problema de redireccionamiento de SAML {#saml-redirect-issue}
+### Problema de redirección de SAML {#saml-redirect-issue}
 
 El motivo más común de los problemas con AEM Desktop que se conecta a la instancia de AEM habilitada para SSO (SAML) es que el proceso SAML no redirige a la ruta solicitada originalmente. Como alternativa, la conexión puede redirigirse a un host que no esté configurado en AEM escritorio. Siga estos pasos para verificar el proceso de inicio de sesión:
 
@@ -282,13 +282,13 @@ El motivo más común de los problemas con AEM Desktop que se conecta a la insta
 1. Reemplace la dirección URL con la instancia de destinatario AEM, por ejemplo `http://localhost:4502/content/dam.json`.
 1. Inicie sesión en AEM.
 1. Después de iniciar sesión, compruebe la dirección actual del explorador en la barra de direcciones. Debe coincidir con la dirección URL que introdujo inicialmente.
-1. Compruebe que todo lo anterior `/content/dam.json` coincide con el valor de AEM de destinatario configurado en AEM Desktop.
+1. Compruebe que todo lo anterior a `/content/dam.json` coincide con el valor de AEM de destinatario configurado en AEM Escritorio.
 
-### Problema de configuración de SSL {#ssl-configuration-issue}
+### Problema de configuración SSL {#ssl-configuration-issue}
 
 Las bibliotecas que AEM aplicación de escritorio utiliza para la comunicación HTTP utilizan una estricta aplicación SSL. A veces, una conexión puede funcionar correctamente con un navegador, pero falla al usar AEM aplicación de escritorio. Para configurar SSL correctamente, instale el certificado intermedio que falta en Apache. Consulte [Cómo instalar un certificado de CA intermedio en Apache](https://access.redhat.com/solutions/43575).
 
-## Uso de AEM Desktop con dispatcher {#using-aem-desktop-with-dispatcher}
+## Uso de AEM Desktop con el despachante {#using-aem-desktop-with-dispatcher}
 
 AEM Desktop funciona con AEM implementaciones detrás de un despachante, que es una configuración predeterminada y recomendada para AEM servidores. AEM despachantes de AEM entornos de creación suelen configurarse para omitir el almacenamiento en caché de recursos DAM. Por lo tanto, los despachantes no proporcionan almacenamiento en caché adicional desde el punto de vista de AEM Desktop. Asegúrese de que la configuración del despachante esté ajustada para funcionar con AEM Desktop. Para obtener más información, consulte [Conexión a AEM detrás de un despachante](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher).
 
