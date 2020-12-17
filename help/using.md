@@ -3,9 +3,9 @@ title: Uso de la aplicación de escritorio de Adobe Experience Manager
 description: Aprenda a instalar y utilizar la aplicación de escritorio de Adobe Experience Manager para trabajar con los recursos de Adobe Experience Manager DAM directamente desde el escritorio de Windows o Mac. Conozca las prácticas recomendadas y la información de solución de problemas.
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: 41625c59df00b82ceda8a566b35341bc51c2a30f
 workflow-type: tm+mt
-source-wordcount: '4022'
+source-wordcount: '4028'
 ht-degree: 0%
 
 ---
@@ -173,7 +173,7 @@ Si es necesario, active la desprotección. El recurso actualizado se elimina de 
 
 ## Cargar y agregar recursos nuevos al Experience Manager {#upload-and-add-new-assets-to-aem}
 
-Los usuarios pueden agregar recursos nuevos al repositorio de DAM. Por ejemplo, puede ser un fotógrafo o contratista de la agencia que desee agregar un gran número de fotos de una sesión fotográfica al repositorio de Experience Manager. Para agregar contenido nuevo al Experience Manager, haga clic en ![Cargar en el icono de nube](assets/do-not-localize/upload_to_cloud_da2.png) en la barra superior de la aplicación. Busque los archivos de recursos en el sistema de archivos local y haga clic en **[!UICONTROL Select]**. La aplicación inicio la carga del recurso y muestra una barra de progreso en la parte inferior si el recurso tarda más en cargarse. No utilice espacios en blanco ni caracteres no válidos al crear o cargar carpetas. Consulte una lista de caracteres en [Crear carpetas en [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
+Los usuarios pueden agregar recursos nuevos al repositorio de DAM. Por ejemplo, puede ser un fotógrafo o contratista de la agencia que desee agregar un gran número de fotos de una sesión fotográfica al repositorio [!DNL Experience Manager]. Para agregar nuevo contenido a [!DNL Experience Manager], seleccione ![cargar en la opción de nube](assets/do-not-localize/upload_to_cloud_da2.png) en la barra superior de la aplicación. Busque los archivos de recursos en el sistema de archivos local y haga clic en **[!UICONTROL Select]**. También puede arrastrar los archivos o carpetas de la interfaz de la aplicación. La aplicación inicio a cargar el recurso. Si la carga tarda más, la aplicación muestra una barra de progreso en la parte inferior. No utilice espacios en blanco ni caracteres no válidos al crear o cargar carpetas. Consulte una lista de caracteres permitidos en [crear carpetas en [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
