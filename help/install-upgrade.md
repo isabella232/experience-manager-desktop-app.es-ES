@@ -1,35 +1,28 @@
 ---
-title: Instalación y configuración de la aplicación de escritorio de Adobe Experience Manager
-description: Instale y configure la aplicación de escritorio de Adobe Experience Manager para que funcione con los servidores de Adobe Experience Manager Assets y descargue los recursos en el sistema de archivos local.
-uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f6365302-1690-4719-9b8c-035719422740
-index: y
-internal: n
-snippet: y
+title: Instalar y configurar [!DNL Adobe Experience Manager] aplicación de escritorio
+description: Instale y configure [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] servidores y descargue los recursos en el sistema de archivos local.
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1162'
 ht-degree: 1%
 
 ---
 
 
-# Instalación de la aplicación de escritorio de Adobe Experience Manager {#install-app-v2}
+# Instalar [!DNL Adobe Experience Manager] aplicación de escritorio {#install-app-v2}
 
-Con la aplicación de escritorio de Adobe Experience Manager, los recursos de Experience Manager están fácilmente disponibles en el escritorio local y se pueden usar en cualquier aplicación de escritorio nativa. Los recursos se pueden previsualizar, abrir en aplicaciones de escritorio nativas, mostrar en Mac Finder o el Explorador de Windows para colocarlos en otros documentos y cambiar localmente; los cambios se guardan de nuevo en Experience Manager cuando se carga y se crea una nueva versión en el repositorio.
+Al utilizar la aplicación de escritorio [!DNL Adobe Experience Manager], los recursos dentro de [!DNL Experience Manager] están fácilmente disponibles en el escritorio local y se pueden utilizar en cualquier aplicación de escritorio nativa. Los recursos se pueden previsualizar, abrir en aplicaciones de escritorio nativas, mostrar en Mac Finder o el Explorador de Windows para colocarlos en otros documentos y cambiar localmente. Los cambios se guardan en [!DNL Experience Manager] al cargar y se crea una nueva versión en el repositorio.
 
 Esta integración permite que diversas funciones de la organización,
 
-* Administre los recursos de forma centralizada en Recursos Experience Manager.
+* Administre los recursos centralmente en [!DNL Experience Manager Assets].
 
 * Acceda a los recursos en cualquier aplicación de escritorio nativa, incluidas las aplicaciones de terceros y en Adobe Creative Cloud. Al hacerlo, los usuarios pueden cumplir fácilmente los distintos estándares, incluida la marca.
 
-Para utilizar la aplicación de escritorio Experience Manager,
+Para utilizar la aplicación de escritorio [!DNL Experience Manager],
 
-* Asegúrese de que la versión de Experience Manager sea compatible con la aplicación de escritorio de Experience Manager. Consulte los [requisitos del sistema](release-notes.md#system-requirements-and-prerequisites-v2) a continuación.
+* Asegúrese de que su versión [!DNL Experience Manager] sea compatible con la aplicación de escritorio [!DNL Experience Manager]. Consulte los [requisitos del sistema](release-notes.md#system-requirements-and-prerequisites-v2) a continuación.
 
 * Descargue e instale la aplicación. Consulte [instalación de la aplicación de escritorio](#install-v2) a continuación.
 
@@ -37,7 +30,7 @@ Para utilizar la aplicación de escritorio Experience Manager,
 
 ## Requisitos del sistema, requisitos previos y vínculos de descarga {#tech-specs-v2}
 
-Para obtener información detallada, consulte las [notas de la versión de la aplicación de escritorio de Experience Manager](release-notes.md).
+Para obtener información detallada, consulte las [[!DNL Experience Manager] notas de la versión de la aplicación de escritorio](release-notes.md).
 
 ## Actualizar desde una versión anterior {#upgrade-from-previous-version}
 
@@ -49,7 +42,7 @@ Si es un usuario de la versión 1.x de la aplicación de escritorio, comprenda l
 
 Para actualizar desde una versión anterior de la aplicación, siga estas instrucciones:
 
-1. Antes de actualizar, sincronice todos los recursos y cargue los cambios en el Experience Manager. Esto sirve para evitar perder las ediciones al desinstalar la aplicación.
+1. Antes de actualizar, sincronice todos los recursos y cargue los cambios en [!DNL Experience Manager]. Esto sirve para evitar perder las ediciones al desinstalar la aplicación.
 
 1. Desinstale la versión anterior de la aplicación. Al desinstalar, seleccione la opción para borrar la caché.
 
@@ -59,15 +52,15 @@ Para actualizar desde una versión anterior de la aplicación, siga estas instru
 
 ## Instalar {#install-v2}
 
-Para instalar la aplicación de escritorio, siga estos pasos. Desinstale cualquier aplicación de escritorio de Adobe Experience Manager v1.x existente antes de instalar la aplicación más reciente. Para obtener más información, consulte arriba.
+Para instalar la aplicación de escritorio, siga estos pasos. Desinstale cualquier aplicación de escritorio v1.x de Adobe [!DNL Experience Manager] existente antes de instalar la aplicación más reciente. Para obtener más información, consulte arriba.
 
 1. Descargue el instalador más reciente de la página [notas de la versión](release-notes.md).
 
-1. Tenga a mano la dirección URL y las credenciales de la implementación de Experience Manager.
+1. Tenga a mano la dirección URL y las credenciales de su implementación [!DNL Experience Manager].
 
 1. Si está actualizando desde otra versión de la aplicación, consulte [actualización de la aplicación de escritorio](#upgrade-from-previous-version).
 
-1. Omita este paso si utiliza Experience Manager como Cloud Service, Experience Manager 6.4.4 o posterior, o Experience Manager 6.5.0 o posterior. Asegúrese de que la configuración del Experience Manager cumpla los requisitos de compatibilidad mencionados en las [notas de la versión](release-notes.md). Si es necesario, descargue el [paquete de compatibilidad](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) aplicable e instálelo mediante el Administrador de paquetes de Experience Manager como administrador de Experience Manager. Para instalar un paquete, consulte [Cómo trabajar con paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
+1. Omita este paso si utiliza [!DNL Experience Manager] como [!DNL Cloud Service], [!DNL Experience Manager] 6.4.4 o posterior, o [!DNL Experience Manager] 6.5.0 o posterior. Asegúrese de que su configuración [!DNL Experience Manager] cumple los requisitos de compatibilidad mencionados en las [notas de la versión](release-notes.md). Si es necesario, descargue el [paquete de compatibilidad](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) aplicable e instálelo mediante el Administrador de paquetes [!DNL Experience Manager] como administrador [!DNL Experience Manager]. Para instalar un paquete, consulte [Cómo trabajar con paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Ejecute el archivo binario del programa de instalación y siga las instrucciones que aparecen en pantalla para instalarlo.
 
@@ -93,7 +86,7 @@ Para instalar la aplicación de escritorio, siga estos pasos. Desinstale cualqui
 
    *Figura: La aplicación muestra el contenido de DAM después del inicio de sesión*
 
-1. (Experience Manager 6.5.1 o posterior) Si utiliza una aplicación de escritorio con Experience Manager 6.5.1 o posterior, actualice el conector S3 o Azure a la versión 1.10.4 o posterior. Consulte [Conector de Azure](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) o conector [S3](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store).
+1. ([!DNL Experience Manager] 6.5.1 o posterior) Si utiliza una aplicación de escritorio con [!DNL Experience Manager] 6.5.1 o posterior, actualice el conector S3 o Azure a la versión 1.10.4 o posterior. Consulte [Conector de Azure](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) o conector [S3](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store).
 
    Si es cliente de Adobe Managed Services (AMS), póngase en contacto con el servicio de atención al cliente de Adobe.
 
