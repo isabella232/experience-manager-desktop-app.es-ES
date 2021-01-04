@@ -1,15 +1,8 @@
 ---
 title: Instalar y configurar [!DNL Experience Manager] versión 1.x de la aplicación de escritorio
 description: Instale y configure [!DNL Experience Manager] desktop app version 1.x to work with [!DNL Assets] servidores y asigne los recursos que desea montar como unidad en el escritorio.
-uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS,SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f6365302-1690-4719-9b8c-035719422740
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 0%
