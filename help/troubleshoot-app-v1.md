@@ -1,27 +1,20 @@
 ---
-title: Solución de problemas de AEM versión 1.x de la aplicación de escritorio
-description: Solucione los problemas de AEM aplicación de escritorio versión 1.x para resolver los problemas ocasionales relacionados con la instalación, actualización, configuración, etc.
-uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
-index: y
-internal: n
-snippet: y
+title: Solución de problemas [!DNL Adobe Experience Manager] versión 1.x de la aplicación de escritorio
+description: Solucione los problemas de la versión 1.x de la aplicación de escritorio [!DNL Adobe Experience Manager] para resolver los problemas ocasionales relacionados con la instalación, actualización y configuración.
 translation-type: tm+mt
-source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '3379'
+source-wordcount: '3366'
 ht-degree: 1%
 
 ---
 
 
-# Solución de problemas de AEM aplicación de escritorio v1.x {#troubleshoot-aem-desktop-app}
+# Solución de problemas de la aplicación de escritorio v1.x [!DNL Adobe Experience Manager] {#troubleshoot-aem-desktop-app}
 
 Solucione problemas de AEM aplicación de escritorio para resolver los problemas ocasionales relacionados con la instalación, actualización, configuración, etc.
 
-La aplicación de escritorio de Adobe Experience Manager (AEM) incluye utilidades que le ayudan a asignar el repositorio de AEM Assets como recurso compartido de red en el escritorio (recurso compartido SMB en Mac OS). El uso compartido de redes es una tecnología de sistema operativo que permite que las fuentes remotas sean tratadas como si formaran parte del sistema de archivos local de un equipo. En el caso de la aplicación de escritorio, la estructura de repositorio de la administración de recursos digitales (DAM) de una instancia de AEM remota se define como el origen de archivos remoto. El diagrama siguiente describe la topología de la aplicación de escritorio:
+[!DNL Adobe Experience Manager] la aplicación de escritorio incluye utilidades que le ayudan a asignar el repositorio de AEM Assets como recurso compartido de red en el escritorio (recurso compartido SMB en Mac OS). El uso compartido de redes es una tecnología de sistema operativo que permite que las fuentes remotas sean tratadas como si formaran parte del sistema de archivos local de un equipo. En el caso de la aplicación de escritorio, la estructura de repositorio de la administración de recursos digitales (DAM) de una instancia de AEM remota se define como el origen de archivos remoto. El diagrama siguiente describe la topología de la aplicación de escritorio:
 
 ![diagrama de aplicaciones de escritorio](assets/aem-desktopapp-architecture.png)
 
@@ -70,7 +63,7 @@ AEM Desktop no es adecuado para realizar una manipulación intensiva del sistema
 
 Debido a las limitaciones del sistema operativo, Windows tiene una limitación de tamaño de archivo de 4.294.967.295 bytes (aproximadamente 4,29 GB). Se debe a una configuración del Registro que define el tamaño que puede tener un archivo en un recurso compartido de red. El valor de la configuración del Registro es un DWORD con un tamaño máximo igual al número al que se hace referencia.
 
-La aplicación de escritorio Experience Manager no tiene un valor de tiempo de espera configurable que desconecte la conexión entre el servidor Experience Manager y la aplicación de escritorio después de un intervalo de tiempo fijo. Cuando se cargan recursos de gran tamaño, si la conexión se agota después de un tiempo, la aplicación tiene el reintentos de cargar el recurso varias veces aumentando el tiempo de espera de carga. No se recomienda cambiar la configuración de tiempo de espera predeterminada.
+[!DNL Experience Manager] la aplicación de escritorio no tiene un valor de tiempo de espera configurable que desconecte la conexión entre el  [!DNL Experience Manager] servidor y la aplicación de escritorio después de un intervalo de tiempo fijo. Cuando se cargan recursos de gran tamaño, si la conexión se agota después de un tiempo, la aplicación tiene el reintentos de cargar el recurso varias veces aumentando el tiempo de espera de carga. No se recomienda cambiar la configuración de tiempo de espera predeterminada.
 
 ## Almacenamiento en caché y comunicación con AEM {#caching-and-communication-with-aem}
 
