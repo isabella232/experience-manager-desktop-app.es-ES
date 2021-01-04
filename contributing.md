@@ -1,8 +1,8 @@
 ---
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18cebce065f9b55259bf96d14cb50cf5bc6c8ec6
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '516'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ Consulte el siguiente vídeo para obtener una descripción general rápida de c�
 
 ### Contribuciones de empleados de Adobes
 
-Si usted es un empleado de Adobe y tiene una contribución, le solicitamos que utilice la organización `AdobeDocs` en el git corporativo. Puede contribuir a este repositorio público en GitHub.com pero las contribuciones son más fáciles de procesar en la repo corporativa. Asegúrese de que cualquier información patentada o no publicada se analiza solamente en la repo corporativa.
+Si usted es un empleado de Adobe y tiene una contribución, le solicitamos que utilice la organización `AdobeDocs` en el git corporativo. Puede contribuir a este repositorio público en GitHub.com pero las contribuciones son más fáciles de procesar en la repo corporativa. Asegúrese de que cualquier información patentada o no publicada se analiza solamente en la repo corporativa. Los empleados de Adobe no tienen que firmar el CLA.
 
 ## Acerca de la plataforma de creación GitHub y Markdown de Adobe
 
