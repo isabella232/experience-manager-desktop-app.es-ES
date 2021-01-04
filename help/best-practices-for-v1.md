@@ -1,10 +1,10 @@
 ---
-title: Prácticas recomendadas de AEM versión 1.x de la aplicación de escritorio
-description: Funciones clave y uso recomendado de la versión 1.x de la aplicación de escritorio de Adobe Experience Manager.
+title: '[!DNL Adobe Experience Manager] prácticas recomendadas de la versión 1.x de la aplicación de escritorio'
+description: Funciones clave y uso recomendado de [!DNL Adobe Experience Manager] versión 1.x de la aplicación de escritorio.
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '1694'
+source-wordcount: '1686'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Información general {#overview}
 
-La aplicación de escritorio de Adobe Experience Manager (AEM) vincula la solución de administración de recursos digitales (DAM) con el escritorio para que pueda abrir los archivos disponibles en la interfaz de usuario web AEM directamente en el escritorio. Si guarda un recurso desde el escritorio, se carga en AEM en la ubicación adecuada.
+[!DNL Adobe Experience Manager] la aplicación de escritorio vincula la solución de administración de recursos digitales (DAM) con el escritorio para que pueda abrir los archivos disponibles en la interfaz de usuario web de AEM directamente en el escritorio. Si guarda un recurso desde el escritorio, se carga en AEM en la ubicación adecuada.
 
 AEM aplicación de escritorio elimina las posibilidades de actualizar copias locales incorrectas o actualizar un recurso incorrecto en AEM. el flujo de trabajo fácil de usar de la aplicación de escritorio se habilita mediante la tecnología de uso compartido de red que proporcionan los sistemas operativos de escritorio.
 
