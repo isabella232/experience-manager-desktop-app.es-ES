@@ -1,27 +1,20 @@
 ---
 title: Notas de la versión de la aplicación de escritorio de AEM versión 1.x
 description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad y vínculos de descarga para AEM aplicación de escritorio versión 1.x.
-uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 3052549b-fe75-44fb-a55e-5cc612868f54
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 828de6db376d90f6de8f9682183b4c13ffe08d94
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '3920'
+source-wordcount: '3906'
 ht-degree: 1%
 
 ---
 
 
-# Notas de la versión v1.x de la aplicación de escritorio de AEM {#aem-desktop-app-release-notes}
+# [!DNL Adobe Experience Manager] notas de la versión de la aplicación de escritorio v1.x  {#aem-desktop-app-release-notes}
 
 Para la versión v1.x de la aplicación de escritorio, los vínculos de descarga y la información de compatibilidad de AEM son los siguientes.
 
-| Productos | Aplicación de escritorio de Adobe Experience Manager (AEM) |
+| Productos | [!DNL Adobe Experience Manager] aplicación de escritorio |
 |--- |--- |
 | Versión | 1.10 (1.10.0.6 en Mac y 1.10.0.3 en Windows) |
 | Tipo | Versión menor |
@@ -75,7 +68,7 @@ Para obtener instrucciones detalladas, consulte [Instalar y configurar AEM aplic
 
 ## Mejoras en las versiones anteriores {#enhancements-in-the-previous-versions}
 
-Esta versión amplía y reemplaza las versiones anteriores de la aplicación de escritorio de Experience Manager, que ofrece las siguientes mejoras clave:
+Esta versión amplía y reemplaza las versiones anteriores de la aplicación de escritorio [!DNL Experience Manager], que proporciona las siguientes mejoras clave:
 
 * **Versión 1.9/1.9.1**: cargas reanudables, ventana de estado mejorada, iconos de la aplicación que indican el estado de la aplicación/conexión, recuperación previa de recursos vinculados para archivos InDesign.
 
@@ -93,7 +86,7 @@ Esta versión amplía y reemplaza las versiones anteriores de la aplicación de 
 
 ### Mejoras disponibles desde AEM aplicación de escritorio 1.9 {#Enhancements-Available-Since-AEM-Desktop-App-19x}
 
-La aplicación de escritorio de Adobe Experience Manager (AEM) 1.9.1 era una versión de parche que soluciona algunos problemas clave de los clientes relacionados con la retirada de recursos y la copia de archivos del recurso compartido de red a un directorio local.
+[!DNL Adobe Experience Manager] la aplicación de escritorio 1.9.1 era una versión de parche que soluciona algunos problemas clave de los clientes relacionados con la retirada de recursos y la copia de archivos del recurso compartido de red a un directorio local.
 
 * Los recursos desprotegidos por un usuario no deben estar disponibles para su modificación por otros usuarios (CQ-4246009)
 
@@ -135,7 +128,7 @@ Una ventana de estado de recursos mejorada proporciona la siguiente información
 
 * El pie de página muestra el número total de archivos descargados y la tasa media de transferencia.
 
-* Si un usuario decide abrir o editar varios archivos desde la interfaz de usuario web de Recursos Experience Manager, se agruparán juntos. Por ejemplo, myasset.jpeg y 4 archivos más.
+* Si un usuario decide abrir o editar varios archivos desde la interfaz Web [!DNL Experience Manager Assets], se agruparán juntos. Por ejemplo, myasset.jpeg y 4 archivos más.
 
 * Al descargar Documentos de InDesign, incluidos los recursos vinculados almacenados en AEM Assets, la aplicación de escritorio descargará primero todos los recursos vinculados antes de abrir el documento [!UICONTROL Adobe InDesign] e indicará la descarga de los recursos vinculados. Por ejemplo, 5 de 24.
 
@@ -423,7 +416,7 @@ Dado que la carpeta /Volumes ya no requiere derechos administrativos, este cambi
 * Funcionalidad Copiar/Pegar: Pegar está disponible cuando no se ha copiado ningún recurso en el portapapeles
 * Windows:
    * Los archivos con flujos de datos alternativos (ADS) solo son totalmente compatibles con NTFS. Si copia estos archivos al recurso compartido WebDAV proporcionado por la aplicación de escritorio, se mostrará un cuadro de diálogo de advertencia en el que se avisará al usuario de que el archivo tiene propiedades que no se pueden copiar en la nueva ubicación. Esto suele ser correcto, ya que las propiedades solo son relevantes para una aplicación en particular en el escritorio del usuario y no tienen nada que ver con el contenido real del archivo (CQ-103770) (Win)
-   * la aplicación de escritorio en Windows debe ser instalada por el usuario que la va a utilizar (CQ-4216389) (win)
+   * la aplicación de escritorio en Windows debe instalarla el usuario que la va a utilizar (CQ-4216389) (win)
    * La aplicación puede bloquearse al hacer clic en el botón Reintentar en una carga fallida en determinadas circunstancias después de haber reanudado la carga por lotes al desconectarse (CQ-4251884) (Win)
 
 ## Recursos útiles {#helpful-resources}
