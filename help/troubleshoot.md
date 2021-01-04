@@ -1,25 +1,18 @@
 ---
-title: Prácticas recomendadas para la aplicación de escritorio de Adobe Experience Manager y resolución de problemas
+title: 'Prácticas recomendadas para la solución de problemas y la aplicación de escritorio [!DNL Adobe Experience Manager] '
 description: Siga las prácticas recomendadas y resuelva los problemas ocasionales relacionados con la instalación, actualización, configuración, etc.
-uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2120'
 ht-degree: 0%
 
 ---
 
 
-# Solución de problemas de la aplicación de escritorio de Adobe Experience Manager {#troubleshoot-v2}
+# Solución de problemas de la aplicación de escritorio [!DNL Adobe Experience Manager] {#troubleshoot-v2}
 
-La aplicación de escritorio de Adobe Experience Manager se conecta al repositorio de Digital Asset Management (DAM) de la implementación de un Experience Manager remoto. La aplicación obtiene información del repositorio y resultados de búsqueda en el equipo, descarga y carga archivos y carpetas, e incluye funciones para gestionar conflictos con la interfaz de usuario de Recursos.
+[!DNL Adobe Experience Manager] la aplicación de escritorio se conecta al repositorio de administración de recursos digitales (DAM) de una  [!DNL Experience Manager] implementación. La aplicación obtiene información del repositorio y resultados de búsqueda en el equipo, descarga y carga archivos y carpetas, e incluye funciones para gestionar conflictos con la interfaz de usuario de Recursos.
 
 Siga leyendo para solucionar problemas de la aplicación, conozca las prácticas recomendadas y descubra las limitaciones.
 
@@ -27,23 +20,23 @@ Siga leyendo para solucionar problemas de la aplicación, conozca las prácticas
 
 Siga las siguientes optimizaciones para evitar problemas comunes y solucionar problemas.
 
-* **Comprenda cómo funciona** la aplicación de escritorio: Antes de empezar a usar la aplicación, dedique unos minutos a saber cómo funciona. Obtenga información sobre la vinculación entre la interfaz web Experience Manager y el escritorio, la asignación de repositorios, el almacenamiento en caché de recursos, el almacenamiento local y la carga en segundo plano. Consulte [cómo funciona](release-notes.md#how-app-works).
+* **Comprenda cómo funciona** la aplicación de escritorio: Antes de empezar a usar la aplicación, dedique unos minutos a saber cómo funciona. Obtenga información sobre la vinculación entre [!DNL Experience Manager] interfaz Web y escritorio, asignación de repositorios, almacenamiento en caché de recursos, almacenamiento local y carga en segundo plano. Consulte [cómo funciona](release-notes.md#how-app-works).
 
-* **Evite los caracteres no admitidos en los nombres** de carpetas: No utilice espacios en blanco ni caracteres no válidos al crear o cargar carpetas. Consulte una lista de caracteres en [Crear carpetas en Recursos Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders). Algunos casos de uso de Adobe Experience Manager pueden verse afectados por caracteres no admitidos en el nombre de la carpeta.
+* **Evite los caracteres no admitidos en los nombres** de carpetas: No utilice espacios en blanco ni caracteres no válidos al crear o cargar carpetas. Consulte una lista de caracteres en [Crear carpetas en [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders). Algunos [!DNL Experience Manager] casos de uso pueden verse afectados por caracteres no admitidos en el nombre de la carpeta.
 
 * **Prácticas recomendadas para evitar conflictos**: Para evitar conflictos potenciales al colaborar en varios recursos, consulte  [Evitar conflictos](using.md#adv-workflow-collaborate-avoid-conflicts) de edición.
 
-* **Utilice la carga de carpetas para carpetas** grandes y jerárquicas: En lugar de utilizar la interfaz web de Recursos u otros métodos, utilice la aplicación de escritorio de Experience Manager para cargar carpetas grandes. La aplicación carga los recursos en segundo plano con el registro y la supervisión. Consulte [carga masiva de recursos](using.md#bulk-upload-assets).
+* **Utilice la carga de carpetas para carpetas** grandes y jerárquicas: En lugar de utilizar la interfaz web de Recursos u otros métodos, utilice la aplicación de  [!DNL Experience Manager] escritorio para cargar carpetas grandes. La aplicación carga los recursos en segundo plano con el registro y la supervisión. Consulte [carga masiva de recursos](using.md#bulk-upload-assets).
 
-* **Utilice la versión** más reciente: Utilice la versión más reciente de la aplicación y compruebe siempre la compatibilidad antes de instalar una nueva versión de la aplicación o antes de actualizar a una versión más reciente de Adobe Experience Manager. Consulte [notas de la versión](release-notes.md).
+* **Utilice la versión** más reciente: Utilice la versión más reciente de la aplicación y compruebe siempre la compatibilidad antes de instalar una nueva versión de la aplicación o antes de actualizar a una  [!DNL Experience Manager] versión más reciente. Consulte [notas de la versión](release-notes.md).
 
-* **Utilice la misma letra** de unidad: Utilice la misma letra de unidad en una organización para asignarla a Adobe Experience Manager DAM. Para ver los recursos colocados por otros usuarios, las rutas deben ser las mismas. El uso de la misma letra de unidad garantiza una ruta constante a los recursos DAM. Los recursos permanecen colocados y no se eliminan incluso si distintos usuarios utilizan distintas letras de unidad.
+* **Utilice la misma letra** de unidad: Utilice la misma letra de unidad en una organización para asignarla a  [!DNL Experience Manager] DAM. Para ver los recursos colocados por otros usuarios, las rutas deben ser las mismas. El uso de la misma letra de unidad garantiza una ruta constante a los recursos DAM. Los recursos permanecen colocados y no se eliminan incluso si distintos usuarios utilizan distintas letras de unidad.
 
-* **Tenga en cuenta la red**: El rendimiento de la red es fundamental para el rendimiento de la aplicación de escritorio Experience Manager. Si se enfrenta a una respuesta lenta a las transferencias de archivos o a las operaciones masivas, desactive las funciones o aplicaciones que pueden causar mucho tráfico en la red.
+* **Tenga en cuenta la red**: El rendimiento de la red es fundamental para el rendimiento de la aplicación de  [!DNL Experience Manager] escritorio. Si se enfrenta a una respuesta lenta a las transferencias de archivos o a las operaciones masivas, desactive las funciones o aplicaciones que pueden causar mucho tráfico en la red.
 
 * **Casos de uso no admitidos para la aplicación** de escritorio: No utilice la aplicación para la migración de recursos (necesita planificación y otras herramientas); para operaciones DAM de gran capacidad (como mover carpetas grandes, cargas grandes, buscar archivos mediante búsquedas avanzadas de metadatos); y como cliente de sincronización (los principios de diseño y los patrones de uso son diferentes de los clientes en sincronización como la sincronización de escritorio de Microsoft OneDrive o Adobe Creative Cloud).
 
-* **Tiempo de espera**: Actualmente, la aplicación de escritorio no tiene un valor de tiempo de espera configurable que desconecte la conexión entre el servidor Experience Manager y la aplicación de escritorio después de un intervalo de tiempo fijo. Cuando se cargan recursos de gran tamaño, si la conexión se agota después de un tiempo, la aplicación tiene el reintentos de cargar el recurso varias veces aumentando el tiempo de espera de carga. No se recomienda cambiar la configuración de tiempo de espera predeterminada.
+* **Tiempo de espera**: Actualmente, la aplicación de escritorio no tiene un valor de tiempo de espera configurable que desconecte la conexión entre el  [!DNL Experience Manager] servidor y la aplicación de escritorio después de un intervalo de tiempo fijo. Cuando se cargan recursos de gran tamaño, si la conexión se agota después de un tiempo, la aplicación tiene el reintentos de cargar el recurso varias veces aumentando el tiempo de espera de carga. No se recomienda cambiar la configuración de tiempo de espera predeterminada.
 
 ## Cómo solucionar problemas {#troubleshooting-prep}
 
@@ -119,7 +112,7 @@ Para habilitar el modo de depuración en Windows:
 
 Siga estos pasos:
 
-1. Inicio la aplicación y conecte una instancia de Experience Manager.
+1. Inicio la aplicación y conecte una instancia [!DNL Experience Manager].
 
 1. Para abrir las preferencias de la aplicación, haga clic en las elipses en la esquina superior derecha y seleccione [!UICONTROL Preferences].
 
@@ -163,9 +156,9 @@ Si no puede ver los recursos que usted u otros profesionales creativos colocaron
 
 * Tamaño de archivo. Los recursos grandes tardan más en descargarse y mostrarse.
 
-* Consistencia de la letra de unidad. Si usted u otro colaborador colocó los recursos mientras asignaba el DAM Experience Manager a una letra de unidad diferente, no se muestran los recursos colocados.
+* Consistencia de la letra de unidad. Si usted u otro colaborador colocó los recursos mientras asignaba el DAM [!DNL Experience Manager] a una letra de unidad diferente, no se muestran los recursos colocados.
 
-* Permisos. Para comprobar si tiene permisos para recuperar los recursos colocados, póngase en contacto con el administrador del Experience Manager.
+* Permisos. Para comprobar si tiene permisos para recuperar los recursos colocados, póngase en contacto con su [!DNL Experience Manager] administrador.
 
 ### Las ediciones realizadas en archivos de la interfaz de usuario de la aplicación de escritorio no se reflejan en [!DNL Adobe Experience Manager] inmediatamente {#changes-on-da-not-visible-on-aem}
 
@@ -173,7 +166,7 @@ Si no puede ver los recursos que usted u otros profesionales creativos colocaron
 
 ### Problemas al actualizar en macOS {#issues-when-upgrading-on-macos}
 
-En ocasiones pueden producirse problemas al actualizar la aplicación de escritorio Experience Manager en macOS. Esto se debe a que la carpeta de sistema heredada de la aplicación de escritorio Experience Manager impide que las nuevas versiones de la aplicación de escritorio Experience Manager se carguen correctamente. Para solucionar este problema, se pueden quitar manualmente las siguientes carpetas y archivos.
+En ocasiones pueden producirse problemas al actualizar la aplicación de escritorio [!DNL Experience Manager] en macOS. Esto se debe a que la carpeta de sistema heredada de la aplicación de escritorio [!DNL Experience Manager] impide que las nuevas versiones de la aplicación de escritorio [!DNL Experience Manager] se carguen correctamente. Para solucionar este problema, se pueden quitar manualmente las siguientes carpetas y archivos.
 
 Antes de ejecutar los siguientes pasos, arrastre la aplicación `Adobe Experience Manager Desktop` de la carpeta Aplicaciones macOS a la papelera. A continuación, abra terminal, ejecute el siguiente comando y proporcione su contraseña cuando se le solicite.
 
@@ -188,7 +181,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 ### No se pueden cargar archivos {#upload-fails}
 
-Si utiliza una aplicación de escritorio con Experience Manager 6.5.1 o posterior, actualice el conector S3 o Azure a la versión 1.10.4 o posterior. Resuelve el problema de error de carga de archivos relacionado con [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Consulte [instrucciones de instalación](install-upgrade.md#install-v2).
+Si utiliza una aplicación de escritorio con [!DNL Experience Manager] 6.5.1 o posterior, actualice el conector S3 o Azure a la versión 1.10.4 o posterior. Resuelve el problema de error de carga de archivos relacionado con [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Consulte [instrucciones de instalación](install-upgrade.md#install-v2).
 
 ### [!DNL Experience Manager] problemas de conexión de la aplicación de escritorio  {#connection-issues}
 
@@ -256,9 +249,9 @@ El observar la secuencia de URL que se está cargando puede ayudar a solucionar 
 
 #### Problema de configuración SSL {#ssl-config-v2}
 
-Las bibliotecas que utiliza la aplicación de escritorio de Experience Manager para la comunicación HTTP utilizan una estricta aplicación SSL. A veces, una conexión puede funcionar correctamente con un navegador, pero falla al usar la aplicación de escritorio Experience Manager. Para configurar SSL correctamente, instale el certificado intermedio que falta en Apache. Consulte [Cómo instalar un certificado de CA intermedio en Apache](https://access.redhat.com/solutions/43575).
+Las bibliotecas que utiliza la aplicación de escritorio [!DNL Experience Manager] para la comunicación HTTP utilizan una estricta aplicación SSL. A veces, una conexión puede funcionar correctamente con un navegador, pero falla al utilizar la aplicación de escritorio [!DNL Experience Manager]. Para configurar SSL correctamente, instale el certificado intermedio que falta en Apache. Consulte [Cómo instalar un certificado de CA intermedio en Apache](https://access.redhat.com/solutions/43575).
 
-Las bibliotecas que Experience Manager Desktop utiliza para la comunicación HTTP utilizan una estricta aplicación SSL. Por lo tanto, puede haber casos en los que las conexiones SSL que se ejecutan con éxito a través de un explorador fallan con la aplicación de escritorio [!DNL Adobe Experience Manager]. Esto es bueno porque fomenta la configuración correcta de SSL y aumenta la seguridad, pero puede resultar frustrante cuando la aplicación no puede conectarse.
+Las bibliotecas que utiliza la aplicación de escritorio [!DNL Experience Manager] para la comunicación HTTP utilizan una estricta aplicación SSL. Por lo tanto, puede haber casos en los que las conexiones SSL que se ejecutan con éxito a través de un explorador fallan con la aplicación de escritorio [!DNL Adobe Experience Manager]. Esto es bueno porque fomenta la configuración correcta de SSL y aumenta la seguridad, pero puede resultar frustrante cuando la aplicación no puede conectarse.
 
 El método recomendado en este caso es utilizar una herramienta para analizar el certificado SSL de un servidor e identificar problemas para que se puedan corregir. Hay sitios web que inspeccionan el certificado de un servidor al proporcionar su dirección URL.
 
