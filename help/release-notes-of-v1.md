@@ -134,7 +134,7 @@ Una ventana de estado de recursos mejorada proporciona la siguiente información
 
 [!UICONTROL Bulk Uploads]
 
-Al cargar jerarquías de carpetas grandes mediante [!UICONTROL Create] > [!UICONTROL Upload Folder] en AEM interfaz de usuario web, o al copiar y seleccionar &quot;Pegar recursos&quot; en Finder o Explorer en el menú contextual de la aplicación de escritorio, se activará el uso de este cuadro de diálogo.
+La carga de jerarquías de carpetas grandes mediante [!UICONTROL Create] > [!UICONTROL Upload Folder] en AEM interfaz de usuario web o la copia y selección de &quot;Pegar recursos&quot; en Finder o Explorer en el menú contextual de la aplicación de escritorio déclencheur el uso de este cuadro de diálogo.
 
 * Muestra las cargas en curso, incluida una barra de progreso y el nombre del archivo que se está transfiriendo.
 
@@ -416,7 +416,7 @@ Dado que la carpeta /Volumes ya no requiere derechos administrativos, este cambi
 * Funcionalidad Copiar/Pegar: Pegar está disponible cuando no se ha copiado ningún recurso en el portapapeles
 * Windows:
    * Los archivos con flujos de datos alternativos (ADS) solo son totalmente compatibles con NTFS. Si copia estos archivos al recurso compartido WebDAV proporcionado por la aplicación de escritorio, se mostrará un cuadro de diálogo de advertencia en el que se avisará al usuario de que el archivo tiene propiedades que no se pueden copiar en la nueva ubicación. Esto suele ser correcto, ya que las propiedades solo son relevantes para una aplicación en particular en el escritorio del usuario y no tienen nada que ver con el contenido real del archivo (CQ-103770) (Win)
-   * la aplicación de escritorio en Windows debe instalarla el usuario que la va a utilizar (CQ-4216389) (win)
+   * la aplicación de escritorio en Windows debe ser instalada por el usuario que la va a utilizar (CQ-4216389) (win)
    * La aplicación puede bloquearse al hacer clic en el botón Reintentar en una carga fallida en determinadas circunstancias después de haber reanudado la carga por lotes al desconectarse (CQ-4251884) (Win)
 
 ## Recursos útiles {#helpful-resources}
