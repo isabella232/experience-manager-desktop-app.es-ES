@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guía de la aplicación de escritorio de Experience Manager
 breadcrumb-title: Guía de la aplicación de escritorio
-user-guide-description: Aprenda a utilizar la aplicación de escritorio Experience Manager para conectar repositorios y aplicaciones de escritorio para proporcionar un acceso más rápido a los recursos y a los flujos de trabajo optimizados.
+user-guide-description: Aprenda a utilizar la aplicación de escritorio de Experience Manager para conectar repositorios y aplicaciones de escritorio con el fin de proporcionar un acceso más rápido a recursos y flujos de trabajo optimizados.
 solution-title: AEM Assets
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html
 getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html
@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
 source-wordcount: '85'
-ht-degree: 48%
+ht-degree: 81%
 
 ---
 
