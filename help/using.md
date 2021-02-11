@@ -192,7 +192,7 @@ Puede controlar la concurrencia de carga (aceleración) en **[!UICONTROL Prefere
 
 >[!NOTE]
 >
->Si los archivos no se pueden cargar y se está conectando a [!DNL Experience Manager] 6.5.1 o una implementación posterior, consulte esta [información de solución de problemas](troubleshoot.md#upload-fails).
+>Si los archivos no se pueden cargar y se está conectando a [!DNL Experience Manager] 6.5.1 o a una implementación posterior, consulte esta [información de solución de problemas](troubleshoot.md#upload-fails).
 
 ## Trabajar con varios recursos {#work-with-multiple-assets}
 
