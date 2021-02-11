@@ -140,7 +140,7 @@ Después de asignar el repositorio [!DNL Assets] a la unidad local, puede activa
 
    Estas acciones de escritorio también están disponibles al hacer clic en la opción **Acciones de escritorio** de la barra de herramientas después de seleccionar el recurso o de la barra de herramientas de la página de recursos.
 
-1. Para abrir el recurso en la aplicación de escritorio que está asociado con la extensión de archivo específica, haga clic en la **acción rápida &lt;a0/>Abrir en escritorio** ![Abrir en el icono de escritorio](assets/do-not-localize/aemassets_icon_openondesktop.png).
+1. Para abrir el recurso en la aplicación de escritorio que está asociado con la extensión de archivo específica, haga clic en la **acción rápida Abrir en escritorio** ![Abrir en el icono de escritorio](assets/do-not-localize/aemassets_icon_openondesktop.png).
 
    Como alternativa, elija **Abrir** en el menú **Acciones de escritorio** de la barra de herramientas.
 
