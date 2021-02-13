@@ -1,16 +1,16 @@
 ---
-title: Utilice [!DNL Experience Manager] versión 1.x de la aplicación de escritorio.
-description: Aprenda a utilizar la versión 1.x de la aplicación de escritorio de Adobe Experience Manager y a optimizar su trabajo con recursos en el escritorio.
+title: Utilice [!DNL Experience Manager] versión 1.10 de la aplicación de escritorio.
+description: Aprenda a utilizar la versión 1.10 de la aplicación de escritorio de Adobe Experience Manager y a optimizar su trabajo con los recursos en el escritorio.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '2377'
 ht-degree: 0%
 
 ---
 
 
-# Utilice la aplicación de escritorio v1.x [!DNL Experience Manager] {#use-aem-desktop-app-v1x}
+# Usar la aplicación de escritorio v1.10 {#use-aem-desktop-app-v1x}[!DNL Experience Manager]
 
 Al utilizar la aplicación, los recursos de [!DNL Experience Manager] son fácilmente accesibles en el escritorio local y se pueden utilizar en cualquier aplicación de escritorio. Los recursos se pueden revelar fácilmente en Mac Finder o el Explorador de Windows, abrirse en aplicaciones de escritorio y cambiarse localmente; los cambios se guardan de nuevo en [!DNL Experience Manager] con una nueva versión creada en el repositorio.
 
@@ -27,7 +27,7 @@ Para ver las distintas recomendaciones de administración y no, consulte las [pr
 
 >[!NOTE]
 >
->[!DNL Experience Manager] la aplicación de escritorio se introdujo en la versión  [!DNL Experience Manager] 6.1 y se llamó  [!DNL Experience Manager Assets Companion App].
+>La aplicación de escritorio se introdujo en [!DNL Experience Manager] versión 6.1 y se denominó [!DNL Experience Manager Assets Companion App].
 
 ## [!DNL Experience Manager] puntos de contacto de la aplicación de escritorio en el flujo de trabajo creativo  {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
