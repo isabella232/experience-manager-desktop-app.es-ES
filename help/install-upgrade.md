@@ -1,8 +1,8 @@
 ---
-title: Instalar y configurar [!DNL Adobe Experience Manager] aplicación de escritorio
+title: Instalación y configuración de la aplicación de escritorio
 description: Instale y configure [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] servidores y descargue los recursos en el sistema de archivos local.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: cc4ce762ad1d7f4c5a54ab6bac9d1a872e3d18c9
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 1%
@@ -100,7 +100,7 @@ Para cambiar las preferencias, haga clic en ![Más iconos de opciones](assets/do
 
 * **[!UICONTROL Cache Directory]**:: Ubicación de la caché local de la aplicación (contiene los recursos descargados localmente).
 
-* **[!UICONTROL Network Drive Letter]**:: La letra de unidad utilizada para asignar al  [!DNL Experience Manager] DAM. No lo cambie si no está seguro. La aplicación puede asignarse a cualquier letra de unidad en Windows. Si dos usuarios colocan recursos de distintas letras de unidad, no podrán ver los recursos colocados entre ellos. La ruta de los recursos cambia. Los recursos permanecen colocados en el archivo binario (digamos INDD) y no se eliminan. La aplicación lista todas las letras de unidad disponibles y, de forma predeterminada, utiliza la última letra disponible que suele ser `Z`.
+* **[!UICONTROL Network Drive Letter]**:: La letra de unidad utilizada para asignar al  [!DNL Experience Manager] DAM. No lo cambie si no está seguro. La aplicación puede asignarse a cualquier letra de unidad de Windows. Si dos usuarios colocan recursos de distintas letras de unidad, no podrán ver los recursos colocados entre ellos. La ruta de los recursos cambia. Los recursos permanecen colocados en el archivo binario (digamos INDD) y no se eliminan. La aplicación lista todas las letras de unidad disponibles y, de forma predeterminada, utiliza la última letra disponible que suele ser `Z`.
 
 * **[!UICONTROL Maximum Cache Size]**:: Caché permitida en el disco duro en GB que se utiliza para almacenar recursos descargados localmente.
 
