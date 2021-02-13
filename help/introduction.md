@@ -1,11 +1,11 @@
 ---
-title: 'Introducción a la aplicación de escritorio [!DNL Adobe Experience Manager] '
+title: 'Introducción a la aplicación de escritorio [!DNL Experience Manager] '
 description: Aprenda a utilizar [!DNL Adobe Experience Manager] desktop app to optimize the asset management workflows for creative users when using [!DNL Adobe Experience Manager Assets] directamente desde su escritorio.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 70%
+source-wordcount: '619'
+ht-degree: 64%
 
 ---
 
@@ -20,7 +20,7 @@ Esta integración permite que diversas funciones de la organización administren
 
 >[!NOTE]
 >
->[!DNL Adobe Experience Manager] la aplicación de escritorio se introdujo en la versión  [!DNL Adobe Experience Manager] 6.1 y anteriormente se denominaba Aplicación  [!DNL Adobe Experience Manager Assets] Companion. Para obtener ayuda sobre la versión 1.x de la aplicación, consulte la tabla de contenido en la barra lateral izquierda. Adobe recomienda actualizar a la versión 2 más reciente.
+>La aplicación se introdujo en la versión [!DNL Adobe Experience Manager] 6.1 y anteriormente se denominaba [!DNL Adobe Experience Manager Assets] Aplicación Companion. Para obtener ayuda sobre la versión 1.x de la aplicación, consulte la tabla de contenido en la barra lateral izquierda. Adobe recomienda actualizar a la versión más reciente.
 
 La documentación de la aplicación de escritorio contiene información sobre las siguientes funciones y casos de uso.
 
