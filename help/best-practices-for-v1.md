@@ -2,9 +2,9 @@
 title: '[!DNL Adobe Experience Manager] prácticas recomendadas de la versión 1.x de la aplicación de escritorio'
 description: Funciones clave y uso recomendado de [!DNL Adobe Experience Manager] versión 1.x de la aplicación de escritorio.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1677'
 ht-degree: 0%
 
 ---
@@ -122,13 +122,13 @@ La buena experiencia de los usuarios que utilizan la aplicación de escritorio A
 
 Para conocer las prácticas recomendadas en cuanto a la configuración de red de AEM Assets, consulte el documento [Consideraciones de red de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-migration-guide.html). Algunos de los aspectos importantes que ayudan a optimizar AEM experiencia de la aplicación de escritorio para los usuarios son:
 
-* **Use Dispatcher** configurado correctamente. Use AEM Dispatcher para obtener seguridad adicional y asegúrese de que está configurado para [AEM conexión de la aplicación de escritorio para AEM tras un distribuidor](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
+* **Use Dispatcher** configurado correctamente. Use AEM Dispatcher para obtener seguridad adicional y asegúrese de que está configurado para [AEM conexión de la aplicación de escritorio para AEM detrás de un despachante](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
 * **Ahorre ancho de banda**. Considere desactivar la previsualización de iconos en Finder en Mac al explorar el repositorio montado con Finder. Finder solicita a cada archivo que genere una previsualización y hace que la aplicación de escritorio descargue y almacene en caché el recurso localmente. Tenga en cuenta que, al ahorrar ancho de banda, también disminuiría la experiencia del usuario en el escritorio, por lo que debería hacerse al trabajar con repositorios con recursos grandes y/o ancho de banda limitado.
 
 >[!NOTE]
 >
->Para desactivar las previsualizaciones de iconos, en Finder vaya a Vista, seleccione Opciones de Vista y, a continuación, desmarque la opción &quot;Mostrar previsualización de iconos&quot;. Esto solo funciona para la carpeta actual; para que sea predeterminada, haga clic en el botón &quot;Usar como predeterminado&quot; en la misma ventana.
+>Para desactivar las previsualizaciones de iconos, en Finder vaya a [!UICONTROL View], seleccione [!UICONTROL View Options] y luego desmarque la opción [!UICONTROL Show icon preview]. Esto solo funciona para la carpeta actual; para convertirla en predeterminada, haga clic en la opción [!UICONTROL Use as default] en el mismo cuadro de diálogo.
 
 ### Optimización del rendimiento del servidor {#optimizing-server-performance}
 
