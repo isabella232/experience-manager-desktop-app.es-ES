@@ -1,16 +1,16 @@
 ---
-title: Notas de la versión de la aplicación de escritorio de AEM versión 1.x
-description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad y vínculos de descarga para AEM aplicación de escritorio versión 1.x.
+title: Notas de la versión de la aplicación de escritorio v1.10
+description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad y vínculos de descarga para AEM aplicación de escritorio versión 1.10.
 translation-type: tm+mt
-source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '3904'
+source-wordcount: '3901'
 ht-degree: 1%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] notas de la versión de la aplicación de escritorio v1.x  {#aem-desktop-app-release-notes}
+# [!DNL Adobe Experience Manager] notas de la versión v1.10 de la aplicación de escritorio  {#aem-desktop-app-release-notes}
 
 Para la versión v1.x de la aplicación de escritorio, los vínculos de descarga y la información de compatibilidad de AEM son los siguientes.
 
@@ -44,7 +44,7 @@ La versión de AEM aplicación de escritorio que está planeando instalar en su 
 
 Consulte la [matriz de compatibilidad detallada](#compatibilitymatrix) al final de este documento para evaluar los requisitos previos de la configuración.
 
-## Novedades de AEM aplicación de escritorio 1.10 {#what-s-new-in-aem-desktop-app}
+## Novedades de la aplicación de escritorio v1.10 {#what-s-new-in-aem-desktop-app}
 
 AEM aplicación de escritorio 1.10 se centra en mejorar la experiencia del usuario en cuanto a las cargas grandes, la información sobre las operaciones en segundo plano y la experiencia optimizada al abrir recursos con archivos vinculados (como InDesign).
 
