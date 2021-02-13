@@ -1,16 +1,16 @@
 ---
-title: '[!DNL Adobe Experience Manager] prácticas recomendadas de la versión 1.x de la aplicación de escritorio'
-description: Funciones clave y uso recomendado de [!DNL Adobe Experience Manager] versión 1.x de la aplicación de escritorio.
+title: Prácticas recomendadas de la aplicación de escritorio v1.10
+description: Funciones clave y uso recomendado de [!DNL Adobe Experience Manager] aplicación de escritorio versión 1.10.
 translation-type: tm+mt
-source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
+source-git-commit: cc4ce762ad1d7f4c5a54ab6bac9d1a872e3d18c9
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1674'
 ht-degree: 0%
 
 ---
 
 
-# Prácticas recomendadas de AEM aplicación de escritorio v1.x {#aem-desktop-app-best-practices}
+# Prácticas recomendadas de AEM aplicación de escritorio v1.10 {#aem-desktop-app-best-practices}
 
 ## Información general {#overview}
 
