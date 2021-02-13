@@ -1,16 +1,16 @@
 ---
-title: Instalar y configurar [!DNL Experience Manager] versión 1.x de la aplicación de escritorio
-description: Instale y configure [!DNL Experience Manager] desktop app version 1.x to work with [!DNL Assets] servidores y asigne los recursos que desea montar como unidad en el escritorio.
+title: Instalación y configuración de la aplicación de escritorio v1.10
+description: Instale y configure [!DNL Experience Manager] desktop app version 1.10 to work with [!DNL Assets] servidores y asigne los recursos que desea montar como unidad en el escritorio.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: cc4ce762ad1d7f4c5a54ab6bac9d1a872e3d18c9
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
 
 
-# Instalar y configurar [!DNL Experience Manager] aplicación de escritorio v1.x {#install-and-configure-aem-desktop-app}
+# Instalar y configurar [!DNL Experience Manager] aplicación de escritorio v1.10 {#install-and-configure-aem-desktop-app}
 
 Al utilizar la aplicación de escritorio [!DNL Experience Manager], los recursos dentro de [!DNL Experience Manager] son fácilmente accesibles en el escritorio local y se pueden utilizar en cualquier aplicación de escritorio. Los recursos se pueden revelar fácilmente en Mac Finder o el Explorador de Windows, abrirse en aplicaciones de escritorio y cambiarse localmente; los cambios se guardan de nuevo en [!DNL Experience Manager] cuando se carga y se crea una nueva versión en el repositorio.
 
