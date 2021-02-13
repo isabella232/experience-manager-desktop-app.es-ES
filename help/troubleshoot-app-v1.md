@@ -1,10 +1,10 @@
 ---
-title: Solución de problemas [!DNL Adobe Experience Manager] versión 1.x de la aplicación de escritorio
-description: Solucione los problemas de la versión 1.x de la aplicación de escritorio [!DNL Adobe Experience Manager] para resolver los problemas ocasionales relacionados con la instalación, actualización y configuración.
+title: Solución de problemas de la versión 1.10 de la aplicación de escritorio.
+description: Solucione los problemas de la versión 1.10 de la aplicación de escritorio [!DNL Adobe Experience Manager] para resolver los problemas ocasionales relacionados con la instalación, actualización y configuración.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3364'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ El siguiente ejemplo de caso de uso ilustra cómo se debe utilizar AEM Desktop:
 * Con el menú contextual de AEM escritorio, el usuario inicia o cierra la compra del recurso o regresa a la interfaz de usuario de DAM.
 * Tras completar los cambios realizados en el archivo, el usuario vuelve a la interfaz de usuario web AEM
 
-Este no es el único caso de uso. Sin embargo, ilustra cómo AEM Desktop es un mecanismo práctico para acceder a los recursos y editarlos localmente. Se le recomienda utilizar la interfaz de usuario web DAM tanto como sea posible, ya que ofrece una mejor experiencia. Proporciona al Adobe más flexibilidad para cumplir con los requerimientos del cliente.
+Este no es el único caso de uso. Sin embargo, ilustra cómo AEM Desktop es un mecanismo práctico para acceder a los recursos y editarlos localmente. Se le recomienda utilizar la interfaz de usuario web DAM tanto como sea posible, ya que proporciona una mejor experiencia. Proporciona al Adobe más flexibilidad para cumplir con los requerimientos del cliente.
 
 ## Restricciones     {#limitations}
 
