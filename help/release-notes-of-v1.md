@@ -2,9 +2,9 @@
 title: Notas de la versión de la aplicación de escritorio de AEM versión 1.x
 description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad y vínculos de descarga para AEM aplicación de escritorio versión 1.x.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
 workflow-type: tm+mt
-source-wordcount: '3906'
+source-wordcount: '3904'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ AEM aplicación de escritorio 1.10 se centra en mejorar la experiencia del usuar
 
 **Notificaciones de conflictos** de actualización. Cuando la aplicación detecta un conflicto al intentar actualizar un recurso, muestra una notificación para que el usuario pueda revisarla sin necesidad de supervisar la ventana de estado. Cuando la aplicación inicio, comprobará si hay todos los conflictos para que el usuario pueda resolverlos.
 
-**Mejor manejo de las pérdidas** de conexión. Las cargas masivas se pausarán si se produce una pérdida de conexión y el usuario podrá reanudarlas más tarde. Hay disponible un botón Reintentar para reintentar una carga fallida de un archivo individual.
+**Mejor manejo de las pérdidas** de conexión. Las cargas masivas se pausarán si se produce una pérdida de conexión y el usuario podrá reanudarlas más tarde. Hay disponible una opción [!UICONTROL Retry] para reintentar una carga fallida de un archivo individual.
 
 ## Instrucciones de instalación {#installation-instructions}
 
@@ -247,7 +247,7 @@ AEM aplicación de escritorio 1.8.1 versión de seguimiento rápido ha añadido 
 
    * Se ha mejorado el rendimiento al explorar carpetas con muchos recursos (CQ-4214933).
 
-   * la aplicación de escritorio 1.5 puede ralentizar el funcionamiento del equipo de escritorio con el tiempo (CQ-4209159).
+   * la aplicación de escritorio 1.5 puede ralentizar el funcionamiento del equipo de escritorio con el paso del tiempo (CQ-4209159).
 
    * La función Mostrar estado de cola solo funciona para el usuario que instaló la aplicación (CQ-4212199).
 
@@ -416,8 +416,8 @@ Dado que la carpeta /Volumes ya no requiere derechos administrativos, este cambi
 * Funcionalidad Copiar/Pegar: Pegar está disponible cuando no se ha copiado ningún recurso en el portapapeles
 * Windows:
    * Los archivos con flujos de datos alternativos (ADS) solo son totalmente compatibles con NTFS. Si copia estos archivos al recurso compartido WebDAV proporcionado por la aplicación de escritorio, se mostrará un cuadro de diálogo de advertencia en el que se avisará al usuario de que el archivo tiene propiedades que no se pueden copiar en la nueva ubicación. Esto suele ser correcto, ya que las propiedades solo son relevantes para una aplicación en particular en el escritorio del usuario y no tienen nada que ver con el contenido real del archivo (CQ-103770) (Win)
-   * la aplicación de escritorio en Windows debe instalarla el usuario que la va a utilizar (CQ-4216389) (win)
-   * La aplicación puede bloquearse al hacer clic en el botón Reintentar en una carga fallida en determinadas circunstancias después de haber reanudado la carga por lotes al desconectarse (CQ-4251884) (Win)
+   * la aplicación de escritorio en Windows debe ser instalada por el usuario que la va a utilizar (CQ-4216389) (win)
+   * La aplicación puede bloquearse al seleccionar la opción [!UICONTROL Retry] en una carga fallida en determinadas circunstancias después de haber reanudado la carga por lotes al desconectarse (CQ-4251884) (Win)
 
 ## Recursos útiles {#helpful-resources}
 
