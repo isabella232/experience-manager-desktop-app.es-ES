@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] Notas de la versión de la aplicación d
 description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad y vínculos de descarga para la aplicación de escritorio [!DNL Adobe Experience Manager] .
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 784ffb2468d856589fbf29b10b965b3c3d919a2f
+source-git-commit: 06ce2dc1c47bc1ba71b4fd1d053131d9dbdb08ba
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 29%
@@ -15,7 +15,7 @@ ht-degree: 29%
 
 A continuación se muestra la información de la versión 2.1 (2.1.1.0) de la aplicación de escritorio más reciente. La fecha de la versión es el 5 de marzo de 2021. Se trata de una versión menor con una mejora.
 
-Las versiones [!DNL Experience Manager] compatibles son:
+Las **versiones [!DNL Experience Manager] compatibles** son:
 
 * [!DNL Experience Manager] as a [!DNL Cloud Service]. Consulte [notas de la versión](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html?lang=es).
 * [!DNL Experience Manager] 6.5.0 o posterior, en Adobe Managed Services (AMS) o local. Consulte las [notas de la versión del Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=es).
@@ -24,12 +24,12 @@ Las versiones [!DNL Experience Manager] compatibles son:
 * [!DNL Experience Manager] 6.3 (con paquete de compatibilidad)
 * [!DNL Experience Manager] 6.3.3.1 o posterior con el paquete de  [compatibilidad ](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) instalado. La aplicación de escritorio no es compatible con [!DNL Experience Manager] 6.3.3.0 ni con versiones anteriores.
 
-[!DNL Adobe Experience Manager] la aplicación de escritorio está disponible para los siguientes sistemas operativos:
+[!DNL Adobe Experience Manager] la aplicación de escritorio está disponible para los siguientes sistemas  **operativos**:
 
 * macOS X 10.14 o posterior, con las últimas correcciones de errores.
 * Windows 10 con los paquetes de servicios y las correcciones de errores más recientes.
 
-Las direcciones URL de descarga para el sistema operativo compatible son:
+Las **URL de descarga** para el sistema operativo compatible son:
 
 | Sistema operativo | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
