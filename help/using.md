@@ -2,10 +2,11 @@
 title: 'Usar aplicación de escritorio [!DNL Experience Manager] '
 description: Utilice los recursos  [!DNL Adobe Experience Manager] desktop app, to work with [!DNL Adobe Experience Manager] DAM directamente desde el escritorio Win o Mac y utilice en otras aplicaciones.
 mini-toc-levels: 1
+feature: Aplicación de escritorio de Experience Manager, administración de recursos
 translation-type: tm+mt
-source-git-commit: caf6faf17157a0e9e3bffd40b4bdd0802a71dad7
+source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
 workflow-type: tm+mt
-source-wordcount: '3906'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -50,7 +51,7 @@ Antes de empezar a usar la aplicación, es necesario que conozca [Cómo funciona
 
 * **[!UICONTROL Download]** acción: Descargue el recurso en el equipo local. Ahora puede descargar los recursos y editarlos más tarde; trabajar sin conexión y cargar los cambios más tarde. Los recursos se descargan en una carpeta de caché del sistema de archivos.
 
-* **[!UICONTROL Reveal File]** o  **[!UICONTROL Reveal Folder]** acción: Mientras los recursos se descargan en una carpeta de caché local, la aplicación imita una unidad de red local y proporciona una ruta local para cada recurso. Para saber esta ruta, utilice la opción de revelación adecuada en la aplicación. Se requiere una acción reveladora para colocar recursos en la aplicación Creative Cloud. Consulte [Colocar recursos](using.md#place-assets-in-native-documents).
+* **[!UICONTROL Reveal File]** o  **[!UICONTROL Reveal Folder]** acción: Mientras los recursos se descargan en una carpeta de caché local, la aplicación imita una unidad de red local y proporciona una ruta local para cada recurso. Para saber esta ruta, utilice la opción de revelación adecuada en la aplicación. Se requiere una acción de revelación para colocar recursos en la aplicación de Creative Cloud. Consulte [Colocar recursos](using.md#place-assets-in-native-documents).
 
 * **[!UICONTROL Open In Web]** acción: Para ver el recurso en la interfaz  [!DNL Experience Manager] web, ábralo en la web. Puede iniciar más flujos de trabajo desde la interfaz [!DNL Experience Manager], como actualizar metadatos o descubrir recursos.
 
@@ -222,7 +223,7 @@ La aplicación proporciona una vista, denominada **[!UICONTROL Edited locally]**
 
 Los usuarios o la organización, como fotógrafos o agencias creativas, pueden crear numerosos recursos locales en escenarios como fotografías, retoques o selecciones de un conjunto más grande hecho fuera de [!DNL Experience Manager]. Pueden cargar estas carpetas locales grandes a [!DNL Assets] directamente desde la aplicación de escritorio. Las jerarquías de carpetas se conservan y se cargan todas las subcarpetas anidadas y los recursos incluidos. Los recursos cargados también están disponibles inmediatamente para el consumo de otros usuarios del mismo servidor. Los recursos se cargan en segundo plano, por lo que la operación no está vinculada a una sesión del explorador web.
 
-![Cargue varias carpetas locales de forma masiva desde el escritorio en  [!DNL Experience Manager]](assets/upload_local_folders_da2.png "Bulk Cargue varias carpetas locales desde el escritorio en Experience Manager")
+![Cargue varias carpetas locales de forma masiva desde el escritorio a  [!DNL Experience Manager]](assets/upload_local_folders_da2.png "Bulk, cargue varias carpetas locales desde el escritorio a Experience Manager")
 
 Después de cargar, si los cambios esperados no se reflejan en la aplicación, haga clic en el icono de actualización ![Actualizar ](assets/do-not-localize/refresh.png).
 
@@ -248,7 +249,7 @@ La funcionalidad de la aplicación de escritorio se utiliza cuando intenta reali
 
 Por ejemplo, las acciones de la interfaz web disponibles para un recurso desprotegido en la aplicación son [!UICONTROL Open], [!UICONTROL Reveal] y [!UICONTROL Check-in].
 
-![Acciones de escritorio en la  [!DNL Experience Manager] interfaz ](assets/assets_web_actions_da2.png "webAcciones de escritorio en la interfaz web de Experience Manager")
+![Acciones de escritorio en la  [!DNL Experience Manager] interfaz ](assets/assets_web_actions_da2.png "webAcciones de escritorio en la interfaz web del Experience Manager")
 
 >[!NOTE]
 >
@@ -287,7 +288,7 @@ Si un recurso que está editando localmente también se actualiza en el servidor
 
 Cuando utiliza la aplicación de escritorio [!DNL Experience Manager] para abrir archivos con recursos vinculados, los recursos se descargan previamente y aparecen colocados en las aplicaciones nativas. Para que este flujo de trabajo funcione, la aplicación nativa debe admitir la colocación de vínculos a recursos locales y [!DNL Experience Manager] debe admitir la resolución de estos vínculos en los archivos binarios a referencias del lado del servidor.
 
-[!DNL Experience Manager] la aplicación de escritorio admite este flujo de trabajo con algunas aplicaciones de escritorio y formatos de archivo de Adobe Creative Cloud seleccionadas: Adobe InDesign, Adobe Illustrator y Adobe Photoshop. El flujo de trabajo le permite trabajar de forma eficaz con los archivos de Creative Cloud admitidos. Por lo tanto, si el usuario A coloca algunos recursos en un archivo de InDesign y los marca en [!DNL Experience Manager], el usuario B verá los recursos en el archivo de InDesign aunque no formen parte del archivo. Los recursos se descargan localmente en el equipo del usuario B.
+[!DNL Experience Manager] la aplicación de escritorio es compatible con este flujo de trabajo con algunas aplicaciones de escritorio y formatos de archivo de Adobe Creative Cloud seleccionadas: Adobe InDesign, Adobe Illustrator y Adobe Photoshop. El flujo de trabajo le permite trabajar de forma eficaz con los archivos Creative Cloud admitidos. Por lo tanto, si el usuario A coloca algunos recursos en un archivo de InDesign y los comprueba en [!DNL Experience Manager], el usuario B verá los recursos en el archivo de InDesign aunque no formen parte del archivo. Los recursos se descargan localmente en el equipo del usuario B.
 
 >[!NOTE]
 >
@@ -295,11 +296,11 @@ Cuando utiliza la aplicación de escritorio [!DNL Experience Manager] para abrir
 
 Para conocer las limitaciones de este flujo de trabajo, consulte los [requisitos del sistema y las versiones compatibles](release-notes.md).
 
-Para probar este flujo de trabajo con un recurso de imagen e InDesign, siga estos pasos:
+Para probar este flujo de trabajo con un recurso de imagen y un InDesign, siga estos pasos:
 
 1. Utilice un archivo INDD con recursos colocados en [!DNL Experience Manager]. Para saber cómo crear un archivo INDD de este tipo, consulte [Colocación de gráficos](https://helpx.adobe.com/indesign/using/placing-graphics.html).
 1. Desde la aplicación de escritorio, **[!UICONTROL Edit]** el archivo INDD con recursos colocados en [!DNL Experience Manager].
-1. La aplicación descarga ambos, el archivo de InDesign y los recursos vinculados. Cuando InDesign abre el documento, se resuelven los vínculos, se descargan los recursos y éstos se muestran en el documento de InDesign.
+1. La aplicación descarga tanto el archivo de InDesign como los recursos vinculados. Cuando el InDesign abre el documento, los vínculos se resuelven, los recursos se descargan y los recursos se muestran en el documento de InDesign.
 1. Para colocar un nuevo gráfico en el archivo de InDesign, utilice la acción **[!UICONTROL Reveal File]** en el recurso. La acción descarga el recurso localmente y abre la ubicación del recurso compartido de red local en el Explorador de Windows o en el Buscador de Mac.
 1. Coloque el recurso mostrado en el documento de InDesign. Esto crea un vínculo en el documento.
 1. Una vez completadas las ediciones en el documento de InDesign, guárdelo y cárguelo en [!DNL Experience Manager] mediante la aplicación de escritorio.
