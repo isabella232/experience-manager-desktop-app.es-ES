@@ -2,11 +2,12 @@
 title: '[!DNL Adobe Experience Manager] Notas de la versión de la aplicación de escritorio'
 description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad y vínculos de descarga para la aplicación de escritorio [!DNL Adobe Experience Manager] .
 mini-toc-levels: 1
+feature: Experience Manager Aplicación de escritorio, información de la versión
 translation-type: tm+mt
-source-git-commit: 06ce2dc1c47bc1ba71b4fd1d053131d9dbdb08ba
+source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 29%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -154,7 +155,7 @@ En el diagrama siguiente se ilustra el flujo de recursos y archivos desde la nub
 
 * La aplicación intenta cargar archivos incluso cuando incluye caracteres no válidos, lo que puede provocar un error de carga en el servidor. <!-- CQ-4273652 -->
 
-* Al cargar cambios en un recurso con comentarios, los comentarios se almacenan con el recurso en [!DNL Experience Manager] pero no se pueden ver como comentarios de versiones. Este problema se resuelve en [!DNL Experience Manager] 6.4.5 y [!DNL Experience Manager] 6.5.1. Adobe recomienda instalar los paquetes de servicios más recientes. <!-- CQ-4268990 -->
+* Al cargar cambios en un recurso con comentarios, los comentarios se almacenan con el recurso en [!DNL Experience Manager] pero no se pueden ver como comentarios de versiones. Este problema se resuelve en [!DNL Experience Manager] 6.4.5 y [!DNL Experience Manager] 6.5.1. Adobe recomienda instalar los service packs más recientes. <!-- CQ-4268990 -->
 
 * El usuario no puede cancelar las transferencias de recursos. Si ha activado una transferencia de gran volumen sin querer, salga de la aplicación y vuelva a iniciarla. <!-- CQ-4278940 -->
 
