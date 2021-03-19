@@ -1,10 +1,11 @@
 ---
 title: Instalación y configuración de la aplicación de escritorio
 description: Instale y configure los servidores [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] y descargue los recursos en su sistema de archivos local.
+feature: Experience Manager Aplicación de escritorio, información de la versión
 translation-type: tm+mt
-source-git-commit: caf6faf17157a0e9e3bffd40b4bdd0802a71dad7
+source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1306'
 ht-degree: 1%
 
 ---
@@ -106,7 +107,7 @@ Para cambiar las preferencias, haga clic en el icono ![Más opciones](assets/do-
 
 * **[!UICONTROL Current cache size]**: Tamaño de almacenamiento de los recursos descargados localmente. La información solo se muestra después de descargar los recursos mediante la aplicación.
 
-* **[!UICONTROL Automatically download linked assets]**: Los recursos que se colocan en las aplicaciones nativas compatibles de Creative Cloud se recuperan automáticamente si descarga el archivo original.
+* **[!UICONTROL Automatically download linked assets]**: Los recursos que se colocan en las aplicaciones de Creative Cloud nativas compatibles se recuperan automáticamente si descarga el archivo original.
 
 * **[!UICONTROL Maximum number of downloads]**:  ![precaución ](assets/do-not-localize/caution-icon.png) iconCambie con precaución. Al descargar recursos por primera vez (mediante la opción Mostrar, Abrir, Editar, Descargar u otra opción similar), los recursos solo se descargan si el lote contiene menos de este número. El valor predeterminado es 50. No cambie si no está seguro. Aumentar el valor puede llevar a tiempos de espera más largos y disminuir el valor puede no permitirle descargar los recursos o carpetas necesarios de una sola vez.
 
