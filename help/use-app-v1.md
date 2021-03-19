@@ -1,10 +1,11 @@
 ---
 title: Utilice la versión 1.10 de la aplicación de escritorio [!DNL Experience Manager] .
 description: Aprenda a utilizar la versión 1.10 de la aplicación de escritorio de Adobe Experience Manager y a optimizar su trabajo con recursos en el escritorio.
+feature: Aplicación de escritorio de Experience Manager, administración de recursos
 translation-type: tm+mt
-source-git-commit: 4870615ed40226964d077d6666b83b85b73da180
+source-git-commit: a0a7081b705957ef6d1a72bc3c54603b1cff5897
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '2379'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 Con la aplicación, los recursos de [!DNL Experience Manager] son fácilmente accesibles desde el escritorio local y se pueden usar en cualquier aplicación de escritorio. Los recursos pueden mostrarse fácilmente en el Buscador de Mac o en el Explorador de Windows, abrirse en aplicaciones de escritorio y modificarse localmente. Los cambios se guardan de nuevo en [!DNL Experience Manager] con una nueva versión creada en el repositorio.
 
-Esta integración permite que diversas funciones de la organización administren los recursos de forma centralizada en Assets y accedan a ellos en Creative Cloud y otras aplicaciones, a la vez que facilita el cumplimiento de los distintos estándares, incluida la promoción de la marca.
+Esta integración permite que diversas funciones de la organización administren los recursos de forma centralizada en Assets y accedan a ellos en el Creative Cloud y en otras aplicaciones, a la vez que facilita el cumplimiento de los distintos estándares, incluida la promoción de la marca.
 
 Las tareas clave que realiza mediante la aplicación de escritorio v1 [!DNL Experience Manager] incluyen:
 
@@ -114,7 +115,7 @@ Al hacer clic en **Abrir** para abrir un recurso en el equipo local, la aplicaci
 
 En Mac, seleccione **Abrir** en el menú contextual para abrir un recurso a través de la aplicación de escritorio [!DNL Experience Manager]. En Windows, seleccione Abrir en Web en el menú contextual para abrir el recurso. En la ventana Estado del recurso, pulse o haga clic en ![Abrir en escritorio icono](assets/do-not-localize/aemassets_icon_openondesktop.png) para abrir el recurso.
 
-Para los archivos de Adobe InDesign (INDD), seleccione **[!UICONTROL Open]** en el menú contextual. Al hacer clic en esta opción, la aplicación descarga los recursos vinculados a su sistema de archivos local y, a continuación, abre el archivo INDD en Adobe InDesign. Este método garantiza que los recursos necesarios estén disponibles localmente al editar el archivo INDD.
+Para los archivos Adobe InDesign (INDD), seleccione **[!UICONTROL Open]** en el menú contextual. Al hacer clic en esta opción, la aplicación descarga los recursos vinculados a su sistema de archivos local y, a continuación, abre el archivo INDD en Adobe InDesign. Este método garantiza que los recursos necesarios estén disponibles localmente al editar el archivo INDD.
 
 ![Opciones del menú contextual para acceder y abrir recursos mediante la aplicación de  [!DNL Experience Manager] escritorio](assets/aem_desktopapp_mac_context_menu.png)
 
@@ -249,7 +250,7 @@ Con la aplicación de escritorio [!DNL Experience Manager], puede cargar una car
 
 1. Una vez que se haya cargado la carpeta, cierre el cuadro de diálogo y vaya a la interfaz de usuario de Assets. La carpeta cargada se muestra en la interfaz web.
 
-Adobe no recomienda copiar, pegar ni arrastrar un mayor número de archivos o carpetas anidadas, desde el sistema de archivos local, al área de uso compartido de red. La aplicación no puede controlar el proceso de carga debido a limitaciones técnicas y el rendimiento es deficiente.
+Adobe no recomienda copiar, pegar o arrastrar un mayor número de archivos o carpetas anidadas, desde el sistema de archivos local, al área de red compartida. La aplicación no puede controlar el proceso de carga debido a limitaciones técnicas y el rendimiento es deficiente.
 
 También puede seleccionar los archivos o carpetas que desea cargar en [!DNL Experience Manager] en Finder o Explorer, copiarlos en el portapapeles del sistema, navegar a la carpeta de destino en el área de uso compartido de la red y, en el menú contextual de la aplicación de escritorio [!DNL Experience Manager], seleccionar **Pegar recursos**. De este modo, la aplicación de escritorio [!DNL Experience Manager] comienza a cargar los recursos pegados de forma similar a la opción **Upload Folder** disponible en la interfaz web [!DNL Experience Manager].
 
