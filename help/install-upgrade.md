@@ -3,7 +3,7 @@ title: Instalación y configuración de la aplicación de escritorio
 description: Instale y configure los servidores [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] y descargue los recursos en su sistema de archivos local.
 feature: Experience Manager Aplicación de escritorio, información de la versión
 translation-type: tm+mt
-source-git-commit: f9d982d3039d04abf53e10b78e0e7a89e673ca04
+source-git-commit: 7204e3afb6d3a0908c076cf042072e3157572797
 workflow-type: tm+mt
 source-wordcount: '1405'
 ht-degree: 1%
@@ -111,7 +111,7 @@ Para cambiar las preferencias, haga clic en el icono ![Más opciones](assets/do-
 
 * **[!UICONTROL Maximum number of downloads]**:  ![precaución ](assets/do-not-localize/caution-icon.png) iconCambie con precaución. Al descargar recursos por primera vez (mediante la opción Mostrar, Abrir, Editar, Descargar u otra opción similar), los recursos solo se descargan si el lote contiene menos de este número. El valor predeterminado es 50. No cambie si no está seguro. Aumentar el valor puede llevar a tiempos de espera más largos y disminuir el valor puede no permitirle descargar los recursos o carpetas necesarios de una sola vez.
 
-* **[!UICONTROL Use legacy conventions when creating nodes for assets and folders]**:  ![precaución ](assets/do-not-localize/caution-icon.png) iconCambie con precaución. Esta configuración permite que la aplicación emule el comportamiento de la aplicación v1.10 al cargar carpetas. En la versión 1.10, los nombres de nodo creados en el repositorio respetan los espacios y las mayúsculas y minúsculas de los nombres de carpeta proporcionados por el usuario. Sin embargo, en la versión 2.1 de la aplicación, los espacios adicionales en los nombres de carpeta se convierten en guiones. Por ejemplo, cargar `New Folder` o `new   folder` crea el mismo nodo en el repositorio si la opción no está seleccionada y se mantiene el comportamiento predeterminado en v2.1. Si se selecciona esta opción, se crean diferentes nodos en el repositorio para las dos carpetas anteriores y coinciden con el comportamiento de la aplicación v1.10.
+* **[!UICONTROL Use legacy conventions when creating nodes for assets and folders]**:  ![precaución ](assets/do-not-localize/caution-icon.png) iconCambie con precaución. Esta configuración permite que la aplicación emule el comportamiento de la aplicación v1.10 al cargar carpetas. En v1.10, los nombres de nodo creados en el repositorio respetan los espacios y el formato en mayúsculas de los nombres de carpeta proporcionados por el usuario. Sin embargo, en la versión 2.1 de la aplicación, los espacios adicionales en los nombres de carpeta se convierten en guiones. Por ejemplo, cargar `New Folder` o `new   folder` crea el mismo nodo en el repositorio si la opción no está seleccionada y se mantiene el comportamiento predeterminado en v2.1. Si se selecciona esta opción, se crean diferentes nodos en el repositorio para las dos carpetas anteriores y coinciden con el comportamiento de la aplicación v1.10.
 
    El comportamiento predeterminado de v2.1 sigue siendo el mismo, es decir, reemplaza varios espacios en los nombres de carpeta con guiones en el nombre del nodo del repositorio y convierte en nombres de nodo en minúsculas.
 
