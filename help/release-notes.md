@@ -4,10 +4,10 @@ description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad 
 mini-toc-levels: 1
 feature: Experience Manager Aplicación de escritorio, información de la versión
 translation-type: tm+mt
-source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
+source-git-commit: 7204e3afb6d3a0908c076cf042072e3157572797
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1474'
+ht-degree: 29%
 
 ---
 
@@ -71,7 +71,7 @@ Para conocer los detalles, consulte [Novedades de v2.0](introduction.md#whats-ne
 
 **Actualización en la aplicación v2.1.1.0**
 
-* Una configuración avanzada permite que la aplicación emule el comportamiento de la aplicación v1.10 al cargar carpetas. En la versión 1.10, los nombres de nodo creados en el repositorio respetan los espacios y las mayúsculas y minúsculas de los nombres de carpeta proporcionados por el usuario. El comportamiento predeterminado de v2.1 sigue siendo el mismo, es decir, reemplaza varios espacios en los nombres de carpetas con un guión en el nombre del nodo del repositorio y convierte en nombres de nodos en minúsculas. Consulte [las preferencias de la aplicación](/help/install-upgrade.md#set-preferences).
+* Una configuración avanzada permite que la aplicación emule el comportamiento de la aplicación v1.10 al cargar carpetas. En v1.10, los nombres de nodo creados en el repositorio respetan los espacios y el formato en mayúsculas de los nombres de carpeta proporcionados por el usuario. El comportamiento predeterminado de v2.1 sigue siendo el mismo, es decir, reemplaza varios espacios en los nombres de carpetas con un guión en el nombre del nodo del repositorio y convierte en nombres de nodos en minúsculas. Consulte [las preferencias de la aplicación](/help/install-upgrade.md#set-preferences).
 
 **Actualización en la aplicación v2.1.0.0**
 
