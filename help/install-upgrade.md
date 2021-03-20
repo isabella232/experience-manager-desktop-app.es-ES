@@ -3,9 +3,9 @@ title: Instalación y configuración de la aplicación de escritorio
 description: Instale y configure los servidores [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] y descargue los recursos en su sistema de archivos local.
 feature: Experience Manager Aplicación de escritorio, información de la versión
 translation-type: tm+mt
-source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
+source-git-commit: f9d982d3039d04abf53e10b78e0e7a89e673ca04
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1405'
 ht-degree: 1%
 
 ---
@@ -122,6 +122,14 @@ Para actualizar las preferencias no disponibles, cierre la sesión del servidor 
 ![Preferencias y configuración de la aplicación de escritorio](assets/preferences_da2.png)
 
 *Figura: Preferencias de aplicación de escritorio.*
+
+### Compatibilidad con proxy {#proxy-support}
+
+[!DNL Experience Manager] la aplicación de escritorio utiliza el proxy predefinido del sistema para conectarse a Internet a través de HTTPS. La aplicación solo se puede conectar con un proxy de red que no requiera autenticación adicional.
+
+Si configura o modifica la configuración del servidor proxy para Windows (Opciones de Internet > Configuración de LAN), reinicie la aplicación de escritorio [!DNL Experience Manager] para que los cambios surtan efecto. La configuración del proxy se aplica al iniciar la aplicación de escritorio. Cierre la aplicación y vuelva a iniciarla para que se apliquen los cambios.
+
+Si el proxy requiere autenticación, el equipo de TI puede permitir que la [!DNL Experience Manager Assets] URL en la configuración del servidor proxy permita que el tráfico de la aplicación pase.
 
 ## Desinstalar la aplicación {#uninstall-the-app}
 
