@@ -4,7 +4,7 @@ description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad 
 mini-toc-levels: 1
 feature: Experience Manager Aplicación de escritorio, información de la versión
 translation-type: tm+mt
-source-git-commit: e15dffa9b32dcbdbe5121b23847e9efe50b514b3
+source-git-commit: e8a299c7357faf2c19c11a56f2868f6679c15ac1
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 28%
@@ -14,7 +14,7 @@ ht-degree: 28%
 
 # [!DNL Adobe Experience Manager] Notas de la versión de la aplicación de escritorio  {#release-notes-v2}
 
-A continuación se muestra la información de la versión 2.1 (2.1.1.0) de la aplicación de escritorio más reciente. La fecha de la versión es el 5 de marzo de 2021. Se trata de una versión menor con una mejora.
+A continuación se muestra la información de la versión 2.1 (2.1.2.0) de la aplicación de escritorio más reciente. La fecha de la versión es el 26 de marzo de 2021. Se trata de una versión menor con una mejora.
 
 Las **versiones [!DNL Experience Manager] compatibles** son:
 
