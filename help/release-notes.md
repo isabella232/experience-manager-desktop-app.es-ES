@@ -4,10 +4,10 @@ description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad 
 mini-toc-levels: 1
 feature: Experience Manager Aplicación de escritorio, información de la versión
 translation-type: tm+mt
-source-git-commit: 7204e3afb6d3a0908c076cf042072e3157572797
+source-git-commit: e15dffa9b32dcbdbe5121b23847e9efe50b514b3
 workflow-type: tm+mt
-source-wordcount: '1474'
-ht-degree: 29%
+source-wordcount: '1507'
+ht-degree: 28%
 
 ---
 
@@ -34,9 +34,9 @@ Las **URL de descarga** para el sistema operativo compatible son:
 
 | Sistema operativo | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
-| macOS de 64 bits | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.1.0.dmg) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.1.0.dmg) |
-| Windows de 64 bits | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.1.0.exe) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.1.0.exe) |
-| Windows de 32 bits | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.1.0.exe) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.1.0.exe) |
+| macOS de 64 bits | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.2.0.dmg) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.2.0.dmg) |
+| Windows de 64 bits | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.2.0.exe) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.2.0.exe) |
+| Windows de 32 bits | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.2.0.exe) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.2.0.exe) |
 
 >[!NOTE]
 >
@@ -68,6 +68,10 @@ La función es compatible con las versiones [!DNL Adobe Creative Cloud] 2018 y [
 ## Nuevas funciones, mejoras y correcciones de errores {#what-is-new}
 
 Para conocer los detalles, consulte [Novedades de v2.0](introduction.md#whats-new-v2).
+
+**Actualización en la aplicación v2.1.2.0**
+
+* Se agrega una nueva opción a [!UICONTROL Clear Cookies] al menú principal de la aplicación. Ayuda con posibles problemas de inicio de sesión, por ejemplo, al cambiar la conexión de un servidor a otro.
 
 **Actualización en la aplicación v2.1.1.0**
 
