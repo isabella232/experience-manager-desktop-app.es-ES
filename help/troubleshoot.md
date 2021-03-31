@@ -2,9 +2,9 @@
 title: 'Prácticas recomendadas para la solución de problemas y la aplicación de escritorio [!DNL Adobe Experience Manager] '
 description: Siga las prácticas recomendadas y resuelva los problemas ocasionales relacionados con la instalación, actualización, configuración, etc.
 translation-type: tm+mt
-source-git-commit: 9d90bdcab79604e03d1ad3f30ed2aca2eb03e1c5
+source-git-commit: a766855c0670e9f291b8020ee6ab7addc50689a4
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2175'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,16 @@ Para habilitar el modo de depuración en Windows:
 
 `AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`.
 
+### Conozca la versión [!DNL Adobe Experience Manager] de la aplicación de escritorio {#know-app-version-v2}
+
+Para ver el número de versión:
+
+1. Inicie la aplicación.
+
+1. Haga clic en los puntos suspensivos en la esquina superior derecha, pase el ratón sobre [!UICONTROL Help] y haga clic en [!UICONTROL About].
+
+   El número de versión aparece en esta pantalla.
+
 ### Borrar caché {#clear-cache-v2}
 
 Siga estos pasos:
@@ -138,17 +148,7 @@ Para borrar la caché, elimine el directorio del extremo [!DNL Adobe Experience 
 
 La eliminación de la caché de la aplicación de escritorio [!DNL Adobe Experience Manager] es una tarea preliminar de solución de problemas que puede resolver varios problemas. Borre la caché de las preferencias de la aplicación. Consulte [establecer preferencias](install-upgrade.md#set-preferences). La ubicación predeterminada de la carpeta de caché es:
 
-### Conozca la versión [!DNL Adobe Experience Manager] de la aplicación de escritorio {#know-app-version-v2}
-
-Para ver el número de versión:
-
-1. Inicie la aplicación.
-
-1. Haga clic en los puntos suspensivos en la esquina superior derecha, pase el ratón sobre [!UICONTROL Help] y haga clic en [!UICONTROL About].
-
-   El número de versión aparece en esta pantalla.
-
-### No se pueden ver los activos colocados {#placed-assets-missing}
+## No se pueden ver los activos colocados {#placed-assets-missing}
 
 Si no puede ver los recursos que usted u otros profesionales creativos colocaron en los archivos de soporte (por ejemplo, archivos INDD), compruebe lo siguiente:
 
@@ -179,11 +179,11 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop" | xargs rm -rf
 sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-plugin" | xargs rm -rf
 ```
 
-### No se pueden cargar archivos {#upload-fails}
+## No se pueden cargar archivos {#upload-fails}
 
 Si utiliza la aplicación de escritorio con [!DNL Experience Manager] 6.5.1 o posterior, actualice el conector S3 o Azure a la versión 1.10.4 o posterior. Resuelve el problema de error de carga de archivos relacionado con [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Consulte [instrucciones de instalación](install-upgrade.md#install-v2).
 
-### [!DNL Experience Manager] problemas de conexión de la aplicación de escritorio  {#connection-issues}
+## [!DNL Experience Manager] problemas de conexión de la aplicación de escritorio  {#connection-issues}
 
 Si tiene problemas generales de conectividad, puede obtener más información sobre lo que hace la aplicación de escritorio [!DNL Experience Manager].
 
@@ -200,7 +200,7 @@ Si tiene problemas generales de conectividad, puede obtener más información so
 La mayoría de las solicitudes de la aplicación se encuentran en el registro de solicitudes. Sin embargo, si no hay información útil allí, puede resultar útil ver las solicitudes enviadas por el explorador incrustado de la aplicación.
 Consulte la [sección SAML](#da-connection-issue-with-saml-aem) para obtener instrucciones sobre cómo ver esas solicitudes.
 
-#### La autenticación de inicio de sesión SAML no funciona {#da-connection-issue-with-saml-aem}
+### La autenticación de inicio de sesión SAML no funciona {#da-connection-issue-with-saml-aem}
 
 [!DNL Experience Manager] es posible que la aplicación de escritorio no se conecte a la  [!DNL Adobe Experience Manager] implementación con SSO habilitado (SAML). El diseño de la aplicación intenta dar cabida a las variaciones y complejidades de las conexiones y procesos de SSO. Sin embargo, una configuración puede requerir resolución de problemas adicional.
 
@@ -247,7 +247,7 @@ Para solucionar problemas aún más, es posible ver las direcciones URL exactas 
 
 Ver la secuencia de URL que se está cargando puede ayudar a solucionar problemas en el extremo de SAML para determinar qué es lo que está mal.
 
-#### Problema de configuración de SSL {#ssl-config-v2}
+### Problema de configuración de SSL {#ssl-config-v2}
 
 Las bibliotecas que utiliza la aplicación de escritorio [!DNL Experience Manager] para la comunicación HTTP utilizan una estricta aplicación SSL. A veces, una conexión puede funcionar correctamente con un explorador, pero falla al usar la aplicación de escritorio [!DNL Experience Manager]. Para configurar SSL correctamente, instale el certificado intermedio que falta en Apache. Consulte [Cómo instalar un certificado de CA intermedio en Apache](https://access.redhat.com/solutions/43575).
 
@@ -284,7 +284,13 @@ Como medida temporal, es posible deshabilitar la aplicación estricta de SSL en 
 
 1. Guarde el archivo y reinicie la aplicación de escritorio [!DNL Adobe Experience Manager].
 
-### La aplicación no responde {#unresponsive}
+### Problemas de inicio de sesión al cambiar a un servidor diferente {#cannot-login-cookies-issue}
+
+Después de utilizar un servidor [!DNL Experience Manager], cuando intente cambiar la conexión a un servidor diferente, puede encontrar problemas de inicio de sesión. Se debe a que las cookies antiguas interfieren con la nueva autenticación. Ayuda una opción del menú principal para [!UICONTROL Clear Cookies]. Cierre la sesión actual de la aplicación y seleccione [!UICONTROL Clear Cookies] antes de conectarse.
+
+![Borrar cookies al cambiar de servidor](assets/main_menu_logout_da2.png)
+
+## La aplicación no responde {#unresponsive}
 
 Raramente la aplicación puede no responder, mostrar solo una pantalla en blanco o mostrar un error en la parte inferior de la interfaz sin ninguna opción en la interfaz. Pruebe lo siguiente en el orden siguiente:
 
