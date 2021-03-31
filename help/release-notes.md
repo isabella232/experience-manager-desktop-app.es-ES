@@ -4,9 +4,9 @@ description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad 
 mini-toc-levels: 1
 feature: Experience Manager Aplicación de escritorio, información de la versión
 translation-type: tm+mt
-source-git-commit: e8a299c7357faf2c19c11a56f2868f6679c15ac1
+source-git-commit: 861f2e8994ae7eb9b35c78036479fe47dc793cf3
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1512'
 ht-degree: 28%
 
 ---
@@ -71,7 +71,7 @@ Para conocer los detalles, consulte [Novedades de v2.0](introduction.md#whats-ne
 
 **Actualización en la aplicación v2.1.2.0**
 
-* Se agrega una nueva opción a [!UICONTROL Clear Cookies] al menú principal de la aplicación. Ayuda con posibles problemas de inicio de sesión, por ejemplo, al cambiar la conexión de un servidor a otro.
+* Se agrega una nueva opción a [!UICONTROL Clear Cookies] al menú principal de la aplicación. Ayuda con posibles problemas de inicio de sesión, por ejemplo, al cambiar la conexión de un servidor a otro. Consulte [borrar cookies antes de conectar](/help/troubleshoot.md#cannot-login-cookies-issue).
 
 **Actualización en la aplicación v2.1.1.0**
 
