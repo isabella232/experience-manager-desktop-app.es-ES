@@ -4,9 +4,9 @@ description: Utilice los recursos  [!DNL Adobe Experience Manager] desktop app, 
 mini-toc-levels: 1
 feature: Aplicación de escritorio de Experience Manager, administración de recursos
 translation-type: tm+mt
-source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
+source-git-commit: d345a0f0ac6826cf623f6e8bbbcc132481ea557c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3907'
 ht-degree: 0%
 
 ---
@@ -61,15 +61,17 @@ Antes de empezar a usar la aplicación, es necesario que conozca [Cómo funciona
 
 ## Habilitar acciones de escritorio en la [!DNL Experience Manager] interfaz web {#desktopactions-v2}
 
-Desde la interfaz de usuario de Assets en un navegador, puede explorar las ubicaciones de los recursos o retirarse y abrir el recurso para editarlo en la aplicación de escritorio. Estas opciones se denominan [!UICONTROL Desktop Actions] y no están activadas de forma predeterminada. Para habilitarlo, siga estos pasos.
+Desde la interfaz de usuario [!DNL Assets] en un explorador, puede explorar las ubicaciones de los recursos o retirarse y abrir el recurso para editarlo en la aplicación de escritorio. Estas opciones se denominan [!UICONTROL Desktop Actions] y no están activadas de forma predeterminada. Para habilitarlo, siga estos pasos.
 
-1. En la consola Assets, pulse o haga clic en el icono **[!UICONTROL User]** de la barra de herramientas.
-1. Pulse o haga clic en **[!UICONTROL My Preferences]** para mostrar el cuadro de diálogo **[!UICONTROL Preferences]**.
-1. En el cuadro de diálogo Preferencias de usuario, seleccione **[!UICONTROL Show Desktop Actions For Assets]**. Toque o haga clic en **[!UICONTROL Accept]**.
+1. En la consola [!DNL Assets], haga clic en el icono **[!UICONTROL User]** de la barra de herramientas.
+1. Haga clic en **[!UICONTROL My Preferences]** para mostrar el cuadro de diálogo **[!UICONTROL Preferences]**.
 
-   ![Marque Mostrar acciones de escritorio para recursos para habilitar acciones de escritorio](assets/enable_desktop_actions.png)
+1. En el cuadro de diálogo Preferencias de usuario, seleccione **[!UICONTROL Show Desktop Actions For Assets]**. Haga clic **[!UICONTROL Accept]**.
 
-   Marque [!UICONTROL Show Desktop Actions For Assets] para habilitar las acciones de escritorio
+
+   ![Seleccione Mostrar acciones de escritorio para recursos para habilitar las acciones de escritorio](assets/enable_desktop_actions.png)
+
+   *Figura: Seleccione  [!UICONTROL Show Desktop Actions For Assets] para habilitar las acciones de escritorio.*
 
 ## Examinar, buscar y previsualizar recursos {#browse-search-preview-assets}
 
