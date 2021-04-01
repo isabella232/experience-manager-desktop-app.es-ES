@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guía de la aplicación de escritorio de Experience Manager
@@ -9,7 +9,7 @@ feature-set: Experience Manager Assets
 feature: Aplicación de escritorio de Experience Manager
 role: Profesional empresarial, administrador
 translation-type: tm+mt
-source-git-commit: a0a7081b705957ef6d1a72bc3c54603b1cff5897
+source-git-commit: fd29c31e8a353ce6f827f58c58c5ecc36f3c71af
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 84%
