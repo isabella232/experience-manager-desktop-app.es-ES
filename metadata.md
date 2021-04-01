@@ -1,12 +1,12 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 solution: Experience Manager, Experience Manager Assets
 type: Documentación
 mini-toc-levels: 1
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-desktop-app.es-ES
 index: y
 translation-type: tm+mt
-source-git-commit: a0a7081b705957ef6d1a72bc3c54603b1cff5897
+source-git-commit: fd29c31e8a353ce6f827f58c58c5ecc36f3c71af
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 71%
@@ -18,7 +18,7 @@ ht-degree: 71%
 
 El archivo metadata.md incluye metadatos de repositorios que pasan a los archivos TOC.md de la guía del usuario en el repositorio. Si desea cambiar el contenido de metadata.md para cualquier guía de usuario, hágalo en cualquier archivo TOC.md.
 
-| metadata | Función |
+| metadata | función |
 |--- |--- |
 | solution-title | Se utiliza en el encabezado del artículo como vínculo. |
 | solution-hub-url | Abre la página del centro de aprendizaje y asistencia. |
@@ -30,7 +30,7 @@ El archivo metadata.md incluye metadatos de repositorios que pasan a los archivo
 
 En el archivo TOC.md
 
-| metadata | lo que hace |
+| metadata | función |
 |--- |--- |
 | user-guide-title | Se utiliza en el encabezado del artículo como vínculo. |
 | user-guide-url | Abre la página del centro de aprendizaje y asistencia. |
