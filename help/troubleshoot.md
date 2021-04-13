@@ -1,14 +1,14 @@
 ---
 title: 'Prácticas recomendadas para la solución de problemas y la aplicación de escritorio [!DNL Adobe Experience Manager] '
 description: Siga las prácticas recomendadas y resuelva los problemas ocasionales relacionados con la instalación, actualización, configuración, etc.
+exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
 translation-type: tm+mt
-source-git-commit: a766855c0670e9f291b8020ee6ab7addc50689a4
+source-git-commit: b893ad24d360ed382cab50771413219ea7bda09e
 workflow-type: tm+mt
-source-wordcount: '2175'
+source-wordcount: '2261'
 ht-degree: 0%
 
 ---
-
 
 # Solución de problemas de la aplicación de escritorio [!DNL Adobe Experience Manager] {#troubleshoot-v2}
 
@@ -298,6 +298,13 @@ Raramente la aplicación puede no responder, mostrar solo una pantalla en blanco
 * Salga de la aplicación y ábrala de nuevo.
 
 En ambos métodos, la aplicación se inicia en la carpeta raíz DAM.
+
+## Ocultar activos caducados {#hide-expired-assets}
+
+Al examinar recursos desde la interfaz de usuario [!DNL Experience Manager], no se muestran los recursos caducados. Para evitar la visualización, búsqueda y captura de recursos caducados al examinar recursos desde la aplicación de escritorio y Asset Link, los administradores pueden realizar la siguiente configuración. La configuración funciona para todos los usuarios, independientemente del privilegio de administrador.
+
+* [Configuración en el Experience Manager 6.5 para ocultar los recursos](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#hide-expired-assets-via-acp-api) caducados.
+* [Configuración en Experience Manager como Cloud Service para ocultar recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api) caducados.
 
 <!--
 ### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}
