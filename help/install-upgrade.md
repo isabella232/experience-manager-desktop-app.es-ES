@@ -1,15 +1,15 @@
 ---
 title: Instalación y configuración de la aplicación de escritorio
 description: Instale y configure los servidores [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] y descargue los recursos en su sistema de archivos local.
-feature: Experience Manager Aplicación de escritorio, información de la versión
+feature: Aplicación de escritorio, información de versión
+exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
 translation-type: tm+mt
-source-git-commit: 7204e3afb6d3a0908c076cf042072e3157572797
+source-git-commit: 4616934e8923693106401da008e2510310d0742a
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1403'
 ht-degree: 1%
 
 ---
-
 
 # Instalación de la aplicación de escritorio [!DNL Adobe Experience Manager] {#install-app-v2}
 
