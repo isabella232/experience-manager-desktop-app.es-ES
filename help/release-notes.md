@@ -2,15 +2,15 @@
 title: '[!DNL Adobe Experience Manager] Notas de la versión de la aplicación de escritorio'
 description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad y vínculos de descarga para la aplicación de escritorio [!DNL Adobe Experience Manager] .
 mini-toc-levels: 1
-feature: Experience Manager Aplicación de escritorio, información de la versión
+feature: Aplicación de escritorio, información de versión
+exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
 translation-type: tm+mt
-source-git-commit: 861f2e8994ae7eb9b35c78036479fe47dc793cf3
+source-git-commit: 4616934e8923693106401da008e2510310d0742a
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1510'
 ht-degree: 28%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] Notas de la versión de la aplicación de escritorio  {#release-notes-v2}
 
