@@ -5,9 +5,9 @@ mini-toc-levels: 1
 feature: Aplicación de escritorio, información de versión
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
 translation-type: tm+mt
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+source-git-commit: ac533db59b2a5c64243b762f4b77b3148c4f1867
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1523'
 ht-degree: 28%
 
 ---
@@ -27,7 +27,7 @@ Las **versiones [!DNL Experience Manager] compatibles** son:
 
 [!DNL Adobe Experience Manager] la aplicación de escritorio está disponible para los siguientes sistemas  **operativos**:
 
-* macOS X 10.14 o posterior, con las últimas correcciones de errores.
+* macOS X 10.14 o posterior, con las últimas correcciones de errores. [Los equipos Mac con ](https://support.apple.com/en-us/HT211814) silicio Apple aún no son compatibles.
 * Windows 10 con los paquetes de servicios y las correcciones de errores más recientes.
 
 Las **URL de descarga** para el sistema operativo compatible son:
