@@ -1,7 +1,7 @@
 ---
 title: 'Introducción a la aplicación de escritorio [!DNL Experience Manager] '
 description: Aprenda a utilizar [!DNL Adobe Experience Manager] desktop app to optimize the asset management workflows for creative users when using [!DNL Adobe Experience Manager Assets] directamente desde su escritorio.
-role: Profesional del negocio, Administrador, Líder
+role: Business Practitioner, Administrator, Leader
 translation-type: tm+mt
 source-git-commit: a0a7081b705957ef6d1a72bc3c54603b1cff5897
 workflow-type: tm+mt

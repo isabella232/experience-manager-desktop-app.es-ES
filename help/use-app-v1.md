@@ -1,7 +1,7 @@
 ---
 title: Utilice la versión 1.10 de la aplicación de escritorio [!DNL Experience Manager] .
 description: Aprenda a utilizar la versión 1.10 de la aplicación de escritorio de Adobe Experience Manager y a optimizar su trabajo con recursos en el escritorio.
-feature: Aplicación de escritorio, administración de recursos
+feature: Desktop App,Asset Management
 exl-id: 2fdc1c8d-b822-4cca-ad06-bd875a00aa6d
 translation-type: tm+mt
 source-git-commit: 4616934e8923693106401da008e2510310d0742a

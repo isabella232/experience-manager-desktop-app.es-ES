@@ -2,7 +2,7 @@
 title: 'Usar aplicación de escritorio [!DNL Experience Manager] '
 description: Utilice los recursos  [!DNL Adobe Experience Manager] desktop app, to work with [!DNL Adobe Experience Manager] DAM directamente desde el escritorio Win o Mac y utilice en otras aplicaciones.
 mini-toc-levels: 1
-feature: Aplicación de escritorio, administración de recursos
+feature: Desktop App,Asset Management
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
 translation-type: tm+mt
 source-git-commit: 4616934e8923693106401da008e2510310d0742a

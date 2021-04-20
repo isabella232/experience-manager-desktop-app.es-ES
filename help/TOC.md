@@ -6,7 +6,7 @@ user-guide-title: Guía de la aplicación de escritorio de Experience Manager
 breadcrumb-title: Guía de la aplicación de escritorio
 user-guide-description: Aprenda a utilizar la aplicación de escritorio de Experience Manager para conectar repositorios y aplicaciones de escritorio con el fin de proporcionar un acceso más rápido a recursos y flujos de trabajo optimizados.
 feature-set: Experience Manager Assets,Experience Manager
-feature: Aplicación de escritorio
+feature: Desktop App
 role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 4616934e8923693106401da008e2510310d0742a
