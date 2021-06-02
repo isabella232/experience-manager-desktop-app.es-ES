@@ -2,12 +2,11 @@
 title: '[!DNL Adobe Experience Manager] Notas de la versión de la aplicación de escritorio'
 description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad y vínculos de descarga para la aplicación de escritorio [!DNL Adobe Experience Manager] .
 mini-toc-levels: 1
-feature: Desktop App,Release Information
+feature: Aplicación de escritorio, información de versión
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-translation-type: tm+mt
-source-git-commit: ac533db59b2a5c64243b762f4b77b3148c4f1867
+source-git-commit: bc938588d0d54a6f3b8b85e0d4097104f9df46c9
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1525'
 ht-degree: 28%
 
 ---
@@ -79,7 +78,7 @@ Para conocer los detalles, consulte [Novedades de v2.0](introduction.md#whats-ne
 
 **Actualización en la aplicación v2.1.0.0**
 
-* Para cargar recursos, los usuarios ahora pueden arrastrar los archivos o carpetas de la interfaz de la aplicación, directamente desde el Explorador de Windows o el Buscador de Mac. Esto funciona además de la opción de carga previamente disponible en la aplicación. <!-- CQ-4309527 -->
+* Para cargar recursos, los usuarios ahora pueden arrastrar los archivos o carpetas de la interfaz de la aplicación, directamente desde el Explorador de Windows o el Buscador de Mac. Esto funciona además de la opción de carga disponible en la aplicación. Consulte [carga de recursos](/help/using.md#upload-and-add-new-assets-to-aem) <!-- CQ-4309527 -->
 
 **Actualización en la aplicación v2.0.3**
 
@@ -171,7 +170,7 @@ En el diagrama siguiente se ilustra el flujo de recursos y archivos desde la nub
 >
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] documentación.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] documentación.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
->* [Cómo usar la aplicación de  [!DNL Experience Manager] escritorio](using.md)
->* [Instalación y actualización de la aplicación de escritorio](install-upgrade.md)
->* [Procedimientos recomendados y sugerencias para la solución de problemas](troubleshoot.md)
+>* [Cómo usar la aplicación de escritorio [!DNL Experience Manager] ](using.md)
+* [Instalación y actualización de la aplicación de escritorio](install-upgrade.md)
+* [Procedimientos recomendados y sugerencias para la solución de problemas](troubleshoot.md)
 
