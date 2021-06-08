@@ -4,16 +4,16 @@ description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad 
 mini-toc-levels: 1
 feature: Aplicación de escritorio, información de versión
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: bc938588d0d54a6f3b8b85e0d4097104f9df46c9
+source-git-commit: 5c8d8b4ee62185529985b652585f8067947b5599
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 28%
+source-wordcount: '1649'
+ht-degree: 25%
 
 ---
 
 # [!DNL Adobe Experience Manager] Notas de la versión de la aplicación de escritorio  {#release-notes-v2}
 
-A continuación se muestra la información de la versión 2.1 (2.1.2.0) de la aplicación de escritorio más reciente. La fecha de la versión es el 26 de marzo de 2021. Se trata de una versión menor con una mejora.
+A continuación se muestra la información de la versión 2.1 (2.1.3.1) de la aplicación de escritorio más reciente. La fecha de la versión es el 8 de junio de 2021.
 
 Las **versiones [!DNL Experience Manager] compatibles** son:
 
@@ -33,9 +33,9 @@ Las **URL de descarga** para el sistema operativo compatible son:
 
 | Sistema operativo | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
-| macOS de 64 bits | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.2.0.dmg) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.2.0.dmg) |
-| Windows de 64 bits | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.2.0.exe) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.2.0.exe) |
-| Windows de 32 bits | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.2.0.exe) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.2.0.exe) |
+| macOS de 64 bits | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.1.dmg) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.3.1.dmg) |
+| Windows de 64 bits | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.3.1.exe) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.3.1.exe) |
+| Windows de 32 bits | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) |
 
 >[!NOTE]
 >
@@ -68,6 +68,16 @@ La función es compatible con las versiones [!DNL Adobe Creative Cloud] 2018 y [
 
 Para conocer los detalles, consulte [Novedades de v2.0](introduction.md#whats-new-v2).
 
+**Actualizaciones en la aplicación v2.1.3.1**
+
+* Se añade una opción que (si está seleccionada) permite que la aplicación cargue carpetas y archivos de forma que sus nombres de nodo creados en [!DNL Adobe Experience Manager] sean los mismos que los nombres de archivo y carpeta locales.
+
+   Este comportamiento es similar al comportamiento predeterminado en la versión 1 de la aplicación de escritorio. Mientras que en la versión actual, si la opción no está activada, los espacios en blanco y los caracteres `% ; # , + ? ^ { } "` en los nombres de carpeta se sustituyen por guiones en las rutas de carpeta. Además, los caracteres en mayúsculas se convierten a minúsculas en las rutas de carpeta. Sin embargo, en los nombres de archivo, los caracteres `# % { } ? &` se sustituyen por guiones; pero se conservan los espacios en blanco y las mayúsculas y minúsculas. Para obtener más información, consulte [preferencias de la aplicación](/help/install-upgrade.md#set-preferences) y [Cargar y añadir nuevos recursos](/help/using.md#upload-and-add-new-assets-to-aem).
+
+El error corregido en la versión actual es:
+
+* Las velocidades de carga y descarga de recursos han mejorado, incluso con los recursos grandes. Se ha corregido el problema por el que las cargas de recursos con [!DNL desktop app] fallaban cada vez más cuando se cargaban archivos grandes.
+
 **Actualización en la aplicación v2.1.2.0**
 
 * Se agrega una nueva opción a [!UICONTROL Clear Cookies] al menú principal de la aplicación. Ayuda con posibles problemas de inicio de sesión, por ejemplo, al cambiar la conexión de un servidor a otro. Consulte [borrar cookies antes de conectar](/help/troubleshoot.md#cannot-login-cookies-issue).
@@ -82,7 +92,7 @@ Para conocer los detalles, consulte [Novedades de v2.0](introduction.md#whats-ne
 
 **Actualización en la aplicación v2.0.3**
 
-El error corregido en la versión actual es:
+El error corregido en esta versión es:
 
 * Se ha corregido un problema de inicio de sesión para usuarios de aplicaciones en Windows que intentan acceder al repositorio de DAM en [!DNL Adobe Experience Manager] 6.5.5.0.
 
@@ -155,8 +165,6 @@ En el diagrama siguiente se ilustra el flujo de recursos y archivos desde la nub
 * A veces, cuando se conecta a una dirección URL que no tiene [!DNL Experience Manager] servidor en ejecución, la pantalla de conexión deja de responder. Salga de la aplicación y vuelva a iniciarla.
 
 **Problemas de CRUD (Crear, Leer, Actualizar y Eliminar):**
-
-* La aplicación intenta cargar archivos incluso cuando incluye caracteres no válidos, lo que puede provocar un error de carga en el servidor. <!-- CQ-4273652 -->
 
 * Al cargar cambios en un recurso con comentarios, los comentarios se almacenan con el recurso en [!DNL Experience Manager] pero no se pueden ver como comentarios de versiones. Este problema se resuelve en [!DNL Experience Manager] 6.4.5 y [!DNL Experience Manager] 6.5.1. Adobe recomienda instalar los service packs más recientes. <!-- CQ-4268990 -->
 
