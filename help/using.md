@@ -4,9 +4,9 @@ description: Utilice los recursos  [!DNL Adobe Experience Manager] desktop app, 
 mini-toc-levels: 1
 feature: Aplicación de escritorio, administración de recursos
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: 5c8d8b4ee62185529985b652585f8067947b5599
+source-git-commit: 7c413be995ef087fab75114d65e87f6936c8e021
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4054'
 ht-degree: 0%
 
 ---
@@ -177,18 +177,6 @@ Si es necesario, active la desprotección. El recurso actualizado se elimina de 
 
 Los usuarios pueden agregar nuevos recursos al repositorio de DAM. Por ejemplo, puede ser un fotógrafo o contratista de la agencia que desee agregar un gran número de fotos de una sesión fotográfica al repositorio [!DNL Experience Manager]. Para añadir contenido nuevo a [!DNL Experience Manager], seleccione ![upload to cloud option](assets/do-not-localize/upload_to_cloud_da2.png) en la barra superior de la aplicación. Vaya a los archivos de recursos en el sistema de archivos local y haga clic en **[!UICONTROL Select]**. Como alternativa, para cargar recursos, arrastre los archivos o carpetas en la interfaz de la aplicación. En Windows, si arrastra recursos en una carpeta dentro de la aplicación, los recursos se cargan en la carpeta . Si la carga tarda más, la aplicación muestra una barra de progreso.
 
-Al asignar nombres a los archivos y carpetas, no utilice los siguientes caracteres (lista de) separados por espacios:
-
-* en nombres de archivo `\\`.
-
-   Los caracteres `# % { } ? & . / : [ | ] *` se sustituyen por guiones en los nombres de nodo creados en [!DNL Adobe Experience Manager]; pero se conservan los espacios en blanco y las mayúsculas y minúsculas.
-
-* en los nombres de carpeta `\\ \t &`.
-
-   Los espacios en blanco y los caracteres `% ; # , + ? ^ { } " . / : [ ] | *` en los nombres de carpeta se sustituyen por guiones en las rutas de carpeta en los nombres de nodo creados en [!DNL Adobe Experience Manager]. Además, los caracteres en mayúsculas se convierten a minúsculas en las rutas de carpeta.
-
-Sin embargo, si [!UICONTROL Use legacy conventions when creating nodes for assets and folders] está habilitado en [!UICONTROL Preferences], la aplicación emula el comportamiento de la aplicación v1.10 al cargar carpetas. En v1.10, los nombres de nodo creados en el repositorio respetan los espacios y el formato en mayúsculas de los nombres de carpeta proporcionados por el usuario. Para obtener más información, consulte [Preferencias de la aplicación](/help/install-upgrade.md#set-preferences).
-
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
 
@@ -204,9 +192,76 @@ Puede controlar la concurrencia de carga (aceleración) en **[!UICONTROL Prefere
 >
 >La lista de transferencia no es persistente y no está disponible si sale de la aplicación y la vuelve a abrir.
 
+### Administrar caracteres especiales en nombres de recursos {#special-characters-in-filename}
+
+En la aplicación heredada, los nombres de nodo creados en el repositorio conservaban los espacios y las mayúsculas y minúsculas de los nombres de carpeta proporcionados por el usuario. Para que la aplicación actual emule las reglas de nomenclatura de nodos de la aplicación v1.10, habilite [!UICONTROL Use legacy conventions when creating nodes for assets and folders] en la [!UICONTROL Preferences]. Consulte [preferencias de la aplicación](/help/install-upgrade.md#set-preferences). Esta preferencia heredada está desactivada de forma predeterminada.
+
 >[!NOTE]
 >
->Si los archivos no se cargan y se está conectando a [!DNL Experience Manager] 6.5.1 o una implementación posterior, consulte esta [información de solución de problemas](troubleshoot.md#upload-fails).
+>La aplicación solo cambia los nombres de nodo en el repositorio mediante las siguientes convenciones de nomenclatura. La aplicación conserva el `Title` del recurso tal cual.
+
+<!-- TBD: Do NOT use this table.
+
+| Where do characters occur | Characters | Legacy preference | Renaming convention | Example |
+|---|---|---|---|---|
+| In file name extension | `.` | Enabled or disabled | Retained as is | NA |
+| File or folder name | `. / : [ ] | *` | Enabled or disabled | Replaced with a `-` (hyphen) | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
+| Folder name | `% ; # , + ? ^ { } "` | Disabled | Replaced with a `-` (hyphen) | tbd |
+| File name | `% # ? { } &` | Disabled | Replaced with a `-` (hyphen) | tbd |
+| File name | Whitespaces | Enabled or disabled | Retained as is | NA |
+| Folder name | Whitespaces | Disabled | Replaced with a `-` (hyphen) | tbd |
+| File name | Uppercase characters | Disabled | Retained as is | tbd |
+| Folder name | Uppercase characters | Disabled | Replaced with a `-` (hyphen) | tbd |
+-->
+
+| Caracteres ‡ | Preferencias heredadas en la aplicación | Cuando se producen en nombres de archivo | Cuando ocurre en nombres de carpeta | Ejemplo |
+|---|---|---|---|---|
+| `. / : [ ] | *` | Habilitado o deshabilitado | Se sustituye por `-` (guión). Se mantiene un `.` (punto) en la extensión del nombre de archivo tal cual. | Se sustituye por `-` (guión). | `myimage.jpg` permanece tal cual y  `my.image.jpg` cambia a  `my-image.jpg`. |
+| `% ; # , + ? ^ { } "` y espacios en blanco | ![deseleccionar ](assets/do-not-localize/deselect-icon.png) iconDisabled | Los espacios en blanco se conservan | Se sustituye por `-` (guión). | `My Folder.` cambia a  `my-folder-`. |
+| `# % { } ? & .` | ![deseleccionar ](assets/do-not-localize/deselect-icon.png) iconDisabled | Se sustituye por `-` (guión). | ND. | `#My New File.` cambia a  `-My New File-`. |
+| Caracteres en mayúsculas | ![deseleccionar ](assets/do-not-localize/deselect-icon.png) iconDisabled | El cajón se conserva tal cual. | Se ha cambiado a caracteres en minúsculas. | `My New Folder` cambia a  `my-new-folder`. |
+| Caracteres en mayúsculas | ![selección marcada ](assets/do-not-localize/selection-checked-icon.png) iconEnabled | El cajón se conserva tal cual. | El cajón se conserva tal cual. | ND. |
+
+✓ La lista de caracteres es una lista separada por espacios en blanco.
+
+<!-- TBD: Check if the following is to be included in the footnote.
+
+Do not use &#92;&#92; in the names of files and &#92;&#116; &#38; in the names of folders. 
+-->
+
+
+<!-- TBD: Securing the below presentation of the same content in a comment.
+
+**File names**
+
+| Characters | Replaced by |
+|---|---|
+| &#35; &#37; &#123; &#63; &#125; &#38; &#46; &#47; &#58; &#91; &#124; &#93; &#42; | hyphen (-) |
+| whitespaces | whitespaces are retained |
+| capital case | casing is retained |
+
+>[!CAUTION]
+>
+>Avoid using &#92;&#92; in file names.
+
+**Folder names**
+
+| Characters | Replaced by |
+|---|---|
+| Characters | Replaced by |
+| &#37; &#59; &#35; &#44; &#43; &#63; &#94; &#123; &#123; &#34; &#46; &#47; &#59; &#91; &#93; &#124; &#42; | hyphen (-) |
+| whitespaces | hyphen (-) |
+| capital case | lower case |
+
+>[!CAUTION]
+>
+>Avoid using &#92;&#92; &#92;&#116; &#38; in folder names.
+
+>[!NOTE]
+>
+>If you enable [!UICONTROL Use legacy conventions when creating nodes for assets and folders] in app [!UICONTROL Preferences], then the app emulates v1.10 app behavior when uploading folders. In v1.10, the node names created in the repository respect spaces and casing of the folder names provided by the user. For more information, see [app Preferences](/help/install-upgrade.md#set-preferences).
+
+-->
 
 ## Trabajar con varios recursos {#work-with-multiple-assets}
 
