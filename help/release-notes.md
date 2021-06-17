@@ -4,7 +4,7 @@ description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad 
 mini-toc-levels: 1
 feature: Aplicación de escritorio, información de versión
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 5c8d8b4ee62185529985b652585f8067947b5599
+source-git-commit: d642a33c8e8c2f771a6f996a76167b7f6e42c1ce
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 25%
@@ -70,10 +70,6 @@ Para conocer los detalles, consulte [Novedades de v2.0](introduction.md#whats-ne
 
 **Actualizaciones en la aplicación v2.1.3.1**
 
-* Se añade una opción que (si está seleccionada) permite que la aplicación cargue carpetas y archivos de forma que sus nombres de nodo creados en [!DNL Adobe Experience Manager] sean los mismos que los nombres de archivo y carpeta locales.
-
-   Este comportamiento es similar al comportamiento predeterminado en la versión 1 de la aplicación de escritorio. Mientras que en la versión actual, si la opción no está activada, los espacios en blanco y los caracteres `% ; # , + ? ^ { } "` en los nombres de carpeta se sustituyen por guiones en las rutas de carpeta. Además, los caracteres en mayúsculas se convierten a minúsculas en las rutas de carpeta. Sin embargo, en los nombres de archivo, los caracteres `# % { } ? &` se sustituyen por guiones; pero se conservan los espacios en blanco y las mayúsculas y minúsculas. Para obtener más información, consulte [preferencias de la aplicación](/help/install-upgrade.md#set-preferences) y [Cargar y añadir nuevos recursos](/help/using.md#upload-and-add-new-assets-to-aem).
-
 El error corregido en la versión actual es:
 
 * Las velocidades de carga y descarga de recursos han mejorado, incluso con los recursos grandes. Se ha corregido el problema por el que las cargas de recursos con [!DNL desktop app] fallaban cada vez más cuando se cargaban archivos grandes.
@@ -81,6 +77,10 @@ El error corregido en la versión actual es:
 **Actualización en la aplicación v2.1.2.0**
 
 * Se agrega una nueva opción a [!UICONTROL Clear Cookies] al menú principal de la aplicación. Ayuda con posibles problemas de inicio de sesión, por ejemplo, al cambiar la conexión de un servidor a otro. Consulte [borrar cookies antes de conectar](/help/troubleshoot.md#cannot-login-cookies-issue).
+
+* Se añade una opción que (si está seleccionada) permite que la aplicación cargue carpetas y archivos de forma que sus nombres de nodo creados en [!DNL Adobe Experience Manager] sean los mismos que los nombres de archivo y carpeta locales.
+
+   Este comportamiento es similar al comportamiento predeterminado en la versión 1 de la aplicación de escritorio. Mientras que en la versión actual, si la opción no está activada, los espacios en blanco y los caracteres `% ; # , + ? ^ { } "` en los nombres de carpeta se sustituyen por guiones en las rutas de carpeta. Además, los caracteres en mayúsculas se convierten a minúsculas en las rutas de carpeta. Sin embargo, en los nombres de archivo, los caracteres `# % { } ? &` se sustituyen por guiones; pero se conservan los espacios en blanco y las mayúsculas y minúsculas. Para obtener más información, consulte [preferencias de la aplicación](/help/install-upgrade.md#set-preferences) y [Cargar y añadir nuevos recursos](/help/using.md#upload-and-add-new-assets-to-aem).
 
 **Actualización en la aplicación v2.1.1.0**
 
