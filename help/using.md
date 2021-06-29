@@ -4,14 +4,14 @@ description: Utilice los recursos  [!DNL Adobe Experience Manager] desktop app, 
 mini-toc-levels: 1
 feature: Aplicación de escritorio, administración de recursos
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: 7c413be995ef087fab75114d65e87f6936c8e021
+source-git-commit: dcd29d0bbb32004d970d334c256e659f4a4c39e1
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4053'
 ht-degree: 0%
 
 ---
 
-# Usar la aplicación de escritorio [!DNL Adobe Experience Manager] {#use-aem-desktop-app-v2}
+# Usar aplicación de escritorio [!DNL Adobe Experience Manager] {#use-aem-desktop-app-v2}
 
 Utilice la aplicación de escritorio [!DNL Adobe Experience Manager] para acceder fácilmente a los recursos digitales almacenados en el repositorio [!DNL Adobe Experience Manager] DAM en su escritorio local y utilice estos recursos en cualquier aplicación de escritorio. Puede abrir los recursos en las aplicaciones de escritorio y editarlos localmente. Vuelva a cargar los cambios a [!DNL Experience Manager] con control de versiones para compartirlos con otros usuarios. También puede cargar nuevos archivos y jerarquías de carpetas a [!DNL Experience Manager], crear carpetas y eliminar recursos o carpetas de [!DNL Experience Manager] DAM.
 
@@ -58,14 +58,14 @@ Antes de empezar a usar la aplicación, es necesario que conozca [Cómo funciona
 
 * **[!UICONTROL Upload Changes]**: La aplicación de escritorio carga el recurso actualizado solo cuando se carga explícitamente en el  [!DNL Experience Manager] servidor. Al guardar las ediciones, los cambios se guardan únicamente en el equipo local. Al cargar, el recurso se registra automáticamente y se elimina el icono de bloqueo. Consulte [editar recursos](using.md#edit-assets-upload-updated-assets).
 
-## Habilitar acciones de escritorio en la [!DNL Experience Manager] interfaz web {#desktopactions-v2}
+## Habilitar acciones de escritorio en la interfaz web [!DNL Experience Manager] {#desktopactions-v2}
 
 Desde la interfaz de usuario [!DNL Assets] en un explorador, puede explorar las ubicaciones de los recursos o retirarse y abrir el recurso para editarlo en la aplicación de escritorio. Estas opciones se denominan [!UICONTROL Desktop Actions] y no están activadas de forma predeterminada. Para habilitarlo, siga estos pasos.
 
 1. En la consola [!DNL Assets], haga clic en el icono **[!UICONTROL User]** de la barra de herramientas.
 1. Haga clic en **[!UICONTROL My Preferences]** para mostrar el cuadro de diálogo **[!UICONTROL Preferences]**.
 
-1. En el cuadro de diálogo Preferencias de usuario, seleccione **[!UICONTROL Show Desktop Actions For Assets]**. Haga clic **[!UICONTROL Accept]**.
+1. En el cuadro de diálogo [!UICONTROL User Preferences], seleccione **[!UICONTROL Show Desktop Actions For Assets]** y haga clic en **[!UICONTROL Accept]**.
 
 
    ![Seleccione Mostrar acciones de escritorio para recursos para habilitar las acciones de escritorio](assets/enable_desktop_actions.png)
@@ -113,7 +113,7 @@ La descarga de varios recursos puede producir un rendimiento deficiente si el ta
 
 Si se seleccionan y descargan carpetas, la aplicación solo descarga los recursos almacenados directamente en las carpetas de [!DNL Experience Manager]. No descarga recursos de subcarpetas automáticamente.
 
-## Abra los recursos en el escritorio {#openondesktop-v2}
+## Abra recursos en el escritorio {#openondesktop-v2}
 
 Puede abrir los recursos remotos para verlos en la aplicación nativa. Los recursos se descargan en una carpeta local y se inician en la aplicación nativa asociada al formato de archivo. Puede cambiar la aplicación nativa para abrir tipos de archivo específicos (extensiones) en su Mac o Windows.
 
@@ -173,7 +173,7 @@ En los siguientes casos, es posible que desee descartar los cambios y ediciones 
 
 Si es necesario, active la desprotección. El recurso actualizado se elimina de la carpeta de caché local y se descarga de nuevo al editarlo o abrirlo.
 
-## Cargar y agregar nuevos activos a [!DNL Experience Manager] {#upload-and-add-new-assets-to-aem}
+## Cargar y agregar nuevos recursos a [!DNL Experience Manager] {#upload-and-add-new-assets-to-aem}
 
 Los usuarios pueden agregar nuevos recursos al repositorio de DAM. Por ejemplo, puede ser un fotógrafo o contratista de la agencia que desee agregar un gran número de fotos de una sesión fotográfica al repositorio [!DNL Experience Manager]. Para añadir contenido nuevo a [!DNL Experience Manager], seleccione ![upload to cloud option](assets/do-not-localize/upload_to_cloud_da2.png) en la barra superior de la aplicación. Vaya a los archivos de recursos en el sistema de archivos local y haga clic en **[!UICONTROL Select]**. Como alternativa, para cargar recursos, arrastre los archivos o carpetas en la interfaz de la aplicación. En Windows, si arrastra recursos en una carpeta dentro de la aplicación, los recursos se cargan en la carpeta . Si la carga tarda más, la aplicación muestra una barra de progreso.
 
@@ -192,7 +192,7 @@ Puede controlar la concurrencia de carga (aceleración) en **[!UICONTROL Prefere
 >
 >La lista de transferencia no es persistente y no está disponible si sale de la aplicación y la vuelve a abrir.
 
-### Administrar caracteres especiales en nombres de recursos {#special-characters-in-filename}
+### Administrar caracteres especiales en los nombres de recursos {#special-characters-in-filename}
 
 En la aplicación heredada, los nombres de nodo creados en el repositorio conservaban los espacios y las mayúsculas y minúsculas de los nombres de carpeta proporcionados por el usuario. Para que la aplicación actual emule las reglas de nomenclatura de nodos de la aplicación v1.10, habilite [!UICONTROL Use legacy conventions when creating nodes for assets and folders] en la [!UICONTROL Preferences]. Consulte [preferencias de la aplicación](/help/install-upgrade.md#set-preferences). Esta preferencia heredada está desactivada de forma predeterminada.
 
@@ -303,7 +303,7 @@ Después de cargar, si los cambios esperados no se reflejan en la aplicación, h
 
 Para ver la lista de recursos transferidos en una sesión determinada, consulte [Cargar recursos a [!DNL Experience Manager]](#upload-and-add-new-assets-to-aem).
 
-## Flujo de trabajo avanzado: inicio desde la [!DNL Assets] interfaz web {#adv-workflow-start-from-aem-ui}
+## Flujo de trabajo avanzado: inicio desde la interfaz web [!DNL Assets] {#adv-workflow-start-from-aem-ui}
 
 Si es necesario, inicie el flujo de trabajo desde la interfaz web de Assets. La aplicación de escritorio se integra con [!DNL Experience Manager] para asumir el control cuando se solicita mediante las acciones del escritorio.
 
