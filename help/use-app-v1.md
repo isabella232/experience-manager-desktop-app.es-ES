@@ -1,17 +1,16 @@
 ---
 title: Utilice la versión 1.10 de la aplicación de escritorio [!DNL Experience Manager] .
 description: Aprenda a utilizar la versión 1.10 de la aplicación de escritorio de Adobe Experience Manager y a optimizar su trabajo con recursos en el escritorio.
-feature: Desktop App,Asset Management
+feature: Aplicación de escritorio, administración de recursos
 exl-id: 2fdc1c8d-b822-4cca-ad06-bd875a00aa6d
-translation-type: tm+mt
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+source-git-commit: dcd29d0bbb32004d970d334c256e659f4a4c39e1
 workflow-type: tm+mt
-source-wordcount: '2377'
+source-wordcount: '2371'
 ht-degree: 0%
 
 ---
 
-# Usar [!DNL Experience Manager] aplicación de escritorio v1.10 {#use-aem-desktop-app-v1x}
+# Usar la aplicación de escritorio v1.10 de [!DNL Experience Manager] {#use-aem-desktop-app-v1x}
 
 Con la aplicación, los recursos de [!DNL Experience Manager] son fácilmente accesibles desde el escritorio local y se pueden usar en cualquier aplicación de escritorio. Los recursos pueden mostrarse fácilmente en el Buscador de Mac o en el Explorador de Windows, abrirse en aplicaciones de escritorio y modificarse localmente. Los cambios se guardan de nuevo en [!DNL Experience Manager] con una nueva versión creada en el repositorio.
 
@@ -19,7 +18,7 @@ Esta integración permite que diversas funciones de la organización administren
 
 Las tareas clave que realiza mediante la aplicación de escritorio v1 [!DNL Experience Manager] incluyen:
 
-1. [Conectarse con  [!DNL Experience Manager] un servidor](#installandconnect)
+1. [Conectarse con un servidor [!DNL Experience Manager] ](#installandconnect)
 1. [Abrir recursos directamente en el escritorio](#openondesktop)
 1. [Editar y extraer recursos del escritorio](#workonassets)
 1. [Cargar recursos y carpetas de forma masiva](#bulkupload)
@@ -30,7 +29,7 @@ Para ver las distintas recomendaciones recomendadas y no recomendadas, consulte 
 >
 >La aplicación de escritorio se introdujo en la versión [!DNL Experience Manager] 6.1 y se denominó [!DNL Experience Manager Assets Companion App].
 
-## [!DNL Experience Manager] puntos de contacto de la aplicación de escritorio en el flujo de trabajo creativo  {#aem-desktop-app-touch-points-in-the-creative-workflow}
+## [!DNL Experience Manager] puntos de contacto de la aplicación de escritorio en el flujo de trabajo creativo {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
 [!DNL Experience Manager] la aplicación de escritorio, junto con  [!DNL Assets], se integra en el flujo de trabajo creativo y ofrece los siguientes puntos de contacto.
 
@@ -38,7 +37,7 @@ Para ver las distintas recomendaciones recomendadas y no recomendadas, consulte 
 
 [!DNL Experience Manager] puntos de contacto de la aplicación de escritorio en el flujo de trabajo creativo
 
-## Instale y conecte la aplicación al servidor [!DNL Experience Manager] {#installandconnect}
+## Instalación y conexión de la aplicación al servidor [!DNL Experience Manager] {#installandconnect}
 
 Antes de empezar a crear o editar los recursos creativos, conecte la aplicación de escritorio con el servidor [!DNL Assets] para descargar y cargar recursos en el repositorio. Realice las siguientes tareas:
 
@@ -53,7 +52,7 @@ Antes de empezar a crear o editar los recursos creativos, conecte la aplicación
 >
 >Para parte de o todos los pasos de instalación y configuración, es posible que necesite ayuda de su [!DNL Experience Manager] administrador o administrador del sistema.
 
-### Instale la aplicación {#installapp}
+### Instalación de la aplicación {#installapp}
 
 Para utilizar la aplicación de escritorio [!DNL Experience Manager], asegúrese de que la aplicación admite la versión del servidor [!DNL Experience Manager]. Descargue el archivo de instalación (binario) apropiado para su sistema operativo (Mac o Windows) e instale la aplicación.
 
@@ -66,7 +65,7 @@ Puede ser necesaria una configuración detallada en función de las preferencias
    >
    >Solo se puede instalar una instancia de la aplicación de escritorio [!DNL Experience Manager] y estar activa a la vez.
 
-### Comprenda las opciones y preferencias en la aplicación {#inapppref}
+### Conozca las opciones y preferencias en la aplicación {#inapppref}
 
 La aplicación permite que la configuración se conecte y desconecte de los servidores [!DNL Experience Manager], vea el estado de las cargas, administre la caché local, etc. La configuración predeterminada funciona para un usuario típico de la aplicación. Puede modificar la configuración para obtener más información de la aplicación y de la integración con el servidor [!DNL Experience Manager]. Los distintos ajustes se describen a continuación en detalle.
 
@@ -94,7 +93,7 @@ La aplicación admite la configuración proxy en Mac y Windows. La configuració
 
    ![Proporcionar credenciales de  [!DNL Experience Manager] servidor en la pantalla de inicio de sesión de la aplicación de  [!DNL Experience Manager] escritorio](assets/login_screen_v1.png)
 
-### Habilitar acciones de escritorio en la [!DNL Experience Manager] interfaz web {#desktopactions}
+### Habilitar acciones de escritorio en la interfaz web [!DNL Experience Manager] {#desktopactions}
 
 Desde la interfaz de usuario de Assets, puede explorar las ubicaciones de los recursos o retirarse y abrir el recurso para editarlo en la aplicación de escritorio. Estas opciones se denominan acciones de escritorio y no están activadas de forma predeterminada. Siga estos pasos para habilitarlo.
 
@@ -103,13 +102,13 @@ Desde la interfaz de usuario de Assets, puede explorar las ubicaciones de los re
 
    ![[!DNL Experience Manager] interfaz con preferencias de usuario](assets/aem_ui_user_preferences.png)
 
-1. En el cuadro de diálogo Preferencias de usuario, seleccione **[!UICONTROL Show Desktop Actions For Assets]**. Haga clic **[!UICONTROL Accept]**.
+1. En el cuadro de diálogo [!UICONTROL User Preferences], seleccione **[!UICONTROL Show Desktop Actions For Assets]** y haga clic en **[!UICONTROL Accept]**.
 
    ![Marque  [!UICONTROL Show Desktop Actions For Assets] para habilitar acciones de escritorio](assets/enable_desktop_actions.png)
 
-   *Figura: Marque Mostrar acciones de escritorio para recursos para habilitar las acciones de escritorio.*
+   *Figura: Marque  [!UICONTROL Show Desktop Actions For Assets] para habilitar las acciones de escritorio.*
 
-## Acceda y abra recursos en su escritorio {#openondesktop}
+## Acceso y apertura de recursos en el escritorio {#openondesktop}
 
 Al hacer clic en **Abrir** para abrir un recurso en el equipo local, la aplicación descarga el recurso en su caché interna. La aplicación inicia la aplicación de escritorio nativa asociada al tipo de archivo del recurso descargado.
 
@@ -150,7 +149,7 @@ Después de asignar el repositorio [!DNL Assets] a la unidad local, puede activa
 
 Para localizar el recurso en particular en el sistema de archivos local, haga clic en **Mostrar** acción rápida ![Mostrar icono](assets/do-not-localize/aemassets_reveal_icon.png). Como alternativa, elija **Mostrar** en el menú **Acciones de escritorio** de la barra de herramientas.
 
-## Comprender los estados de los recursos {#understand-the-asset-statuses}
+## Explicación de los estados de los recursos {#understand-the-asset-statuses}
 
 | ![Icono de aplicación predeterminado de Windows](assets/do-not-localize/win_default.png) | La aplicación está conectada al servidor y todos los recursos están sincronizados. |
 --- |--- |
@@ -158,9 +157,9 @@ Para localizar el recurso en particular en el sistema de archivos local, haga cl
 | ![Icono de sincronización de archivos de Windows](assets/do-not-localize/win_sync.png) | Los recursos se están sincronizando. Los archivos se están cargando o descargando. Puede ver los estados exactos y pausar las transferencias desde la ventana Estado del recurso. |
 | ![Icono de reconexión de Windows](assets/do-not-localize/win_refresh.png) | La aplicación está intentando volver a conectarse. Potencialmente, los problemas de red están provocando que se desconecte. |
 
-## Trabaje en sus recursos {#workonassets}
+## Trabajar en los recursos {#workonassets}
 
-### Consulte los recursos de la [!DNL Experience Manager] interfaz web {#check-out-assets-from-the-aem-web-interface}
+### Consulte los recursos de la interfaz web [!DNL Experience Manager] {#check-out-assets-from-the-aem-web-interface}
 
 [!DNL Assets] permite extraer recursos para editarlos y volver a protegerlos después de completar los cambios. Después de retirar un recurso, solo puede editarlo, anotarlo, publicarlo, moverlo o eliminarlo. Si se cierra un recurso, este se bloquea y se evita que otros usuarios realicen cualquiera de estas operaciones. Para poder extraer o incorporar recursos, debe disponer de acceso de escritura.
 
@@ -187,7 +186,7 @@ Existen dos formas de extraer recursos de la interfaz web [!DNL Experience Manag
 1. Seleccione la opción de menú Abrir. Los recursos seleccionados se abren en modo de vista previa.
 1. Para editar los recursos, seleccione la opción Editar . Los recursos se abren en modo de edición.
 
-### Consulte los activos desde Finder en Mac OS {#check-out-assets-on-mac}
+### Consulte los recursos desde Finder en Mac OS {#check-out-assets-on-mac}
 
 La aplicación permite extraer archivos de recursos para evitar que otros usuarios modifiquen los archivos en los que está trabajando.
 
@@ -205,7 +204,7 @@ La aplicación permite extraer archivos de recursos para evitar que otros usuari
 
 1. Para proteger el recurso y que esté disponible para otros usuarios, toque o haga clic en el icono de protección del cuadro de diálogo Información del recurso .
 
-### Consulte los recursos en Windows {#check-out-assets-on-windows}
+### Comprobar recursos en Windows {#check-out-assets-on-windows}
 
 La aplicación permite extraer archivos de recursos para evitar que otros usuarios modifiquen los archivos en los que está trabajando.
 
@@ -224,7 +223,7 @@ La aplicación permite extraer archivos de recursos para evitar que otros usuari
 
 1. Para proteger el recurso y que esté disponible para otros usuarios, toque o haga clic en el icono de registro del cuadro de diálogo **Información del recurso**.
 
-### Insertar un recurso utilizando Finder o Explorer y utilizando la interfaz web {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
+### Insertar un recurso mediante Finder o Explorer y utilizando la interfaz web {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
 
 Cuando haya terminado de editar los recursos, guárdelos en la aplicación de escritorio. En el menú contextual, seleccione **Más información de recursos** y haga clic en proteger.
 
@@ -232,7 +231,7 @@ Los recursos se cargan en el servidor [!DNL Experience Manager]. De forma opcion
 
 Un recurso se carga automáticamente en [!DNL Experience Manager] después de guardar los cambios localmente. El registro pone el recurso a disposición de otros usuarios [!DNL Experience Manager] para su edición.
 
-### Carga masiva de recursos y carpetas al [!DNL Experience Manager] servidor {#bulkupload}
+### Carga masiva de recursos y carpetas al servidor [!DNL Experience Manager] {#bulkupload}
 
 Con la aplicación de escritorio [!DNL Experience Manager], puede cargar una carpeta entera que contenga recursos del directorio de archivos local a [!DNL Assets]. De este modo, todos los recursos de la carpeta se cargan de forma masiva, en lugar de tener que cargarlos de a una.
 
@@ -256,5 +255,5 @@ También puede seleccionar los archivos o carpetas que desea cargar en [!DNL Exp
 
 >[!MORELIKETHIS]
 >
->* [ [!DNL Experience Manager] Solución de problemas de la aplicación de escritorio](troubleshoot-app-v1.md)
+>* [Solución de problemas [!DNL Experience Manager] de la aplicación de la aplicación de escritorio](troubleshoot-app-v1.md)
 
