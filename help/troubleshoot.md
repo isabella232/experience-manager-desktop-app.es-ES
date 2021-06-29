@@ -2,10 +2,9 @@
 title: 'Prácticas recomendadas para la solución de problemas y la aplicación de escritorio [!DNL Adobe Experience Manager] '
 description: Siga las prácticas recomendadas y resuelva los problemas ocasionales relacionados con la instalación, actualización, configuración, etc.
 exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
-translation-type: tm+mt
-source-git-commit: b893ad24d360ed382cab50771413219ea7bda09e
+source-git-commit: db5aaf7127b94879cb24842fb41b55c099d6221d
 workflow-type: tm+mt
-source-wordcount: '2261'
+source-wordcount: '2260'
 ht-degree: 0%
 
 ---
@@ -38,7 +37,7 @@ Siga las siguientes prácticas recomendadas para evitar algunos problemas comune
 
 * **Tiempo de espera**: Actualmente, la aplicación de escritorio no tiene un valor de tiempo de espera que se pueda configurar y que desconecte la conexión entre el  [!DNL Experience Manager] servidor y la aplicación de escritorio después de un intervalo de tiempo fijo. Al cargar recursos de gran tamaño, si la conexión supera el tiempo de espera después de un tiempo, la aplicación vuelve a intentar cargar el recurso varias veces aumentando el tiempo de espera de carga. No se recomienda cambiar la configuración de tiempo de espera predeterminada.
 
-## Solución de problemas de {#troubleshooting-prep}
+## Solución de problemas {#troubleshooting-prep}
 
 Para solucionar los problemas de las aplicaciones de escritorio, tenga en cuenta la siguiente información. Además, le prepara para transmitir mejor los problemas al Servicio de atención al cliente de Adobe si decide solicitar asistencia técnica.
 
@@ -84,7 +83,7 @@ Para cambiar el nivel de detalles en los archivos de registro:
 
 Los niveles de registro válidos son DEBUG, INFO, WARN o ERROR. La gran diversidad de los registros es mayor en DEBUG y menor en ERROR.
 
-### Habilitar el modo de depuración {#enable-debug-mode}
+### Habilitar modo de depuración {#enable-debug-mode}
 
 Para solucionar problemas, puede habilitar el modo de depuración y obtener más información en los registros.
 
@@ -108,7 +107,7 @@ Para habilitar el modo de depuración en Windows:
 
 `AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`.
 
-### Conozca la versión [!DNL Adobe Experience Manager] de la aplicación de escritorio {#know-app-version-v2}
+### Conozca la versión de la aplicación de escritorio [!DNL Adobe Experience Manager] {#know-app-version-v2}
 
 Para ver el número de versión:
 
@@ -148,7 +147,7 @@ Para borrar la caché, elimine el directorio del extremo [!DNL Adobe Experience 
 
 La eliminación de la caché de la aplicación de escritorio [!DNL Adobe Experience Manager] es una tarea preliminar de solución de problemas que puede resolver varios problemas. Borre la caché de las preferencias de la aplicación. Consulte [establecer preferencias](install-upgrade.md#set-preferences). La ubicación predeterminada de la carpeta de caché es:
 
-## No se pueden ver los activos colocados {#placed-assets-missing}
+## No se pueden ver los recursos colocados {#placed-assets-missing}
 
 Si no puede ver los recursos que usted u otros profesionales creativos colocaron en los archivos de soporte (por ejemplo, archivos INDD), compruebe lo siguiente:
 
@@ -160,7 +159,7 @@ Si no puede ver los recursos que usted u otros profesionales creativos colocaron
 
 * Permisos. Para comprobar si tiene permisos para recuperar los recursos colocados, póngase en contacto con su administrador de [!DNL Experience Manager].
 
-### Las ediciones a archivos en la interfaz de usuario de la aplicación de escritorio no se reflejan en [!DNL Adobe Experience Manager] inmediatamente {#changes-on-da-not-visible-on-aem}
+### Las ediciones realizadas en archivos de la interfaz de usuario de la aplicación de escritorio no se reflejan inmediatamente en [!DNL Adobe Experience Manager] {#changes-on-da-not-visible-on-aem}
 
 [!DNL Adobe Experience Manager] la aplicación de escritorio permite al usuario decidir cuándo se completan todas las ediciones de un archivo. Según el tamaño y la complejidad de un archivo, se tarda una cantidad de tiempo considerable en transferir la nueva versión de un archivo a [!DNL Adobe Experience Manager]. El diseño de la aplicación requiere minimizar el número de veces que un archivo se transfiere de un lado a otro, en lugar de adivinar cuándo se completan las ediciones del archivo y se cargan automáticamente. Se recomienda que el usuario inicie de nuevo la transferencia del archivo a [!DNL Adobe Experience Manager] al elegir cargar los cambios de un archivo.
 
@@ -183,7 +182,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 Si utiliza la aplicación de escritorio con [!DNL Experience Manager] 6.5.1 o posterior, actualice el conector S3 o Azure a la versión 1.10.4 o posterior. Resuelve el problema de error de carga de archivos relacionado con [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Consulte [instrucciones de instalación](install-upgrade.md#install-v2).
 
-## [!DNL Experience Manager] problemas de conexión de la aplicación de escritorio  {#connection-issues}
+## [!DNL Experience Manager] problemas de conexión de la aplicación de escritorio {#connection-issues}
 
 Si tiene problemas generales de conectividad, puede obtener más información sobre lo que hace la aplicación de escritorio [!DNL Experience Manager].
 
@@ -299,7 +298,7 @@ Raramente la aplicación puede no responder, mostrar solo una pantalla en blanco
 
 En ambos métodos, la aplicación se inicia en la carpeta raíz DAM.
 
-## Ocultar activos caducados {#hide-expired-assets}
+## Ocultar recursos caducados {#hide-expired-assets}
 
 Al examinar recursos desde la interfaz de usuario [!DNL Experience Manager], no se muestran los recursos caducados. Para evitar la visualización, búsqueda y captura de recursos caducados al examinar recursos desde la aplicación de escritorio y Asset Link, los administradores pueden realizar la siguiente configuración. La configuración funciona para todos los usuarios, independientemente del privilegio de administrador.
 
@@ -327,5 +326,5 @@ Create Jira ticket with the following information:
 >[!MORELIKETHIS]
 >
 >* [Problemas conocidos](release-notes.md#known-issues-v2)
->* [Evitar conflictos de edición](using.md#adv-workflow-collaborate-avoid-conflicts)
+* [Evitar conflictos de edición](using.md#adv-workflow-collaborate-avoid-conflicts)
 
