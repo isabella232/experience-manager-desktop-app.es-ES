@@ -1,17 +1,16 @@
 ---
 title: 'Introducción a la aplicación de escritorio [!DNL Experience Manager] '
 description: Aprenda a utilizar [!DNL Adobe Experience Manager] desktop app to optimize the asset management workflows for creative users when using [!DNL Adobe Experience Manager Assets] directamente desde su escritorio.
-role: Business Practitioner, Administrator, Leader
-translation-type: tm+mt
-source-git-commit: a0a7081b705957ef6d1a72bc3c54603b1cff5897
+role: User, Admin, Leader
+exl-id: 5da36ac5-ab5b-4f8d-b446-ebe2360ec464
+source-git-commit: b661fedb6e33599921d39c0597c7d9f8e576798b
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '619'
 ht-degree: 64%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] Información general de la aplicación de escritorio  {#overview-v2}
+# [!DNL Adobe Experience Manager] Información general de la aplicación de escritorio {#overview-v2}
 
 Adobe ofrece flujos de trabajo conectados en todas sus soluciones para permitir una mejora de la productividad para los usuarios de la línea de negocios y los profesionales creativos. La aplicación de escritorio [!DNL Adobe Experience Manager] conecta repositorios y aplicaciones de escritorio, incluidas las de Adobe y de terceros, para proporcionar un acceso más rápido a los recursos y a los flujos de trabajo optimizados. Esto ahorra tiempo y reduce el esfuerzo mejora la eficacia de los usuarios que trabajan con recursos de [!DNL Adobe Experience Manager] en sus flujos de trabajo de escritorio.
 
