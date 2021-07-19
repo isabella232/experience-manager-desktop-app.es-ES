@@ -4,9 +4,9 @@ description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad 
 mini-toc-levels: 1
 feature: Aplicación de escritorio, información de versión
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 56596ade6e7aca5020af6df485289c5902417594
+source-git-commit: d83f04fb4757bb8025489da7866d36a51ddfe374
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1668'
 ht-degree: 24%
 
 ---
@@ -70,7 +70,7 @@ Para conocer los detalles, consulte [Novedades de v2.0](introduction.md#whats-ne
 
 **Actualizaciones en la aplicación v2.1.3.2**
 
-La nueva versión de la aplicación viene con algunas correcciones importantes.
+La nueva versión de la aplicación ofrece una corrección de errores.
 
 **Actualizaciones en la aplicación v2.1.3.1**
 
