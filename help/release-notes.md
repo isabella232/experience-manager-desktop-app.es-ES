@@ -4,16 +4,16 @@ description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad 
 mini-toc-levels: 1
 feature: Aplicación de escritorio, información de versión
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 32aff5d66f2cb67ab4bb440d7ace747a5cf1dd26
+source-git-commit: 56596ade6e7aca5020af6df485289c5902417594
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 25%
+source-wordcount: '1670'
+ht-degree: 24%
 
 ---
 
 # [!DNL Adobe Experience Manager] Notas de la versión de la aplicación de escritorio {#release-notes-v2}
 
-A continuación se muestra la información de la versión 2.1 (2.1.3.1) de la aplicación de escritorio más reciente. La fecha de la versión es el 8 de junio de 2021.
+A continuación se muestra la información de la versión 2.1 (2.1.3.2) de la aplicación de escritorio más reciente. La fecha de la versión es el 19 de julio de 2021.
 
 Las **versiones [!DNL Experience Manager] compatibles** son:
 
@@ -33,9 +33,9 @@ Las **URL de descarga** para el sistema operativo compatible son:
 
 | Sistema operativo | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
-| macOS | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.2.dmg) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.3.2.dmg) |
-| Windows de 64 bits | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.3.1.exe) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.3.1.exe) |
-| Windows de 32 bits | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) |
+| macOS (v2.1.3.2) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.2.dmg) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.3.2.dmg) |
+| Windows de 64 bits (v2.1.3.2) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.3.2.exe) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.3.2.exe) |
+| Windows de 32 bits (v2.1.3.1) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) |
 
 >[!NOTE]
 >
@@ -68,11 +68,15 @@ La función es compatible con las versiones [!DNL Adobe Creative Cloud] 2018 y [
 
 Para conocer los detalles, consulte [Novedades de v2.0](introduction.md#whats-new-v2).
 
+**Actualizaciones en la aplicación v2.1.3.2**
+
+La nueva versión de la aplicación viene con algunas correcciones importantes.
+
 **Actualizaciones en la aplicación v2.1.3.1**
 
 El error corregido en la versión actual es:
 
-* Las velocidades de carga y descarga de recursos han mejorado, incluso con los recursos grandes. Se ha corregido el problema por el que las cargas de recursos con [!DNL desktop app] fallaban cada vez más cuando se cargaban archivos grandes.
+* Las velocidades de carga y descarga de recursos han mejorado, incluso con los recursos grandes. Esta versión solucionó un problema por el cual las cargas de recursos con [!DNL desktop app] fallaban a veces cuando se cargaban archivos muy grandes.
 
 **Actualización en la aplicación v2.1.2.0**
 
