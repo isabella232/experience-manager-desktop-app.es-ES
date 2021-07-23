@@ -4,10 +4,10 @@ description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad 
 mini-toc-levels: 1
 feature: Aplicación de escritorio, información de versión
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: d83f04fb4757bb8025489da7866d36a51ddfe374
+source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 24%
+source-wordcount: '1675'
+ht-degree: 23%
 
 ---
 
@@ -22,7 +22,7 @@ Las **versiones [!DNL Experience Manager] compatibles** son:
 * [!DNL Experience Manager] 6.4.4 o posterior, en Adobe Managed Services (AMS) o local. Consulte las [notas de la versión del Service Pack](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=es).
 * [!DNL Experience Manager] 6.4.0 - 6.4.3 con el paquete de  [compatibilidad ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) instalado, en Adobe Managed Services (AMS) o On-Premise.
 * [!DNL Experience Manager] 6.3 (con paquete de compatibilidad)
-* [!DNL Experience Manager] 6.3.3.1 o posterior con el paquete de  [compatibilidad ](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) instalado. La aplicación de escritorio no es compatible con [!DNL Experience Manager] 6.3.3.0 ni con versiones anteriores.
+* [!DNL Experience Manager] 6.3.3.1 o posterior con el paquete de  [compatibilidad ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) instalado. La aplicación de escritorio no es compatible con [!DNL Experience Manager] 6.3.3.0 ni con versiones anteriores.
 
 [!DNL Adobe Experience Manager] la aplicación de escritorio está disponible para los siguientes sistemas  **operativos**:
 
