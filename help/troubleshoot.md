@@ -2,7 +2,7 @@
 title: 'Prácticas recomendadas para la solución de problemas y la aplicación de escritorio [!DNL Adobe Experience Manager] '
 description: Siga las prácticas recomendadas y resuelva los problemas ocasionales relacionados con la instalación, actualización, configuración, etc.
 exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
-source-git-commit: db5aaf7127b94879cb24842fb41b55c099d6221d
+source-git-commit: 2c846fb9cd82691f6439e93429dffcca8127ba68
 workflow-type: tm+mt
 source-wordcount: '2260'
 ht-degree: 0%
@@ -33,13 +33,13 @@ Siga las siguientes prácticas recomendadas para evitar algunos problemas comune
 
 * **Tenga en cuenta la red**: El rendimiento de la red es fundamental para el rendimiento de la aplicación de  [!DNL Experience Manager] escritorio. Si se enfrenta a una respuesta lenta a transferencias de archivos u operaciones masivas, desactive las funciones o aplicaciones que puedan causar mucho tráfico de red.
 
-* **Casos de uso no compatibles con la aplicación** de escritorio: No utilice la aplicación para la migración de recursos (necesita planificación y otras herramientas); para operaciones DAM de gran capacidad (como mover carpetas grandes, cargas grandes, buscar archivos mediante búsquedas avanzadas de metadatos); y como cliente de sincronización (los principios de diseño y los patrones de uso son diferentes de los clientes en sincronización como Microsoft OneDrive o Adobe Creative Cloud Desktop Sync).
+* **Casos de uso no compatibles con la aplicación** de escritorio: No utilice la aplicación para la migración de recursos (necesita planificación y otras herramientas); para operaciones DAM de gran capacidad (como mover carpetas grandes, cargas grandes, buscar archivos mediante búsquedas avanzadas de metadatos); y como cliente de sincronización (los principios de diseño y los patrones de uso son diferentes de los clientes en sincronización como Microsoft OneDrive o Adobe Creative Cloud Desktop sync).
 
 * **Tiempo de espera**: Actualmente, la aplicación de escritorio no tiene un valor de tiempo de espera que se pueda configurar y que desconecte la conexión entre el  [!DNL Experience Manager] servidor y la aplicación de escritorio después de un intervalo de tiempo fijo. Al cargar recursos de gran tamaño, si la conexión supera el tiempo de espera después de un tiempo, la aplicación vuelve a intentar cargar el recurso varias veces aumentando el tiempo de espera de carga. No se recomienda cambiar la configuración de tiempo de espera predeterminada.
 
 ## Solución de problemas {#troubleshooting-prep}
 
-Para solucionar los problemas de las aplicaciones de escritorio, tenga en cuenta la siguiente información. Además, le prepara para transmitir mejor los problemas al Servicio de atención al cliente de Adobe si decide solicitar asistencia técnica.
+Para solucionar los problemas de las aplicaciones de escritorio, tenga en cuenta la siguiente información. Además, le prepara para transmitir mejor los problemas al servicio de asistencia al cliente de Adobe si decide solicitar asistencia técnica.
 
 ### Ubicación de los archivos de registro {#check-log-files-v2}
 
@@ -53,7 +53,7 @@ Al cargar muchos recursos, si algunos archivos no se cargan, consulte el archivo
 
 >[!NOTE]
 >
->Al trabajar con el Servicio de atención al cliente de Adobe en una solicitud de asistencia o ticket, se le puede pedir que comparta los archivos de registro para ayudar al equipo del Servicio de atención al cliente a comprender el problema. Archive toda la carpeta `Logs` y compártala con el contacto del Servicio de atención al cliente.
+>Cuando trabaje con el servicio de asistencia al cliente de Adobe en una solicitud de asistencia o ticket, se le puede pedir que comparta los archivos de registro para ayudar al equipo de asistencia al cliente a comprender el problema. Archive toda la carpeta `Logs` y compártala con su contacto de asistencia al cliente.
 
 ### Cambiar el nivel de detalles en los archivos de registro {#level-of-details-in-log}
 
@@ -167,7 +167,7 @@ Si no puede ver los recursos que usted u otros profesionales creativos colocaron
 
 Ocasionalmente pueden producirse problemas al actualizar la aplicación de escritorio [!DNL Experience Manager] en macOS. Esto se debe a que la carpeta del sistema heredada de la aplicación de escritorio [!DNL Experience Manager] impide que las nuevas versiones de la aplicación de escritorio [!DNL Experience Manager] se carguen correctamente. Para solucionar este problema, las siguientes carpetas y archivos se pueden eliminar manualmente.
 
-Antes de ejecutar los siguientes pasos, arrastre la aplicación `Adobe Experience Manager Desktop` desde la carpeta Aplicaciones macOS a la Papelera. A continuación, abra terminal, ejecute el siguiente comando y proporcione la contraseña cuando se le solicite.
+Antes de ejecutar los siguientes pasos, arrastre la aplicación `Adobe Experience Manager Desktop` desde la carpeta Aplicaciones de macOS a la Papelera. A continuación, abra terminal, ejecute el siguiente comando y proporcione la contraseña cuando se le solicite.
 
 ```shell
 sudo rm -rf ~/Library/Application\ Support/com.adobe.aem.desktop
@@ -303,7 +303,7 @@ En ambos métodos, la aplicación se inicia en la carpeta raíz DAM.
 Al examinar recursos desde la interfaz de usuario [!DNL Experience Manager], no se muestran los recursos caducados. Para evitar la visualización, búsqueda y captura de recursos caducados al examinar recursos desde la aplicación de escritorio y Asset Link, los administradores pueden realizar la siguiente configuración. La configuración funciona para todos los usuarios, independientemente del privilegio de administrador.
 
 * [Configuración en el Experience Manager 6.5 para ocultar los recursos](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#hide-expired-assets-via-acp-api) caducados.
-* [Configuración en Experience Manager como Cloud Service para ocultar recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api) caducados.
+* [Configuración en el Experience Manager as a Cloud Service para ocultar los recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api) caducados.
 
 <!--
 ### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}
@@ -326,5 +326,5 @@ Create Jira ticket with the following information:
 >[!MORELIKETHIS]
 >
 >* [Problemas conocidos](release-notes.md#known-issues-v2)
-* [Evitar conflictos de edición](using.md#adv-workflow-collaborate-avoid-conflicts)
+>* [Evitar conflictos de edición](using.md#adv-workflow-collaborate-avoid-conflicts)
 

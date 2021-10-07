@@ -1,16 +1,15 @@
 ---
-source-git-commit: 0fc393ac74d114de53f0484f6f5121d56365c1e0
+source-git-commit: 2c846fb9cd82691f6439e93429dffcca8127ba68
 workflow-type: tm+mt
-translation-type: tm+mt
 source-wordcount: '719'
-ht-degree: 53%
+ht-degree: 50%
 
 ---
 # Directrices para contribuir a la documentación de [!DNL Adobe Experience Manager]
 
 ## Filosofía de la documentación
 
-Sabemos que los usuarios de [!DNL Adobe Experience Manager] están trabajando en entornos altamente competitivos, esforzándose por crear experiencias digitales que los separen de sus competidores. Por lo tanto, es vital que, cuando Adobe proporcione nuevas herramientas avanzadas en [!DNL Experience Manager], estas herramientas se complementen con documentación precisa y clara que permita al cliente aprovechar inmediatamente su inversión en [!DNL Experience Manager] y maximizar el ROI.
+Sabemos que los usuarios de [!DNL Adobe Experience Manager] están trabajando en entornos altamente competitivos, esforzándose por crear experiencias digitales que los separen de sus competidores. Por lo tanto, es vital que, cuando Adobe ofrece nuevas herramientas avanzadas en [!DNL Experience Manager], estas herramientas se complementen con documentación precisa y clara para permitir que el cliente aproveche inmediatamente su inversión en [!DNL Experience Manager] y maximice el ROI.
 
 El objetivo de la documentación [!DNL Experience Manager] es poner la documentación en manos de los usuarios de [!DNL Experience Manager] lo antes posible. Por lo tanto, queremos que nuestra documentación sea precisa y útil y nos esforzamos por actualizarla y mejorarla continuamente.
 
@@ -38,9 +37,9 @@ Las excepciones a esta regla se aplican a las notas de la versión donde los pro
 
 Cualquier idea que tenga para mejorar la [!DNL Experience Manager] documentación es bienvenida como contribución. Sin embargo, los comentarios, las incidencias y las solicitudes de extracción están destinados únicamente a *contribuciones*. No están pensados para utilizarse para responder a sus preguntas sobre cómo utilizar [!DNL Experience Manager], implementar su proyecto [!DNL Experience Manager] ni resolver problemas técnicos.
 
-Cualquier pregunta sobre el uso de [!DNL Experience Manager] o los errores técnicos que pueda tener debe notificarse a través del proceso de soporte normal a través del [[!DNL Experience Cloud] portal de soporte](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) o discutirse en la [comunidad de Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
+Cualquier pregunta sobre el uso de [!DNL Experience Manager] o errores técnicos que pueda haber sido notificada debe ser informada a través del proceso de soporte normal a través del [[!DNL Experience Cloud] portal de soporte](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) o discutida en la [comunidad de Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
 
-***[!DNL Experience Manager]Las contribuciones a la documentación de no sustituyen al equipo de asistencia de Adobe*** y se rechazará cualquier contribución de este tipo que busque respuestas a preguntas relacionadas con la asistencia.
+***[!DNL Experience Manager]las contribuciones de documentación no sustituyen a Adobe Customer*** Support y cualquier contribución de este tipo que busque respuestas a preguntas relacionadas con la asistencia será rechazada.
 
 ### Las contribuciones deben hacer referencia claramente a las páginas de documentación afectadas.
 
@@ -88,6 +87,6 @@ Intente evitar cualquier referencia directa a una versión específica en todo e
 
 ### Uso del día, [!DNL Experience Manager], CQ, CRX
 
-Consulte el producto con el nombre completo **Adobe Experience Manager** para conocer el primer uso en un artículo y, a continuación, consulte **Experience Manager**.
+Consulte el producto con el nombre completo **Adobe Experience Manager** para conocer el primer uso en un artículo y, a continuación, consulte el producto como **Experience Manager**.
 
 No utilice los términos Day, Day Software, CQ y CRX, excepto cuando sea inevitable, como en nombres de clase o cuando se haga referencia al historial de [!DNL Experience Manager].
