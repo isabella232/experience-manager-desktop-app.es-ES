@@ -4,16 +4,16 @@ description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad 
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 9b7cb9c7114c1518f9b6c2e4c9ed9771f4a1716d
+source-git-commit: 88d74bb9bff7ec5d454600d383f27dcd5dbbe775
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1711'
 ht-degree: 23%
 
 ---
 
 # [!DNL Adobe Experience Manager] Notas de la versión de la aplicación de escritorio {#release-notes-v2}
 
-A continuación se muestra la información de la versión 2.1 (2.1.3.4) de la aplicación de escritorio más reciente. La fecha de la versión es el 4 de noviembre de 2021.
+A continuación se muestra la información de la versión 2.1 (2.1.4.0) de la aplicación de escritorio más reciente. La fecha de la versión es el 16 de diciembre de 2021.
 
 La variable **admitido [!DNL Experience Manager] versiones** son:
 
@@ -64,6 +64,10 @@ La función es compatible con [!DNL Adobe Creative Cloud] 2018 y [!DNL Adobe Cre
 ## Nuevas funciones, mejoras y correcciones de errores {#what-is-new}
 
 Para conocer los detalles, consulte [Novedades de la versión 2.0](introduction.md#whats-new-v2).
+
+**Actualizaciones en la aplicación v2.1.4.0**
+
+La nueva versión de la aplicación ofrece una corrección de errores.
 
 **Actualizaciones en la aplicación v2.1.3.4**
 
