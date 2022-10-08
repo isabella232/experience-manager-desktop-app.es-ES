@@ -3,9 +3,9 @@ title: Instalación y configuración de la aplicación de escritorio
 description: Instalación y configuración [!DNL Adobe Experience Manager] aplicación de escritorio con la que trabajar [!DNL Adobe Experience Manager Assets] y descargue los recursos en su sistema de archivos local.
 feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: 7b884d89c34a6e45f49d4cacb0f5d537dc769742
+source-git-commit: 5b5970cec02d4a605bd7d826d1daa71fe228b0d9
 workflow-type: tm+mt
-source-wordcount: '1411'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,8 @@ Para instalar la aplicación de escritorio, siga estos pasos. Desinstalar cualqu
    ![Pantalla de conexión de la aplicación de escritorio a la dirección del servidor de entrada](assets/connect_da2.png)
 
    *Figura: Pantalla de conexión con la dirección del servidor de entrada.*
+
+   Select **[!UICONTROL Remember Connection]** para evitar introducir los detalles de conexión cada vez que inicie sesión en la aplicación de escritorio.
 
    >[!CAUTION]
    >

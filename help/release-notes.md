@@ -1,19 +1,25 @@
 ---
-title: '"[!DNL Adobe Experience Manager] notas de la versión de la aplicación de escritorio"'
+title: "[!DNL Adobe Experience Manager] notas de la versión de la aplicación de escritorio"
 description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad y vínculos de descarga para [!DNL Adobe Experience Manager] aplicación de escritorio.
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 34803cd261c88f6fbe8aa283c057518217a1785e
+source-git-commit: 1167ca53c603b94b298f702d6cbb3231e318e4cd
 workflow-type: tm+mt
-source-wordcount: '2027'
-ht-degree: 20%
+source-wordcount: '2201'
+ht-degree: 17%
 
 ---
 
 # [!DNL Adobe Experience Manager] Notas de la versión de la aplicación de escritorio {#release-notes-v2}
 
-A continuación se muestra la información de la versión 2.1 (2.1.5.0) de la aplicación de escritorio más reciente. La fecha de la versión es el 14 de junio de 2022.
+A continuación se muestra la información de la versión 2.2.0 de la aplicación de escritorio más reciente. La fecha de la versión es el 7 de octubre de 2022.
+
+La versión más reciente de la aplicación de escritorio incluye las siguientes mejoras:
+
+* Compatibilidad con Apple Silicon (M1).
+
+* Posibilidad de recordar la cadena de conexión al iniciar sesión en la aplicación de escritorio.
 
 La variable **admitido [!DNL Experience Manager] versiones** son:
 
@@ -33,6 +39,9 @@ La variable **descargar direcciones URL** para el sistema operativo compatible s
 
 | Sistema operativo | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
+| macOS (v2.2.0) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-2.2.0.dmg) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-2.2.0.dmg) |
+| macOS Apple Silicon (M1) (v2.2.0) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-2.2.0.dmg) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-2.2.0.dmg) |
+| Windows de 64 bits (v2.2.0) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-2.2.0.exe) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-2.2.0.exe) |
 | macOS (v2.1.5.0) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.5.0.dmg) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.5.0.dmg) |
 | Windows de 64 bits (v2.1.5.0) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.5.0.exe) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.5.0.exe) |
 | Windows de 32 bits (v2.1.5.0) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.5.0.exe) | [Vínculo de descarga](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.5.0.exe) |
@@ -63,7 +72,7 @@ La función es compatible con [!DNL Adobe Creative Cloud] 2018 y [!DNL Adobe Cre
 
 * La aplicación nativa almacena las rutas en el registro XMP del archivo.
 
-* [!DNL Experience Manager] ha extraído el registro XMP con las rutas al registro de metadatos del recurso.
+* [!DNL Experience Manager] ha extraído el registro de XMP con las rutas al registro de metadatos del recurso.
 
 * Las rutas pueden coincidir con los recursos de [!DNL Experience Manager], es decir, los archivos colocados también están en [!DNL Experience Manager] en una ruta coincidente.
 
