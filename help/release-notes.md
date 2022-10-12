@@ -4,9 +4,9 @@ description: Detalles de la versión, mejoras, nuevas funciones, compatibilidad 
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 1167ca53c603b94b298f702d6cbb3231e318e4cd
+source-git-commit: 2f49c1e952202e627e60fa9ad7998a4927aa817c
 workflow-type: tm+mt
-source-wordcount: '2201'
+source-wordcount: '2188'
 ht-degree: 17%
 
 ---
@@ -32,7 +32,7 @@ La variable **admitido [!DNL Experience Manager] versiones** son:
 
 [!DNL Adobe Experience Manager] La aplicación de escritorio está disponible para lo siguiente **sistemas operativos**:
 
-* macOS X 10.14 o posterior, con las últimas correcciones de errores. [Equipos Mac con silicio Apple](https://support.apple.com/en-us/HT211814) todavía no son compatibles.
+* macOS X 10.14 o posterior, con las últimas correcciones de errores.
 * Windows 10 con los paquetes de servicios y las correcciones de errores más recientes.
 
 La variable **descargar direcciones URL** para el sistema operativo compatible son:
