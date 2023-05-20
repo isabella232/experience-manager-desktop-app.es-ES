@@ -16,7 +16,7 @@ ht-degree: 93%
 ---
 
 
-# Guía de la aplicación de escritorio de Adobe {#using}
+# Guía de aplicación de escritorio de Adobe {#using}
 
 + [Información general](introduction.md)
 + [Notas de la versión](release-notes.md)
