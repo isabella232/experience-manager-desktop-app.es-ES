@@ -3,9 +3,9 @@ title: Instalación y configuración de la aplicación de escritorio
 description: Instalación y configuración [!DNL Adobe Experience Manager] aplicación de escritorio para trabajar [!DNL Adobe Experience Manager Assets] y descargue los recursos en su sistema de archivos local.
 feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: df5283f6bef6adbb007bf93c6dabb3b12e430f58
+source-git-commit: 0f366e07b9d220cf04286b24e4bb45ce0b385e5c
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1477'
 ht-degree: 0%
 
 ---
@@ -81,6 +81,10 @@ Para instalar la aplicación de escritorio, siga estos pasos. Desinstalar cualqu
    >[!CAUTION]
    >
    >Asegúrese de que no haya espacios iniciales o finales antes o después de la dirección del [!DNL Experience Manager] servidor. De lo contrario, la aplicación no se podrá conectar al [!DNL Experience Manager] servidor.
+
+1. Clic **[!UICONTROL I want to connect a different way]** y haga clic en **[!UICONTROL Adobe login]** para iniciar sesión en el servidor de Experience Manager Assets mediante el servicio Identity Management de Adobe (IMS). El inicio de sesión de IMS permite a la aplicación de escritorio actualizar el token de acceso automáticamente, lo que permite al usuario permanecer conectado durante un máximo de 14 días. Clic **[!UICONTROL Direct login]** para iniciar sesión en [!DNL Experience Manager] servidor con las credenciales.
+
+   ![Inicio de sesión de Adobe](assets/adobe-login.png)
 
 1. Una vez que la conexión se haya realizado correctamente, podrá ver la lista de carpetas y recursos disponibles en la carpeta raíz de [!DNL Experience Manager] DAM. Puede examinar las carpetas desde la aplicación.
 
