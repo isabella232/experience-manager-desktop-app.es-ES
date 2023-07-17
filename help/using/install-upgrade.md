@@ -3,9 +3,9 @@ title: Instalación y configuración de la aplicación de escritorio
 description: Instalación y configuración [!DNL Adobe Experience Manager] aplicación de escritorio para trabajar [!DNL Adobe Experience Manager Assets] y descargue los recursos en su sistema de archivos local.
 feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: 0f366e07b9d220cf04286b24e4bb45ce0b385e5c
+source-git-commit: e51547496b03ac42d13e7bee5e2e3d20e520d0ad
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1481'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Para instalar la aplicación de escritorio, siga estos pasos. Desinstalar cualqu
    >
    >Asegúrese de que no haya espacios iniciales o finales antes o después de la dirección del [!DNL Experience Manager] servidor. De lo contrario, la aplicación no se podrá conectar al [!DNL Experience Manager] servidor.
 
-1. Clic **[!UICONTROL I want to connect a different way]** y haga clic en **[!UICONTROL Adobe login]** para iniciar sesión en el servidor de Experience Manager Assets mediante el servicio Identity Management de Adobe (IMS). El inicio de sesión de IMS permite a la aplicación de escritorio actualizar el token de acceso automáticamente, lo que permite al usuario permanecer conectado durante un máximo de 14 días. Clic **[!UICONTROL Direct login]** para iniciar sesión en [!DNL Experience Manager] servidor con las credenciales.
+1. [Opcional] Clic **[!UICONTROL I want to connect a different way]** y haga clic en **[!UICONTROL Adobe login]** para iniciar sesión en el servidor de Experience Manager Assets mediante el servicio Identity Management de Adobe (IMS). El inicio de sesión de IMS permite a la aplicación de escritorio actualizar el token de acceso automáticamente, lo que permite al usuario permanecer conectado durante un máximo de 14 días. Clic **[!UICONTROL Direct login]** para realizar el inicio de sesión estándar en [!DNL Experience Manager] servidor con credenciales de usuario.
 
    ![Inicio de sesión de Adobe](assets/adobe-login.png)
 
