@@ -4,7 +4,7 @@ description: Uso [!DNL Adobe Experience Manager] aplicación de escritorio, para
 mini-toc-levels: 1
 feature: Desktop App,Asset Management
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: df5283f6bef6adbb007bf93c6dabb3b12e430f58
+source-git-commit: 98e99ee48d835cea0098c4acfe49f6b247ccf658
 workflow-type: tm+mt
 source-wordcount: '4054'
 ht-degree: 0%
@@ -22,6 +22,7 @@ Cuando abra la aplicación después de cerrar sesión o por primera vez, proporc
 Las tareas clave que realiza con el [!DNL Adobe Experience Manager] aplicación de escritorio son:
 
 ![Flujos de trabajo y tareas que puede realizar mediante [!DNL Experience Manager] aplicación de escritorio](assets/aem_desktop_app_usecases_v2.png "Flujos de trabajo y tareas que puede realizar mediante [!DNL Adobe Experience Manager] aplicación de escritorio")
+
 Descargar [esta](assets/aem_desktop_app_usecases_print.pdf) archivo de PDF listo para imprimir.
 
 ## Cómo funciona la aplicación de escritorio {#how-app-works2}
