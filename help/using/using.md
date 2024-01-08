@@ -4,9 +4,9 @@ description: Uso [!DNL Adobe Experience Manager] aplicación de escritorio, para
 mini-toc-levels: 1
 feature: Desktop App,Asset Management
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: 98e99ee48d835cea0098c4acfe49f6b247ccf658
+source-git-commit: 1139b3359042a134d86900e3b7b7f03d8d920cdc
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4032'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Puede buscar, buscar y previsualizar los recursos disponibles en la [!DNL Experi
 
 >[!NOTE]
 >
->La aplicación muestra los recursos haciendo coincidir los criterios de búsqueda en varios campos de metadatos, y no solo el título del recurso o el nombre de archivo.
+>La aplicación muestra los recursos haciendo coincidir los criterios de búsqueda en varios campos de metadatos, y no solo el título del recurso o el nombre del archivo.
 
 ## Descarga de recursos {#download-assets}
 
@@ -217,11 +217,11 @@ En la aplicación heredada, los nombres de nodo creados en el repositorio conser
 
 | Caracteres ‡ | Preferencia heredada en la aplicación | Cuando se produce en nombres de archivo | Cuando se produce en nombres de carpeta | Ejemplos |
 |---|---|---|---|---|
-| `. / : [ ] | *` | Habilitado o deshabilitado | Reemplazado por `-` (guion). A `.` (punto) en la extensión de nombre de archivo se conserva tal cual. | Reemplazado por `-` (guion). | `myimage.jpg` permanece tal cual y `my.image.jpg` cambios en `my-image.jpg`. |
+| `. / : [ ] \| *` | Habilitado o deshabilitado | Reemplazado por `-` (guion). A `.` (punto) en la extensión de nombre de archivo se conserva tal cual. | Reemplazado por `-` (guion). | `myimage.jpg` permanece tal cual y `my.image.jpg` cambios en `my-image.jpg`. |
 | `% ; # , + ? ^ { } "` y espacios en blanco | ![icono de anular selección](assets/do-not-localize/deselect-icon.png) Desactivado | Se conservan los espacios en blanco | Reemplazado por `-` (guion). | `My Folder.` cambios en `my-folder-`. |
-| `# % { } ? & .` | ![icono de anular selección](assets/do-not-localize/deselect-icon.png) Desactivado | Reemplazado por `-` (guion). | ND. | `#My New File.` cambios en `-My New File-`. |
+| `# % { } ? & .` | ![icono de anular selección](assets/do-not-localize/deselect-icon.png) Desactivado | Reemplazado por `-` (guion). | NO. | `#My New File.` cambios en `-My New File-`. |
 | Caracteres en mayúsculas | ![icono de anular selección](assets/do-not-localize/deselect-icon.png) Desactivado | La carcasa se conserva tal cual. | Se ha cambiado a minúsculas. | `My New Folder` cambios en `my-new-folder`. |
-| Caracteres en mayúsculas | ![icono de selección activada](assets/do-not-localize/selection-checked-icon.png) Habilitado | La carcasa se conserva tal cual. | La carcasa se conserva tal cual. | ND. |
+| Caracteres en mayúsculas | ![icono de selección activada](assets/do-not-localize/selection-checked-icon.png) Habilitado | La carcasa se conserva tal cual. | La carcasa se conserva tal cual. | NO. |
 
 ‡ La lista de caracteres es una lista separada por espacios en blanco.
 
